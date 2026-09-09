@@ -83,7 +83,10 @@ def load(client: OpenLigaDB, season: int | None = None, verbose: bool = True):
 
 
 def merge_standings(teams: dict[str, Team], groups: list[dict]):
-    """Fertige Tabellen (fussball.de) in die Mannschaftsliste einhängen.
+    """Fertige Tabellen in die Mannschaftsliste einhängen.
+
+    Jede Staffel bringt ihre Herkunft in `quelle` mit -- die Handball-Staffeln
+    kommen von handball.net und der HBL, nicht von fussball.de.
 
     Liefert die Bilanzen als {key: Stats} zurück. Bei Namenskollisionen mit
     einer bereits erfassten Mannschaft aus einer anderen Staffel wird der
@@ -106,7 +109,8 @@ def merge_standings(teams: dict[str, Team], groups: list[dict]):
                 key=key, name=row["name"], icon=None, tier=group["tier"],
                 league_name=group["name"], verband=group["verband"],
                 area=group["area"], spielklasse=group["spielklasse"],
-                staffel_id=group["staffel"], quelle="fussball.de",
+                staffel_id=group["staffel"],
+                quelle=group.get("quelle", "fussball.de"),
             )
             external[key] = Stats(
                 played=row["played"], won=row["won"], drawn=row["drawn"],

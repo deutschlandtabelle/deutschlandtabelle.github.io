@@ -122,6 +122,7 @@ def fetch(cache_dir: Path, verbose: bool = True) -> list[dict]:
         raus.append({
             "name": anzeige, "tier": tier, "verband": None, "area": None,
             "spielklasse": anzeige, "staffel": f"hbl-{embed_id}", "rows": zeilen,
+            "quelle": "HBL (Sportradar)",
         })
         if verbose:
             print(f"  HBL: {anzeige} — {len(zeilen)} Mannschaften", file=sys.stderr)

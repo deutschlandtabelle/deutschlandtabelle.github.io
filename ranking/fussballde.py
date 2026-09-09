@@ -399,7 +399,8 @@ def fetch(cache_dir: Path, season: int, verbose: bool = True) -> list[dict]:
                     "verband": entry["verband"], "area": entry["area"],
                     "spielklasse": entry["spielklasse"],
                     "mandant": entry["mandant"],
-                    "staffel": entry["staffel"], "rows": rows})
+                    "staffel": entry["staffel"], "rows": rows,
+                    "quelle": "fussball.de"})
     if verbose:
         teams = sum(len(g["rows"]) for g in out)
         print(f"  fussball.de: {len(out)} Staffeln mit Daten, {teams} Mannschaften"

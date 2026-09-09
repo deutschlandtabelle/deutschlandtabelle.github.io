@@ -268,6 +268,7 @@ def fetch(cache_dir: Path, season: int, verbose: bool = True) -> list[dict]:
             "name": label, "tier": k["tier"], "verband": verbaende[fid],
             "area": verbaende[fid], "spielklasse": k["spielklasse"],
             "staffel": str(k["phase_id"]), "rows": zeilen,
+            "quelle": "handball.net",
         })
     if verbose:
         mannschaften = sum(len(g["rows"]) for g in raus)

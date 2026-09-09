@@ -164,7 +164,11 @@ def main() -> int:
         if plaetze != list(range(1, len(rs) + 1)):
             plaetze_falsch.append(f"{rs[0]['staffel']}: {plaetze[:6]}…")
         # Je Partie werden 3 Punkte vergeben (2 bei Remis), nie mehr.
-        if sum(zahl(r["punkte"]) for r in rs) > 3 * (spiele // 2):
+        # Aufgerundet, weil eine Partie zeitweise nur bei einer der beiden
+        # Mannschaften verbucht sein kann -- am Saisonanfang liefert
+        # handball.net das so. Die ungerade Spielsumme steht dafür schon als
+        # Hinweis oben; hier soll sie nicht ein zweites Mal zuschlagen.
+        if sum(zahl(r["punkte"]) for r in rs) > 3 * -(-spiele // 2):
             punkte_zuviel.append(f"{rs[0]['staffel']}")
     # Eine Wertung gegen eine zurückgezogene Mannschaft erzeugt eine Niederlage
     # ohne zugehörigen Sieg: die Torsumme klafft dann auseinander und die
