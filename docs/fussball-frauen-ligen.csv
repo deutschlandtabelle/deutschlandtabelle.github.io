@@ -1,0 +1,333 @@
+staffel_id,verband,gebiet,ligastufe,spielklasse,staffel,mannschaften,spiele_gesamt,tore_gesamt,punkte_gesamt,tabellenfuehrer,tabellenfuehrer_punkte,quelle
+ffb1/2026,,,1,Frauen-Bundesliga,Frauen-Bundesliga,14,21,67,59,VfL Wolfsburg Frauen,9,OpenLigaDB
+rlw-frauen/2026,,,3,Regionalliga West (Frauen),Regionalliga West (Frauen),16,9,33,26,1. FFC Recklinghausen,3,OpenLigaDB
+03162371BG000006VS5489BTVU7GTVLE-G,Baden,Baden,4,Verbandsliga,bfv-Frauen-Verbandsliga · Baden,12,0,0,0,1. FC Ersingen,0,fussball.de
+0319LR9N1K000005VS5489BUVV628VP4-G,Bayern,Bayern,4,Bayernliga,Frauen Bayernliga,12,12,36,35,FC Forstern,6,fussball.de
+0317AJDKH000000HVS5489BUVSBBVPEU-G,Berlin,Berlin,4,Verbandsliga,Frauen Berlin-Liga,14,13,59,35,Hertha BSC II,6,fussball.de
+0316J4BA3C000002VS5489BTVU7GTVLE-G,Brandenburg,Brandenburg,4,Landesliga,Landesliga · Brandenburg,8,5,19,15,SV Grün-Weiss Brieselang,6,fussball.de
+031FAGJE34000017VS5489BTVUS470OH-G,Bremen,Bremen,4,Verbandsliga,Verbandsliga - Hauptrunde · Bremen,8,11,59,32,ESC Geestemünde,6,fussball.de
+0314C5SDDO00000EVS5489BTVU7GTVLE-G,Hamburg,Hamburg,4,Verbandsliga,FOL Frauen-Oberliga Hamburg,12,18,82,53,Victoria 1.Fr.,9,fussball.de
+031CO14DG400000FVS5489BTVUS470OH-G,Hessen,Hessen,4,Hessenliga,Frauen Hessenliga,13,22,83,60,SG Bornheim/GW,10,fussball.de
+031JFG3C6S000005VS5489BUVVKNMR0J-G,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,4,Verbandsliga,Verbandsliga Frauen · Mecklenburg-Vorpommern,7,2,12,6,Greifswalder FC,3,fussball.de
+031DHDEQ90000003VS5489BUVUR5FS5A-G,Mittelrhein,Mittelrhein,4,Verbandsliga,Frauen-Mittelrheinliga,13,0,0,0,1. FC Köln III,0,fussball.de
+031EETE59G00000CVS5489BUVUR5FS5A-G,Niederrhein,Niederrhein,4,Niederrheinliga,Frauen Niederrheinliga,14,12,57,35,TSV Solingen,6,fussball.de
+03132M2LUO000006VS5489BTVU7GTVLE-G,Niedersachsen,Niedersachsen,4,Oberliga Niedersachsen,AOK-Frauenmeisterschaft Niedersachsen Ost,15,27,136,75,SG Rodenberg,12,fussball.de
+03132M2M74000006VS5489BTVU7GTVLE-G,Niedersachsen,Niedersachsen,4,Oberliga Niedersachsen,AOK-Frauenmeisterschaft Niedersachsen West,14,22,83,65,BWS Tündern-Hastenbeck,12,fussball.de
+031CBUK5UG000003VS5489BUVUR5FS5A-G,Rheinland,Rheinland,4,Rheinlandliga,Rheinlandliga,13,16,76,45,SV Holzbach,9,fussball.de
+031AT6R77O000004VS5489BUVV628VP4-G,Saarland,Saarland,4,Verbandsliga,Verbandsliga · Saarland,12,16,86,46,1. FC Saarbrücken II,9,fussball.de
+031DBH5SVO000000VS5489BUVUR5FS5A-G,Sachsen,Sachsen,4,Landesliga,Sachsenliga Frauen,12,11,44,32,1. FFC Fortuna Dresden,6,fussball.de
+030BND22OG000004VS5489BTVTJUP7HP-G,Sachsen-Anhalt,Sachsen-Anhalt,4,Verbandsliga,Humanas Frauen-Verbandsliga · Sachsen-Anhalt,9,7,47,20,1. FC Magdeburg U23,6,fussball.de
+0311J88R1O000006VS5489BUVVARDA0V-G,Schleswig-Holstein,Schleswig-Holstein,4,Oberliga Schleswig-Holstein,VR-Banken Oberliga · Schleswig-Holstein,12,18,73,49,SG NieBar,7,fussball.de
+031DCM6EKO000005VS5489BTVUS470OH-G,Südbaden,Südbaden,4,Verbandsliga,Frauen Verbandsliga Südbaden,13,0,0,0,Alem. Freiburg-Zähringen,0,fussball.de
+0319RAI0D4000004VS5489BUVV628VP4-G,Südwest,Südwest,4,Verbandsliga,Frauen Verbandsliga Südwest,12,23,125,68,1. FC Kaiserslautern,12,fussball.de
+031HD07908000004VS5489BTVVG7L386-G,Thüringen,Thüringen,4,Verbandsliga,Thüringenliga Staffel 1,5,4,39,12,SG EFC Ruhla 08,6,fussball.de
+031HD0I3L4000003VS5489BTVVG7L386-G,Thüringen,Thüringen,4,Verbandsliga,Thüringenliga Staffel 2,5,4,15,11,Saalfeld Titans,4,fussball.de
+031HD0R2RG000004VS5489BTVVG7L386-G,Thüringen,Thüringen,4,Verbandsliga,Thüringenliga Staffel 3,5,4,19,12,FC Carl Zeiss Jena III,6,fussball.de
+0314GURVOK000012VS5489BUVSBBVPEU-G,Westfalen,Westfalen,4,Verbandsliga,Frauen-Westfalenliga,14,20,117,60,Borussia Dortmund II,9,fussball.de
+031DO1QT3K00000CVS5489BUVUR5FS5A-G,Württemberg,Württemberg,4,Verbandsliga,Verbandsliga · Württemberg,12,0,0,0,1. FC Donzdorf,0,fussball.de
+0316219I2G00000CVS5489BTVU7GTVLE-G,Baden,Baden,5,Landesliga,bfv-Frauen Landesliga Baden,11,0,0,0,FC Odenheim,0,fussball.de
+031621LD9400000CVS5489BTVU7GTVLE-G,Baden,Baden,5,Landesliga,bfv-Frauen Landesliga KF St.1 · Baden,11,0,0,0,1. FC Engelsbrand,0,fussball.de
+031621LDE800000CVS5489BTVU7GTVLE-G,Baden,Baden,5,Landesliga,bfv-Frauen Landesliga KF St.2 · Baden,11,0,0,0,FC Germ. Forst,0,fussball.de
+031621LCQ000000CVS5489BTVU7GTVLE-G,Baden,Baden,5,Landesliga,bfv-Frauen Landesliga St. 1 · Baden,11,0,0,0,ATSV Mutschelbach 2,0,fussball.de
+031621LCV400000BVS5489BTVU7GTVLE-G,Baden,Baden,5,Landesliga,bfv-Frauen Landesliga St. 2 · Baden,12,0,0,0,FC Türkspor Mannheim (flex),0,fussball.de
+031621LD4400000CVS5489BTVU7GTVLE-G,Baden,Baden,5,Landesliga,bfv-Frauen Landesliga St. 3 · Baden,11,0,0,0,SpG Auerbach / Katzental,0,fussball.de
+0319LIUD18000005VS5489BUVV628VP4-G,Bayern,Bayern,5,Landesliga,Frauen Landesliga Nord · Bayern,12,12,62,35,SGV Nürnberg-Fürth,6,fussball.de
+0319LIUD90000005VS5489BUVV628VP4-G,Bayern,Bayern,5,Landesliga,Frauen Landesliga Süd · Bayern,12,12,42,35,SC Amicitia München,6,fussball.de
+0317AJEGF800000JVS5489BUVSBBVPEU-G,Berlin,Berlin,5,Landesliga,Frauen Landesliga · Berlin,13,10,61,26,SFC Stern 1900 II,6,fussball.de
+031DE495N0000003VS5489BTVUS470OH-G,Brandenburg,Brandenburg,5,Landesklasse,Landesklasse Ost · Brandenburg,6,3,15,9,MSV Zossen 07,3,fussball.de
+031DE2C0NO000003VS5489BTVUS470OH-G,Brandenburg,Brandenburg,5,Landesklasse,Landesklasse West · Brandenburg,6,3,20,8,FSV Forst Borgsdorf I,3,fussball.de
+031FAQL8I000000AVS5489BTVUS470OH-G,Bremen,Bremen,5,Landesliga,Landesliga - Hauptrunde · Bremen,8,7,29,19,TUS Schwachhausen,6,fussball.de
+0314C6O8LC00000FVS5489BTVU7GTVLE-G,Hamburg,Hamburg,5,Landesliga,FLL Landesliga Frauen · Hamburg,12,17,85,49,UH-Adler 1.Fr.,9,fussball.de
+031CO20PGG00000FVS5489BTVUS470OH-G,Hessen,Hessen,5,Verbandsliga,Frauen VL Gr.Nord · Hessen,13,20,89,59,TSV Obermelsungen,12,fussball.de
+031CO20P7C00000DVS5489BTVUS470OH-G,Hessen,Hessen,5,Verbandsliga,Frauen VL Gr.Süd · Hessen,12,16,79,46,FSG Schwalbach/Niederhöchstadt,12,fussball.de
+031A8QCF10000008VS5489BTVSK8S3O6-G,Mecklenburg-Vorpommern,Kreis Schwerin-Nordwestmeckl.,5,Kreisoberliga,Frauen Kreisoberliga · Kreis Schwerin-Nordwestmeckl.,10,9,85,25,PSV Röbel-Müritz,6,fussball.de
+031JQ4GAP4000003VS5489BUVVKNMR0J-G,Mecklenburg-Vorpommern,Kreis Vorpommern-Greifswald,5,Kreisoberliga,Kreisoberliga Frauen · Kreis Vorpommern-Greifswald,8,0,0,0,1. FC Neubrandenburg 04 II,0,fussball.de
+031AHIGF8G000008VS5489BUVV628VP4-G,Mecklenburg-Vorpommern,Kreis Warnow,5,Kreisoberliga,Frauen KFV Warnow KOL,7,0,0,0,Doberaner FC,0,fussball.de
+031DHDD1L0000002VS5489BUVUR5FS5A-G,Mittelrhein,Mittelrhein,5,Landesliga,"Frauen-Landesliga, Staffel 1 · Mittelrhein",12,0,0,0,Bonner SC 01/04 e.V.,0,fussball.de
+031DHDD1QC000002VS5489BUVUR5FS5A-G,Mittelrhein,Mittelrhein,5,Landesliga,"Frauen-Landesliga, Staffel 2 · Mittelrhein",12,0,0,0,Bedburger BV,0,fussball.de
+031EEUBQEO00000JVS5489BUVUR5FS5A-G,Niederrhein,Niederrhein,5,Landesliga,Landesliga Gruppe 1 · Niederrhein,14,12,48,34,DJK Arminia Klosterhardt,6,fussball.de
+031EEUBQO400000KVS5489BUVUR5FS5A-G,Niederrhein,Niederrhein,5,Landesliga,Landesliga Gruppe 2 · Niederrhein,14,12,43,34,MSV Duisburg II. U23,6,fussball.de
+031AHIK0EC000009VS5489BUVV628VP4-G,Niedersachsen,Bezirk Braunschweig,5,Landesliga,Frauen Landesliga Braunschweig,10,10,54,29,VfL Wahrenholz,6,fussball.de
+031DQ9GU3O000005VS5489BTVUS470OH-G,Niedersachsen,Bezirk Hannover,5,Landesliga,Frauen Landesliga Hannover,12,12,51,32,TSV Limmer II,6,fussball.de
+0316TBGAE8000008VS5489BTVU7GTVLE-G,Niedersachsen,Bezirk Lüneburg,5,Landesliga,Frauen Landesliga Lüneburg,13,16,60,45,SV Eintracht Lüneburg,9,fussball.de
+0318B33UGK00000CVS5489BTVU7GTVLE-G,Niedersachsen,Bezirk Weser-Ems,5,Landesliga,Frauen Landesliga Weser-Ems,13,18,75,53,SV Olympia Uelsen,9,fussball.de
+031E53PO4G000004VS5489BTVUS470OH-G,Rheinland,Bezirk Rheinland,5,Bezirksliga,Bezirksliga 1 Frauen · Bezirk Rheinland,10,14,68,39,FC Rot-Weiß Koblenz,7,fussball.de
+031E5433VC000005VS5489BTVUS470OH-G,Rheinland,Bezirk Rheinland,5,Bezirksliga,Bezirksliga 2 Frauen · Bezirk Rheinland,10,14,88,39,DJK Watzerath,7,fussball.de
+031BSNK0K0000005VS5489BTVUS470OH-G,Saarland,Saarland,5,Landesliga,Landesliga · Saarland,11,8,53,24,SV Göttelborn,6,fussball.de
+031DBKN7HK000004VS5489BTVUS470OH-G,Sachsen,Sachsen,5,Landesklasse,Sachsenklasse Frauen Nord,12,11,73,30,BSV Schönau 1983,6,fussball.de
+031DBKCDVK000004VS5489BTVUS470OH-G,Sachsen,Sachsen,5,Landesklasse,Sachsenklasse Frauen Ost,10,10,48,29,NFV Gelb-Weiß Görlitz 09,6,fussball.de
+031DBL3A1G000004VS5489BTVUS470OH-G,Sachsen,Sachsen,5,Landesklasse,Sachsenklasse Frauen Süd/West,11,9,42,27,ESV Eintracht Thum-Herold,6,fussball.de
+030BNDVH1C000000VS5489BTVTJUP7HP-G,Sachsen-Anhalt,Sachsen-Anhalt,5,Landesliga,Landesliga Nord · Sachsen-Anhalt,7,4,34,12,SC 1919 Heudeber (flex),3,fussball.de
+030BNE372O000003VS5489BTVTJUP7HP-G,Sachsen-Anhalt,Sachsen-Anhalt,5,Landesliga,Landesliga Süd · Sachsen-Anhalt,6,4,14,12,Hallescher FC 2,6,fussball.de
+0311JA61C4000007VS5489BUVVARDA0V-G,Schleswig-Holstein,Schleswig-Holstein,5,Landesliga,Landesliga Holstein · Schleswig-Holstein,12,16,73,48,SV Boostedt,9,fussball.de
+0311JA6138000007VS5489BUVVARDA0V-G,Schleswig-Holstein,Schleswig-Holstein,5,Landesliga,Landesliga Schleswig · Schleswig-Holstein,11,14,79,40,TSB Flensburg,9,fussball.de
+031A6I5C58000005VS5489BUVV628VP4-G,Südbaden,Südbaden,5,Landesliga,Landesliga Frauen Staffel 1 · Südbaden,12,0,0,0,Alem. Freiburg-Zähringen 2,0,fussball.de
+031A6I5CE000000FVS5489BUVV628VP4-G,Südbaden,Südbaden,5,Landesliga,Landesliga Frauen Staffel 2 · Südbaden,11,0,0,0,FC Wittlingen,0,fussball.de
+031B53B82C000004VS5489BUVV628VP4-G,Südwest,Südwest,5,Landesliga,Frauen Landesliga Nord · Südwest,12,14,46,40,1. FC Nackenheim,9,fussball.de
+031CH7VJNG000004VS5489BTVUS470OH-G,Südwest,Südwest,5,Landesliga,Frauen Landesliga Süd · Südwest,13,18,111,53,FC Phönix 21 Bellheim,9,fussball.de
+031CDUVGJO000007VS5489BUVUR5FS5A-G,Südwest,Südwest,5,Landesliga,Frauen Landesliga West · Südwest,11,12,54,34,VfR Baumholder,9,fussball.de
+031DS4P7V8000007VS5489BUVUR5FS5A-G,Thüringen,Kreis Erfurt-Sömmerda,5,Kreisoberliga,Frauen KOL St.1 · Kreis Erfurt-Sömmerda,7,4,15,12,SV Frohndorf/Orlishausen,3,fussball.de
+031DS5KIMK000004VS5489BUVUR5FS5A-G,Thüringen,Kreis Erfurt-Sömmerda,5,Kreisoberliga,Frauen KOL St.2 · Kreis Erfurt-Sömmerda,6,3,32,9,SG FSV Einheit Eisenberg,3,fussball.de
+0319T83L38000006VS5489BTVSK8S3O6-G,Thüringen,Kreis Nordthüringen,5,Kreisoberliga,Teamsport NDH Kreisoberliga · Kreis Nordthüringen,7,5,39,15,FSV Wacker 90 Nordhausen,6,fussball.de
+031DHN14CS000006VS5489BUVUR5FS5A-G,Thüringen,Kreis Rhön-Rennsteig,5,Kreisoberliga,Frauen Kreisoberliga Staffel Süd · Kreis Rhön-Rennsteig,7,0,0,0,1. SC Phönix am Rennsteig,0,fussball.de
+031CG84VVO000006VS5489BTVUS470OH-G,Thüringen,Kreis Westthüringen,5,Kreisoberliga,KREISOBERLIGA FRAUEN · Kreis Westthüringen,8,3,25,8,Fischbacher SV,3,fussball.de
+0314GV0PE000000TVS5489BUVSBBVPEU-G,Westfalen,Westfalen,5,Landesliga,IGA 2027 Frauen Landesliga Staffel 1 · Westfalen,14,21,105,60,Delbrücker SC,9,fussball.de
+0314GV0PQ8000012VS5489BUVSBBVPEU-G,Westfalen,Westfalen,5,Landesliga,IGA 2027 Frauen Landesliga Staffel 2 · Westfalen,14,21,88,62,SpVgg Horsthausen,9,fussball.de
+0314GV0Q5G00000RVS5489BUVSBBVPEU-G,Westfalen,Westfalen,5,Landesliga,IGA 2027 Frauen Landesliga Staffel 3 · Westfalen,14,17,73,49,SV Langenhorst Welbergen,9,fussball.de
+031CQMSMOK00000CVS5489BUVUR5FS5A-G,Württemberg,Württemberg,5,Landesliga,Landesliga 1 · Württemberg,12,0,0,0,SGM Wendlingen/Ötlingen,0,fussball.de
+031CQMSN14000007VS5489BUVUR5FS5A-G,Württemberg,Württemberg,5,Landesliga,Landesliga 2 · Württemberg,12,0,0,0,FC Blau-Weiß Bellamont,0,fussball.de
+0312Q1GS9G000003VS5489BTVU7GTVLE-G,,Deutschland,6,Regionalliga,Regionalliga Südwest,12,17,78,49,1. FC Saarbrücken,9,fussball.de
+0316L6D12K000006VS5489BTVU7GTVLE-G,Baden,Kreis Mosbach,6,Kreisliga,bfv-Frauen Kreisliga MOS/BCH/TBB · Kreis Mosbach,4,0,0,0,SV Ballenberg,0,fussball.de
+031DNDGVQC000006VS5489BTVUS470OH-G,Bayern,Bezirk Mittelfranken,6,Bezirksoberliga,Frauen BOL · Bezirk Mittelfranken,12,6,31,18,DJK Fiegenstall,3,fussball.de
+0318D4JS3K00000AVS5489BUVSBBVPEU-G,Bayern,Bezirk Niederbayern,6,Bezirksoberliga,Frauen BOL · Bezirk Niederbayern,10,0,0,0,1. FC Passau,0,fussball.de
+031EVJ7C48000006VS5489BUVUR5FS5A-G,Bayern,Bezirk Oberbayern,6,Bezirksoberliga,Frauen BOL · Bezirk Oberbayern,11,0,0,0,FC 1927 Oberau,0,fussball.de
+031DRLDMBK000005VS5489BUVUR5FS5A-G,Bayern,Bezirk Oberfranken,6,Bezirksoberliga,Frauen BOL · Bezirk Oberfranken,12,12,61,35,Universitäts-Sportclub Bayreuth,6,fussball.de
+0316VD0FOS000006VS5489BTVU7GTVLE-G,Bayern,Bezirk Oberpfalz,6,Bezirksoberliga,Frauen BOL · Bezirk Oberpfalz,10,5,18,13,SV Wilting (A),3,fussball.de
+0316TGC1PG000006VS5489BTVU7GTVLE-G,Bayern,Bezirk Schwaben,6,Bezirksoberliga,Frauen BOL · Bezirk Schwaben,11,3,5,7,TSV Sielenbach,3,fussball.de
+0319679CPO000057VS5489BTVSK8S3O6-G,Bayern,Bezirk Unterfranken,6,Bezirksoberliga,Frauen BOL · Bezirk Unterfranken,10,0,0,0,1. FC Schweinfurt,0,fussball.de
+0317AJFCVG00000IVS5489BUVSBBVPEU-G,Berlin,Bezirk Berlin,6,Bezirksliga,Frauen Bezirksliga St.1 · Bezirk Berlin,14,14,80,38,BFC Dynamo,6,fussball.de
+0317AJFD7800000LVS5489BUVSBBVPEU-G,Berlin,Bezirk Berlin,6,Bezirksliga,Frauen Bezirksliga St.2 · Bezirk Berlin,13,12,42,33,Lichtenrader BC,4,fussball.de
+031CGDDNC800000JVS5489BUVUR5FS5A-G,Brandenburg,Kreis Dahme/Fläming,6,Kreisliga,Kreisliga · Kreis Dahme/Fläming,9,3,25,9,SG Südstern Senzig,3,fussball.de
+031HTI8PTO000004VS5489BTVSRD0UH9-G,Brandenburg,Kreis Havelland,6,Kreisliga,Kreisliga Frauen (Kerstin Grothe-Benkenstein) · Kreis Havelland,11,7,49,21,FSV Viktoria Brandenburg 1990 e.V.,6,fussball.de
+03142N5IIC00000CVS5489BUVSBBVPEU-G,Brandenburg,Kreis Oberhavel/Barnim,6,Kreisliga,Kreisliga Frauen · Kreis Oberhavel/Barnim,9,7,37,20,FSV Lok Eberswalde,6,fussball.de
+031CP5NH8S00000HVS5489BTVUS470OH-G,Brandenburg,Kreis Ostbrandenburg,6,Kreisliga,Kreisliga · Kreis Ostbrandenburg,9,4,13,10,Storkower SC,3,fussball.de
+031JVGVNLO00000DVS5489BUVVKNMR0J-G,Brandenburg,Kreis Prignitz/Ruppin,6,Kreisliga,Kreisliga Frauen · Kreis Prignitz/Ruppin,10,3,19,8,SG Sieversdorf,3,fussball.de
+031F55NRLC000004VS5489BUVSJ4CRAP-G,Brandenburg,Kreis Südbrandenburg,6,Kreisliga,SBB/NL-Frauen-Kreisliga · Kreis Südbrandenburg,13,9,30,26,SG Gießmannsdorf,4,fussball.de
+031CS3DM5400000EVS5489BTVUS470OH-G,Brandenburg,Kreis Uckermark,6,Kreisliga,Kreisliga Frauen · Kreis Uckermark,8,2,9,6,FSV Rot-Weiß Prenzlau,3,fussball.de
+031FARD6IK000018VS5489BTVUS470OH-G,Bremen,Bezirk Bremen,6,Bezirksliga,Bezirksliga - Hauptrunde · Bezirk Bremen,6,6,33,18,Habenhauser FV,6,fussball.de
+0314CCB7IG000000VS5489BTVU7GTVLE-G,Hamburg,Bezirksebene Hamburg,6,Bezirksliga,FBZL 01 · Bezirksebene Hamburg,12,12,50,33,SV Eidelstedt 1.Fr.,6,fussball.de
+0314CCB7QC00000FVS5489BTVU7GTVLE-G,Hamburg,Bezirksebene Hamburg,6,Bezirksliga,FBZL 02 · Bezirksebene Hamburg,12,12,64,35,Ahrensburg 1.Fr.,6,fussball.de
+031CO2CTM400000EVS5489BTVUS470OH-G,Hessen,Region Frankfurt,6,Gruppenliga,Frauen Gruppenliga Süd-Ost · Region Frankfurt,12,14,81,42,FSG Hassia Dieburg/Semd,9,fussball.de
+031CO2GG3O00000GVS5489BTVUS470OH-G,Hessen,Region Fulda,6,Gruppenliga,Frauen Gruppenliga Nord-Ost · Region Fulda,10,16,82,46,FSG Raßdorf/Bosserode,9,fussball.de
+031COEE52400000CVS5489BTVUS470OH-G,Hessen,Region Gießen / Marburg,6,Gruppenliga,Frauen GL Nord-West · Region Gießen / Marburg,9,8,41,24,SSV Sechshelden,6,fussball.de
+031COEI21G000000VS5489BTVUS470OH-G,Hessen,Region Kassel,6,Gruppenliga,Frauen Gruppenliga Nord · Region Kassel,10,16,55,41,SG Flechtdorf-Ittertal,9,fussball.de
+031E2AVBQ4000002VS5489BUVUR5FS5A-G,Hessen,Region Wiesbaden,6,Gruppenliga,Frauen Gruppenliga Süd-West · Region Wiesbaden,12,18,107,53,SG Runkel/Brechen/Weyer,10,fussball.de
+031AHIHGPO00000AVS5489BUVV628VP4-G,Mecklenburg-Vorpommern,Kreis Warnow,6,Kreisliga,KL Frauen Warnow,6,0,0,0,BSG ScanHaus Marlow/SG Wöpkendorf,0,fussball.de
+031DHCTJIS000006VS5489BUVUR5FS5A-G,Mittelrhein,Bezirk Mittelrhein,6,Bezirksliga,"Frauen-Bezirksliga, Staffel 1 · Bezirk Mittelrhein",12,0,0,0,1. FSV Köln 1,0,fussball.de
+031DHCTJQ0000006VS5489BUVUR5FS5A-G,Mittelrhein,Bezirk Mittelrhein,6,Bezirksliga,"Frauen-Bezirksliga, Staffel 2 · Bezirk Mittelrhein",12,0,0,0,DJK Südwest Köln 2,0,fussball.de
+031DHCTJV0000004VS5489BUVUR5FS5A-G,Mittelrhein,Bezirk Mittelrhein,6,Bezirksliga,"Frauen-Bezirksliga, Staffel 3 · Bezirk Mittelrhein",12,0,0,0,Burtscheider TV 2,0,fussball.de
+031EF19OVG00000GVS5489BUVUR5FS5A-G,Niederrhein,Bezirk Niederrhein,6,Bezirksliga,Bezirksliga Gruppe 1 · Bezirk Niederrhein,14,14,75,42,SG Kaarst II.,6,fussball.de
+031EF19P7O00000FVS5489BUVUR5FS5A-G,Niederrhein,Bezirk Niederrhein,6,Bezirksliga,Bezirksliga Gruppe 2 · Bezirk Niederrhein,14,14,58,40,SV Rot-Weiß Venn,6,fussball.de
+031EF19PEK000007VS5489BUVUR5FS5A-G,Niederrhein,Bezirk Niederrhein,6,Bezirksliga,Bezirksliga Gruppe 3 · Bezirk Niederrhein,14,14,68,40,Eintracht Emmerich,6,fussball.de
+031EF19PL800000DVS5489BUVUR5FS5A-G,Niederrhein,Bezirk Niederrhein,6,Bezirksliga,Bezirksliga Gruppe 4 · Bezirk Niederrhein,14,10,50,29,DJK 1928 Vierlinden,6,fussball.de
+031AHK4JGK00000BVS5489BUVV628VP4-G,Niedersachsen,Bezirk Braunschweig,6,Bezirksliga,Frauen Bezirksliga Staffel Nord/Mitte · Bezirk Braunschweig,12,16,53,45,SG Isenbüttel/Meine,7,fussball.de
+031AHK4JPK00000GVS5489BUVV628VP4-G,Niedersachsen,Bezirk Braunschweig,6,Bezirksliga,Frauen Bezirksliga Staffel Süd · Bezirk Braunschweig,10,11,52,30,FC Westharz,6,fussball.de
+0313H0TSKC000004VS5489BUVSBBVPEU-G,Niedersachsen,Bezirk Hannover,6,Bezirksliga,Frauen Bezirksliga Hannover Staffel 1,13,12,45,36,TSV Krähenwinkel/Kaltenweide,6,fussball.de
+0313H10RD0000004VS5489BUVSBBVPEU-G,Niedersachsen,Bezirk Hannover,6,Bezirksliga,Frauen Bezirksliga Hannover Staffel 2,13,11,62,33,Hannover 96 III,6,fussball.de
+0316TCP0QO000006VS5489BTVU7GTVLE-G,Niedersachsen,Bezirk Lüneburg,6,Bezirksliga,Frauen Bezirksliga Lüneburg Ost,12,15,86,44,SV Hodenhagen,7,fussball.de
+0316TCPT6K000006VS5489BTVU7GTVLE-G,Niedersachsen,Bezirk Lüneburg,6,Bezirksliga,Frauen Bezirksliga Lüneburg West,12,17,67,50,TSV Brunsbrock,9,fussball.de
+0313O7G2CO000009VS5489BUVSBBVPEU-G,Niedersachsen,Bezirk Weser-Ems,6,Bezirksliga,Frauen Bezirksliga Weser-Ems Mitte,12,17,88,50,1.FC Ohmstede,9,fussball.de
+0313O7G2TC00000BVS5489BUVSBBVPEU-G,Niedersachsen,Bezirk Weser-Ems,6,Bezirksliga,Frauen Bezirksliga Weser-Ems Nord,12,17,73,50,TuS Obenstrohe Damen,9,fussball.de
+0313O7G2LS00000BVS5489BUVSBBVPEU-G,Niedersachsen,Bezirk Weser-Ems,6,Bezirksliga,Frauen Bezirksliga Weser-Ems Süd,12,13,76,38,SV Eintr. Neuenkirchen,9,fussball.de
+031GIKVLV8000006VS5489BTVVG7L386-G,Rheinland,Kreis Eifel,6,Kreisklasse,Frauen-Kreisklasse 3 · Kreis Eifel,8,10,76,30,FSG Eifelhöhe Müllenbach,9,fussball.de
+031GIKB0P8000003VS5489BTVVG7L386-G,Rheinland,Kreis Rhein/Ahr,6,Kreisklasse,Frauen-Kreisklasse 2 · Kreis Rhein/Ahr,9,12,93,36,SV Eintracht Mendig,9,fussball.de
+031GILDB80000007VS5489BTVVG7L386-G,Rheinland,Kreis Trier/Saarburg,6,Kreisklasse,Frauen-Kreisklasse 4 · Kreis Trier/Saarburg,8,8,60,24,FSG Schöndorf (9er),9,fussball.de
+031GIJJ1E4000006VS5489BTVVG7L386-G,Rheinland,Kreis Westerwald/Sieg,6,Kreisklasse,Frauen-Kreisklasse 1 · Kreis Westerwald/Sieg,9,7,50,21,FSG Eichelhardt/Ingelbach,6,fussball.de
+031C3V02R0000004VS5489BUVUR5FS5A-G,Saarland,Bezirk Saarland,6,Bezirksliga,Bezirksliga Vorrunde · Bezirk Saarland,13,10,56,29,SV Victoria St. Wendel,6,fussball.de
+03171VKFFG000009VS5489BTVU7GTVLE-G,Sachsen,Kreis Dresden,6,Kreisoberliga,Stadtloberliga · Kreis Dresden,10,10,66,28,Serkowitzer FSV 2,6,fussball.de
+031JVGRBCK000004VS5489BTVSRD0UH9-G,Sachsen,Kreis Leipzig,6,Kreisoberliga,Stadtklasse Frauen · Kreis Leipzig,12,10,77,30,SC Eintracht Schkeuditz,6,fussball.de
+0319R4CO10000004VS5489BTVSK8S3O6-G,Sachsen,Kreis Leipzig,6,Kreisoberliga,Stadtliga Frauen · Kreis Leipzig,9,8,38,24,TSV Großsteinberg,6,fussball.de
+031LHJG0TG000004VS5489BUVVKNMR0J-G,Sachsen,Kreis Sächs.Schweiz/Osterzgeb.,6,Kreisoberliga,Kreisoberliga · Kreis Sächs.Schweiz/Osterzgeb.,10,7,26,18,SC Freital,4,fussball.de
+031JIUQGOG000005VS5489BTVSRD0UH9-G,Schleswig-Holstein,Kreis Kiel,6,Kreisliga,Frauen Kreisliga Mitte-Ost · Kreis Kiel,11,11,66,32,MTSV Olympia Neumünster,6,fussball.de
+031CHKPPM0000004VS5489BTVUS470OH-G,Schleswig-Holstein,Kreis Lübeck,6,Kreisliga,Kreisliga Süd · Kreis Lübeck,11,11,65,30,VfB Lübeck,6,fussball.de
+031JRC0OTC000004VS5489BTVSRD0UH9-G,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,6,Kreisliga,Kreisliga Nord-Ost RD-Eck · Kreis Rendsburg-Eckernförde,11,10,48,27,Kieler MTV III,7,fussball.de
+031JUIT5PG000004VS5489BUVVKNMR0J-G,Schleswig-Holstein,Kreis Schleswig-Flensburg,6,Kreisliga,Frauen Kreisliga Nord · Kreis Schleswig-Flensburg,11,6,31,17,SG Leck/Achtrup/Ladelund,6,fussball.de
+031KUBKDGG000004VS5489BUVVKNMR0J-G,Schleswig-Holstein,Kreis Westküste,6,Kreisliga,Staffel 4 West (WK) · Kreis Westküste,11,2,11,6,SSV Sarzbüttel,3,fussball.de
+031D6VSN08000003VS5489BTVUS470OH-G,Südbaden,Bezirk Baden-Baden,6,Bezirksliga,Bezirksliga Frauen · Bezirk Baden-Baden,10,0,0,0,1.SV Mörsch,0,fussball.de
+0319TNMOVK00000DVS5489BUVV628VP4-G,Südbaden,Bezirk Bodensee,6,Bezirksliga,Frauen Bezirksliga Bodensee,8,0,0,0,FC Hilzingen,0,fussball.de
+031GV5FSUS000000VS5489BUVSJ4CRAP-G,Südbaden,Bezirk Freiburg,6,Bezirksliga,Frauen Bezirksliga · Bezirk Freiburg,11,0,0,0,FC Freiburg-St. Georgen 2,0,fussball.de
+031LQS1KR4000006VS5489BTVSRD0UH9-G,Südbaden,Bezirk Hochrhein,6,Bezirksliga,Frauen Bezirksliga Hochrhein,10,0,0,0,FC Schönau,0,fussball.de
+031LQS1L5K000005VS5489BTVSRD0UH9-G,Südbaden,Bezirk Hochrhein,6,Bezirksliga,Frauen Bezirksliga Ost · Bezirk Hochrhein,8,0,0,0,FC Dachsberg (7er),0,fussball.de
+031LQS1L14000005VS5489BTVSRD0UH9-G,Südbaden,Bezirk Hochrhein,6,Bezirksliga,Frauen Bezirksliga West · Bezirk Hochrhein,7,0,0,0,FC Bernau,0,fussball.de
+031DQNQB5K000005VS5489BUVUR5FS5A-G,Südbaden,Bezirk Offenburg,6,Bezirksliga,Frauen Bezirksliga · Bezirk Offenburg,6,0,0,0,SG Gengenbach/Zell/Fischerbach 2,0,fussball.de
+031I7GF1OG000004VS5489BUVVKNMR0J-G,Südbaden,Bezirk Schwarzwald,6,Bezirksliga,Frauen Bezirksliga · Bezirk Schwarzwald,10,0,0,0,FC07 Furtwangen,0,fussball.de
+031EV7TSU8000003VS5489BTVUS470OH-G,Südwest,Südwest,6,Bezirksliga (Verband),Frauen Bezirksliga Mitte · Südwest,7,7,38,20,SG Freinsheim - Leistadt II 9er (flex),7,fussball.de
+031EQKKBO8000003VS5489BUVUR5FS5A-G,Südwest,Südwest,6,Bezirksliga (Verband),Frauen Bezirksliga Nord · Südwest,5,3,10,8,FMSG Bretzenheim/Waldböckelheim,6,fussball.de
+031CHR0AM0000004VS5489BTVUS470OH-G,Südwest,Südwest,6,Bezirksliga (Verband),Frauen Bezirksliga Süd · Südwest,5,1,4,3,FC Phönix 21 Bellheim /Südwestgirls II / 9er,3,fussball.de
+031DELDGM4000003VS5489BUVUR5FS5A-G,Südwest,Südwest,6,Bezirksliga (Verband),Frauen Bezirksliga West · Südwest,8,9,52,26,1. FC Kaiserslautern 2,9,fussball.de
+0314GV3FRK000010VS5489BUVSBBVPEU-G,Westfalen,Bezirk Westfalen,6,Bezirksliga,Frauen Bezirksliga Staffel 1 · Bezirk Westfalen,14,18,62,52,Spvg Steinhagen II,9,fussball.de
+0314GV3G6S00000CVS5489BUVSBBVPEU-G,Westfalen,Bezirk Westfalen,6,Bezirksliga,Frauen Bezirksliga Staffel 2 · Bezirk Westfalen,14,19,88,55,SV DJK BW Kleinenberg,9,fussball.de
+0314GV3GHC000013VS5489BUVSBBVPEU-G,Westfalen,Bezirk Westfalen,6,Bezirksliga,Frauen Bezirksliga Staffel 3 · Bezirk Westfalen,14,20,120,57,SV Setzen,9,fussball.de
+0314GV3GS800000SVS5489BUVSBBVPEU-G,Westfalen,Bezirk Westfalen,6,Bezirksliga,Frauen Bezirksliga Staffel 4 · Bezirk Westfalen,14,19,106,53,TuS Germania Lohauserholz,9,fussball.de
+0314GV3H4S00000OVS5489BUVSBBVPEU-G,Westfalen,Bezirk Westfalen,6,Bezirksliga,Frauen Bezirksliga Staffel 5 · Bezirk Westfalen,14,21,87,59,FC Bochum 10/21,9,fussball.de
+0314GV3HCK00000NVS5489BUVSBBVPEU-G,Westfalen,Bezirk Westfalen,6,Bezirksliga,Frauen Bezirksliga Staffel 6 · Bezirk Westfalen,14,20,105,56,Turo Darfeld,9,fussball.de
+031E2OTJEK00000EVS5489BUVUR5FS5A-G,Württemberg,Württemberg,6,Regionenliga,Regionenliga 1 · Württemberg,13,0,0,0,FSV 08 Bietigheim-Bissingen,0,fussball.de
+031E2OTJNK00000DVS5489BUVUR5FS5A-G,Württemberg,Württemberg,6,Regionenliga,Regionenliga 2 · Württemberg,11,0,0,0,1. FC Heidenheim 1846 II,0,fussball.de
+031E2OTJUO000009VS5489BUVUR5FS5A-G,Württemberg,Württemberg,6,Regionenliga,Regionenliga 3 · Württemberg,12,0,0,0,1. FC Donzdorf II,0,fussball.de
+031E2OTK5S00000BVS5489BUVUR5FS5A-G,Württemberg,Württemberg,6,Regionenliga,Regionenliga 4 · Württemberg,13,0,0,0,SGM Bierlingen/Weiler,0,fussball.de
+031E2OTKCO00000BVS5489BUVUR5FS5A-G,Württemberg,Württemberg,6,Regionenliga,Regionenliga 5 · Württemberg,12,0,0,0,SGM FC Engstingen / SV Lautertal / FC Sonnenbühl,0,fussball.de
+031E2OTKIO000008VS5489BUVUR5FS5A-G,Württemberg,Württemberg,6,Regionenliga,Regionenliga 6 · Württemberg,13,0,0,0,FC Blau-Weiß Bellamont II,0,fussball.de
+031FCGP6VO000007VS5489BUVSJ4CRAP-G,Bayern,Bezirk Mittelfranken,7,Bezirksliga,Frauen BZL Nord · Bezirk Mittelfranken,12,6,23,18,(SG) 1. FC Burk /DJK-FC Schlaifhausen 1,3,fussball.de
+031FCOKBPO000000VS5489BUVSJ4CRAP-G,Bayern,Bezirk Mittelfranken,7,Bezirksliga,Frauen BZL Süd · Bezirk Mittelfranken,11,4,18,11,SV Leerstetten 2,3,fussball.de
+0318D4SMMG000009VS5489BUVSBBVPEU-G,Bayern,Bezirk Niederbayern,7,Bezirksliga,Frauen BZL Ost · Bezirk Niederbayern,8,0,0,0,(SG) 1. FC Viechtach/SV Geiersthal,0,fussball.de
+0318D4SMU0000008VS5489BUVSBBVPEU-G,Bayern,Bezirk Niederbayern,7,Bezirksliga,Frauen BZL West · Bezirk Niederbayern,8,0,0,0,(SG) FC Kirchberg/TSV Taufkirchen,0,fussball.de
+031EVJRKJS000006VS5489BUVUR5FS5A-G,Bayern,Bezirk Oberbayern,7,Bezirksliga,Frauen BZL  02 · Bezirk Oberbayern,12,0,0,0,(SG) ESV M.-Freimann / SC Bogenhausen I,0,fussball.de
+031EVJRKEK000000VS5489BUVUR5FS5A-G,Bayern,Bezirk Oberbayern,7,Bezirksliga,Frauen BZL 01 · Bezirk Oberbayern,11,0,0,0,(SG) SpVgg Jettenbach/TSV Gars,0,fussball.de
+031DR3UOF4000007VS5489BTVUS470OH-G,Bayern,Bezirk Oberfranken,7,Bezirksliga,Frauen BZL Ost · Bezirk Oberfranken,9,7,26,21,SV 05 Froschbachtal,6,fussball.de
+031DR3UO7K000006VS5489BTVUS470OH-G,Bayern,Bezirk Oberfranken,7,Bezirksliga,Frauen BZL West · Bezirk Oberfranken,9,5,25,14,(SG) 1.FC Michelau / 1.FC Fortuna Roth,6,fussball.de
+0316VDSGSK000006VS5489BTVU7GTVLE-G,Bayern,Bezirk Oberpfalz,7,Bezirksliga,Frauen BZL Nord · Bezirk Oberpfalz,9,3,16,9,SV 08 Auerbach,3,fussball.de
+0316VDSH28000002VS5489BTVU7GTVLE-G,Bayern,Bezirk Oberpfalz,7,Bezirksliga,Frauen BZL Süd · Bezirk Oberpfalz,9,3,14,9,SV Wenzenbach,3,fussball.de
+031BE7174G000007VS5489BUVUR5FS5A-G,Bayern,Bezirk Schwaben,7,Bezirksliga,Frauen BZL Nord · Bezirk Schwaben,11,3,14,9,(SG) FC Ehekirchen/SV Bayerdilling,3,fussball.de
+031BE717FS000007VS5489BUVUR5FS5A-G,Bayern,Bezirk Schwaben,7,Bezirksliga,Frauen BZL Süd · Bezirk Schwaben,10,3,13,8,FC Blonhofen 1,3,fussball.de
+03196OOA6K00001EVS5489BTVSK8S3O6-G,Bayern,Bezirk Unterfranken,7,Bezirksliga,Frauen BZL 01 · Bezirk Unterfranken,8,0,0,0,(SG) FSV Feldkahl/TSV Keilberg,0,fussball.de
+03196OOC0S000029VS5489BTVSK8S3O6-G,Bayern,Bezirk Unterfranken,7,Bezirksliga,Frauen BZL 02 · Bezirk Unterfranken,8,0,0,0,(SG) FC Thulba/Schönderling/Schondra/Oehrberg/Waldfenster/Lauter,0,fussball.de
+0314CF1BNG00000FVS5489BTVU7GTVLE-G,Hamburg,Kreisebene Hamburg,7,Kreisliga,FKL 01 · Kreisebene Hamburg,13,11,90,32,Lieth 1.Fr.,6,fussball.de
+0314CF1BV000000FVS5489BTVU7GTVLE-G,Hamburg,Kreisebene Hamburg,7,Kreisliga,FKL 02 · Kreisebene Hamburg,13,12,68,35,Rahlstedt 2.Fr.,6,fussball.de
+031F0B2R7C00000CVS5489BTVUS470OH-G,Hessen,Region Darmstadt,7,Oberliga (Region),FKOL DA · Region Darmstadt,11,12,65,35,TSV Nieder-Ramstadt II,7,fussball.de
+031EVOL33C00000BVS5489BTVUS470OH-G,Hessen,Region Frankfurt,7,Oberliga (Region),KOL Frankfurt · Region Frankfurt,9,8,36,22,1. FFV´97 Oberursel,7,fussball.de
+031F9S09RO00000AVS5489BUVSJ4CRAP-G,Hessen,Region Gießen / Marburg,7,Oberliga (Region),FKOL GI/MR Gr. 1 · Region Gießen / Marburg,11,16,57,47,FSV Friedensdorf,9,fussball.de
+031F9S0A6400000BVS5489BUVSJ4CRAP-G,Hessen,Region Gießen / Marburg,7,Oberliga (Region),FKOL GI/MR Gr. 2 · Region Gießen / Marburg,10,9,25,25,SVP Fauerbach,10,fussball.de
+031HSVVFR400000BVS5489BUVVKNMR0J-G,Hessen,Region Kassel,7,Oberliga (Region),FKOL KS · Region Kassel,9,11,59,32,TSV Heiligenrode,9,fussball.de
+031F004GGG00000BVS5489BTVUS470OH-G,Hessen,Region Wiesbaden,7,Oberliga (Region),FKOL WI Gr. 1 · Region Wiesbaden,7,9,66,26,FSG Schwalbach/Niederhöchstadt II,9,fussball.de
+031FA3HIP8000004VS5489BUVSJ4CRAP-G,Hessen,Region Wiesbaden,7,Oberliga (Region),FKOL WI Gr. 2 · Region Wiesbaden,7,9,58,27,FSG Geisenheim- Erbach,9,fussball.de
+031FNFM0U4000005VS5489BTVVG7L386-G,Mittelrhein,Kreis Aachen,7,Kreisliga A,Kreisliga Aachen,12,0,0,0,Arminia Eilendorf,0,fussball.de
+031FMBGCLK000004VS5489BTVUS470OH-G,Mittelrhein,Kreis Berg,7,Kreisliga A,Kreisliga A · Kreis Berg,14,10,47,21,TuS Immekeppel,4,fussball.de
+031BOIP720000004VS5489BTVUS470OH-G,Mittelrhein,Kreis Bonn,7,Kreisliga A,Frauen Kreisliga A · Kreis Bonn,10,0,0,0,BSV Roleber,0,fussball.de
+031P3E39FG000003VS5489BTVT8K11BC-G,Mittelrhein,Kreis Düren,7,Kreisliga A,Kreisliga A Frauen Düren/Heinsberg,10,0,0,0,FC Concordia Birgelen,0,fussball.de
+031OLMV2P8000004VS5489BTVV1LNS7C-G,Mittelrhein,Kreis Euskirchen,7,Kreisliga A,Frauen KL A · Kreis Euskirchen,12,0,0,0,Bedburger BV U23,0,fussball.de
+030TOD9FC4000003VS5489BUVSOV43J9-G,Mittelrhein,Kreis Köln,7,Kreisliga A,Kreisliga A - Frauen · Kreis Köln,13,8,56,24,DJK Südwest III,6,fussball.de
+031QKMK61O000004VS5489BUVSV0FPBG-G,Mittelrhein,Kreis Sieg,7,Kreisliga A,Frauen Kreisliga A · Kreis Sieg,9,1,11,3,SV Allner-Bödingen 3,3,fussball.de
+031FU6U64C00000FVS5489BUVSJ4CRAP-G,Niederrhein,Kreis Düsseldorf,7,Kreisliga A,Frauen-Kreisliga Gruppe 1 · Kreis Düsseldorf,13,11,91,33,DJK Sportfreunde Gerresheim,6,fussball.de
+031G0FMPS4000009VS5489BUVSJ4CRAP-G,Niederrhein,Kreis Essen,7,Kreisliga A,Frauen-Kreisliga Gruppe 3 · Kreis Essen,14,14,78,40,FC Sportfreunde Rüttenscheid,6,fussball.de
+031G0KED0C000007VS5489BUVSJ4CRAP-G,Niederrhein,Kreis Grevenbroich-Neuss,7,Kreisliga A,Frauen-Kreisliga Gruppe 6 · Kreis Grevenbroich-Neuss,14,12,74,36,1.FC Grevenbroich-Süd 12/77,6,fussball.de
+031G0I78HK000000VS5489BUVSJ4CRAP-G,Niederrhein,Kreis Kempen-Krefeld,7,Kreisliga A,Frauen-Kreisliga Gruppe 5 · Kreis Kempen-Krefeld,14,13,117,29,SC Blau-Weiß Auwel-Holt,6,fussball.de
+031G0PR1MS000005VS5489BUVSJ4CRAP-G,Niederrhein,Kreis Moers,7,Kreisliga A,Frauen Kreisliga A Gruppe 7 · Kreis Moers,14,12,91,35,SG Lüttingen/Borth,6,fussball.de
+031G0GMSC0000008VS5489BUVSJ4CRAP-G,Niederrhein,Kreis Oberhausen-Bottrop,7,Kreisliga A,Frauen-Kreisliga Gruppe 4 · Kreis Oberhausen-Bottrop,14,12,71,36,Duisburger SV 1900,6,fussball.de
+031G0E5QFS000004VS5489BUVSJ4CRAP-G,Niederrhein,Kreis Wuppertal-Niederberg,7,Kreisliga A,Frauen-Kreisliga Gruppe 2 · Kreis Wuppertal-Niederberg,13,6,29,17,SV Union Velbert,4,fussball.de
+031NMHED78000004VS5489BUVT2M8LCU-G,Niedersachsen,Kreis Braunschweig,7,Kreisliga,Frauen Kreisliga A Braunschweig,11,5,21,15,SG Vechelde/Lengede,3,fussball.de
+031EM26E60000001VS5489BTVUS470OH-G,Niedersachsen,Kreis Braunschweig,7,Kreisliga,Frauen Kreisliga B Braunschweig,6,3,23,9,SV Eischott (9er),3,fussball.de
+03153PKDB0000008VS5489BUVSBBVPEU-G,Niedersachsen,Kreis Cuxhaven,7,Kreisliga,Frauen Kreisliga · Kreis Cuxhaven,8,10,44,30,FC Land Wursten (7er),12,fussball.de
+031EAMUNMC000003VS5489BTVUS470OH-G,Niedersachsen,Kreis Diepholz,7,Kreisliga,Kreisliga Frauen · Kreis Diepholz,10,10,82,30,SV Weyhe III,6,fussball.de
+0318JGRN2S000005VS5489BTVSK8S3O6-G,Niedersachsen,Kreis Emsland,7,Kreisliga,Frauen Kreisliga Ems-Vechte · Kreis Emsland,14,28,135,80,VfL Herzlake,12,fussball.de
+03168M09SG000004VS5489BUVSBBVPEU-G,Niedersachsen,Kreis Göttingen-Osterode,7,Kreisliga,Kreisliga Frauen · Kreis Göttingen-Osterode,13,20,69,57,FC Gleichen,9,fussball.de
+031A9HJLUO000004VS5489BTVSK8S3O6-G,Niedersachsen,Kreis Heide-Wendland,7,Kreisliga,Frauenkreisliga · Kreis Heide-Wendland,9,12,74,35,SG Woltersdorf/Dannenberg,12,fussball.de
+03172M1UU8000004VS5489BUVSBBVPEU-G,Niedersachsen,Kreis Heidekreis,7,Kreisliga,Kreisliga Frauen Heidekreis,8,7,46,21,Eintracht Munster 2020 e.V. (7er),6,fussball.de
+031D6SP528000004VS5489BUVUR5FS5A-G,Niedersachsen,Kreis Hildesheim-Holzminden,7,Kreisliga,Kreisliga Hildesheim/Holzminden · Kreis Hildesheim-Holzminden,9,14,75,42,SG Föhrste/Alfeld,9,fussball.de
+031DNOG2O0000004VS5489BTVUS470OH-G,Niedersachsen,Kreis Jade-Weser-Hunte,7,Kreisliga,Frauen Kreisliga JWH QR · Kreis Jade-Weser-Hunte,7,12,67,34,TuS Eversten,8,fussball.de
+031EFISAMK000006VS5489BUVUR5FS5A-G,Niedersachsen,Kreis Nienburg,7,Kreisliga,Frauen Kreisliga Nienburg,11,9,42,26,SBV Erichshagen,6,fussball.de
+0316EAM4T8000007VS5489BUVSBBVPEU-G,Niedersachsen,Kreis Osnabrück,7,Kreisliga,Kreisliga Osnabrück,10,10,32,27,SG Grafeld-Berge,6,fussball.de
+0317IM2VPK000004VS5489BUVSBBVPEU-G,Niedersachsen,Kreis Osterholz,7,Kreisliga,Kreisliga Frauen OHZ/VER · Kreis Osterholz,8,5,25,14,SG Fulde,3,fussball.de
+031CO452U8000004VS5489BUVUR5FS5A-G,Niedersachsen,Kreis Ostfriesland,7,Kreisliga,Ostfrieslandliga,10,13,78,37,VfB Germania Wiesmoor,9,fussball.de
+03154LACGC00000AVS5489BUVSBBVPEU-G,Niedersachsen,Kreis Region Hannover,7,Kreisliga,Frauen Kreisliga Staffel 1 · Kreis Region Hannover,8,8,46,23,TSV Groß Munzel,6,fussball.de
+03154LACNG00000AVS5489BUVSBBVPEU-G,Niedersachsen,Kreis Region Hannover,7,Kreisliga,Frauen Kreisliga Staffel 2 · Kreis Region Hannover,10,14,76,41,SV Germania Helstorf,9,fussball.de
+03181DLOQO000005VS5489BTVU7GTVLE-G,Niedersachsen,Kreis Rotenburg,7,Kreisliga,Frauen Kreisliga Rotenburg,12,10,52,29,MTV Soltau,6,fussball.de
+031CHGIMSS000004VS5489BTVUS470OH-G,Niedersachsen,Kreis Schaumburg,7,Kreisliga,Kreisliga Hameln-Pymont/Schaumburg Staffel B,6,2,5,6,SG Bückeberge/Liekwegen II (7er),3,fussball.de
+031CHGC3MC000004VS5489BTVUS470OH-G,Niedersachsen,Kreis Schaumburg,7,Kreisliga,Kreisliga Hameln-Pyrmont/Schaumburg Staffel A,7,6,36,17,BWS Tündern-Hastenbeck III,6,fussball.de
+0318KFE3TC00000AVS5489BUVV628VP4-G,Niedersachsen,Kreis Stade,7,Kreisliga,Frauen Kreisliga Stade/Harburg,10,12,62,36,SG Buchholzer FC/SV Holm-S.,9,fussball.de
+031835JM6C000004VS5489BUVSBBVPEU-G,Niedersachsen,Kreis Vechta,7,Kreisliga,Kreisliga Vechta CLP OL-Land - VEC,10,11,30,27,SV Carum,9,fussball.de
+031DCEHODS000004VS5489BUVUR5FS5A-G,Sachsen,Kreis Westlausitz,7,1.Kreisliga (A),Kreisliga Westlausitz,15,9,54,27,SpG SG Blau-Weiß Obercunnersdorf,6,fussball.de
+031M5A2J94000002VS5489BTVSRD0UH9-G,Schleswig-Holstein,Kreis Herzogtum Lauenburg,7,Kreisklasse A,Kreisklasse A Süd-Ost · Kreis Herzogtum Lauenburg,8,3,8,8,Lübeck 1876 1 (7er),3,fussball.de
+031JJ36HR4000004VS5489BTVSRD0UH9-G,Schleswig-Holstein,Kreis Kiel,7,Kreisklasse A,Kreisklasse A  Mitte/Ost · Kreis Kiel,7,1,5,3,SSG Rot-Schwarz Kiel III (7er),3,fussball.de
+031LG3V0J4000004VS5489BTVSRD0UH9-G,Schleswig-Holstein,Kreis Nordfriesland,7,Kreisklasse A,Frauen KKA N-W (NF) · Kreis Nordfriesland,7,1,9,3,SC Norddörfer (7er),3,fussball.de
+031LFAO8HS000004VS5489BTVSRD0UH9-G,Schleswig-Holstein,Kreis Schleswig-Flensburg,7,Kreisklasse A,Frauen KKA N-O (SL-FL) · Kreis Schleswig-Flensburg,8,8,46,24,VfR Schleswig (7er),6,fussball.de
+031M6KFOP4000003VS5489BTVSRD0UH9-G,Schleswig-Holstein,Kreis Segeberg,7,Kreisklasse A,Frauen Kreisklasse A Süd · Kreis Segeberg,10,6,44,17,SC Elmenhorst (7er),6,fussball.de
+0319TO1R5S00000CVS5489BUVV628VP4-G,Südbaden,Bodensee,7,1.Kreisliga (A),Frauen Kreisliga A · Bodensee,12,0,0,0,FC Hilzingen 2,0,fussball.de
+031HINM30G00000EVS5489BUVSJ4CRAP-G,Südbaden,Freiburg,7,1.Kreisliga (A),Frauen Kreisliga A · Freiburg,13,0,0,0,Alem. Freiburg-Zähringen 3,0,fussball.de
+031HAA6V1G000004VS5489BUVSJ4CRAP-G,Südbaden,Offenburg,7,1.Kreisliga (A),Kreisliga A 1 · Offenburg,6,0,0,0,FC Ohlsbach,0,fussball.de
+031HAAOB8O000004VS5489BUVSJ4CRAP-G,Südbaden,Offenburg,7,1.Kreisliga (A),Kreisliga A 2 · Offenburg,6,0,0,0,FV Auenheim,0,fussball.de
+031I7M3GN4000004VS5489BUVVKNMR0J-G,Südbaden,Schwarzwald,7,1.Kreisliga (A),Kreisliga A1 Frauen · Schwarzwald,11,0,0,0,DJK Donaueschingen,0,fussball.de
+031LOM6FKC000002VS5489BTVSRD0UH9-G,Westfalen,Kreis Ahaus-Coesfeld,7,Kreisliga A,Frauen Kreisliga A Ahaus-Coesfeld,16,26,144,75,Vorwärts Epe,12,fussball.de
+031KRB8FGO000007VS5489BUVVKNMR0J-G,Westfalen,Kreis Arnsberg,7,Kreisliga A,Kreisliga A Arnsberg/HSK/Olpe,12,6,25,18,Brilon SV 1,3,fussball.de
+031AROBD8G000004VS5489BTVSK8S3O6-G,Westfalen,Kreis Beckum,7,Kreisliga A,Frauen Kreisliga A Beckum-Gütersloh,11,4,29,12,SG Lette-Stromberg,3,fussball.de
+03139CLFSK00000HVS5489BUVSBBVPEU-G,Westfalen,Kreis Bielefeld,7,Kreisliga A,Kreisliga A · Kreis Bielefeld,11,5,37,12,VfL Theesen,3,fussball.de
+0319THQ5EO000004VS5489BUVV628VP4-G,Westfalen,Kreis Bochum,7,Kreisliga A,Frauen Kreisliga A Bochum,15,17,100,47,TuS Querenburg,9,fussball.de
+031340MNQO000004VS5489BUVSBBVPEU-G,Westfalen,Kreis Dortmund,7,Kreisliga A,Kreisliga A - Dortmund / Hagen,15,19,85,47,SC Berchum/Garenfeld 53/74,9,fussball.de
+031DDHDRBS000009VS5489BTVUS470OH-G,Westfalen,Kreis Herne,7,Kreisliga A,Frauen Kreisliga  A HER/GE/RE · Kreis Herne,15,20,148,57,ASC LEONE,9,fussball.de
+031EL7514800000AVS5489BTVUS470OH-G,Westfalen,Kreis Iserlohn,7,Kreisliga A,Frauen KL A Iserlohn/Lüdenscheid/Arnsberg,10,4,19,11,FFC Lüdenscheid,3,fussball.de
+031O39Q850000004VS5489BTVV1LNS7C-G,Westfalen,Kreis Lippstadt,7,Kreisliga A,Kreisliga A  Lippstadt/Soest,8,10,59,29,SuS Störmede,9,fussball.de
+031HA3R4QO000008VS5489BUVSJ4CRAP-G,Westfalen,Kreis Lübbecke,7,Kreisliga A,Frauen Kreisliga A HF/LE/MI/LK · Kreis Lübbecke,12,5,20,13,SG Tonnenheide/Isenstedt/Varl,3,fussball.de
+031HT6D5G0000008VS5489BUVVKNMR0J-G,Westfalen,Kreis Münster,7,Kreisliga A,Frauen Kreisliga A · Kreis Münster,9,6,22,16,DJK Borussia Münster II,4,fussball.de
+031I8CLV30000004VS5489BTVSRD0UH9-G,Westfalen,Kreis Paderborn,7,Kreisliga A,Frauen Kreisliga A PB/DT/HX · Kreis Paderborn,14,19,117,55,SG Oberes Almetal 23,9,fussball.de
+031F18VB8O000004VS5489BTVUS470OH-G,Westfalen,Kreis Siegen-Wittgenstein,7,Kreisliga A,Frauen Kreisliga A - SIWI · Kreis Siegen-Wittgenstein,10,4,30,11,TuS Alchen,3,fussball.de
+031HMP0DSO000004VS5489BUVVKNMR0J-G,Westfalen,Kreis Steinfurt,7,Kreisliga A,Kreisliga A Steinfurt - Tecklenburg,14,20,84,59,SC Preußen Lengerich,9,fussball.de
+031BT4I5K4000000VS5489BTVUS470OH-G,Westfalen,Kreis Unna-Hamm,7,Kreisliga A,Frauen Kreisliga A Unna/Hamm · Kreis Unna-Hamm,15,14,98,36,FC TuRa Bergkamen,9,fussball.de
+031H8043F4000004VS5489BUVSJ4CRAP-G,Württemberg,Bezirk Alb,7,Bezirksliga,Bezirksliga · Bezirk Alb,6,0,0,0,FC Rottenburg,0,fussball.de
+0316NG2AF000000DVS5489BUVSBBVPEU-G,Württemberg,Bezirk Bodensee,7,Bezirksliga,Bezirksliga · Bezirk Bodensee,11,0,0,0,SC Blönried,0,fussball.de
+031C3HGM6S00000BVS5489BUVUR5FS5A-G,Württemberg,Bezirk Donau/Iller,7,Bezirksliga,Bezirksliga · Bezirk Donau/Iller,12,0,0,0,SGM AHP,0,fussball.de
+031DG6GDDS000007VS5489BUVUR5FS5A-G,Württemberg,Bezirk Enz/Murr,7,Bezirksliga,Bezirksliga · Bezirk Enz/Murr,13,0,0,0,FC Biegelk. Erdmannhausen,0,fussball.de
+031F589R8K000004VS5489BUVSJ4CRAP-G,Württemberg,Bezirk Franken,7,Bezirksliga,Bezirksliga · Bezirk Franken,7,0,0,0,FC Creglingen,0,fussball.de
+03164IGUOK000004VS5489BTVU7GTVLE-G,Württemberg,Bezirk Neckar/Fils,7,Bezirksliga,Bezirksliga · Bezirk Neckar/Fils,6,0,0,0,FC Esslingen,0,fussball.de
+031NBJ6SA4000004VS5489BTVV1LNS7C-G,Württemberg,Bezirk Nordschwarzwald,7,Bezirksliga,Bezirksliga Nordschwarzwald,8,0,0,0,SGM Bergfelden/Vöhringen,0,fussball.de
+031I0AN018000001VS5489BUVVKNMR0J-G,Württemberg,Bezirk Oberschwaben,7,Bezirksliga,Bezirksliga · Bezirk Oberschwaben,11,0,0,0,FC Blau-Weiß Bellamont III,0,fussball.de
+031M3SQJ4000000DVS5489BUVVKNMR0J-G,Württemberg,Bezirk Ostwürttemberg,7,Bezirksliga,Bezirksliga · Bezirk Ostwürttemberg,6,0,0,0,FC Ellwangen II,0,fussball.de
+031LH7MI8G000005VS5489BTVSRD0UH9-G,Württemberg,Bezirk Rems/Murr/Hall,7,Bezirksliga,Bezirksliga · Bezirk Rems/Murr/Hall,9,0,0,0,FC Welzheim 06,0,fussball.de
+031G5494G0000006VS5489BUVSJ4CRAP-G,Württemberg,Bezirk Schwarzwald/Zollern,7,Bezirksliga,Bezirksliga · Bezirk Schwarzwald/Zollern,10,0,0,0,FV Rot-Weiß Ebingen,0,fussball.de
+03160HUGV8000000VS5489BUVSBBVPEU-G,Württemberg,Bezirk Stuttgart/Böblingen,7,Bezirksliga,Bezirksliga · Bezirk Stuttgart/Böblingen,9,0,0,0,1. FC Lauchhau-Lauchäcker 04,0,fussball.de
+031BE90RT8000005VS5489BUVUR5FS5A-G,Bayern,Kreis Allgäu,8,Kreisliga,Frauen KL 01 · Kreis Allgäu,5,2,13,5,(SG) SV Böhen/ TSV Ottobeuren 2,3,fussball.de
+03195HTEMS000001VS5489BUVV628VP4-G,Bayern,Kreis Amberg/Weiden,8,Kreisliga,Frauen KL 01 · Kreis Amberg/Weiden,8,0,0,0,(SG) DJK Ursensollen/SV Illschwang/SV Kauerhof,0,fussball.de
+0319U1JDFS000059VS5489BUVV628VP4-G,Bayern,Kreis Aschaffenburg,8,Kreisliga,Frauen KL 01 · Kreis Aschaffenburg,8,0,0,0,Elsava 1913 Elsenfeld 2,0,fussball.de
+031BE9QCF4000006VS5489BUVUR5FS5A-G,Bayern,Kreis Augsburg,8,Kreisliga,Frauen KL 02 · Kreis Augsburg,10,4,19,12,FC 1928 Augsburg Hochzoll,3,fussball.de
+031BE9QCKS000006VS5489BUVUR5FS5A-G,Bayern,Kreis Augsburg,8,Kreisliga,Frauen KL 03 · Kreis Augsburg,11,3,11,8,FC Loppenhausen 2,3,fussball.de
+031DS8RQ54000007VS5489BUVUR5FS5A-G,Bayern,Kreis Bamberg/Bayreuth/Kulmb.,8,Kreisliga,Frauen KL Süd · Kreis Bamberg/Bayreuth/Kulmb.,12,9,31,25,(SG) 1.FC Viereth/SPVGG ROSSSTADT,6,fussball.de
+03195J7FIC000006VS5489BUVV628VP4-G,Bayern,Kreis Cham/Schwandorf,8,Kreisliga,Frauen KL 02 · Kreis Cham/Schwandorf,7,0,0,0,(SG) DJK-SV Rettenbach 2 / SV Zinzenzell 2,0,fussball.de
+031DRU7NNS000004VS5489BUVUR5FS5A-G,Bayern,Kreis Coburg/Kronach/Lichtenf.,8,Kreisliga,Frauen KL Nord · Kreis Coburg/Kronach/Lichtenf.,12,9,40,26,SC 06 Oberlind,6,fussball.de
+031BEATBIG000006VS5489BUVUR5FS5A-G,Bayern,Kreis Donau,8,Kreisliga,Frauen KL 04 · Kreis Donau,10,5,25,14,(SG) SC Mörslingen/SV Donaualtheim,3,fussball.de
+030VA1BKMK00005IVS5489BUVVARDA0V-G,Bayern,Kreis Donau/Isar,8,Kreisliga,Frauen KL 04 · Kreis Donau/Isar,10,0,0,0,(SG) Freising United,0,fussball.de
+031GNTFAIC000004VS5489BUVSJ4CRAP-G,Bayern,Kreis Erlangen/Pegnitzgrund,8,Kreisliga,Frauen Kreisliga · Kreis Erlangen/Pegnitzgrund,10,0,0,0,(SG 1) ASV Möhrendorf / TSV Frauenaurach 2,0,fussball.de
+031DS4HJK4000005VS5489BUVUR5FS5A-G,Bayern,Kreis Hof/Tirschenr./Wunsiedel,8,Kreisliga,Frauen KL Ost · Kreis Hof/Tirschenr./Wunsiedel,10,6,24,17,TSV Engelmannsreuth,6,fussball.de
+031CIME7AC00003OVS5489BTVUS470OH-G,Bayern,Kreis Inn/Salzach,8,Kreisliga,Frauen KL 03 · Kreis Inn/Salzach,9,0,0,0,(SG) SC Rechtmehring/DJK SV Oberndorf,0,fussball.de
+031HCC6CE0000003VS5489BUVSJ4CRAP-G,Bayern,Kreis München,8,Kreisliga,Frauen KL 01 · Kreis München,11,0,0,0,(SG) FC Aschheim/Kirchheimer SC,0,fussball.de
+031HBHH480000007VS5489BTVVG7L386-G,Bayern,Kreis Neumarkt/Jura,8,Kreisliga,Frauen Kreisliga · Kreis Neumarkt/Jura,10,0,0,0,(SG) DJK Veitsaurach/TSC Weissenbronn1,0,fussball.de
+0319TE344C000006VS5489BTVSK8S3O6-G,Bayern,Kreis Niederbayern Ost,8,Kreisliga,Frauen KL Ost · Kreis Niederbayern Ost,9,1,4,3,SV Kirchberg i. W. 2,3,fussball.de
+0319TE5J14000007VS5489BTVSK8S3O6-G,Bayern,Kreis Niederbayern West,8,Kreisliga,Frauen KL West · Kreis Niederbayern West,9,0,0,0,(SG) SC Kirchdorf 2/TSV Rohr/SV Adlhausen,0,fussball.de
+031J8NURMK000004VS5489BUVVKNMR0J-G,Bayern,Kreis Nürnberg/Frankenhöhe,8,Kreisliga,Frauen Kreisliga · Kreis Nürnberg/Frankenhöhe,11,0,0,0,(SG) DTV Diespeck/SV Steigerwald Münchsteinach/SpVgg Markt Baudenbach/FC Schauerheim,0,fussball.de
+03195JV0C4000006VS5489BUVV628VP4-G,Bayern,Kreis Regensburg,8,Kreisliga,Frauen KL 03 · Kreis Regensburg,7,0,0,0,(SG) ASV Burglengenfeld / SC Katzdorf,0,fussball.de
+0319U59JCC000004VS5489BUVV628VP4-G,Bayern,Kreis Rhön,8,Kreisliga,Frauen KL 03 · Kreis Rhön,9,0,0,0,(SG) FC Hendungen/TSV Nordheim/FC Ober-Mittelstreu,0,fussball.de
+0319U26MJO00000EVS5489BUVV628VP4-G,Bayern,Kreis Würzburg,8,Kreisliga,Frauen KL 02 · Kreis Würzburg,9,0,0,0,(SG) SV Kürnach/SV Heidingsfeld,0,fussball.de
+031E59M414000004VS5489BTVUS470OH-G,Bayern,Kreis Zugspitze,8,Kreisliga,Frauen KL 02 · Kreis Zugspitze,9,0,0,0,(SG) TSV Otterfing/SV Sachsenkam,0,fussball.de
+0314CMEQSG00000DVS5489BTVU7GTVLE-G,Hamburg,Kreisebene Hamburg,8,Sonderklasse,FSK 01 Herbst · Kreisebene Hamburg,11,13,51,39,St. Pauli 5.Fr. 7er,9,fussball.de
+0314CMER5400000FVS5489BTVU7GTVLE-G,Hamburg,Kreisebene Hamburg,8,Sonderklasse,FSK 02 Herbst · Kreisebene Hamburg,11,14,45,41,Reinbek 2.Fr. 7er,9,fussball.de
+031DO63Q5C00000AVS5489BUVUR5FS5A-G,Hessen,Region Frankfurt,8,A-Liga (Region),Kreisliga A FFM Gr. 1 · Region Frankfurt,9,8,31,23,1. FFV´97 Oberursel II,6,fussball.de
+031DO63PRO00000AVS5489BUVUR5FS5A-G,Hessen,Region Frankfurt,8,A-Liga (Region),Kreisliga A FFM Gr. 2 · Region Frankfurt,10,13,75,38,SG Egelsbach II,12,fussball.de
+031BOK84K8000004VS5489BTVUS470OH-G,Mittelrhein,Kreis Bonn,8,Kreisliga B,Frauen Kreisliga B · Kreis Bonn,13,11,54,24,FV Bonn-Endenich 1908 II,6,fussball.de
+0317A162O8000004VS5489BUVSBBVPEU-G,Niedersachsen,Kreis Bentheim,8,1.Kreisklasse,1. Kreisklasse Ems/Vechte Süd · Kreis Bentheim,10,15,56,41,SG Holthausen Biene / Altenlingen 9er,9,fussball.de
+031I5MMD28000000VS5489BTVSRD0UH9-G,Niedersachsen,Kreis Braunschweig,8,1.Kreisklasse,Frauen  1.Kreisklasse Braunschweig Ost,6,3,19,9,FT Braunschweig II,6,fussball.de
+031I5OT5TO000005VS5489BTVSRD0UH9-G,Niedersachsen,Kreis Braunschweig,8,1.Kreisklasse,Frauen  1.Kreisklasse Braunschweig West,6,5,24,15,LFC Olympia Braunschweig,6,fussball.de
+03155BU19K000002VS5489BUVSBBVPEU-G,Niedersachsen,Kreis Emsland,8,1.Kreisklasse,Frauen 1. KKL Ems-Vechte Mitte · Kreis Emsland,12,20,119,57,SV Polle (11er),13,fussball.de
+03155BU134000006VS5489BUVSBBVPEU-G,Niedersachsen,Kreis Emsland,8,1.Kreisklasse,Frauen 1. KKL Ems-Vechte Nord · Kreis Emsland,12,23,119,64,SV Eintracht Neulangen II (9er),12,fussball.de
+031D70KNI8000003VS5489BUVUR5FS5A-G,Niedersachsen,Kreis Hildesheim-Holzminden,8,1.Kreisklasse,1. Kreisklasse Hildesheim/Holzminden · Kreis Hildesheim-Holzminden,12,19,64,52,SG Wohldenberg/ Ambergau,9,fussball.de
+031DNQ1D3C000003VS5489BTVUS470OH-G,Niedersachsen,Kreis Jade-Weser-Hunte,8,1.Kreisklasse,Frauen 1. Kreisklasse Staffel 1 JWH QR · Kreis Jade-Weser-Hunte,7,9,52,27,1.FC Ohmstede II,9,fussball.de
+031DNQ83I0000004VS5489BTVUS470OH-G,Niedersachsen,Kreis Jade-Weser-Hunte,8,1.Kreisklasse,Frauen 1. Kreisklasse Staffel 2 JWH QR · Kreis Jade-Weser-Hunte,7,8,33,21,SV Eintracht Oldenburg II,7,fussball.de
+031EQ3GG5O000003VS5489BUVUR5FS5A-G,Niedersachsen,Kreis Nordharz,8,1.Kreisklasse,1.Kreisklasse · Kreis Nordharz,11,9,38,27,WSV Wiedelah (7er),6,fussball.de
+031BO0GMJO000004VS5489BUVUR5FS5A-G,Niedersachsen,Kreis Northeim-Einbeck,8,1.Kreisklasse,1.Kreisklasse Staffel 1 · Kreis Northeim-Einbeck,8,7,28,20,SG Leinepolder II,6,fussball.de
+0316EAOQ1G000004VS5489BUVSBBVPEU-G,Niedersachsen,Kreis Osnabrück,8,1.Kreisklasse,1. Kreisklasse Osnabrück Staffel A,10,10,72,30,SG Alfhausen/Hesepe-Sögeln/Rieste II 9er,6,fussball.de
+0316EAOQ8400000BVS5489BUVSBBVPEU-G,Niedersachsen,Kreis Osnabrück,8,1.Kreisklasse,1. Kreisklasse Osnabrück Staffel B,9,6,49,18,SG Gretesch / OSC IV 9er,6,fussball.de
+031CO536QG000004VS5489BUVUR5FS5A-G,Niedersachsen,Kreis Ostfriesland,8,1.Kreisklasse,"Ostfrieslandklasse A, Staffel A",8,11,49,31,FSG Neuharlingersiel/Carolinensiel/Esens,7,fussball.de
+031CO5750C000004VS5489BUVUR5FS5A-G,Niedersachsen,Kreis Ostfriesland,8,1.Kreisklasse,"Ostfrieslandklasse A, Staffel B",8,10,53,25,SV Grossefehn,5,fussball.de
+031558T1J400000BVS5489BTVU7GTVLE-G,Niedersachsen,Kreis Region Hannover,8,1.Kreisklasse,Frauen Kreisklasse Staffel 1 · Kreis Region Hannover,9,10,80,30,SV Frielingen (7er),6,fussball.de
+031558T1QG00000BVS5489BTVU7GTVLE-G,Niedersachsen,Kreis Region Hannover,8,1.Kreisklasse,Frauen Kreisklasse Staffel 2 · Kreis Region Hannover,8,9,66,25,VfL Eintracht Hannover IV (7er),6,fussball.de
+0317CS3NJS000004VS5489BUVSBBVPEU-G,Niedersachsen,Kreis Region Hannover,8,1.Kreisklasse,Frauen Kreisklasse Staffel 3 · Kreis Region Hannover,8,12,54,33,SV Wilkenburg (7er),7,fussball.de
+031B6CALUS000007VS5489BTVSK8S3O6-G,Niedersachsen,Kreis Rotenburg,8,1.Kreisklasse,Frauen Kreisklasse · Kreis Rotenburg,11,11,39,31,TV Stemmen 9er,6,fussball.de
+0319JRKGTS00000AVS5489BUVV628VP4-G,Niedersachsen,Kreis Stade,8,1.Kreisklasse,Frauen 1. Kreisklasse Stade/Harburg Nord,7,6,33,18,SUSV Heinbockel 9er/11er,6,fussball.de
+0319RJP174000009VS5489BUVV628VP4-G,Niedersachsen,Kreis Stade,8,1.Kreisklasse,Frauen 1. Kreisklasse Stade/Harburg Süd,6,3,21,9,VfL Güldenstern Stade II 9er/11er,6,fussball.de
+03187JUS9K000004VS5489BTVU7GTVLE-G,Niedersachsen,Kreis Vechta,8,1.Kreisklasse,1.Kreisklasse VEC/CLP/OL-Land-DEL · Kreis Vechta,10,8,42,23,TUS Lutten II 9er,6,fussball.de
+031CBUHLKK000004VS5489BTVUS470OH-G,Niedersachsen,Kreis Verden,8,1.Kreisklasse,Kreisklasse Verden/Osterholz,10,9,31,26,TSV Bassen 9er,7,fussball.de
+031HSR6J7O00000CVS5489BTVSRD0UH9-G,Sachsen,Kreis Mittelsachsen,8,1.Kreisklasse,Frauen - Kreisklasse · Kreis Mittelsachsen,9,4,23,12,SV Fortuna Langenau,3,fussball.de
+031GL911FO000008VS5489BUVSJ4CRAP-G,Sachsen,Kreis Vogtland,8,1.Kreisklasse,Vogtlandklasse,8,6,30,17,SpG Zobes/Pfaffengrün,6,fussball.de
+031I7N0GFO000004VS5489BUVVKNMR0J-G,Südbaden,Schwarzwald,8,2.Kreisliga (B),Kreisliga B Frauen Staffel · Schwarzwald,3,0,0,0,FC Schwandorf-Wornd.-Neuh.,0,fussball.de
+031LOUIP78000000VS5489BTVSRD0UH9-G,Westfalen,Kreis Ahaus-Coesfeld,8,Kreisliga B,Frauen Kreisliga B Ahaus-Coesfeld,13,18,73,53,SG Osterwick / Darfeld II,9,fussball.de
+031LE19JQO00000DVS5489BTVSRD0UH9-G,Westfalen,Kreis Hagen,8,Kreisliga B,Frauen Kreisliga B DO/HA · Kreis Hagen,18,25,193,72,SG Deusen/Rahm 9er,9,fussball.de
+031DIO80CG000003VS5489BTVUS470OH-G,Westfalen,Kreis Lemgo,8,Kreisliga B,Frauen Kreisliga B HF/LE/MI/LK · Kreis Lemgo,11,5,39,15,SG Maaslingen/SVKT 07 Minden III 9er,3,fussball.de
+031HB9DJH0000006VS5489BTVVG7L386-G,Westfalen,Kreis Münster,8,Kreisliga B,Frauen Kreisliga B · Kreis Münster,11,13,74,35,SC Westfalia Kinderhaus II,9,fussball.de
+0316NFT09K000000VS5489BUVSBBVPEU-G,Württemberg,Bezirk Bodensee (K),8,Kreisliga A; Kreisliga,Kreisliga A · Bezirk Bodensee (K),10,0,0,0,FV Weithart,0,fussball.de
+031FLPVBNG000004VS5489BUVSJ4CRAP-G,Württemberg,Bezirk Franken (K),8,Kreisliga A; Kreisliga,Kreisliga · Bezirk Franken (K),10,0,0,0,FSV Friedrichshaller SV,0,fussball.de
+03164C6ARO000004VS5489BTVU7GTVLE-G,Württemberg,Bezirk Neckar/Fils (K),8,Kreisliga A; Kreisliga,Kreisliga A · Bezirk Neckar/Fils (K),10,0,0,0,ASV Spartania Eislingen,0,fussball.de
+031LPMEH40000006VS5489BTVSRD0UH9-G,Württemberg,Bezirk Rems/Murr/Hall (K),8,Kreisliga A; Kreisliga,Kreisliga · Bezirk Rems/Murr/Hall (K),8,0,0,0,SC Urbach,0,fussball.de
+03160IRTKO000005VS5489BUVSBBVPEU-G,Württemberg,Bezirk Stuttgart/Böblingen (K),8,Kreisliga A; Kreisliga,Kreisliga A · Bezirk Stuttgart/Böblingen (K),9,0,0,0,SG Stuttgart-West II,0,fussball.de
+030VA1HG5800000KVS5489BUVVARDA0V-G,Bayern,Kreis Donau/Isar,9,Kreisklasse,Frauen KK 04 · Kreis Donau/Isar,6,0,0,0,(SG) TV Münchsmünster/SV Schwaig,0,fussball.de
+031B36N9UG000000VS5489BTVSK8S3O6-G,Bayern,Kreis Donau/Isar,9,Kreisklasse,Frauen KK 05 · Kreis Donau/Isar,6,0,0,0,(SG) SC Kirchasch / SV Walpertskirchen,0,fussball.de
+031L6EAN2S000004VS5489BTVSRD0UH9-G,Bayern,Kreis Erlangen/Pegnitzgrund,9,Kreisklasse,Frauen Kreisklasse · Kreis Erlangen/Pegnitzgrund,9,0,0,0,(SG 1) FC Dormitz/TSV Brand 2/1. FC Kalchreuth,0,fussball.de
+031CIMFU50000000VS5489BTVUS470OH-G,Bayern,Kreis Inn/Salzach,9,Kreisklasse,Frauen KK 03 · Kreis Inn/Salzach,10,0,0,0,(SG) ASV Rott a. Inn/SV Schechen 2,0,fussball.de
+031HCPI9F4000007VS5489BUVSJ4CRAP-G,Bayern,Kreis München,9,Kreisklasse,Frauen KK 01 · Kreis München,9,0,0,0,(SG) SV DJK Taufkirchen 1/FC Stern München 4,0,fussball.de
+031HCPN3B4000004VS5489BUVSJ4CRAP-G,Bayern,Kreis München,9,Kreisklasse,Frauen KK 02 · Kreis München,9,0,0,0,(SG) ESV München-Freimann/ SC Bogenhausen 2,0,fussball.de
+031JABM4Q0000004VS5489BUVVKNMR0J-G,Bayern,Kreis Neumarkt/Jura,9,Kreisklasse,Frauen Kreisklasse · Kreis Neumarkt/Jura,10,0,0,0,(SG) Langlau/Pfofeld/Theilenhofen/Ramsberg,0,fussball.de
+031J9P9V88000004VS5489BUVVKNMR0J-G,Bayern,Kreis Nürnberg/Frankenhöhe,9,Kreisklasse,Frauen Kreisklasse · Kreis Nürnberg/Frankenhöhe,10,0,0,0,(SG) TSV Lonnerstadt 2/ASV Weisendorf 1,0,fussball.de
+031E5EFFKS000004VS5489BTVUS470OH-G,Bayern,Kreis Zugspitze,9,Kreisklasse,Frauen KK 02 · Kreis Zugspitze,9,0,0,0,SG FC Penzing/FC Hofstetten,0,fussball.de
+031FTBVESK000003VS5489BTVVG7L386-G,Niedersachsen,Kreis Ostfriesland,9,2.Kreisklasse,Ostfrieslandklasse B Staffel A,9,8,56,24,SV Wittmund 9er,6,fussball.de
+031COCO49C000004VS5489BUVUR5FS5A-G,Niedersachsen,Kreis Ostfriesland,9,2.Kreisklasse,Ostfrieslandklasse B Staffel B,8,10,60,29,SV BW Filsum 9er,10,fussball.de
+03187L624G000003VS5489BTVU7GTVLE-G,Niedersachsen,Kreis Vechta,9,2.Kreisklasse,2.Kreisklasse CLP DEL-Ol-Land VEC · Kreis Vechta,12,15,97,43,SV Baris Delmenhorst 9er,7,fussball.de
+031CIMH9KS000007VS5489BTVUS470OH-G,Bayern,Kreis Inn/Salzach,10,A Klasse,Frauen A-Klasse 04 · Kreis Inn/Salzach,7,0,0,0,(SG) ASV Au/SV Parsberg,0,fussball.de
+031CIMMD08000004VS5489BTVUS470OH-G,Bayern,Kreis Inn/Salzach,10,A Klasse,Frauen A-Klasse 05 · Kreis Inn/Salzach,7,0,0,0,(SG) TSV 66 Polling/FC Mühldorf 1/SpVgg Jettenbach/TSV Gars 2 (flex),0,fussball.de
+031IL2MG8G000007VS5489BUVVKNMR0J-G,Bayern,Kreis München,10,A Klasse,Frauen A-Klasse 01 · Kreis München,7,0,0,0,(SG) FC Aschheim/Kirchheimer SC 2,0,fussball.de
+031IL2MGFG000007VS5489BUVVKNMR0J-G,Bayern,Kreis München,10,A Klasse,Frauen A-Klasse 02 · Kreis München,8,0,0,0,(SG) DJK Würmtal Planegg/SC Unterpfaffenhofen,0,fussball.de
+031E5H71K0000004VS5489BTVUS470OH-G,Bayern,Kreis Zugspitze,10,A Klasse,Frauen A-Klasse 03 · Kreis Zugspitze,9,0,0,0,ESV Penzberg 2 (FLEX),0,fussball.de

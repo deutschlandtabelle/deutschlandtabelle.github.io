@@ -37,26 +37,39 @@ jobs:
         with:
           python-version: "3.12"
 
-      # Handball zuerst, weil schnell -- so steht bei einem Abbruch im
-      # Fußball-Lauf wenigstens ein frischer Handball-Stand.
+      # Reihenfolge nach Dauer: die kleinen Rangfolgen zuerst, der große
+      # Fußball-Lauf zuletzt. Bricht er ab, steht wenigstens alles andere
+      # auf frischem Stand.
       # Mit dem Schalter "nur_veroeffentlichen" wird der committete Stand aus
       # docs/ direkt veröffentlicht. Nützlich, wenn sich nur Seitenaufbau oder
       # Bilder geändert haben -- dann muss niemand eine Stunde crawlen.
       - name: Handball bauen
         if: ${{ !inputs.nur_veroeffentlichen }}
-        run: python3 build.py --sport handball
+        run: |
+          python3 build.py --sport handball
+          python3 build.py --sport handball-frauen
+
+      - name: Basketball bauen
+        if: ${{ !inputs.nur_veroeffentlichen }}
+        run: |
+          python3 build.py --sport basketball
+          python3 build.py --sport basketball-frauen
 
       - name: Fußball bauen
         if: ${{ !inputs.nur_veroeffentlichen }}
-        run: python3 build.py --sport fussball
+        run: |
+          python3 build.py --sport fussball-frauen
+          python3 build.py --sport fussball
 
       # Die Prüfung bricht ab, wenn eine harte Prüfung fehlschlägt -- dann
       # wird nichts veröffentlicht und der Lauf ist rot.
       - name: Daten prüfen
         if: ${{ !inputs.nur_veroeffentlichen }}
         run: |
-          python3 pruefen.py --sport fussball
-          python3 pruefen.py --sport handball
+          for s in fussball fussball-frauen handball handball-frauen \
+                   basketball basketball-frauen; do
+            python3 pruefen.py --sport "$s"
+          done
 
       - uses: actions/upload-pages-artifact@v3
         with:

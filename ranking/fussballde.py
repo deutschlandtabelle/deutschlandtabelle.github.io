@@ -54,6 +54,20 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 
 COMP_TYPE = "1"       # Meisterschaften (keine Pokale, Turniere, Freundschaftsspiele)
 
+# Kleinfeldstaffeln: 7er, 9er und alles, was ausdrücklich "Kleinfeld" heißt.
+# Sie gehören nicht in dieselbe Rangfolge wie der Elferfußball -- auf einem
+# kleineren Feld mit weniger Spielern fallen deutlich mehr Tore, was Werte wie
+# Tore pro Spiel und damit die Bestenlisten verzerrt. Der Name der Staffel ist
+# der einzige Hinweis darauf; eine eigene Kennzeichnung gibt es in den Daten
+# nicht. "7/9er" ist Absicht: der Kreis Oldenburg-Land mischt beide Formen.
+KLEINFELD = re.compile(r"(?<![0-9])[79]\s*(?:/\s*[79]\s*)?er\b|kleinfeld", re.I)
+
+# Oberste Spielklasse eines Landesverbands bei den Frauen. Über ihr liegen
+# bundesweit nur Bundesliga, 2. Bundesliga und Regionalliga -- die
+# Frauenpyramide ist drei Stufen flacher als die der Herren, wo Oberliga und
+# Verbandsliga dazwischenliegen.
+FRAUEN_START_TIER = 4
+
 
 @dataclass(frozen=True)
 class Verband:
@@ -230,7 +244,8 @@ def season_code(season: int) -> str:
 
 class FussballDe:
     def __init__(self, cache_dir: Path, min_interval: float = 1.0,
-                 ttl: float = 3 * 3600):
+                 ttl: float = 3 * 3600, verbose: bool = True):
+        self.verbose = verbose
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.min_interval = min_interval
@@ -268,20 +283,26 @@ class FussballDe:
             return None
 
     # -- Discovery --------------------------------------------------------
-    def team_type(self, verband: Verband, season: int) -> tuple[str, dict] | None:
-        """ID der Mannschaftsart "Herren" und der kinds-Baum des Verbands."""
+    def team_type(self, verband: Verband, season: int,
+                  art: str = "Herren") -> tuple[str, dict] | None:
+        """ID einer Mannschaftsart und der kinds-Baum des Verbands.
+
+        Die IDs sind je Verband frei vergeben -- "Frauen" ist in Westfalen die
+        49, am Niederrhein die 351 -- deshalb wird über das Etikett gesucht.
+        """
         kinds = self._json(f"{BASE}/wam_kinds_{verband.mandant}"
                            f"_{season_code(season)}_{COMP_TYPE}.json")
         if not kinds:
             return None
         for key, label in (kinds.get("Mannschaftsart") or {}).items():
-            if str(label).strip() == "Herren":
+            if str(label).strip() == art:
                 return key.lstrip("_"), kinds
         return None
 
-    def discover(self, verband: Verband, season: int) -> list[dict]:
-        """Alle Herren-Meisterschaftsstaffeln eines Verbands der laufenden Saison."""
-        found = self.team_type(verband, season)
+    def discover(self, verband: Verband, season: int,
+                 art: str = "Herren") -> list[dict]:
+        """Alle Meisterschaftsstaffeln eines Verbands der laufenden Saison."""
+        found = self.team_type(verband, season, art)
         if not found:
             return []
         team_type, kinds = found
@@ -291,8 +312,17 @@ class FussballDe:
         # Er ist die Sprache des Verbands; der Staffelname darunter ist frei.
         klassen = {k.lstrip("_"): v for k, v
                    in ((kinds.get("Spielklasse") or {}).get(team_type, {})).items()}
+        # Für Herren stehen die Klassen samt Startstufe im Verbandseintrag.
+        # Für jede andere Mannschaftsart wird die Pyramide aus dem kinds-Baum
+        # abgeleitet: er listet die Klassen in Pyramidenreihenfolge (bei den
+        # Herren deckt sich das exakt mit den hinterlegten Werten), und die
+        # oberste Klassse eines Landesverbands sitzt bei den Frauen auf
+        # Stufe 4 -- direkt unter der Regionalliga.
+        stufen = (verband.tiers if art == "Herren"
+                  else {k: FRAUEN_START_TIER + i for i, k in enumerate(klassen)})
         out: list[dict] = []
-        for league_id, tier in verband.tiers.items():
+        kleinfeld: list[str] = []
+        for league_id, tier in stufen.items():
             for area_key, area_name in (areas_by_league.get(league_id) or {}).items():
                 area = area_key.lstrip("_")
                 data = self._json(
@@ -305,6 +335,11 @@ class FussballDe:
                         for url, name in comps.items():
                             if verband.only and name not in verband.only:
                                 continue
+                            if KLEINFELD.search(name):
+                                # Gar nicht erst abrufen -- spart auch den
+                                # Tabellenabruf für die Staffel.
+                                kleinfeld.append(name)
+                                continue
                             sid = re.search(r"/staffel/([0-9A-Z]+-[GC])", url)
                             if sid:
                                 out.append({
@@ -313,6 +348,10 @@ class FussballDe:
                                     "spielklasse": klassen.get(league_id),
                                     "mandant": verband.mandant,
                                     "staffel": sid.group(1)})
+        if kleinfeld and self.verbose:
+            print(f"  {verband.name}: {len(kleinfeld)} Kleinfeldstaffeln "
+                  f"übersprungen ({', '.join(sorted(kleinfeld)[:3])}"
+                  f"{' …' if len(kleinfeld) > 3 else ''})", file=sys.stderr)
         return out
 
     # -- Tabelle ----------------------------------------------------------
@@ -368,15 +407,16 @@ def _label(entry: dict) -> str:
     return f"{entry['name']} · {area}"
 
 
-def fetch(cache_dir: Path, season: int, verbose: bool = True) -> list[dict]:
+def fetch(cache_dir: Path, season: int, art: str = "Herren",
+          verbose: bool = True) -> list[dict]:
     """Liefert je Staffel {name, tier, verband, rows}. Leere Staffeln entfallen."""
     if not ENABLED:
         return []
-    client = FussballDe(cache_dir)
+    client = FussballDe(cache_dir, verbose=verbose)
 
     entries: list[dict] = []
     for verband in VERBAENDE:
-        gefunden = client.discover(verband, season)
+        gefunden = client.discover(verband, season, art)
         entries += gefunden
         if verbose:
             print(f"  fussball.de: {verband.name:12s} {len(gefunden):4d} Staffeln",

@@ -20,27 +20,47 @@ import shutil
 import sys
 from pathlib import Path
 
-from ranking import (fussballde, handballnet, hbl, landing, load, pokal,
-                     rank, render, site)
+from ranking import (basketballde, fussballde, handballnet, hbl, landing,
+                     load, pokal, rank, render, site)
 from ranking.api import OpenLigaDB
 from ranking.leagues import EXPECTED_TIER4, current_season
 
 ROOT = Path(__file__).resolve().parent
 
+# Jede Rangfolge ist eine Sportart in einer Geschlechtsklasse. Männer und
+# Frauen spielen getrennte Pyramiden mit eigenen Auf- und Abstiegsketten --
+# eine gemeinsame Rangfolge hätte keine sportliche Grundlage. Der Slug der
+# Männerklasse bleibt ohne Zusatz, damit geteilte Links weiter funktionieren.
 SPORTARTEN = {
     "fussball": {
-        "name": "Fußball", "icon": "⚽", "torwort": "Tore",
-        "hinweis": None,
+        "name": "Fußball", "sportart": "fussball", "sportName": "Fußball",
+        "klasse": "maenner", "klasseName": "Männer",
+        "icon": "⚽", "torwort": "Tore", "hinweis": None,
+    },
+    "fussball-frauen": {
+        "name": "Fußball der Frauen", "sportart": "fussball",
+        "sportName": "Fußball", "klasse": "frauen", "klasseName": "Frauen",
+        "icon": "⚽", "torwort": "Tore", "hinweis": None,
     },
     "handball": {
-        "name": "Handball", "icon": "🤾", "torwort": "Tore",
-        "hinweis": None,
+        "name": "Handball", "sportart": "handball", "sportName": "Handball",
+        "klasse": "maenner", "klasseName": "Männer",
+        "icon": "🤾", "torwort": "Tore", "hinweis": None,
+    },
+    "handball-frauen": {
+        "name": "Handball der Frauen", "sportart": "handball",
+        "sportName": "Handball", "klasse": "frauen", "klasseName": "Frauen",
+        "icon": "🤾", "torwort": "Tore", "hinweis": None,
     },
     "basketball": {
-        "name": "Basketball", "icon": "🏀", "torwort": "Körbe",
-        "hinweis": "Die Datenquelle für den deutschen Basketball ist noch nicht "
-                   "erschlossen. Sobald sie steht, erscheint hier dieselbe "
-                   "Rangfolge wie bei Fußball und Handball.",
+        "name": "Basketball", "sportart": "basketball",
+        "sportName": "Basketball", "klasse": "maenner", "klasseName": "Männer",
+        "icon": "🏀", "torwort": "Körbe", "hinweis": None,
+    },
+    "basketball-frauen": {
+        "name": "Basketball der Frauen", "sportart": "basketball",
+        "sportName": "Basketball", "klasse": "frauen", "klasseName": "Frauen",
+        "icon": "🏀", "torwort": "Körbe", "hinweis": None,
     },
 }
 
@@ -50,15 +70,16 @@ VERGLEICH = ("Unterhalb der überregionalen Ligen gibt es zwischen den "
 
 
 # --- Fußball --------------------------------------------------------------
-def baue_fussball(cache_dir: Path, season: int, ohne_fussballde: bool):
+def baue_fussball(cache_dir: Path, season: int, ohne_fussballde: bool,
+                  art: str = "Herren"):
     client = OpenLigaDB(cache_dir)
-    matches, teams, leagues = load.load(client, season)
-    if not matches:
+    matches, teams, leagues = load.load(client, season, art=art)
+    if not matches and ohne_fussballde:
         return None
 
     external = {}
     if not ohne_fussballde:
-        groups = fussballde.fetch(cache_dir, season)
+        groups = fussballde.fetch(cache_dir, season, art)
         external = load.merge_standings(teams, groups)
         leagues += [{"shortcut": g["staffel"], "tier": g["tier"], "name": g["name"],
                      "verband": g["verband"], "matches": None,
@@ -71,7 +92,19 @@ def baue_fussball(cache_dir: Path, season: int, ohne_fussballde: bool):
     verbaende = sorted({lg.get("verband") for lg in leagues
                         if lg.get("source") == "fussball.de" and lg.get("verband")})
     note = note_summary = None
-    if external:
+    if external and art == "Frauen":
+        note_summary = ("Ab Ligastufe 4 nur innerhalb eines Landesverbands "
+                        "sinnvoll vergleichbar")
+        note = (f"Erfasst sind die Landesverbände ({len(verbaende)} mit Daten) "
+                "ab der obersten Frauenklasse abwärts. Die Frauenpyramide ist "
+                "flacher als die der Männer: unter der Regionalliga folgt "
+                "direkt die oberste Klasse des Landesverbands. <b>Zwei Lücken:</b> "
+                "von den fünf Regionalligen liefert die offene Quelle nur den "
+                "Westen, und wie bei den Männern gibt es unterhalb der "
+                "Regionalliga zwischen den Verbänden keine gemeinsame Auf- und "
+                "Abstiegskette — ein Vergleich ist dort nicht sportlich "
+                "begründet, sondern nur rechnerisch.")
+    elif external:
         note_summary = ("Ab Ligastufe 5 nur innerhalb eines Landesverbands "
                         "sinnvoll vergleichbar")
         note = (f"Erfasst sind alle {len(verbaende)} Landesverbände, von der "
@@ -83,17 +116,22 @@ def baue_fussball(cache_dir: Path, season: int, ohne_fussballde: bool):
                 "Ligastufe und Punkten pro Spiel; ein sportliches Kräftemessen "
                 "ist sie nicht. Innerhalb eines Verbands ist sie belastbar, weil "
                 "dort alle Staffeln über Auf- und Abstieg zusammenhängen.")
-    if gaps:
+    if gaps and art == "Herren":
         note = (note or "") + " Auf Ligastufe 4 fehlen zudem " + ", ".join(gaps) + "."
 
     return ranking, len(leagues), len(matches), note, note_summary
 
 
 # --- Handball -------------------------------------------------------------
-def baue_handball(cache_dir: Path, season: int):
+def baue_handball(cache_dir: Path, season: int, klasse: str = "maenner"):
     # Zwei Quellen: die Bundesligen laufen über das Sportradar-Widget der HBL,
-    # alles darunter über handball.net.
-    groups = hbl.fetch(cache_dir) + handballnet.fetch(cache_dir, season)
+    # alles darunter über handball.net. Für die Frauen gibt es kein passendes
+    # HBL-Widget -- ihre Rangfolge beginnt deshalb bei der 3. Liga.
+    # handball.net führt die Geschlechter als "M"/"F"/"X" (Male, Female, Mixed).
+    geschlecht = "F" if klasse == "frauen" else "M"
+    groups = handballnet.fetch(cache_dir, season, geschlecht)
+    if klasse == "maenner":
+        groups = hbl.fetch(cache_dir) + groups
     if not groups:
         return None
     teams: dict = {}
@@ -102,6 +140,17 @@ def baue_handball(cache_dir: Path, season: int):
     verbaende = sorted({g["verband"] for g in groups if g["verband"]})
     note_summary = ("Ab Ligastufe 3 nur innerhalb eines Verbands sinnvoll "
                     "vergleichbar")
+    if klasse == "frauen":
+        note = ("Die Rangfolge beginnt bei der 3. Liga: die Handball-Bundesliga "
+                "Frauen und die 2. Bundesliga liegen auf einer eigenen Plattform, "
+                f"für die es keine offene Schnittstelle gibt. Darunter deckt "
+                f"handball.net {len(verbaende)} Verbände und Kreise ab — aber "
+                "nicht jeder Landesverband wickelt seinen Spielbetrieb dort ab, "
+                "die Abdeckung ist also nicht flächendeckend. Und zwischen "
+                "Verbänden gibt es unterhalb der Regionalliga keine gemeinsame "
+                "Auf- und Abstiegskette; ein Vergleich ist dort nicht sportlich "
+                "begründet.")
+        return ranking, len(groups), 0, note, note_summary
     note = ("Die 1. und 2. Bundesliga kommen von der HBL, alles darunter aus dem "
             f"Spielbetrieb auf handball.net mit {len(verbaende)} Verbänden und "
             "Kreisen. <b>Eine Lücke bleibt:</b> nicht jeder Landesverband wickelt "
@@ -110,6 +159,35 @@ def baue_handball(cache_dir: Path, season: int):
             "gilt: zwischen Verbänden gibt es unterhalb der Regionalliga keine "
             "gemeinsame Auf- und Abstiegskette, ein Vergleich ist dort also nicht "
             "sportlich begründet.")
+    return ranking, len(groups), 0, note, note_summary
+
+
+# --- Basketball -----------------------------------------------------------
+def baue_basketball(cache_dir: Path, klasse: str = "maenner"):
+    groups = basketballde.fetch(cache_dir, klasse)
+    if not groups:
+        return None
+    teams: dict = {}
+    external = load.merge_standings(teams, groups)
+    ranking = rank.build([], teams, external)
+    verbaende = sorted({g["verband"] for g in groups if g["verband"]})
+    gespielt = sum(1 for r in ranking if r["played"])
+    note_summary = ("Ab Ligastufe 3 nur innerhalb eines Verbands sinnvoll "
+                    "vergleichbar")
+    note = (f"Alles aus dem Spielbetrieb des Deutschen Basketball Bunds, "
+            f"{len(verbaende)} Verbände von der Bundesliga bis zur Kreisliga. "
+            "<b>Zur Einordnung:</b> anders als im Fußball liefert die Quelle "
+            "keine Reihenfolge der Spielklassen mit — die Ligastufe wird aus dem "
+            "Klassennamen abgeleitet (Oberliga, Bezirksliga, Kreisliga A …). "
+            "Das trifft die Ordnung innerhalb eines Verbands, ist zwischen "
+            "Verbänden aber eine Näherung. Und wie in den anderen Sportarten "
+            "verbindet unterhalb der Regionalliga keine Auf- und Abstiegskette "
+            "die Verbände miteinander.")
+    if not gespielt:
+        note = ("<b>Die Saison hat noch nicht begonnen.</b> Alle Mannschaften "
+                "stehen bei null Spielen, die Rangfolge ordnet deshalb vorerst "
+                "nur nach Ligastufe. Sobald die ersten Spieltage laufen, füllt "
+                "sie sich von selbst. ") + note
     return ranking, len(groups), 0, note, note_summary
 
 
@@ -205,14 +283,16 @@ def main() -> int:
     print(f"{SPORTARTEN[args.sport]['name']} · Saison {season}/{str(season+1)[2:]}",
           file=sys.stderr)
 
-    if args.sport == "fussball":
-        ergebnis = baue_fussball(cache_dir, season, args.no_fussballde)
-    elif args.sport == "handball":
-        ergebnis = baue_handball(cache_dir, season)
+
+    vorgabe = SPORTARTEN[args.sport]
+    sportart, klasse = vorgabe["sportart"], vorgabe["klasse"]
+    if sportart == "fussball":
+        ergebnis = baue_fussball(cache_dir, season, args.no_fussballde,
+                                 "Frauen" if klasse == "frauen" else "Herren")
+    elif sportart == "handball":
+        ergebnis = baue_handball(cache_dir, season, klasse)
     else:
-        print(f"Für {args.sport} gibt es noch keine Datenquelle.", file=sys.stderr)
-        huelle(out)
-        return 0
+        ergebnis = baue_basketball(cache_dir, klasse)
 
     if not ergebnis:
         print("Keine Daten erhalten — Abbruch.", file=sys.stderr)

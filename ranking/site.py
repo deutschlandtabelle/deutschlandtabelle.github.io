@@ -133,6 +133,28 @@ body{margin:0;background:var(--bg);color:var(--ink);
   color:var(--accent);margin:6px 0 0}
 .sportkarte .klein{color:var(--muted);font-size:13px}
 .sportkarte.leer{opacity:.62;border-style:dashed;cursor:default}
+/* Zwei Klassen je Sportart, untereinander in derselben Karte. */
+.sportkarte .klassen{display:grid;gap:8px;margin-top:12px}
+.klassenzeile{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;
+  align-items:baseline;padding:9px 11px;border:1px solid var(--line);
+  border-radius:10px;text-decoration:none;color:var(--ink);background:var(--bg)}
+a.klassenzeile:hover{border-color:var(--accent)}
+.klassenzeile .wer{font-weight:600;font-size:14px;grid-row:1}
+.klassenzeile .zahl{font-size:20px;font-weight:800;letter-spacing:-.02em;
+  color:var(--accent);grid-row:1;justify-self:end;margin:0}
+.klassenzeile .klein{grid-column:1/-1;font-size:12px;color:var(--muted)}
+.klassenzeile.leer{opacity:.6;border-style:dashed}
+
+/* Umschalter Männer/Frauen unter dem Kopfbild. */
+.klassenwahl{display:flex;gap:6px;margin:14px 0 -4px;flex-wrap:wrap}
+.klassenwahl:empty{display:none}
+.klassenwahl a,.klassenwahl span{font-size:14px;font-weight:600;
+  padding:7px 14px;border-radius:999px;border:1px solid var(--line);
+  text-decoration:none;color:var(--muted);background:var(--panel)}
+.klassenwahl a:hover{border-color:var(--accent);color:var(--accent)}
+.klassenwahl [aria-current="page"]{background:var(--accent);border-color:var(--accent);
+  color:#fff}
+.klassenwahl .leer{opacity:.45}
 
 h2{margin:42px 0 4px;font-size:24px;letter-spacing:-.02em}
 h2 + p.unter{margin:0 0 18px;color:var(--muted);font-size:15px}
@@ -334,6 +356,7 @@ footer a{color:var(--accent)}
       <p class="claim" id="sportUnter"></p>
     </div>
   </div>
+  <nav class="klassenwahl" id="klassenwahl" aria-label="Männer oder Frauen"></nav>
   <div id="sportInhalt"><div class="laden">Daten werden geladen …</div></div>
 </section>
 
@@ -385,24 +408,41 @@ const tausend = n => Number(n).toLocaleString('de-DE');
 const daten = {};                      // slug -> geladener Datensatz
 
 // --- Kopfleiste und Startseite ----------------------------------------
-document.getElementById('nav').innerHTML =
-  '<a href="#home">Start</a>' + SPORTS.map(s =>
-    `<a href="#${s.slug}" class="${s.ready ? '' : 'leer'}">${s.icon} ${esc(s.name)}</a>`
-  ).join('');
+// Sechs Rangfolgen, aber drei Sportarten: die Kopfleiste zeigt die Sportart,
+// die Klasse (Männer/Frauen) wird in der Sportansicht umgeschaltet.
+const SPORTARTEN = [];
+SPORTS.forEach(s => {
+  let eintrag = SPORTARTEN.find(x => x.sportart === s.sportart);
+  if (!eintrag) SPORTARTEN.push(eintrag = {
+    sportart: s.sportart, name: s.sportName, icon: s.icon, klassen: [],
+  });
+  eintrag.klassen.push(s);
+});
 
-document.getElementById('sportkarten').innerHTML = SPORTS.map(s => s.ready
-  ? `<a class="sportkarte" href="#${s.slug}">
-       <div class="ic">${s.icon}</div><h3>${esc(s.name)}</h3>
-       <div class="zahl">${tausend(s.teams)}</div>
-       <div class="klein">Mannschaften · ${tausend(s.leagues)} Staffeln ·
-         ${s.tiers} Ligastufen</div></a>`
-  : `<div class="sportkarte leer">
-       <div class="ic">${s.icon}</div><h3>${esc(s.name)}</h3>
-       <div class="klein" style="margin-top:8px">${esc(s.hinweis || 'in Arbeit')}</div></div>`
-).join('');
+document.getElementById('nav').innerHTML =
+  '<a href="#home">Start</a>' + SPORTARTEN.map(a => {
+    const erste = a.klassen.find(k => k.ready) || a.klassen[0];
+    return `<a href="#${erste.slug}" data-sportart="${a.sportart}"
+       class="${a.klassen.some(k => k.ready) ? '' : 'leer'}">${a.icon} ${esc(a.name)}</a>`;
+  }).join('');
+
+document.getElementById('sportkarten').innerHTML = SPORTARTEN.map(a => {
+  const zeilen = a.klassen.map(k => k.ready
+    ? `<a class="klassenzeile" href="#${k.slug}">
+         <span class="wer">${esc(k.klasseName)}</span>
+         <span class="zahl">${tausend(k.teams)}</span>
+         <span class="klein">Mannschaften · ${tausend(k.leagues)} Staffeln</span></a>`
+    : `<div class="klassenzeile leer">
+         <span class="wer">${esc(k.klasseName)}</span>
+         <span class="klein">${esc(k.hinweis || 'in Arbeit')}</span></div>`).join('');
+  return `<div class="sportkarte">
+      <div class="ic">${a.icon}</div><h3>${esc(a.name)}</h3>
+      <div class="klassen">${zeilen}</div></div>`;
+}).join('');
 
 document.getElementById('homeSport').innerHTML = SPORTS.filter(s => s.ready)
-  .map(s => `<option value="${s.slug}">${s.icon} ${esc(s.name)}</option>`).join('');
+  .map(s => `<option value="${s.slug}">${s.icon} ${esc(s.name)} · ${esc(s.klasseName)}`
+            + `</option>`).join('');
 document.getElementById('homeSuche').addEventListener('submit', e => {
   e.preventDefault();
   const slug = document.getElementById('homeSport').value;
@@ -419,9 +459,11 @@ function aktuelleRoute(){
 
 async function route(){
   const {slug, params} = aktuelleRoute();
-  document.querySelectorAll('#nav a').forEach(a =>
-    a.toggleAttribute('aria-current', a.getAttribute('href') === '#' + slug));
   const sport = SPORTS.find(s => s.slug === slug);
+  document.querySelectorAll('#nav a').forEach(a =>
+    a.toggleAttribute('aria-current',
+      a.getAttribute('href') === '#' + slug ||
+      (!!sport && a.dataset.sportart === sport.sportart)));
   const home = document.getElementById('view-home');
   const view = document.getElementById('view-sport');
   if (!sport){ home.hidden = false; view.hidden = true; window.scrollTo(0,0); return; }
@@ -430,16 +472,34 @@ async function route(){
   document.getElementById('sportUnter').textContent = sport.ready
     ? `Saison ${sport.season} · Stand ${sport.generated}` : '';
 
+  // Umschalter Männer/Frauen. Beide Klassen sind eigene Rangfolgen: sie
+  // spielen getrennte Pyramiden mit eigenen Auf- und Abstiegsketten, ein
+  // gemeinsamer Platz hätte keine sportliche Grundlage.
+  const geschwister = SPORTS.filter(s => s.sportart === sport.sportart);
+  const umschalter = document.getElementById('klassenwahl');
+  umschalter.innerHTML = geschwister.length < 2 ? '' : geschwister.map(k =>
+    k.slug === sport.slug
+      ? `<span aria-current="page">${esc(k.klasseName)}</span>`
+      : (k.ready ? `<a href="#${k.slug}">${esc(k.klasseName)}</a>`
+                 : `<span class="leer" title="noch keine Daten">${esc(k.klasseName)}</span>`)
+  ).join('');
+
   // Kopfbild der Sportart. Fehlt die Datei, bleibt der Verlauf mit Platzhalter.
   const bild = document.getElementById('sportBild');
   const platz = document.getElementById('sportPlatzhalter');
-  const datei = `header-${sport.slug}.jpg`;
-  document.getElementById('sportBildName').textContent = `docs/${datei}`;
+  // Erst ein Motiv für genau diese Klasse, sonst das der Sportart.
+  const kandidaten = [`header-${sport.slug}.jpg`, `header-${sport.sportart}.jpg`];
+  document.getElementById('sportBildName').textContent = `docs/${kandidaten[0]}`;
   platz.hidden = false;
   bild.hidden = true;
+  let versuch = 0;
   bild.onload = () => { platz.hidden = true; bild.hidden = false; };
-  bild.onerror = () => { bild.hidden = true; platz.hidden = false; };
-  bild.src = datei;
+  bild.onerror = () => {
+    versuch += 1;
+    if (versuch < kandidaten.length){ bild.src = kandidaten[versuch]; return; }
+    bild.hidden = true; platz.hidden = false;
+  };
+  bild.src = kandidaten[0];
   if (!sport.ready){
     document.getElementById('sportInhalt').innerHTML =
       `<div class="note"><p>${esc(sport.hinweis || 'Diese Sportart ist noch in Arbeit.')}</p></div>`;

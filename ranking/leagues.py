@@ -64,10 +64,22 @@ EXPECTED_TIER4 = [
 ]
 
 
-def registry(season: int | None = None) -> list[LeagueRef]:
+# Frauenfußball bei OpenLigaDB. Deutlich dünner gepflegt als bei den Herren:
+# die beiden Bundesligen stehen, von den fünf Regionalligen nur der Westen.
+# Darunter übernimmt fussball.de ab Stufe 4.
+FRAUEN = [
+    ("ffb1",       1, "Frauen-Bundesliga",       None),
+    ("ffb2",       2, "2. Bundesliga (Frauen)",  None),
+    ("rlw-frauen", 3, "Regionalliga West (Frauen)", None),
+]
+
+
+def registry(season: int | None = None,
+             art: str = "Herren") -> list[LeagueRef]:
     season = season or current_season()
+    quelle = FRAUEN if art == "Frauen" else CORE + LOWER
     return [LeagueRef(sc, season, tier, name, verband)
-            for sc, tier, name, verband in CORE + LOWER]
+            for sc, tier, name, verband in quelle]
 
 
 # Ab Stufe 6 heißen die Ligen je Verband anders (Landesliga, Landesklasse,

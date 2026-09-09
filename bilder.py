@@ -33,6 +33,11 @@ ZIELE = {
     "fussball": "header-fussball.jpg",
     "handball": "header-handball.jpg",
     "basketball": "header-basketball.jpg",
+    # Eigene Motive für die Frauenklassen. Fehlen sie, greift die Seite von
+    # selbst auf das Bild der Sportart zurück -- es muss also keins geben.
+    "fussball-frauen": "header-fussball-frauen.jpg",
+    "handball-frauen": "header-handball-frauen.jpg",
+    "basketball-frauen": "header-basketball-frauen.jpg",
     "home": "header.jpg",
     "start": "header.jpg",
     "alle": "header.jpg",
@@ -45,9 +50,11 @@ def schluessel(name: str) -> str:
     text = text.replace("ß", "ss").replace("ä", "ae").replace("ö", "oe")
     text = text.replace("ü", "ue")
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+    # "clubrank_fussball_frauen" und "clubrank_fussball-frauen" meinen dasselbe.
+    text = text.replace("_", "-")
     # Angehängte Ziffern erlauben mehrere Anläufe für dasselbe Motiv:
     # "clubrank_handball2" landet ebenfalls bei header-handball.jpg.
-    return text.rstrip("0123456789 _-")
+    return text.rstrip("0123456789 -")
 
 
 def main() -> int:

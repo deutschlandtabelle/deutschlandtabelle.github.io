@@ -44,8 +44,9 @@ REFERER = "https://www.handball.net/spielbetrieb/wettbewerbe"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
 
-# Nur Erwachsene, nur Männer -- Jugend läuft unter eigenen Meisterschaften und
-# teils unter dem Geschlecht "X" (gemischt).
+# Nur Erwachsene -- Jugend läuft unter eigenen Meisterschaften und teils unter
+# dem Geschlecht "X" (gemischt). Das Geschlecht ist der Vorgabewert von fetch()
+# und wird von dort überschrieben: "M" Männer, "W" Frauen.
 MEISTERSCHAFT = "ERWACHSENE"
 GESCHLECHT = "M"
 
@@ -205,7 +206,8 @@ class HandballNet:
         return zeilen
 
 
-def fetch(cache_dir: Path, season: int, verbose: bool = True) -> list[dict]:
+def fetch(cache_dir: Path, season: int, geschlecht: str = GESCHLECHT,
+          verbose: bool = True) -> list[dict]:
     """Liefert je Staffel {name, tier, verband, area, spielklasse, rows}."""
     if not ENABLED:
         return []
@@ -229,7 +231,7 @@ def fetch(cache_dir: Path, season: int, verbose: bool = True) -> list[dict]:
                 unbekannt[kategorie] = unbekannt.get(kategorie, 0) + 1
             continue
         for ph in w.get("phases") or []:
-            if (ph.get("gender") or {}).get("id") != GESCHLECHT:
+            if (ph.get("gender") or {}).get("id") != geschlecht:
                 continue
             if not ph.get("has_standings"):
                 continue
@@ -241,7 +243,8 @@ def fetch(cache_dir: Path, season: int, verbose: bool = True) -> list[dict]:
                 "federation_id": ph.get("federation_id"),
             })
     if verbose:
-        print(f"  handball.net: {len(kandidaten)} Männer-Staffeln (Erwachsene)",
+        wort = {"M": "Männer", "F": "Frauen"}.get(geschlecht, geschlecht)
+        print(f"  handball.net: {len(kandidaten)} {wort}-Staffeln (Erwachsene)",
               file=sys.stderr)
         if unbekannt:
             print(f"  handball.net: ohne Ligastufe übersprungen: {unbekannt}",

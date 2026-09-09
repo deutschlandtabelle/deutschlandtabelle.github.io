@@ -1,0 +1,186 @@
+staffel_id,verband,gebiet,ligastufe,spielklasse,staffel,mannschaften,spiele_gesamt,tore_gesamt,punkte_gesamt,tabellenfuehrer,tabellenfuehrer_punkte,quelle
+55802,Bundesligen,Bundesligen,1,1. Bundesliga,1. Bundesliga (easyCredit BBL),18,0,0,0,ALBA BERLIN,0,basketball-bund.net
+55811,Bundesligen,Bundesligen,2,2. Bundesliga (ProA),Herren ProA,18,0,0,0,Artland Dragons,0,basketball-bund.net
+55815,Bundesligen,Bundesligen,3,2. Bundesliga (ProB),Herren ProB Nord,14,0,0,0,ART Giants Düsseldorf,0,basketball-bund.net
+55817,Bundesligen,Bundesligen,3,2. Bundesliga (ProB),Herren ProB Süd,17,0,0,0,Ahorn Camp Baskets,0,basketball-bund.net
+54569,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,1.Regionalliga Herren (1RLH),14,0,0,0,ACCENT BASKETS Salzkotten,0,basketball-bund.net
+53316,Baden-Württemberg,Baden-Württemberg,5,2. Regionalliga,Regionalliga Baden-Württemberg Männer,14,0,0,0,BG Remseck,0,basketball-bund.net
+54570,Nordrhein-Westfalen,Nordrhein-Westfalen,5,2.Regionalliga,2.Regionalliga 1 Herren (2RL1H),12,0,0,0,BG Aachen,0,basketball-bund.net
+54571,Nordrhein-Westfalen,Nordrhein-Westfalen,5,2.Regionalliga,2.Regionalliga 2 Herren (2RL2H),12,0,0,0,BBG Herford 2,0,basketball-bund.net
+52859,Regionalliga Südwest,Regionalliga Südwest,5,2. Regionalliga,2. Regionalliga Herren Nord,12,0,0,0,1. FCK epsotech Baskets,0,basketball-bund.net
+53323,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Männer,12,0,0,0,BG Viernheim/Weinheim 2,0,basketball-bund.net
+53322,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Männer,12,0,0,0,BBU'01 2,0,basketball-bund.net
+52531,Bayern,Bayern,6,Bayernliga,Bayernliga Herren Mitte (ByLHM),12,0,0,0,Dukes Dingolfing,0,basketball-bund.net
+52532,Bayern,Bayern,6,Bayernliga,Bayernliga Herren Süd (ByLHS),12,0,0,0,BC Hellenen München,0,basketball-bund.net
+55040,Berlin,Berlin,6,Oberliga,Herren Oberliga A,10,0,0,0,ALBA Berlin 3,0,basketball-bund.net
+55041,Berlin,Berlin,6,Oberliga,Herren Oberliga B,10,0,0,0,BBC 90 Köpenick 1,0,basketball-bund.net
+55009,Brandenburg,Brandenburg,6,Oberliga,Oberliga Herren Hauptrunde,8,0,0,0,BBC White Devils Cottbus,0,basketball-bund.net
+53470,Hamburg,Hamburg,6,Oberliga,Herren Oberliga,10,0,0,0,BG Halstenbek / Pinneberg (1),0,basketball-bund.net
+54626,Hessen,Hessen,6,Oberliga,Oberliga Herren,9,3,482,6,MTV Kronberg 1,2,basketball-bund.net
+55541,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,6,Oberliga,Oberliga Herren (55541),5,0,0,0,PSV Wismar Bulls,0,basketball-bund.net
+54136,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Herren Ost,10,1,155,2,MTV Gifhorn,2,basketball-bund.net
+54576,Nordrhein-Westfalen,Nordrhein-Westfalen,6,Oberliga,Oberliga 3 Herren (OL3H),11,0,0,0,BBA Hagen 2,0,basketball-bund.net
+52893,Rheinland-Pfalz,Rheinland-Pfalz,6,Oberliga,Oberliga Rheinland-Pfalz/Saar Herren,11,0,0,0,1. FC Kaiserslautern 2,0,basketball-bund.net
+53237,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Herren (53237),7,0,0,0,BG GutsMuths Panthers QLB/HBS I,0,basketball-bund.net
+53844,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,HOL,10,0,0,0,1. SC Norderstedt,0,basketball-bund.net
+54718,Thüringen,Thüringen,6,Oberliga,Oberliga Herren (Vorrunde),10,0,0,0,1. BV Gera 66,0,basketball-bund.net
+52661,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW1 Landesliga Männer,13,0,0,0,BAC Hockenheim 1,0,basketball-bund.net
+55014,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Männer,11,0,0,0,BBU 01 Ulm (3),0,basketball-bund.net
+55042,Berlin,Berlin,7,Landesliga,Herren Landesliga A,12,0,0,0,ALBA Berlin 4,0,basketball-bund.net
+55045,Berlin,Berlin,7,Landesliga,Herren Landesliga B,12,0,0,0,ALBA Berlin 5,0,basketball-bund.net
+55193,Brandenburg,Brandenburg,7,Landesliga,Landesliga Herren,10,0,0,0,BBC Cottbus 2,0,basketball-bund.net
+53479,Hamburg,Hamburg,7,Stadtliga,Herren Stadtliga Ost,9,0,0,0,Altrahlstedter MTV 1893 (1),0,basketball-bund.net
+53480,Hamburg,Hamburg,7,Stadtliga,Herren Stadtliga West,9,0,0,0,Altonaer TSV von 1899 e.V. (2),0,basketball-bund.net
+54639,Hessen,Hessen,7,Landesliga,Landesliga Nord Herren,10,5,586,9,RSV Heskem 1,2,basketball-bund.net
+54640,Hessen,Hessen,7,Landesliga,Landesliga Süd Herren,10,5,576,9,FTG Frankfurt 1,2,basketball-bund.net
+55544,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,7,Landesliga,Landesliga Herren West,5,0,0,0,BIG Rostock,0,basketball-bund.net
+54140,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Herren 1,10,0,0,0,ASC 46 Göttingen II,0,basketball-bund.net
+54142,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Herren 3,11,0,0,0,BG '89 Rotenburg/Scheeßel,0,basketball-bund.net
+54674,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Braunschweig Herren,10,0,0,0,Eintracht Braunschweig  2,0,basketball-bund.net
+54708,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Göttingen Herren,9,0,0,0,ASC 46 Göttingen III,0,basketball-bund.net
+54527,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Herren,10,0,0,0,CVJM Hannover 3,0,basketball-bund.net
+53663,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Herren (53663),8,0,0,0,BBC Osnabrück II,0,basketball-bund.net
+54757,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Herren OL/OF,9,0,0,0,Bürgerfelder TB III,0,basketball-bund.net
+54167,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,6,0,0,0,BG Bierden-Bassen-Achim,0,basketball-bund.net
+54165,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Nord Herren,9,0,0,0,1. BC Bremerhaven II,0,basketball-bund.net
+54166,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Süd Herren,9,0,0,0,BG Bierden-Bassen-Achim I,0,basketball-bund.net
+54585,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 08 Herren (LL08H),11,0,0,0,BC Soest 2,0,basketball-bund.net
+54408,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Herren,9,0,0,0,ASC Theresianum Mainz 2,0,basketball-bund.net
+54613,Saarland,Saarland,7,Landesliga,Landesliga Saar Herren 2026 2027,9,0,0,0,ATSV Saarbrücken II,0,basketball-bund.net
+53261,Sachsen-Anhalt,Sachsen-Anhalt,7,Landesliga,Landesliga Herren St. 1,7,0,0,0,1. Magdeburger BC I,0,basketball-bund.net
+53262,Sachsen-Anhalt,Sachsen-Anhalt,7,Landesliga,Landesliga Herren St. 2,7,0,0,0,BBC Halle I,0,basketball-bund.net
+53846,Schleswig-Holstein,Schleswig-Holstein,7,Landesliga,HLL,8,0,0,0,BSG Kisdorf Kaltenkirchen 2,0,basketball-bund.net
+54736,Thüringen,Thüringen,7,Landesliga,Landesliga Herren Ost,7,0,0,0,1. BV Gera 66 II,0,basketball-bund.net
+54453,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Herren 26/27,10,0,0,0,BG powered by BBA Leitershofen/Stadtbergen 3,0,basketball-bund.net
+54755,Bayern,Bayern,8,Bezirksoberliga,OPF Bezirksoberliga Herren 2026/27,7,0,0,0,DJK Pressath 2,0,basketball-bund.net
+55132,Sachsen,Sachsen,8,Bezirksoberliga,Bezirksoberliga Dresden Herren,8,0,0,0,BC Dresden 5,0,basketball-bund.net
+53914,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga 1 Männer,10,0,0,0,BG Tamm/Bietigheim 2,0,basketball-bund.net
+53915,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga 2 Männer,8,0,0,0,BBC Stuttgart,0,basketball-bund.net
+55018,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW4 Bezirksliga Ost,12,0,0,0,BBU 01 Ulm (5),0,basketball-bund.net
+53728,Bayern,Bayern,9,Bezirksliga,Bezirksliga Herren (BZLH-O) - Gruppe Ost 2026/27,3,0,0,0,TG Landshut 2,0,basketball-bund.net
+54485,Bayern,Bayern,9,Bezirksliga,Bezirksliga Herren Nord 26/27,8,0,0,0,DJK Augsburg Nord,0,basketball-bund.net
+54484,Bayern,Bayern,9,Bezirksliga,Bezirksliga Herren Süd 26/27,8,0,0,0,BG Illertal 2,0,basketball-bund.net
+55569,Bayern,Bayern,9,Bezirksliga,UFR Bezirksliga Herren,9,0,0,0,DJK Schweinfurt 2,0,basketball-bund.net
+55046,Berlin,Berlin,9,Bezirksliga,Herren Bezirksliga A,10,0,0,0,BC ASKA 1,0,basketball-bund.net
+55047,Berlin,Berlin,9,Bezirksliga,Herren Bezirksliga B,9,0,0,0,BASS Südwest 4,0,basketball-bund.net
+55048,Berlin,Berlin,9,Bezirksliga,Herren Bezirksliga C,10,0,0,0,ALBA Berlin 6,0,basketball-bund.net
+55198,Brandenburg,Brandenburg,9,Bezirksliga,Bezirksliga Herren Nord,7,3,335,6,Red Eagles Rathenow,4,basketball-bund.net
+55199,Brandenburg,Brandenburg,9,Bezirksliga,Bezirksliga Herren Süd,7,3,447,6,WSG Fürstenwalde 2,4,basketball-bund.net
+53484,Hamburg,Hamburg,9,Bezirksliga,Herren Bezirksliga A (53484),8,0,0,0,Altrahlstedter MTV 1893 (2),0,basketball-bund.net
+53485,Hamburg,Hamburg,9,Bezirksliga,Herren Bezirksliga B (53485),8,0,0,0,BC Hamburg (2),0,basketball-bund.net
+53486,Hamburg,Hamburg,9,Bezirksliga,Herren Bezirksliga C (53486),8,0,0,0,BC Hamburg (3),0,basketball-bund.net
+54657,Hessen,Hessen,9,Bezirksliga,Bezirksliga Herren,11,4,537,8,Gießen Pointers e.V. 4,2,basketball-bund.net
+53455,Hessen,Hessen,9,Bezirksliga,Bezirksliga Herren (53455),9,3,412,6,TSV 1892 Vellmar 1,2,basketball-bund.net
+55952,Hessen,Hessen,9,Bezirksliga,Bezirksliga Herren (55952),10,5,719,10,TV Hofheim 1,2,basketball-bund.net
+52918,Hessen,Hessen,9,Bezirksliga,Herren Bezirksliga,10,5,721,10,SG Weiterstadt 2,2,basketball-bund.net
+54605,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 02 Herren (BeL02H),11,0,0,0,ASG Elsdorf,0,basketball-bund.net
+54606,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 03 Herren (BeL03H),11,0,0,0,BBV Köln-Nordwest 2,0,basketball-bund.net
+54611,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 07 Herren (BeL07H),10,0,0,0,Altenessener TV 2,0,basketball-bund.net
+54634,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 10 Herren (BeL10H),11,0,0,0,GSV Fröndenberg,0,basketball-bund.net
+55406,Rheinland-Pfalz,Rheinland-Pfalz,9,Bezirksliga,Bezirksliga Koblenz Herren,10,0,0,0,BBC Horchheim 3,0,basketball-bund.net
+54423,Rheinland-Pfalz,Rheinland-Pfalz,9,Bezirksliga,Bezirksliga Pfalz Herren,9,0,0,0,1. FC Kaiserslautern 3,0,basketball-bund.net
+52847,Rheinland-Pfalz,Rheinland-Pfalz,9,Bezirksliga,Bezirksliga Trier Herren,7,0,0,0,Gladiators Trier II,0,basketball-bund.net
+54614,Saarland,Saarland,9,Bezirksliga,Bezirksliga Saar Herren 2026 2027,9,0,0,0,SG Baskets 98 Völklingen/BBC Bous II,0,basketball-bund.net
+55074,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Chemnitz Zwischenrunde A,4,0,0,0,2. Gruppe A,0,basketball-bund.net
+55117,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Dresden Herren,11,0,0,0,BC Dresden 7,0,basketball-bund.net
+55116,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Dresden Herren-Masters 40+,3,0,0,0,BC Dresden,0,basketball-bund.net
+53273,Sachsen-Anhalt,Sachsen-Anhalt,9,Bezirksliga,Bezirksliga Herren Anhalt,8,0,0,0,1. Magdeburger Basketballclub III,0,basketball-bund.net
+54654,Sachsen-Anhalt,Sachsen-Anhalt,9,Bezirksliga,Bezirksliga Herren Halle,6,0,0,0,BBC Halle IV,0,basketball-bund.net
+53271,Sachsen-Anhalt,Sachsen-Anhalt,9,Bezirksliga,Bezirksliga Herren Nord-Harz,8,0,0,0,1. Magdeburger BC II,0,basketball-bund.net
+53272,Sachsen-Anhalt,Sachsen-Anhalt,9,Bezirksliga,Bezirksliga Herren Süd (53272),8,0,0,0,ASV Mammuts Sangerhausen,0,basketball-bund.net
+53848,Schleswig-Holstein,Schleswig-Holstein,9,Bezirksliga,HBLN,8,0,0,0,BBC Rendsburg 3,0,basketball-bund.net
+53849,Schleswig-Holstein,Schleswig-Holstein,9,Bezirksliga,HBLS,8,0,0,0,1. SC Norderstedt 2,0,basketball-bund.net
+52810,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Herren,10,0,0,0,BBC Bayreuth 4,0,basketball-bund.net
+54508,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Herren Mitte 26/27,7,0,0,0,MTV Baskets Ingolstadt 3,0,basketball-bund.net
+54507,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Herren Nord 26/27,6,0,0,0,DJK Eichstätt 2,0,basketball-bund.net
+54509,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Herren Süd 26/27,7,0,0,0,BG Illertal 3,0,basketball-bund.net
+55571,Bayern,Bayern,10,Bezirksklasse,UFR Bezirksklasse Herren West,7,0,0,0,BG Elsenfeld/Großwallstadt 2,0,basketball-bund.net
+54680,Niedersachsen,Niedersachsen,10,Regionsklasse,Regionsklasse Braunschweig Herren,9,0,0,0,Eintracht Braunschweig 4,0,basketball-bund.net
+55706,Niedersachsen,Niedersachsen,10,Regionsklasse,Regionsklasse Göttingen Herren,5,0,0,0,ASC 46 Göttingen IV,0,basketball-bund.net
+53678,Niedersachsen,Niedersachsen,10,Regionsklasse,Regionsklasse Herren,10,0,0,0,(spielfrei),0,basketball-bund.net
+54540,Niedersachsen,Niedersachsen,10,Regionsklasse,Regionsklasse Herren / Ost,7,0,0,0,Hanover Basketball Dragons 2,0,basketball-bund.net
+54541,Niedersachsen,Niedersachsen,10,Regionsklasse,Regionsklasse Herren / West,9,0,0,0,Mühlenberger SV 2,0,basketball-bund.net
+54198,Niedersachsen,Niedersachsen,10,Regionsklasse,Regionsklasse Nord Herren,6,0,0,0,BC-VSK Osterholz-Scharmbeck,0,basketball-bund.net
+54910,Niedersachsen,Niedersachsen,10,Regionsklasse,Regionsklasse Ost Herren,7,0,0,0,BG True Lions,0,basketball-bund.net
+54197,Niedersachsen,Niedersachsen,10,Regionsklasse,Regionsklasse Süd Herren,5,0,0,0,BTS Neustadt V,0,basketball-bund.net
+54958,Sachsen,Sachsen,10,Bezirksklasse,Bezirksklasse Leipzig Herren,8,0,0,0,BBV 1950 Wurzen 2,0,basketball-bund.net
+52665,Baden-Württemberg,Baden-Württemberg,11,Kreisliga A,BBW1 Kreisliga A Männer,9,0,0,0,BG Viernheim/Weinheim 4,0,basketball-bund.net
+55022,Baden-Württemberg,Baden-Württemberg,11,Kreisliga A,BBW4 Kreisliga Nord,8,0,0,0,KSG Eislingen,0,basketball-bund.net
+55025,Baden-Württemberg,Baden-Württemberg,11,Kreisliga A,BBW4 Kreisliga West,8,0,0,0,KKK Haiterbach 3,0,basketball-bund.net
+52811,Bayern,Bayern,11,Kreisliga,Kreisliga Herren A,9,0,0,0,1. FC Baunach 3,0,basketball-bund.net
+53735,Bayern,Bayern,11,Kreisliga,Kreisliga Herren A (MI-KLHA) 2026/27,9,0,0,0,MTV München 3,0,basketball-bund.net
+52812,Bayern,Bayern,11,Kreisliga,Kreisliga Herren B,9,0,0,0,ATS Kulmbach 2,0,basketball-bund.net
+53736,Bayern,Bayern,11,Kreisliga,Kreisliga Herren B (MI-KLHB) 2026/27,8,0,0,0,AK Tigers München,0,basketball-bund.net
+53718,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Herren Mitte,7,0,0,0,DJK Nürnberg-Eibach,0,basketball-bund.net
+53716,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Herren Nord,7,0,0,0,CVJM Erlangen 3,0,basketball-bund.net
+55049,Berlin,Berlin,11,Kreisliga,Herren Kreisliga A,11,0,0,0,BC Lions Moabit 5,0,basketball-bund.net
+55050,Berlin,Berlin,11,Kreisliga,Herren Kreisliga B,11,0,0,0,ALBA Berlin 7,0,basketball-bund.net
+55051,Berlin,Berlin,11,Kreisliga,Herren Kreisliga C,12,0,0,0,AC Berlin 1,0,basketball-bund.net
+53491,Hamburg,Hamburg,11,Kreisliga,Herren Kreisliga A (53491),8,0,0,0,Ahrensburger TSV von 1874 (1),0,basketball-bund.net
+53492,Hamburg,Hamburg,11,Kreisliga,Herren Kreisliga B (53492),7,0,0,0,Ahrensburger TSV von 1874 (2),0,basketball-bund.net
+53493,Hamburg,Hamburg,11,Kreisliga,Herren Kreisliga C (53493),7,0,0,0,20HOOP HH-Eppendorf e.V.,0,basketball-bund.net
+56084,Hamburg,Hamburg,11,Kreisliga,Herren Senioren II Ost,6,0,0,0,Bramfelder SV von 1945 (1),0,basketball-bund.net
+53490,Hamburg,Hamburg,11,Kreisliga,Herren Senioren II West,7,0,0,0,BG Halstenbek / Pinneberg (1),0,basketball-bund.net
+52946,Hessen,Hessen,11,Kreisliga A,Herren Kreisliga A (52946),10,4,529,8,BC Wiesbaden 2,2,basketball-bund.net
+55954,Hessen,Hessen,11,Kreisliga A,Kreisliga A Herren Ost,10,4,512,8,TS Klein-Krotzenburg 1,2,basketball-bund.net
+55955,Hessen,Hessen,11,Kreisliga A,Kreisliga A Herren West,10,5,618,10,Baskets Limburg 2,2,basketball-bund.net
+53463,Hessen,Hessen,11,Kreisliga,Kreisliga Herren,7,1,128,2,FC Homberg 1924 e.V.,2,basketball-bund.net
+54668,Hessen,Hessen,11,Kreisliga A,Kreisliga Herren A (54668),8,3,315,6,Lich Basketball e.V. 4,2,basketball-bund.net
+54681,Niedersachsen,Niedersachsen,11,Kreisliga,Kreisliga Braunschweig Herren Nord,8,0,0,0,MSG VT Union Gr. Ilsede/TB Lengede,0,basketball-bund.net
+54682,Niedersachsen,Niedersachsen,11,Kreisliga,Kreisliga Braunschweig Herren Süd,5,0,0,0,Eintracht Braunschweig 5,0,basketball-bund.net
+53689,Niedersachsen,Niedersachsen,11,Kreisliga,Kreisliga Herren (53689),9,0,0,0,(spielfrei),0,basketball-bund.net
+54553,Niedersachsen,Niedersachsen,11,Kreisliga,Kreisliga Herren / Ost,7,0,0,0,BG Godshorn-Langenhagen,0,basketball-bund.net
+54554,Niedersachsen,Niedersachsen,11,Kreisliga,Kreisliga Herren / West,9,0,0,0,ASV Panthers,0,basketball-bund.net
+54773,Niedersachsen,Niedersachsen,11,Kreisliga,Kreisliga Herren Ost,10,0,0,0,Bürgerfelder TB IV,0,basketball-bund.net
+55506,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,1. Kreisliga Essen,12,0,0,0,Altenessener TV 4,0,basketball-bund.net
+54920,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,1. Kreisliga Herren (1KLH),9,0,0,0,BG Monheim 2,0,basketball-bund.net
+54419,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,1. Kreisliga Herren Bochum,7,0,0,0,BC Langendreer 3,0,basketball-bund.net
+54843,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,1. Kreisliga Kreis-EN,5,0,0,0,SG Voerde Schwelm 4,0,basketball-bund.net
+55169,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,1. Kreisliga Ostwestfalen Ost,9,3,358,6,Bad Oeynhausen Baskets 2,2,basketball-bund.net
+55168,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,1. Kreisliga Ostwestfalen West,7,1,114,2,FC Stukenbrock Wombats,2,basketball-bund.net
+56069,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,1.KLH Köln,13,0,0,0,BC Pesch,0,basketball-bund.net
+56045,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,KLH Niers,9,0,0,0,Fischelner Turnverein 05 a.K.,0,basketball-bund.net
+55702,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,Kreisliga Herren 2026/2027,13,0,0,0,BG Kamp-Lintfort 4,0,basketball-bund.net
+56286,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,Kreisliga Herren A (56286),9,0,0,0,"1. BBC Düren ""The Wizards"" 2",0,basketball-bund.net
+56287,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,Kreisliga Herren B (56287),8,0,0,0,"1. BBC Düren ""The Wizards"" 3",0,basketball-bund.net
+56440,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,Kreisliga Herren BBK Wuppertal 26/27,12,0,0,0,BTV Ronsdorf Graben 2,0,basketball-bund.net
+55353,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,Kreisliga Lippe,7,0,0,0,BG Lünen,0,basketball-bund.net
+55528,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,Kreisliga MS Herren Gruppe A,9,0,0,0,RSV Borken 2,0,basketball-bund.net
+55529,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,Kreisliga MS Herren Gruppe B,6,0,0,0,SG Telgte-Wolbeck Baskets 3,0,basketball-bund.net
+56249,Nordrhein-Westfalen,Nordrhein-Westfalen,11,Kreisliga,Kreisliga Vorrunde D/NE,18,0,0,0,Black Eagles Düsseldorf 2,0,basketball-bund.net
+55464,Rheinland-Pfalz,Rheinland-Pfalz,11,A-Klasse,A-Klasse Koblenz Herren Gruppe 1,7,2,216,4,Grundschulliga Rhein-Lahn e.V.,2,basketball-bund.net
+55465,Rheinland-Pfalz,Rheinland-Pfalz,11,A-Klasse,A-Klasse Koblenz Herren Gruppe 2,7,4,434,8,Sportfreunde Neustadt/Wied 2,2,basketball-bund.net
+54426,Rheinland-Pfalz,Rheinland-Pfalz,11,A-Klasse,A-Klasse Pfalz Herren,7,0,0,0,BBC Mehlingen,0,basketball-bund.net
+55355,Rheinland-Pfalz,Rheinland-Pfalz,11,A-Klasse,A-Klasse Rheinhessen Herren,9,0,0,0,Binger Buckets,0,basketball-bund.net
+54615,Saarland,Saarland,11,Kreisliga,Kreisliga Saar Herren 2026 2027,9,0,0,0,ATSV Saarbrücken III,0,basketball-bund.net
+53850,Schleswig-Holstein,Schleswig-Holstein,11,Kreisliga,HBKN,8,0,0,0,BBC Rendsburg 4,0,basketball-bund.net
+53851,Schleswig-Holstein,Schleswig-Holstein,11,Kreisliga,HBKS,7,0,0,0,BSG Kisdorf Kaltenkirchen 3,0,basketball-bund.net
+52666,Baden-Württemberg,Baden-Württemberg,12,Kreisliga B,BBW1 Kreisliga B1 Männer,6,0,0,0,BAC Hockenheim 2,0,basketball-bund.net
+52667,Baden-Württemberg,Baden-Württemberg,12,Kreisliga B,BBW1 Kreisliga B2 Männer,6,0,0,0,LSV Ladenburg 3,0,basketball-bund.net
+53077,Baden-Württemberg,Baden-Württemberg,12,Kreisliga B,BBW2 Kreisliga B Nord Männer,8,0,0,0,ESG Frankonia Karlsruhe 2,0,basketball-bund.net
+53987,Baden-Württemberg,Baden-Württemberg,12,Kreisliga B,BBW3 Kreisliga B 1 Männer,8,0,0,0,BG Tamm/Bietigheim 4,0,basketball-bund.net
+53988,Baden-Württemberg,Baden-Württemberg,12,Kreisliga B,BBW3 Kreisliga B 2 Männer,7,0,0,0,Aalener Sportallianz,0,basketball-bund.net
+53990,Baden-Württemberg,Baden-Württemberg,12,Kreisliga B,BBW3 Kreisliga B 3 Männer,8,0,0,0,Aalener Sportallianz 2,0,basketball-bund.net
+53993,Baden-Württemberg,Baden-Württemberg,12,Kreisliga B,BBW3 Kreisliga B 4 Männer,9,0,0,0,Celtics SB Asperg 2,0,basketball-bund.net
+53739,Bayern,Bayern,12,Kreisklasse,Kreisklasse Herren A (MI-KKHA) 2026/27,8,0,0,0,AK Tigers München 2,0,basketball-bund.net
+53740,Bayern,Bayern,12,Kreisklasse,Kreisklasse Herren B Nordgruppe (MI-KKHB-N) 2026/27,7,0,0,0,FC Aschheim 2,0,basketball-bund.net
+53741,Bayern,Bayern,12,Kreisklasse,Kreisklasse Herren B Südgruppe (MI-KKHB-S) 2026/27,9,0,0,0,Chinesischer Sportverein München 2,0,basketball-bund.net
+52947,Hessen,Hessen,12,Kreisliga B,Herren Kreisliga B Gruppe 1,9,3,381,6,DJK/SCC Pfungstadt 1,2,basketball-bund.net
+52948,Hessen,Hessen,12,Kreisliga B,"Herren Kreisliga B, Gruppe 2",10,5,631,10,SG Weiterstadt 3,2,basketball-bund.net
+55957,Hessen,Hessen,12,Kreisliga B,Kreisliga B Herren Ost,9,3,382,6,BC Gelnhausen 3,2,basketball-bund.net
+55958,Hessen,Hessen,12,Kreisliga B,Kreisliga B Herren West,10,5,586,10,TS Frankfurt-Griesheim 2,2,basketball-bund.net
+54669,Hessen,Hessen,12,Kreisliga B,Kreisliga Herren B (54669),10,3,370,6,TSG Wieseck 2,2,basketball-bund.net
+53690,Niedersachsen,Niedersachsen,12,Kreisklasse,"Kreisklasse Herren, Nord",6,0,0,0,Blau-Weiß Merzen II,0,basketball-bund.net
+53691,Niedersachsen,Niedersachsen,12,Kreisklasse,"Kreisklasse Herren, Süd",6,0,0,0,BBC Osnabrück IV,0,basketball-bund.net
+55527,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,9,0,0,0,ETB Miners Essen 5,0,basketball-bund.net
+55408,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Herren Grp. A (2KLHA),10,0,0,0,BG Bonn 4,0,basketball-bund.net
+55409,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Herren Grp. B (2KLHB),10,0,0,0,Bonner SV Roleber 3,0,basketball-bund.net
+56077,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2.Kreisliga Herren Gruppe A,10,0,0,0,Athena Porz 2,0,basketball-bund.net
+56078,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2.Kreisliga Herren Gruppe B,8,0,0,0,BC Pesch 3,0,basketball-bund.net
+56554,Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,6,4,581,8,Witten Baskets (2RLH),4,basketball-bund.net
+54427,Rheinland-Pfalz,Rheinland-Pfalz,12,B-Klasse,B-Klasse Pfalz Herren,7,0,0,0,1. FC Kaiserslautern 4,0,basketball-bund.net
+52949,Hessen,Hessen,13,Kreisliga C,"Herren Kreisliga C, Gruppe 1",7,1,143,2,TV 1888 Reinheim e.V.,2,basketball-bund.net
+52950,Hessen,Hessen,13,Kreisliga C,"Herren Kreisliga C, Gruppe 2",8,2,286,4,BG Rüsselsheim-Taunusstein 2,2,basketball-bund.net
+55959,Hessen,Hessen,13,Kreisliga C,Kreisliga C Herren Ost,10,3,324,6,SV Dietesheim,2,basketball-bund.net
+55960,Hessen,Hessen,13,Kreisliga C,Kreisliga C Herren West,9,4,423,8,TV Ffm - Sindlingen,2,basketball-bund.net
+54670,Hessen,Hessen,13,Kreisliga C,Kreisliga Herren C,10,0,0,0,Lich Basketball e.V. 5,0,basketball-bund.net

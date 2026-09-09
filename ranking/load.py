@@ -23,14 +23,15 @@ def _parse_dt(row: dict) -> dt.datetime | None:
     return None
 
 
-def load(client: OpenLigaDB, season: int | None = None, verbose: bool = True):
+def load(client: OpenLigaDB, season: int | None = None, verbose: bool = True,
+         art: str = "Herren"):
     season = season or current_season()
     matches: list[Match] = []
     teams: dict[str, Team] = {}
     leagues: list[dict] = []
     covered: set[str] = set()
 
-    for ref in registry(season):
+    for ref in registry(season, art):
         if ref.name in covered:
             continue                      # Staffel schon über ein anderes Kürzel geladen
         raw = client.matches(ref.shortcut, season, is_current=True)
