@@ -21,7 +21,7 @@ import sys
 from pathlib import Path
 
 from ranking import (basketballde, fussballde, handballnet, hbl, landing,
-                     load, pokal, rank, render, site)
+                     load, pokal, rank, render, site, wappen)
 from ranking.api import OpenLigaDB
 from ranking.leagues import EXPECTED_TIER4, current_season
 
@@ -208,6 +208,9 @@ def schreibe_sport(out: Path, slug: str, ranking, leagues, matches,
     (out / "data").mkdir(parents=True, exist_ok=True)
     paket = render.compact(ranking)
     paket["meta"] = meta
+    # Wappen mitliefern statt verlinken: ein Bild von einem fremden Server
+    # gibt die IP-Adresse jedes Besuchers dorthin weiter.
+    wappen.einbetten(paket, out)
     zahlen = landing.kennzahlen(ranking)
     paket["kennzahlen"] = zahlen["karten"]
     # Die Seite baut die Top-100-Listen selbst; dafür braucht sie dieselbe
@@ -223,6 +226,7 @@ def schreibe_sport(out: Path, slug: str, ranking, leagues, matches,
                                   season, ranking)
         if sonder:
             paket["pokal"] = sonder
+            wappen.einbetten(paket, out)
             (out / "data" / f"{slug}.json").write_text(
                 json.dumps(paket, ensure_ascii=False, separators=(",", ":")),
                 encoding="utf-8")

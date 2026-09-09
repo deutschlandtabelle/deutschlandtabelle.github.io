@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250" height="250" version="1.2" viewBox="0 0 187.5 187.5" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <symbol id="glyph1-6" overflow="visible"></symbol>
+  <symbol id="glyph2-13" overflow="visible"></symbol>
+ </defs>
+ <g transform="translate(-195.43 -391.14)">
+  <use x="285.11569" y="49.4674" width="100%" height="100%" xlink:href="#glyph1-6"/>
+ </g>
+ <g transform="matrix(.89008 0 0 .89008 -170.88 -344.69)" stroke-width="1.1235">
+  <path d="m399.13 492.98c0 56.25-45.602 101.85-101.85 101.85-56.25 0-101.85-45.598-101.85-101.85 0-56.246 45.598-101.84 101.85-101.84 56.246 0 101.85 45.598 101.85 101.84" fill="#025c47"/>
+  <path d="m391.87 492.73c0 52.312-42.41 94.719-94.719 94.719-52.312 0-94.719-42.406-94.719-94.719 0-52.309 42.406-94.715 94.719-94.715 52.309 0 94.719 42.406 94.719 94.715" fill="#fff"/>
+  <path d="m385.12 492.98c0 48.375-39.215 87.59-87.59 87.59-48.371 0-87.586-39.215-87.586-87.59 0-48.371 39.215-87.586 87.586-87.586 48.375 0 87.59 39.215 87.59 87.586" fill="#de1738"/>
+  <path d="m378 492.99c0 44.438-36.023 80.461-80.461 80.461-44.434 0-80.457-36.023-80.457-80.461s36.023-80.457 80.457-80.457c44.438 0 80.461 36.02 80.461 80.457" fill="#025c47"/>
+  <g fill="#fff" stroke="#de1738" stroke-width="1.6145">
+   <path d="m258.78 536.61h17.797v-59.168l-23.145-0.20312-0.19922-26.363-19.523 0.0156 0.19922 85.797 19.418 0.043z"/>
+   <path d="m355.97 450.93-0.043 18.562h-16.668v48.711l22.402 0.0742 0.0156 18.27h-38.523l0.20312-85.66z"/>
+   <path d="m258.91 495.95h-5.6641v39.824h5.6641z"/>
+  </g>
+  <path d="m258.18 537.48h-4.2188v-40.781h4.2188z" fill="#025c47"/>
+  <path d="m314.36 443.24 6.8242-22.117h-27.293l-19.055 15.293 19.996 106.58h-12.469l-7.293 22.352 29.645 0.23438 15.527-16-20-105.64z" fill="#fff" stroke="#de1738" stroke-width="1.6145"/>
+ </g>
+ <g transform="translate(-195.43 -391.14)">
+  <use x="238.20889" y="708.7843" width="100%" height="100%" xlink:href="#glyph2-13"/>
+ </g>
+ <g transform="translate(-195.43 -391.14)">
+  <use x="332.76889" y="708.7843" width="100%" height="100%" xlink:href="#glyph2-13"/>
+ </g>
+</svg>
