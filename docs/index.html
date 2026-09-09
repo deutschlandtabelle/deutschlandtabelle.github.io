@@ -166,6 +166,8 @@ th{position:sticky;top:47px;z-index:3;background:var(--panel);font-size:11px;
 .haupt th:nth-child(4),.haupt td:nth-child(4){text-align:left}
 .paarungen th:nth-child(2),.paarungen td:nth-child(2),
 .paarungen th:nth-child(3),.paarungen td:nth-child(3){text-align:left}
+.topliste th:nth-child(2),.topliste td:nth-child(2),
+.topliste th:nth-child(3),.topliste td:nth-child(3){text-align:left}
 .paarungen td:nth-child(2),.paarungen td:nth-child(3){padding-top:10px;padding-bottom:10px}
 .paarungen .league{max-width:none;display:block;margin-top:2px}
 /* In der Paarungstabelle ist Platz -- Vereinsnamen dürfen ausgeschrieben
@@ -252,6 +254,26 @@ tbody tr:hover{background:var(--accent-soft)}
   .haupt th:nth-child(4),.haupt td:nth-child(4){width:25%}
   .haupt th:nth-child(6),.haupt td:nth-child(6){width:9%}
   .haupt th:nth-child(13),.haupt td:nth-child(13){width:14%}
+  /* Die Top-100-Liste hat acht Spalten. Auf dem Telefon fliegt die
+     Tordifferenz raus -- sie steckt bereits in der Torangabe daneben --
+     und der Rest teilt sich die Breite nach dem, was drinsteht: die
+     Torangabe braucht Platz für "112:11", der Gesamtrang für "25.682". */
+  .topliste th:nth-child(6),.topliste td:nth-child(6){display:none}
+  .topliste th,.topliste td{padding:8px 3px}
+  /* Nur die Überschriften dürfen mitten im Wort umbrechen ("Tore/Spiel").
+     Die Zahlen darunter bleiben in einer Zeile -- aus "9.40" sollen nicht
+     zwei Zeilen "9.4" und "0" werden. */
+  .topliste th{overflow-wrap:anywhere}
+  .topliste td:nth-child(4),.topliste td:nth-child(5),
+  .topliste td:nth-child(7),.topliste td:nth-child(8){white-space:nowrap;
+    overflow-wrap:normal}
+  .topliste th:nth-child(1),.topliste td:nth-child(1){width:10%}
+  .topliste th:nth-child(2),.topliste td:nth-child(2){width:21%}
+  .topliste th:nth-child(3),.topliste td:nth-child(3){width:16%}
+  .topliste th:nth-child(4),.topliste td:nth-child(4){width:7%}
+  .topliste th:nth-child(5),.topliste td:nth-child(5){width:16%}
+  .topliste th:nth-child(7),.topliste td:nth-child(7){width:15%}
+  .topliste th:nth-child(8),.topliste td:nth-child(8){width:15%;font-size:11px}
   td:nth-child(2),td:nth-child(3){overflow-wrap:break-word;hyphens:auto}
   td.rank{width:11%}
   .league{font-size:11px}
@@ -671,15 +693,19 @@ function zeigeSport(sport, d, params){
       <h2>${karte.icon} ${esc(karte.titel)} — ${feld.length < 100
           ? `alle ${tausend(feld.length)}` : 'Top 100'}</h2>
       <p class="unter">${esc(karte.erklaerung)}</p>
-      <div class="tablewrap"><table>
+      <div class="tablewrap"><table class="topliste">
         <thead><tr><th>#</th><th>Verein</th><th>Liga</th>
-          <th>Sp</th><th>${esc(karte.spalte)}</th><th>Rang gesamt</th></tr></thead>
+          <th>Sp</th><th title="Geschossene Tore : Gegentore">Tore</th>
+          <th title="Tordifferenz">Diff</th>
+          <th>${esc(karte.spalte)}</th><th>Rang gesamt</th></tr></thead>
         <tbody>${feld.map((r, i) => `<tr class="t${r.tier}">
           <td class="rank">${i + 1}</td>
           <td><div class="club"><span title="${esc(r.name)}">${esc(r.name)}</span></div></td>
           <td><span class="tier t${r.tier}-fg">${r.tier}</span>
               <span class="league" title="${esc(r.league)}">${esc(r.league)}</span></td>
           <td>${r.played}</td>
+          <td>${r.goalsFor}:${r.goalsAgainst}</td>
+          <td>${r.goalDiff > 0 ? '+' : ''}${r.goalDiff}</td>
           <td><b>${WERT[karte.key](r)}</b></td>
           <td>${tausend(r.rank)}</td></tr>`).join('')}</tbody>
       </table></div>`;
