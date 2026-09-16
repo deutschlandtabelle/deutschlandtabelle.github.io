@@ -4,15 +4,19 @@ staffel_id,verband,gebiet,ligastufe,spielklasse,staffel,mannschaften,spiele_gesa
 55749,Bundesligen,Bundesligen,2,2. Bundesliga (ProA),2. DBBL Süd,12,0,0,0,ASC Theresianum Mainz,0,basketball-bund.net
 52539,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,12,0,0,0,BBU'01,0,basketball-bund.net
 54586,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),12,0,0,0,BC Langendreer,0,basketball-bund.net
+52860,Regionalliga Südwest,Regionalliga Südwest,4,1. Regionalliga,Regionalliga Damen Nord,12,4,495,8,MJC Trier,2,basketball-bund.net
+54821,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen Nord,8,0,0,0,BG Harburg-Hittfeld,0,basketball-bund.net
 54823,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,9,0,0,0,BG '89 Rotenburg/Scheeßel 2,0,basketball-bund.net
 53325,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,11,0,0,0,Basket Ladies Kurpfalz 2,0,basketball-bund.net
 53324,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,12,0,0,0,BBC Stuttgart,0,basketball-bund.net
+52533,Bayern,Bayern,6,Bayernliga,Bayernliga Nord Damen (ByLND),10,0,0,0,DJK Neustadt a. d. Waldnaab,0,basketball-bund.net
 55054,Berlin,Berlin,6,Oberliga,Damen Oberliga,10,0,0,0,BASS Berlin 2,0,basketball-bund.net
 55208,Brandenburg,Brandenburg,6,Oberliga,Oberliga Damen,5,0,0,0,BBC Cottbus,0,basketball-bund.net
 53471,Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),10,0,0,0,Altonaer TSV von 1899 (1),0,basketball-bund.net
-54627,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),9,1,98,2,TSG Sulzbach 1,2,basketball-bund.net
-54138,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,8,0,0,0,ASC 46 Göttingen II,0,basketball-bund.net
+54627,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),9,5,628,10,BC Marburg 3,2,basketball-bund.net
+54138,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,8,1,94,2,MTV/BG Wolfenbüttel II,2,basketball-bund.net
 54139,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,7,0,0,0,BBC Osnabrück II,0,basketball-bund.net
+52953,Rheinland-Pfalz,Rheinland-Pfalz,6,Oberliga,Oberliga Rheinland-Pfalz/Saar Damen,10,3,387,6,Sportfreunde Neustadt/Wied,2,basketball-bund.net
 52792,Sachsen,Sachsen,6,Oberliga,Oberliga Damen Sachsen,6,0,0,0,BBV Leipzig Eagles,0,basketball-bund.net
 53239,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Damen (53239),6,0,0,0,BBC Halle,0,basketball-bund.net
 53845,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,8,0,0,0,BBC Rendsburg,0,basketball-bund.net
@@ -23,23 +27,24 @@ staffel_id,verband,gebiet,ligastufe,spielklasse,staffel,mannschaften,spiele_gesa
 55056,Berlin,Berlin,7,Landesliga,Damen Landesliga B,10,0,0,0,ALBA Berlin 4,0,basketball-bund.net
 55206,Brandenburg,Brandenburg,7,Landesliga,Landesliga Damen,4,0,0,0,KINGS&QUEENS Basketball Potsdam e.V.,0,basketball-bund.net
 53481,Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,9,0,0,0,Altonaer TSV e. V. (2),0,basketball-bund.net
-54641,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,9,3,331,6,TV Gladenbach 1,2,basketball-bund.net
-54642,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,8,2,148,4,TG  Hanau 1,2,basketball-bund.net
-54145,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,7,0,0,0,ASC 46 Göttingen III,0,basketball-bund.net
+54641,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,9,7,771,14,TSV Grünberg 2,4,basketball-bund.net
+54642,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,8,3,234,6,TG  Hanau 1,2,basketball-bund.net
+54145,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,7,1,56,2,SC Osterwieck,2,basketball-bund.net
 54144,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,8,0,0,0,1. BC Bremerhaven,0,basketball-bund.net
-54206,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,8,0,0,0,BG '89 Rotenburg/Scheeßel wU18,0,basketball-bund.net
-54528,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,7,0,0,0,BG Godshorn-Langenhagen,0,basketball-bund.net
-53664,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),9,0,0,0,(spielfrei),0,basketball-bund.net
+54206,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,8,1,133,2,TV Meppen,2,basketball-bund.net
+54528,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,7,2,211,4,TKW Nienburg Ravens,2,basketball-bund.net
+53664,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),9,1,114,2,SC Melle,2,basketball-bund.net
 54758,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen OL/OF,5,0,0,0,Bürgerfelder TB III,0,basketball-bund.net
 54709,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Göttingen Damen,4,0,0,0,ASC 46 Göttingen IV,0,basketball-bund.net
 54167,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,6,0,0,0,BG Bierden-Bassen-Achim,0,basketball-bund.net
 54589,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),11,0,0,0,BTV Basketball Brühl,0,basketball-bund.net
-54591,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),10,0,0,0,ART Düsseldorf 2,0,basketball-bund.net
+54591,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),10,1,87,2,TV Grafenberg,2,basketball-bund.net
 54595,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),11,0,0,0,BBA Hagen,0,basketball-bund.net
 54596,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),11,0,0,0,1. AFC Bielefeld Bulldogs,0,basketball-bund.net
-54383,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe B,4,0,0,0,ASC Theresianum  Mainz 3,0,basketball-bund.net
-52846,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,7,0,0,0,BBC Linz,0,basketball-bund.net
-54619,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,6,0,0,0,ATSV Saarbrücken II,0,basketball-bund.net
+54382,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe A,6,3,320,6,SG Towers  Speyer / Schifferstadt,2,basketball-bund.net
+54383,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe B,4,1,83,2,DJK Nieder-Olm 3,2,basketball-bund.net
+52846,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,7,2,178,4,TVG Baskets Trier,2,basketball-bund.net
+54619,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,6,1,63,2,TV St. Ingbert,2,basketball-bund.net
 53847,Schleswig-Holstein,Schleswig-Holstein,7,Landesliga,DLL,4,0,0,0,Kieler TB 2,0,basketball-bund.net
 52803,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen,2,0,0,0,2. BLDA,0,basketball-bund.net
 53875,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,9,0,0,0,ESV Staffelsee 2,0,basketball-bund.net
@@ -55,14 +60,16 @@ staffel_id,verband,gebiet,ligastufe,spielklasse,staffel,mannschaften,spiele_gesa
 55057,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,12,0,0,0,BASS Berlin 3,0,basketball-bund.net
 53487,Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga Ost,6,0,0,0,Bramfelder SV von 1945 (3),0,basketball-bund.net
 53488,Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga West,6,0,0,0,BG Harburg-Hittfeld (3),0,basketball-bund.net
-54658,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,9,2,94,4,BC Marburg 5,2,basketball-bund.net
-55953,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),9,4,414,8,TGS Seligenstadt 1,2,basketball-bund.net
-52919,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),9,3,279,6,TG Hochheim 2,2,basketball-bund.net
+54658,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,9,4,348,8,TV Gladenbach 2,2,basketball-bund.net
+55953,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),9,7,634,13,BC Gelnhausen 1,4,basketball-bund.net
+52919,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),9,5,482,10,TG Hochheim 2,2,basketball-bund.net
 54597,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),7,0,0,0,"1. BBC Düren ""The Wizards""",0,basketball-bund.net
 54599,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),11,0,0,0,ART Düsseldorf 3,0,basketball-bund.net
-54600,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),11,0,0,0,BC Pesch,0,basketball-bund.net
+54600,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),11,2,160,4,TV Dellbrück,2,basketball-bund.net
 54601,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),10,0,0,0,Barmer TV 2,0,basketball-bund.net
 54602,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),8,0,0,0,BG Kamp-Lintfort 2,0,basketball-bund.net
+54603,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 6 Damen (BeL06D),11,0,0,0,BSV Wulfen 2,0,basketball-bund.net
+54608,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 7 Damen (BeL07D),12,1,79,2,LippeBaskets Werne  2,2,basketball-bund.net
 54625,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),7,0,0,0,Gütersloher TV 3,0,basketball-bund.net
 54956,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,9,0,0,0,ATSV Freiberg,0,basketball-bund.net
 53853,Schleswig-Holstein,Schleswig-Holstein,9,Bezirksliga,DBL,5,0,0,0,Kieler TB 3,0,basketball-bund.net
@@ -73,6 +80,6 @@ staffel_id,verband,gebiet,ligastufe,spielklasse,staffel,mannschaften,spiele_gesa
 55008,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,9,0,0,0,DJK Landsberg 2,0,basketball-bund.net
 53720,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Damen,6,0,0,0,Artio Nürnberg 2,0,basketball-bund.net
 52933,Hessen,Hessen,11,Kreisliga,Damen Kreisliga,6,1,93,2,TV Dieburg,2,basketball-bund.net
-55956,Hessen,Hessen,11,Kreisliga A,Kreisliga A Damen,5,1,74,2,TSG Oberursel 2,2,basketball-bund.net
+55956,Hessen,Hessen,11,Kreisliga A,Kreisliga A Damen,5,3,179,5,TSG Oberursel 2,4,basketball-bund.net
 55527,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,9,0,0,0,ETB Miners Essen 5,0,basketball-bund.net
-56554,Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,6,4,581,8,Witten Baskets (2RLH),4,basketball-bund.net
+56554,Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,5,4,581,8,Witten Baskets (2RLH),4,basketball-bund.net

@@ -33,580 +33,648 @@ rang_bundesweit,verein,verband,gebiet,ligastufe,spielklasse,staffel,staffel_id,p
 32,VIMODROM Baskets Jena,Bundesligen,Bundesligen,2,2. Bundesliga (ProA),2. DBBL Süd,55749,12,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
 33,VfL VIACTIV-AstroLadies Bochum,Bundesligen,Bundesligen,2,2. Bundesliga (ProA),2. DBBL Nord,55746,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
 34,WINGS Leverkusen,Bundesligen,Bundesligen,2,2. Bundesliga (ProA),2. DBBL Nord,55746,12,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-35,BBU'01,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-36,BC Langendreer,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-37,Basket Ladies Kurpfalz,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-38,Citybasket Recklinghausen,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-39,DJK Frankenberg,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-40,DTV Basketball Köln,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-41,Hürther BC,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-42,MTV Stuttgart 2,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-43,New Basket Oberhausen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-44,SV Möhringen 1887,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-45,SV03 Tigers Tübingen,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-46,TS Durlach,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-47,TSG Schwäbisch Hall Flyers,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-48,TSV Hagen,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-49,TSV Malmsheim,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-50,TSVE 1890 Bielefeld,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-51,TV Gerthe,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-52,Talents BonnRhöndorf 2,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-53,USC Freiburg 3,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-54,USC Heidelberg 2,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-55,VfL AstroStars Bochum 2,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-56,VfL Kirchheim Knights,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-57,WINGS Leverkusen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,12,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-58,pkf Titans,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,12,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-59,BG '89 Rotenburg/Scheeßel 2,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-60,Bürgerfelder TB Royal Ladies,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-61,Eintracht Braunschweig 2,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-62,Hanover Basketball Dragons,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-63,MTV/BG Wolfenbüttel,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-64,Osnabrücker SC 2,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-65,TK Hannover 2,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-66,TSV Quakenbrück,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-67,TV Vörden,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-68,TSG Sulzbach 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,1,1,1,0,0,50,48,2,2,2.0,,basketball-bund.net
-69,ASC 46 Göttingen II,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-70,Altonaer TSV von 1899 (1),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-71,BASS Berlin 2,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-72,BBC Cottbus,Brandenburg,Brandenburg,6,Oberliga,Oberliga Damen,55208,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-73,BBC Halle,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Damen (53239),53239,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-74,BBC Osnabrück II,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-75,BBC Rendsburg,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-76,BBC Stuttgart,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-77,BBU '01 Ulm 2,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-78,BBV Leipzig Eagles,Sachsen,Sachsen,6,Oberliga,Oberliga Damen Sachsen,52792,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-79,BC Erfurt,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-80,BC Wiesbaden 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-81,BG Darmstadt-Roßdorf 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-82,BG Hamburg-West (2),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-83,BG Harburg-Hittfeld (2),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-84,BG Zehlendorf 2,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-85,BG Zehlendorf 3,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-86,BSG Basket Ludwigsburg,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-87,BSG Kisdorf Kaltenkirchen,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-88,BSW Sixers,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Damen (53239),53239,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-89,BTS Neustadt,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-90,Basket Ladies Kurpfalz 2,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-91,Basketballclub Zwickau,Sachsen,Sachsen,6,Oberliga,Oberliga Damen Sachsen,52792,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-92,ChemCats Chemnitz 2.,Sachsen,Sachsen,6,Oberliga,Oberliga Damen Sachsen,52792,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-93,Culture City Weimar,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-94,DBV Charlottenburg 2,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-95,DJK Rabbits Eppelheim,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-96,Eimsbütteler Turnverband (3),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-97,Einheit Pankow 1,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-98,Eintracht Braunschweig III,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-99,FC St. Pauli von 1910 e.V. (1),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-100,FREIBEUTER 2010 1,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-101,Grizzlies SSC Karlsruhe,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-102,Hagener SV,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-103,Hamburg Towers e.V. (2),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-104,Itzehoe Eagles 2,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-105,Justabs Halle,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Damen (53239),53239,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-106,KINGS&QUEENS Basketball Potsdam 2,Brandenburg,Brandenburg,6,Oberliga,Oberliga Damen,55208,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-107,KSG Gerlingen,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-108,Kieler Förde Baskets,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-109,LADYSKUNKS Herdern,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-110,LSV Ladenburg,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-111,Ladybaskets Jena II,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-112,Ladybaskets Jena e.V.,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-113,Leipzig Lakers,Sachsen,Sachsen,6,Oberliga,Oberliga Damen Sachsen,52792,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-114,Lokomotive TS Göppingen,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-115,Lübecker TS,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-116,MTSV Hohenwestedt,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-117,MTV Stuttgart 3,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-118,MTV Treubund Lüneburg (1),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-119,MTV/BG Wolfenbüttel II,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-120,Osnabrücker SC III,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-121,Osnabrücker TB,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-122,PS Karlsruhe LIONS,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-123,Paradise City (Platzhalter),Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-124,Pfeffersport 1,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-125,RedHawks Potsdam,Brandenburg,Brandenburg,6,Oberliga,Oberliga Damen,55208,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-126,SB Heidenheim,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-127,SC Osterwieck,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Damen (53239),53239,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-128,SC Rist Wedel (2),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-129,SC Rist Wedel (3),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-130,SC Weende,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-131,SSV Lok Bernau 2,Brandenburg,Brandenburg,6,Oberliga,Oberliga Damen,55208,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-132,SV Concordia Belm-Powe,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-133,SV Möhringen 2,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-134,Schapen Sharks,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-135,Science City Jena,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-136,Science City Jena II,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-137,Steinenbronn Beasts,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-138,TG Hochheim 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-139,TG Sandhausen Wild Bees,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-140,TK Hannover 3,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-141,TS Durlach 2,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-142,TSB Flensburg,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-143,TSG Bruchsal,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-144,TSG Markkleeberg v.1903,Sachsen,Sachsen,6,Oberliga,Oberliga Damen Sachsen,52792,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-145,TSV Ettlingen,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-146,TSV Malmsheim 2,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-147,TV Babenhausen 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-148,TV Groß-Gerau 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-149,TV Heppenheim 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-150,TV Jahn Wolfsburg Honeybadgers,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-151,TV Konstanz,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-152,TV Langen 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-153,TV Sinsheim,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-154,TuS Bad Essen,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-155,TuS Neukölln 2,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-156,TuS Nortorf,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-157,USV Braunschweig,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-158,USV Halle I,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Damen (53239),53239,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-159,USV Halle II,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Damen (53239),53239,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-160,USV Jena,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-161,USV TU Dresden,Sachsen,Sachsen,6,Oberliga,Oberliga Damen Sachsen,52792,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-162,Vgg. Adler 1912 1,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-163,WSG Fürstenwalde,Brandenburg,Brandenburg,6,Oberliga,Oberliga Damen,55208,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-164,Walddörfer Sportverein (1),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-165,Weddinger Wiesel 2,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-166,vamos! TSG Söflingen,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,12,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-167,BC Marburg 3,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,9,1,0,0,1,48,50,-2,0,0.0,,basketball-bund.net
-168,TV Gladenbach 1,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,1,1,1,0,0,72,34,38,2,2.0,,basketball-bund.net
-169,ACT Kassel 1,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,2,1,1,0,0,76,41,35,2,2.0,,basketball-bund.net
-170,TG  Hanau 1,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,1,1,1,0,0,54,25,29,2,2.0,,basketball-bund.net
-171,TSV Grünberg 2,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,3,1,1,0,0,68,40,28,2,2.0,,basketball-bund.net
-172,BG Rüsselsheim-Taunusstein 1,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,2,1,1,0,0,39,30,9,2,2.0,,basketball-bund.net
-173,(spielfrei),Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-174,1. AFC Bielefeld Bulldogs,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-175,1. BC Bremerhaven,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-176,ALBA Berlin 3,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-177,ALBA Berlin 4,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-178,ART Düsseldorf 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-179,ASC 46 Göttingen III,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-180,ASC 46 Göttingen IV,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Göttingen Damen,54709,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-181,ASC Theresianum  Mainz 3,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe B,54383,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-182,ATSV Saarbrücken II,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,54619,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-183,Altonaer TSV e. V. (2),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-184,BASS Südwest 1,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-185,BASS Südwest 2,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-186,BBA Hagen,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-187,BBC 90 Köpenick 1,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-188,BBC Linz,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-189,BBC Osnabrück III,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-190,BBC Osnabrück U20,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-191,BBC Stuttgart 2,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-192,BC Langendreer 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-193,BC Leopoldshöhe,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-194,BC Lions Moabit 1,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-195,BC Marburg 4,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-196,BC Neu-Isenburg 1,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-197,BC Soest,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-198,BC-VSK Osterholz-Scharmbeck,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-199,BG '89 Rotenburg/Scheeßel wU18,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-200,BG 74 Göttingen II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-201,BG 74 Göttingen III,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Göttingen Damen,54709,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-202,BG Bierden-Bassen-Achim,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,54167,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-203,BG Godshorn-Langenhagen,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-204,BG Halstenbek / Pinneberg (1),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-205,BG Hamburg-West (3),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-206,BG Shots Kaarst-Büttgen,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-207,BG TVO / TV Jahn,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-208,BG Tamm/Bietigheim,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-209,BSG Basket Ludwigsburg 2,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-210,BSG Südheide,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,54167,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-211,BTS Neustadt,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,54167,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-212,BTS Neustadt II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-213,BTV Basketball Brühl,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-214,Barmer TV,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-215,Basket Dragons Marzahn 1,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-216,Basket Duisburg,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-217,Basketball Lesum Vegesack,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-218,Berliner SC 1,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-219,Bonner SV Roleber,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-220,Bramfelder SV von 1945 (2),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-221,Bremen 1860,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-222,Bremen 1860 I,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,54167,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-223,Bürgerfelder TB II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-224,Bürgerfelder TB III,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen OL/OF,54758,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-225,CVJM Kassel 1,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-226,Capitol Bascats Düsseldorf 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-227,DBV Charlottenburg 3,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-228,DJK Frankenberg 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-229,DJK Köln-Nord,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-230,DJK Nieder-Olm 3,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe B,54383,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-231,DJK Südwest Köln 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-232,DTV Basketball Köln 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-233,ESV Rot-Weiß Stuttgart,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-234,ETuS Trier,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-235,Eimsbütteler Turnverband e. V. (4),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-236,Eintracht Hildesheim,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-237,FREIBEUTER 2010 2,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-238,Friedenauer TSC 1,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-239,Girls Academy Rhein-Lahn 2,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-240,Gütersloher TV 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-241,HTG Bad Homburg 3,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-242,Hagener SV II,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-243,Hanover Basketball Dragons II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-244,Hardegsen Baskets 07,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Göttingen Damen,54709,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-245,Heeßeler SV,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-246,Hürther BC 3,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-247,Jade Giants,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen OL/OF,54758,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-248,KINGS&QUEENS Basketball Potsdam e.V.,Brandenburg,Brandenburg,7,Landesliga,Landesliga Damen,55206,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-249,Kieler TB 2,Schleswig-Holstein,Schleswig-Holstein,7,Landesliga,DLL,53847,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-250,Linden Dudes,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-251,Linden Dudes 2,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-252,LippeBaskets Werne,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-253,Lübecker TS 2,Schleswig-Holstein,Schleswig-Holstein,7,Landesliga,DLL,53847,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-254,MTV Aurich,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen OL/OF,54758,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-255,MTV Treubund Lüneburg (2),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-256,MTV/BG Wolfenbüttel III,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-257,Mitte SuperSonics 1,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-258,NBC Baskets Nordhorn,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-259,Oldenburger TB 2,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-260,Osnabrücker SC IV,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-261,Panthers Villingen-Schwenningen,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-262,RSV Eintracht 1,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-263,Red Eagles Rathenow,Brandenburg,Brandenburg,7,Landesliga,Landesliga Damen,55206,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-264,RheinStars Köln,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-265,Ruhrpott Baskets Herne,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-266,SC G-W Paderborn 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-267,SC Melle,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-268,SC Osterwieck,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-269,SC Ottensen (1),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-270,SC Riedberg 1,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-271,SC Weende III,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Göttingen Damen,54709,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-272,SC Weende-Göttingen II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-273,SE Gevelsberg,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-274,SF Oesede,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-275,SG Bergische Löwen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-276,SG Bramsche,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-277,SG Braunschweig,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-278,SG Rot-Weiß Gierath,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-279,SSG Lutzerather Höhe,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-280,SSV Intercor 1,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-281,SSV Lok Bernau 3,Brandenburg,Brandenburg,7,Landesliga,Landesliga Damen,55206,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-282,SV 03 Tigers Tübingen 2,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-283,SV Concordia Belm-Powe II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-284,SV Empor Berlin 1,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-285,SV Leonardo da Vinci Nauen,Brandenburg,Brandenburg,7,Landesliga,Landesliga Damen,55206,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-286,SV Möhringen 3,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-287,SV Oberelchingen,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-288,SV Treysa Red Caps 1,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-289,Schaffhausen Sixers,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,54619,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-290,Sportfreunde Neustadt/Wied 2,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-291,TG 1846 Worms,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe B,54383,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-292,TG Neuss 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-293,TK Hannover 4,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-294,TKW Nienburg Ravens,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-295,TSC E. Dortmund,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-296,TSG Bergedorf von 1860 (1),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-297,TSG Giengen,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-298,TSG Reutlingen Ravens,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-299,TSV Hagen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-300,TSV Lamstedt,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-301,TSV Luthe,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-302,TSV Luthe 2,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-303,TSV Malmsheim 3,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-304,TSV Quakenbrück II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-305,TSV Vorhalle,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-306,TV Bergkrug,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-307,TV Bitburg,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-308,TV Blatzheim,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-309,TV Derendingen,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-310,TV Dortmund Mengede,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-311,TV Falkenberg e.V.,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,54167,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-312,TV Gerthe 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-313,TV Grafenberg,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-314,TV Illingen I,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,54619,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-315,TV Illingen II,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,54619,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-316,TV Marbach,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-317,TV Meppen,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-318,TV St. Ingbert,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,54619,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-319,TVE Dortmund Barop 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-320,TVG Baskets Trier,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-321,TVG Kaiserau,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-322,Talents BonnRhöndorf 4,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-323,TuRa Harksheide (1),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-324,TuS Brauweiler,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-325,TuS Eintracht Rulle (ab Rückrunde!),Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-326,TuS Herrensohr II,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,54619,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-327,TuS Neukölln 3,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-328,TuS Nortorf 2,Schleswig-Holstein,Schleswig-Holstein,7,Landesliga,DLL,53847,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-329,TuS Zetel,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen OL/OF,54758,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-330,TuS Zülpich,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-331,Türkiyemspor Berlin 2,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-332,Türkiyemspor Berlin 3,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-333,UBC Münster 3,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-334,VfB Hermsdorf 1,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-335,VfL Astrostars Bochum 5,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-336,VfL Bad Kreuznach,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe B,54383,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-337,VfL Bensheim 1,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-338,VfL Edewecht Wattworms,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen OL/OF,54758,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-339,VfL Kirchheim Knights 2,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-340,VfL Lichtenrade 1,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-341,VfL Oldesloe,Schleswig-Holstein,Schleswig-Holstein,7,Landesliga,DLL,53847,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-342,VfL Stade,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,54167,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-343,WINGS Leverkusen 3,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-344,Witten Baskets,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-345,Zuffenhausen 89er,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-346,vamos! TSG Söflingen 2,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-347,TSV Dreieichenhain 2,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,7,1,0,0,1,30,39,-9,0,0.0,,basketball-bund.net
-348,TSG Wieseck 1,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,7,1,0,0,1,40,68,-28,0,0.0,,basketball-bund.net
-349,Eintracht Frankfurt 2,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,8,1,0,0,1,25,54,-29,0,0.0,,basketball-bund.net
-350,FT Fulda 1,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,8,1,0,0,1,41,76,-35,0,0.0,,basketball-bund.net
-351,TSV Krofdorf/Gleiberg 2,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,9,1,0,0,1,34,72,-38,0,0.0,,basketball-bund.net
-352,2. BLDA,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen,52803,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-353,2. BLDB,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen,52803,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-354,DJK Eichstätt,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Nord 25/26,54455,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-355,DJK Eichstätt,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-356,DJK Münsterschwarzach,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-357,ESV Staffelsee 2,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-358,Gerbrunn Grizzlies,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-359,München Basket 2,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-360,SG Oerlenbach/Ebenh.,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-361,SSV Schrobenhausen,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Nord 25/26,54455,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-362,SSV Schrobenhausen,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-363,SV Erlenbach Black Bees,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-364,SV Mammendorf,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-365,TB Arnstein Black Scorpions,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-366,TG 1848 Schweinfurt,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-367,TG 48 Würzburg 4,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-368,TSV 1880 Wasserburg 3,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-369,TSV Etting-Ingolstadt,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Nord 25/26,54455,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-370,TSV Gersthofen,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Süd 25/26,54456,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-371,TSV Gersthofen,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-372,TSV Grombühl 2,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-373,TSV Haunstetten,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Süd 25/26,54456,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-374,TSV Haunstetten,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-375,TSV Jahn Freising,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-376,TSV München Ost 2,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-377,TSV Neuötting,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-378,TSV Nördlingen 2,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Nord 25/26,54455,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-379,TSV Ottobeuren,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Süd 25/26,54456,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-380,TSV Ottobeuren,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-381,TSV Schwaben Augsburg 2,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-382,TSV Schwaben Augsburg 3,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Süd 25/26,54456,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-383,TSV Vaterstetten,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-384,TV Augsburg 3,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Süd 25/26,54456,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-385,TV Augsburg 3,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-386,TV Marktheidenfeld 2,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-387,TV Memmingen,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-388,TuS Bad Aibling Fireballs,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-389,TG Hochheim 2,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,1,1,1,0,0,77,9,68,2,2.0,,basketball-bund.net
-390,TGS Seligenstadt 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,1,1,1,0,0,55,29,26,2,2.0,,basketball-bund.net
-391,TV Hofheim 2,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,2,1,1,0,0,80,55,25,2,2.0,,basketball-bund.net
-392,BC Marburg 5,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,1,1,1,0,0,20,0,20,2,2.0,,basketball-bund.net
-393,BC Wiesbaden 2,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,2,1,1,0,0,65,46,19,2,2.0,,basketball-bund.net
-394,SC Bergstraße 1,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,3,1,1,0,0,49,33,16,2,2.0,,basketball-bund.net
-395,BC Gelnhausen 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,3,1,1,0,0,64,51,13,2,2.0,,basketball-bund.net
-396,HTG Bad Homburg 4,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,4,1,1,0,0,45,35,10,2,2.0,,basketball-bund.net
-397,CVJM Kassel 2,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,2,1,1,0,0,42,32,10,2,2.0,,basketball-bund.net
-398,"1. BBC Düren ""The Wizards""",Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-399,1. FC Baunach,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-400,AK Tigers München,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-401,ART Düsseldorf 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-402,ART Düsseldorf 4,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-403,ASG Elsdorf,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-404,ATS Kulmbach,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-405,ATSV Freiberg,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-406,Aalener Sportallianz,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-407,BAC Hockenheim,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW1 Bezirksliga Frauen,52664,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-408,BASS Berlin 3,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-409,BBC Bayreuth,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-410,BBC Coburg,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-411,BC ASKA 1,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-412,BC Hellenen München 2,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-413,BC Lichterfelde 1,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-414,BC Lions Moabit 2,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-415,BC Pesch,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-416,BG Aachen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-417,BG Darmstadt-Roßdorf 2,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-418,BG Harburg-Hittfeld (3),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga West,53488,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-419,BG Kamp-Lintfort 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-420,BG Litzendorf 2,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-421,BG Litzendorf 3,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-422,BG Niederrhein 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-423,BG Remseck,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-424,BG Tamm/Bietigheim 2,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-425,BSG Vaihingen-Sachsenheim,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-426,BV Hellas Esslingen,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-427,Backnanger Cool Blues,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-428,Barmer TV 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-429,Bischberg Baskets,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-430,Bramfelder SV von 1945 (3),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga Ost,53487,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-431,CITY Basket Berlin 3,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-432,Capitol Bascats Düsseldorf 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-433,Capitol Bascats Düsseldorf 4,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-434,CroBaskets Essen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-435,DJK Adler Frintrop 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-436,DJK Don Bosco Bamberg 2,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-437,DJK Don Bosco Bamberg 3,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-438,DJK Frankenberg 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-439,DJK Köln-Nord 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-440,DJK Südwest Köln 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-441,DJK Südwest Köln 4,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-442,DJK Südwest Köln 5,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-443,DTV Basketball Köln 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-444,DTV Basketball Köln 4,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-445,Dresden Urbanics,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-446,ETB Miners Essen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-447,Elmshorner MTV (1),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga West,53488,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-448,FC Bad. St. Ilgen,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW1 Bezirksliga Frauen,52664,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-449,FC St. Pauli von 1910 e.V. (2),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga West,53488,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-450,Friedenauer TSC 2,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-451,GSV Porz,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-452,Gütersloher TV 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-453,Haarener TE,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-454,Hamburger SV (1),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga Ost,53487,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-455,Hamburger Turnerbund von 1862 (1),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga Ost,53487,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-456,Herner TC 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-457,Hülser SV,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-458,Kieler TB 3,Schleswig-Holstein,Schleswig-Holstein,9,Bezirksliga,DBL,53853,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-459,LSV Ladenburg 2,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW1 Bezirksliga Frauen,52664,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-460,Leipzig Lakers 4,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-461,Leipzig Lakers 5,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-462,München Basket 3,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-463,Niendorfer TSV von 1919 (1),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga West,53488,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-464,Osterather TV,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-465,Regnitztal Baskets,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-466,RheinStars Köln 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-467,Roter Stern Leipzig,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-468,Ruhrbaskets Oberhausen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-469,Ruhrpott Baskets Herne 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-470,SC Alstertal-Langenhorn (3),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga Ost,53487,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-471,SC Fast-Break Leverkusen,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-472,SC G-W Paderborn 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-473,SC Janus,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-474,SC Kemmern 2,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-475,SC Rist Wedel (4),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga West,53488,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-476,SG Adelsberg 2,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-477,SG Herzogenrath/Baesweiler,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-478,SG Langenfeld,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-479,SG Wallau/Laasphe 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-480,SV 1860 Minden,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-481,SV Bad Tölz,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-482,SV Darmstadt 98 1,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-483,SV Germering,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-484,SV Neukölln 09 1,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-485,SV Polizei Hamburg (1),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga West,53488,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-486,Science City Jena 3,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-487,SpVg Odenkirchen,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-488,Sportclub Krefeld 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-489,Südwest Baskets Wuppertal,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-490,Südwest Baskets Wuppertal 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-491,TG Neuss 4,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-492,TS Klein-Krotzenburg,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-493,TSB Flensburg 2,Schleswig-Holstein,Schleswig-Holstein,9,Bezirksliga,DBL,53853,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-494,TSB Schwäbisch Gmünd,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-495,TSC Spandau 1,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-496,TSG Bergedorf von 1860 (2),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga Ost,53487,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-497,TSG Markkleeberg 2,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-498,TSG Schwäbisch Hall 2,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-499,TSG Wiesloch 1,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW1 Bezirksliga Frauen,52664,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-500,TSV 1865 Dachau,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-501,TSV 1884 Wolnzach,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-502,TSV Bargteheide,Schleswig-Holstein,Schleswig-Holstein,9,Bezirksliga,DBL,53853,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-503,TSV Ebermannstadt,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-504,TSV Heumaden,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-505,TSV Klausdorf,Schleswig-Holstein,Schleswig-Holstein,9,Bezirksliga,DBL,53853,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-506,TSV Klein-Linden 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-507,TSV Ludwigsstadt,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-508,TSV München Ost 3,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-509,TSV Urdenbach,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-510,TSV Weilheim,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-511,TSV Wieblingen 2,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW1 Bezirksliga Frauen,52664,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-512,TSVE 1890 Bielefeld 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-513,TV Bad Hersfeld 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-514,TV Breyell,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-515,TV Dellbrück,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-516,TV Gladenbach 2,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-517,TV Groß-Gerau 2,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-518,TV Jahn Borgholzhausen,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-519,TV Salzkotten,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-520,TV Weismain,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-521,TVJ Königshardt,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-522,TuS Fritzlar 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-523,TuS Lichterfelde 3,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-524,TuS Lübeck,Schleswig-Holstein,Schleswig-Holstein,9,Bezirksliga,DBL,53853,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-525,TuS Zülpich 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-526,USV Halle II,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-527,Velberter SG,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-528,VfL AstroStars Bochum 6,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-529,VfL Heiligkreuzsteinach,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW1 Bezirksliga Frauen,52664,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-530,VfL Merkur Kleve,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-531,VfL Schlangen,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-532,Vgg. Adler 1912 2,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-533,Vgg. Adler 1912 3,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-534,WINGS Leverkusen 4,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-535,Walddörfer Sportverein (2),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga Ost,53487,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-536,Weddinger Wiesel 3,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,12,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-537,TV Hofheim 3,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,6,1,0,0,1,35,45,-10,0,0.0,,basketball-bund.net
-538,ACT Kassel 2,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,8,1,0,0,1,32,42,-10,0,0.0,,basketball-bund.net
-539,TuS Makkabi Frankfurt 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,7,1,0,0,1,51,64,-13,0,0.0,,basketball-bund.net
-540,TSV Gernsheim 1,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,7,1,0,0,1,33,49,-16,0,0.0,,basketball-bund.net
-541,BG Rüsselsheim-Taunusstein 2,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,8,1,0,0,1,46,65,-19,0,0.0,,basketball-bund.net
-542,TSV 1846 Butzbach 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,9,1,0,0,1,0,20,-20,0,0.0,,basketball-bund.net
-543,FTG Frankfurt 2,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,8,1,0,0,1,55,80,-25,0,0.0,,basketball-bund.net
-544,TSG Oberursel 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,9,1,0,0,1,29,55,-26,0,0.0,,basketball-bund.net
-545,TV Groß-Gerau 3,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,9,1,0,0,1,9,77,-68,0,0.0,,basketball-bund.net
-546,AK Tigers München 2,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-547,DJK SB Straubing,Bayern,Bayern,10,Bezirksklasse,Nord - Bezirksklasse Damen 4x4 2026/27,54101,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-548,München Basket 4,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-549,Platzhalter 2,Bayern,Bayern,10,Bezirksklasse,Nord - Bezirksklasse Damen 4x4 2026/27,54101,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-550,SB DJK Rosenheim 2,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-551,SV Saaldorf,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-552,Slama Jama Gröbenzell,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-553,TSV 1898 Penzberg,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-554,TSV Gräfelfing e.V.,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-555,TSV Ismaning,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-556,TSV Jahn Freising 2,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-557,TSV München-Forstenried,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-558,TSV München-Solln,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-559,TV Freyung,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-560,TV von 1895 Markt Schwaben,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-561,TuS 1860 Pfarrkirchen,Bayern,Bayern,10,Bezirksklasse,Nord - Bezirksklasse Damen 4x4 2026/27,54101,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-562,TuS Holzkirchen,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-563,TSG Oberursel 2,Hessen,Hessen,11,Kreisliga A,Kreisliga A Damen,55956,1,1,1,0,0,50,24,26,2,2.0,,basketball-bund.net
-564,TV Dieburg,Hessen,Hessen,11,Kreisliga,Damen Kreisliga,52933,1,1,1,0,0,51,42,9,2,2.0,,basketball-bund.net
-565,ASV Rott am Inn,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-566,Artio Nürnberg 2,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Damen,53720,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-567,BSG Usinger Land,Hessen,Hessen,11,Kreisliga A,Kreisliga A Damen,55956,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-568,DJK Landsberg 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-569,DJK/SCC Pfungstadt 1,Hessen,Hessen,11,Kreisliga,Damen Kreisliga,52933,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-570,Frankonia Baskets Nürnberg,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Damen,53720,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-571,MTV München 3,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-572,Maccabi München,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-573,Platzhalter 1,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-574,Platzhalter 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-575,Platzhalter 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-576,Post SV Nürnberg 3,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Damen,53720,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-577,SC Wörnsmühl,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-578,SG Erlensee / Langenselbold,Hessen,Hessen,11,Kreisliga A,Kreisliga A Damen,55956,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-579,SG Poing,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-580,SKG Gräfenhausen,Hessen,Hessen,11,Kreisliga,Damen Kreisliga,52933,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-581,SV Seeon,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-582,TG Landshut 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-583,TSV 1880 Wasserburg 4,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-584,TSV Ansbach,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Damen,53720,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-585,TSV Trudering Basketball,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-586,TSV Weilheim 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-587,TUSPO Nürnberg 2,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Damen,53720,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-588,TV Fürth 1860 2,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Damen,53720,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-589,TV Heppenheim 2,Hessen,Hessen,11,Kreisliga,Damen Kreisliga,52933,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-590,TuS Bad Aibling Fireballs 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-591,TuS Fürstenfeldbruck 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-592,TuS Makkabi Frankfurt 2,Hessen,Hessen,11,Kreisliga A,Kreisliga A Damen,55956,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-593,Turngenossenschaft 1886 Rimbach 1,Hessen,Hessen,11,Kreisliga,Damen Kreisliga,52933,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-594,WSV Glonn,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-595,BG Darmstadt-Roßdorf 3,Hessen,Hessen,11,Kreisliga,Damen Kreisliga,52933,6,1,0,0,1,42,51,-9,0,0.0,,basketball-bund.net
-596,BC Gelnhausen 2,Hessen,Hessen,11,Kreisliga A,Kreisliga A Damen,55956,5,1,0,0,1,24,50,-26,0,0.0,,basketball-bund.net
-597,Witten Baskets (2RLH),Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,56554,1,2,2,0,0,152,124,28,4,2.0,,basketball-bund.net
-598,SV Haspe 70 (1RLH),Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,56554,2,1,1,0,0,85,76,9,2,2.0,,basketball-bund.net
-599,TVE Dortmund Barop (OLH),Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,56554,3,3,1,0,2,209,211,-2,2,0.67,,basketball-bund.net
-600,ETB Miners Essen 5,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-601,Kettwiger SV 3,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-602,MTG Horst,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-603,Ruhrbaskets Oberhausen 3,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-604,Ruhrbaskets Oberhausen 4,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-605,Ruhrbaskets Oberhausen 5,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-606,TUSEM Essen 3,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-607,TVG Steele,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-608,TuS Iserlohn Kangaroos (2RLH),Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,56554,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-609,Turnerbund Oberhausen,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
-610,Citybasket Recklinghausen (1RLH),Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,56554,5,1,0,0,1,76,85,-9,0,0.0,,basketball-bund.net
-611,TSV Bocholt (LLH),Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,56554,6,1,0,0,1,59,85,-26,0,0.0,,basketball-bund.net
+35,MJC Trier,Regionalliga Südwest,Regionalliga Südwest,4,1. Regionalliga,Regionalliga Damen Nord,52860,1,1,1,0,0,99,39,60,2,2.0,,basketball-bund.net
+36,TSV Krofdorf-Gleiberg,Regionalliga Südwest,Regionalliga Südwest,4,1. Regionalliga,Regionalliga Damen Nord,52860,2,1,1,0,0,78,39,39,2,2.0,,basketball-bund.net
+37,Eintracht Frankfurt,Regionalliga Südwest,Regionalliga Südwest,4,1. Regionalliga,Regionalliga Damen Nord,52860,3,1,1,0,0,65,54,11,2,2.0,,basketball-bund.net
+38,HTG Bad Homburg 2,Regionalliga Südwest,Regionalliga Südwest,4,1. Regionalliga,Regionalliga Damen Nord,52860,4,1,1,0,0,61,60,1,2,2.0,,basketball-bund.net
+39,ATSV Saarbrücken,Regionalliga Südwest,Regionalliga Südwest,4,1. Regionalliga,Regionalliga Damen Nord,52860,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+40,BBU'01,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+41,BC Langendreer,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+42,Basket Ladies Kurpfalz,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+43,Citybasket Recklinghausen,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+44,DJK Frankenberg,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+45,DJK Nieder-Olm,Regionalliga Südwest,Regionalliga Südwest,4,1. Regionalliga,Regionalliga Damen Nord,52860,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+46,DTV Basketball Köln,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+47,Hürther BC,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+48,MTV Stuttgart 2,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+49,New Basket Oberhausen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+50,SV Möhringen 1887,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+51,SV03 Tigers Tübingen,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+52,TS Durlach,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+53,TSG Schwäbisch Hall Flyers,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+54,TSV Dreieichenhain,Regionalliga Südwest,Regionalliga Südwest,4,1. Regionalliga,Regionalliga Damen Nord,52860,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+55,TSV Hagen,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+56,TSV Malmsheim,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+57,TSVE 1890 Bielefeld,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+58,TV Gerthe,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+59,TV Hofheim,Regionalliga Südwest,Regionalliga Südwest,4,1. Regionalliga,Regionalliga Damen Nord,52860,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+60,Talents BonnRhöndorf 2,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+61,USC Freiburg 3,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+62,USC Heidelberg 2,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+63,VfL AstroStars Bochum 2,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+64,VfL Kirchheim Knights,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+65,WINGS Leverkusen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,4,1.Regionalliga,Regionalliga Damen (RLD),54586,12,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+66,pkf Titans,Baden-Württemberg,Baden-Württemberg,4,1. Regionalliga,Regionalliga Baden-Württemberg Frauen,52539,12,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+67,BC Marburg 2,Regionalliga Südwest,Regionalliga Südwest,4,1. Regionalliga,Regionalliga Damen Nord,52860,9,1,0,0,1,60,61,-1,0,0.0,,basketball-bund.net
+68,FTG Frankfurt,Regionalliga Südwest,Regionalliga Südwest,4,1. Regionalliga,Regionalliga Damen Nord,52860,10,1,0,0,1,54,65,-11,0,0.0,,basketball-bund.net
+69,SG Saarlouis-Roden/Dillingen,Regionalliga Südwest,Regionalliga Südwest,4,1. Regionalliga,Regionalliga Damen Nord,52860,11,1,0,0,1,39,78,-39,0,0.0,,basketball-bund.net
+70,ASC Theresianum Mainz 2,Regionalliga Südwest,Regionalliga Südwest,4,1. Regionalliga,Regionalliga Damen Nord,52860,12,1,0,0,1,39,99,-60,0,0.0,,basketball-bund.net
+71,BG '89 Rotenburg/Scheeßel 2,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+72,BG Harburg-Hittfeld,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen Nord,54821,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+73,Bramfelder SV,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen Nord,54821,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+74,Bürgerfelder TB Royal Ladies,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+75,Eimsbütteler TV 2,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen Nord,54821,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+76,Eintracht Braunschweig 2,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+77,Hanover Basketball Dragons,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+78,Itzehoe Eagles,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen Nord,54821,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+79,Kieler TB,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen Nord,54821,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+80,MTV/BG Wolfenbüttel,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+81,Osnabrücker SC 2,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+82,SC Alstertal-Langenhorn 2,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen Nord,54821,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+83,SV St. Georg,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen Nord,54821,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+84,TK Hannover 2,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+85,TSV Quakenbrück,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+86,TV Vörden,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen West,54823,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+87,VfL Stade,Regionalliga Nord,Regionalliga Nord,5,2.Regionalliga,2. Regionalliga Damen Nord,54821,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+88,TG Hochheim 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,2,1,1,0,0,90,51,39,2,2.0,,basketball-bund.net
+89,TV Groß-Gerau 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,3,1,1,0,0,87,58,29,2,2.0,,basketball-bund.net
+90,Sportfreunde Neustadt/Wied,Rheinland-Pfalz,Rheinland-Pfalz,6,Oberliga,Oberliga Rheinland-Pfalz/Saar Damen,52953,1,1,1,0,0,83,69,14,2,2.0,,basketball-bund.net
+91,MTV/BG Wolfenbüttel II,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,1,1,1,0,0,50,44,6,2,2.0,,basketball-bund.net
+92,TV Langen 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,4,1,1,0,0,71,68,3,2,2.0,,basketball-bund.net
+93,Kaiserslautern Thunderbolts e.V.,Rheinland-Pfalz,Rheinland-Pfalz,6,Oberliga,Oberliga Rheinland-Pfalz/Saar Damen,52953,2,1,1,0,0,70,68,2,2,2.0,,basketball-bund.net
+94,TSG Sulzbach 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,5,1,1,0,0,50,48,2,2,2.0,,basketball-bund.net
+95,MJC Trier 2,Rheinland-Pfalz,Rheinland-Pfalz,6,Oberliga,Oberliga Rheinland-Pfalz/Saar Damen,52953,3,1,1,0,0,49,48,1,2,2.0,,basketball-bund.net
+96,BC Marburg 3,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,1,2,1,0,1,126,77,49,2,1.0,,basketball-bund.net
+97,Altonaer TSV von 1899 (1),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+98,BASS Berlin 2,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+99,BBC Cottbus,Brandenburg,Brandenburg,6,Oberliga,Oberliga Damen,55208,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+100,BBC Halle,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Damen (53239),53239,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+101,BBC Osnabrück II,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+102,BBC Rendsburg,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+103,BBC Stuttgart,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+104,BBU '01 Ulm 2,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+105,BBV Leipzig Eagles,Sachsen,Sachsen,6,Oberliga,Oberliga Damen Sachsen,52792,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+106,BC Erfurt,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+107,BC Saarbrücken,Rheinland-Pfalz,Rheinland-Pfalz,6,Oberliga,Oberliga Rheinland-Pfalz/Saar Damen,52953,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+108,BG Hamburg-West (2),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+109,BG Harburg-Hittfeld (2),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+110,BG Zehlendorf 2,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+111,BG Zehlendorf 3,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+112,BSG Basket Ludwigsburg,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+113,BSG Kisdorf Kaltenkirchen,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+114,BSW Sixers,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Damen (53239),53239,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+115,BTS Neustadt,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+116,Basket Ladies Kurpfalz 2,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+117,Basketballclub Zwickau,Sachsen,Sachsen,6,Oberliga,Oberliga Damen Sachsen,52792,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+118,ChemCats Chemnitz 2.,Sachsen,Sachsen,6,Oberliga,Oberliga Damen Sachsen,52792,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+119,Culture City Weimar,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+120,DBV Charlottenburg 2,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+121,DJK Neustadt a. d. Waldnaab,Bayern,Bayern,6,Bayernliga,Bayernliga Nord Damen (ByLND),52533,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+122,DJK Nieder-Olm 2,Rheinland-Pfalz,Rheinland-Pfalz,6,Oberliga,Oberliga Rheinland-Pfalz/Saar Damen,52953,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+123,DJK Rabbits Eppelheim,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+124,Eimsbütteler Turnverband (3),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+125,Einheit Pankow 1,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+126,Eintracht Braunschweig III,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+127,Elster Baskets Greiz e.V.,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+128,FC St. Pauli von 1910 e.V. (1),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+129,FREIBEUTER 2010 1,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+130,Girls Academy Rhein-Lahn,Rheinland-Pfalz,Rheinland-Pfalz,6,Oberliga,Oberliga Rheinland-Pfalz/Saar Damen,52953,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+131,Grizzlies SSC Karlsruhe,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+132,Hagener SV,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+133,Hamburg Towers e.V. (2),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+134,Itzehoe Eagles 2,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+135,Justabs Halle,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Damen (53239),53239,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+136,KINGS&QUEENS Basketball Potsdam 2,Brandenburg,Brandenburg,6,Oberliga,Oberliga Damen,55208,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+137,KSG Gerlingen,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+138,Kieler Förde Baskets,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+139,LADYSKUNKS Herdern,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+140,LSV Ladenburg,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+141,Ladybaskets Jena II,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+142,Ladybaskets Jena e.V.,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+143,Leipzig Lakers,Sachsen,Sachsen,6,Oberliga,Oberliga Damen Sachsen,52792,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+144,Lokomotive TS Göppingen,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+145,Lübecker TS,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+146,MSG TSV Grombühl / TG Veitshöchheim 1877,Bayern,Bayern,6,Bayernliga,Bayernliga Nord Damen (ByLND),52533,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+147,MTSV Hohenwestedt,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+148,MTV Stuttgart 3,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+149,MTV Treubund Lüneburg (1),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+150,ONLINEPRINTERS Neustadt a.d. Aisch,Bayern,Bayern,6,Bayernliga,Bayernliga Nord Damen (ByLND),52533,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+151,Osnabrücker SC III,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+152,Osnabrücker TB,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+153,PS Karlsruhe LIONS,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+154,Paradise City Jena e.V.,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+155,Pfeffersport 1,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+156,Post SV Nürnberg 2,Bayern,Bayern,6,Bayernliga,Bayernliga Nord Damen (ByLND),52533,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+157,RedHawks Potsdam,Brandenburg,Brandenburg,6,Oberliga,Oberliga Damen,55208,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+158,Regensburg Baskets,Bayern,Bayern,6,Bayernliga,Bayernliga Nord Damen (ByLND),52533,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+159,SB Heidenheim,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+160,SC Kemmern 1930,Bayern,Bayern,6,Bayernliga,Bayernliga Nord Damen (ByLND),52533,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+161,SC Osterwieck,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Damen (53239),53239,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+162,SC Rist Wedel (2),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+163,SC Rist Wedel (3),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+164,SC Weende,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+165,SSV Lok Bernau 2,Brandenburg,Brandenburg,6,Oberliga,Oberliga Damen,55208,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+166,SV Concordia Belm-Powe,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+167,SV Möhringen 2,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+168,Schapen Sharks,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+169,Science City Jena,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+170,Steinenbronn Beasts,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+171,TG 48 Würzburg 3,Bayern,Bayern,6,Bayernliga,Bayernliga Nord Damen (ByLND),52533,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+172,TG Sandhausen Wild Bees,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+173,TK Hannover 3,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+174,TS Durlach 2,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+175,TS Herzogenaurach,Bayern,Bayern,6,Bayernliga,Bayernliga Nord Damen (ByLND),52533,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+176,TSB Flensburg,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+177,TSG Bruchsal,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+178,TSG Markkleeberg v.1903,Sachsen,Sachsen,6,Oberliga,Oberliga Damen Sachsen,52792,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+179,TSV Ettlingen,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+180,TSV Malmsheim 2,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+181,TV 48 Schwabach,Bayern,Bayern,6,Bayernliga,Bayernliga Nord Damen (ByLND),52533,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+182,TV Jahn Wolfsburg Honeybadgers,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+183,TV Konstanz,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+184,TV Marktheidenfeld,Bayern,Bayern,6,Bayernliga,Bayernliga Nord Damen (ByLND),52533,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+185,TV Sinsheim,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Baden Frauen,53325,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+186,TuS Bad Essen,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen West,54139,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+187,TuS Herrensohr,Rheinland-Pfalz,Rheinland-Pfalz,6,Oberliga,Oberliga Rheinland-Pfalz/Saar Damen,52953,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+188,TuS Neukölln 2,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+189,TuS Nortorf,Schleswig-Holstein,Schleswig-Holstein,6,Oberliga,DOL,53845,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+190,USV Braunschweig,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+191,USV Halle I,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Damen (53239),53239,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+192,USV Halle II,Sachsen-Anhalt,Sachsen-Anhalt,6,Oberliga,Oberliga Damen (53239),53239,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+193,USV Jena,Thüringen,Thüringen,6,Oberliga,Oberliga Damen (54721),54721,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+194,USV TU Dresden,Sachsen,Sachsen,6,Oberliga,Oberliga Damen Sachsen,52792,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+195,Vgg. Adler 1912 1,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+196,WSG Fürstenwalde,Brandenburg,Brandenburg,6,Oberliga,Oberliga Damen,55208,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+197,Walddörfer Sportverein (1),Hamburg,Hamburg,6,Oberliga,Damen Oberliga (53471),53471,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+198,Weddinger Wiesel 2,Berlin,Berlin,6,Oberliga,Damen Oberliga,55054,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+199,vamos! TSG Söflingen,Baden-Württemberg,Baden-Württemberg,6,Oberliga,Oberliga Württemberg Frauen,53324,12,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+200,SG 1. FC Kaiserslautern/BBC Mehlingen,Rheinland-Pfalz,Rheinland-Pfalz,6,Oberliga,Oberliga Rheinland-Pfalz/Saar Damen,52953,8,1,0,0,1,48,49,-1,0,0.0,,basketball-bund.net
+201,TV Bad Bergzabern,Rheinland-Pfalz,Rheinland-Pfalz,6,Oberliga,Oberliga Rheinland-Pfalz/Saar Damen,52953,9,1,0,0,1,68,70,-2,0,0.0,,basketball-bund.net
+202,BG Darmstadt-Roßdorf 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,6,1,0,0,1,68,71,-3,0,0.0,,basketball-bund.net
+203,ASC 46 Göttingen II,Niedersachsen,Niedersachsen,6,Oberliga,Oberliga Damen Ost,54138,8,1,0,0,1,44,50,-6,0,0.0,,basketball-bund.net
+204,Saarlouis/Dillingen,Rheinland-Pfalz,Rheinland-Pfalz,6,Oberliga,Oberliga Rheinland-Pfalz/Saar Damen,52953,10,1,0,0,1,69,83,-14,0,0.0,,basketball-bund.net
+205,TV Babenhausen 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,7,1,0,0,1,58,87,-29,0,0.0,,basketball-bund.net
+206,TV Heppenheim 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,8,1,0,0,1,51,90,-39,0,0.0,,basketball-bund.net
+207,BC Wiesbaden 1,Hessen,Hessen,6,Oberliga,Oberliga Damen (54627),54627,9,1,0,0,1,27,78,-51,0,0.0,,basketball-bund.net
+208,SG Towers  Speyer / Schifferstadt,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe A,54382,1,1,1,0,0,115,20,95,2,2.0,,basketball-bund.net
+209,TVG Baskets Trier,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,1,1,1,0,0,79,24,55,2,2.0,,basketball-bund.net
+210,BBV Landau,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe A,54382,2,1,1,0,0,71,29,42,2,2.0,,basketball-bund.net
+211,TKW Nienburg Ravens,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,1,1,1,0,0,72,36,36,2,2.0,,basketball-bund.net
+212,SC Osterwieck,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,1,1,1,0,0,44,12,32,2,2.0,,basketball-bund.net
+213,TG  Hanau 1,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,1,1,1,0,0,54,25,29,2,2.0,,basketball-bund.net
+214,TSV Grünberg 2,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,1,2,2,0,0,142,89,53,4,2.0,,basketball-bund.net
+215,DJK Nieder-Olm 3,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe B,54383,1,1,1,0,0,54,29,25,2,2.0,,basketball-bund.net
+216,ACT Kassel 1,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,2,2,2,0,0,133,84,49,4,2.0,,basketball-bund.net
+217,TV Bergkrug,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,2,1,1,0,0,61,42,19,2,2.0,,basketball-bund.net
+218,TV Clausen,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe A,54382,3,1,1,0,0,52,33,19,2,2.0,,basketball-bund.net
+219,TV Bitburg,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,2,1,1,0,0,47,28,19,2,2.0,,basketball-bund.net
+220,SC Riedberg 1,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,2,1,1,0,0,50,36,14,2,2.0,,basketball-bund.net
+221,BG Rüsselsheim-Taunusstein 1,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,3,1,1,0,0,39,30,9,2,2.0,,basketball-bund.net
+222,SC Melle,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,1,1,1,0,0,61,53,8,2,2.0,,basketball-bund.net
+223,TV Meppen,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,1,1,1,0,0,70,63,7,2,2.0,,basketball-bund.net
+224,TV Grafenberg,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,1,1,1,0,0,45,42,3,2,2.0,,basketball-bund.net
+225,BC Marburg 4,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,5,1,1,0,0,45,43,2,2,2.0,,basketball-bund.net
+226,TV St. Ingbert,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,54619,1,1,1,0,0,32,31,1,2,2.0,,basketball-bund.net
+227,TV Gladenbach 1,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,3,2,1,0,1,121,108,13,2,1.0,,basketball-bund.net
+228,FT Fulda 1,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,4,2,1,0,1,128,118,10,2,1.0,,basketball-bund.net
+229,(spielfrei),Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+230,1. AFC Bielefeld Bulldogs,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+231,1. BC Bremerhaven,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+232,ALBA Berlin 3,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+233,ALBA Berlin 4,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+234,ART Düsseldorf 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+235,ASC 46 Göttingen III,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+236,ASC 46 Göttingen IV,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Göttingen Damen,54709,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+237,ASC Theresianum  Mainz 3,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe B,54383,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+238,ATSV Saarbrücken II,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,54619,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+239,Altonaer TSV e. V. (2),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+240,BASS Südwest 1,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+241,BASS Südwest 2,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+242,BBA Hagen,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+243,BBC 90 Köpenick 1,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+244,BBC Linz,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+245,BBC Osnabrück III,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+246,BBC Stuttgart 2,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+247,BC Langendreer 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+248,BC Leopoldshöhe,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+249,BC Lions Moabit 1,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+250,BC Neu-Isenburg 1,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+251,BC Soest,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+252,BC-VSK Osterholz-Scharmbeck,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+253,BG '89 Rotenburg/Scheeßel wU18,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+254,BG 74 Göttingen III,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Göttingen Damen,54709,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+255,BG Bierden-Bassen-Achim,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,54167,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+256,BG Halstenbek / Pinneberg (1),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+257,BG Hamburg-West (3),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+258,BG TVO / TV Jahn,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+259,BG Tamm/Bietigheim,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+260,BSG Basket Ludwigsburg 2,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+261,BSG Südheide,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,54167,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+262,BTS Neustadt,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,54167,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+263,BTS Neustadt II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+264,BTV Basketball Brühl,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+265,Barmer TV,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+266,Basket Dragons Marzahn 1,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+267,Basket Duisburg,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+268,Basketball Lesum Vegesack,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+269,Berliner SC 1,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+270,Bonner SV Roleber,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+271,Bramfelder SV von 1945 (2),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+272,Bremen 1860,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+273,Bremen 1860 I,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,54167,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+274,Bürgerfelder TB II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+275,Bürgerfelder TB III,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen OL/OF,54758,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+276,Capitol Bascats Düsseldorf 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+277,DBV Charlottenburg 3,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+278,DJK Frankenberg 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+279,DJK Köln-Nord,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+280,DJK Südwest Köln 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+281,DTV Basketball Köln 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+282,ESV Rot-Weiß Stuttgart,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+283,ETuS Trier,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+284,Eimsbütteler Turnverband e. V. (4),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+285,Eintracht Hildesheim,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+286,FREIBEUTER 2010 2,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+287,Friedenauer TSC 1,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+288,Girls Academy Rhein-Lahn 2,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+289,Gütersloher TV 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+290,HTG Bad Homburg 3,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+291,Hagener SV II,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+292,Hanover Basketball Dragons II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+293,Hardegsen Baskets 07,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Göttingen Damen,54709,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+294,Heeßeler SV,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+295,Hürther BC 3,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+296,Jade Giants,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen OL/OF,54758,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+297,KINGS&QUEENS Basketball Potsdam e.V.,Brandenburg,Brandenburg,7,Landesliga,Landesliga Damen,55206,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+298,Kieler TB 2,Schleswig-Holstein,Schleswig-Holstein,7,Landesliga,DLL,53847,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+299,Linden Dudes,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+300,Linden Dudes 2,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+301,LippeBaskets Werne,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+302,Lübecker TS 2,Schleswig-Holstein,Schleswig-Holstein,7,Landesliga,DLL,53847,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+303,MTV Aurich,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen OL/OF,54758,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+304,MTV Treubund Lüneburg (2),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+305,MTV/BG Wolfenbüttel III,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+306,Mitte SuperSonics 1,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+307,NBC Baskets Nordhorn,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+308,Osnabrücker SC IV,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+309,Panthers Villingen-Schwenningen,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+310,RSV Eintracht 1,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+311,Red Eagles Rathenow,Brandenburg,Brandenburg,7,Landesliga,Landesliga Damen,55206,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+312,RheinStars Köln,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+313,Ruhrpott Baskets Herne,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+314,SC G-W Paderborn 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+315,SC Ottensen (1),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+316,SC Weende III,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Göttingen Damen,54709,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+317,SC Weende-Göttingen II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+318,SE Gevelsberg,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+319,SF Oesede,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+320,SG Bergische Löwen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+321,SG Bramsche,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+322,SG Braunschweig,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+323,SG Rot-Weiß Gierath,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+324,SSV Intercor 1,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+325,SSV Lok Bernau 3,Brandenburg,Brandenburg,7,Landesliga,Landesliga Damen,55206,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+326,SV 03 Tigers Tübingen 2,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+327,SV Concordia Belm-Powe II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+328,SV Empor Berlin 1,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+329,SV Leonardo da Vinci Nauen,Brandenburg,Brandenburg,7,Landesliga,Landesliga Damen,55206,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+330,SV Möhringen 3,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+331,SV Oberelchingen,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+332,Schaffhausen Sixers,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,54619,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+333,TG Neuss 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+334,TSC E. Dortmund,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+335,TSG Bergedorf von 1860 (1),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+336,TSG Giengen,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+337,TSG Reutlingen Ravens,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+338,TSV Hagen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+339,TSV Lamstedt,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+340,TSV Luthe,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 2,54144,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+341,TSV Luthe 2,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+342,TSV Malmsheim 3,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+343,TSV Quakenbrück II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+344,TSV Vorhalle,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+345,TV Blatzheim,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+346,TV Derendingen,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+347,TV Dortmund Mengede,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+348,TV Falkenberg e.V.,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,54167,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+349,TV Gerthe 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+350,TV Illingen I,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,54619,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+351,TV Marbach,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+352,TVE Dortmund Barop 2,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+353,TVG Kaiserau,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+354,Talents BonnRhöndorf 4,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+355,TuRa Harksheide (1),Hamburg,Hamburg,7,Stadtliga,Damen Stadtliga,53481,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+356,TuS Brauweiler,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+357,TuS Eintracht Rulle (ab Rückrunde!),Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+358,TuS Herrensohr II,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,54619,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+359,TuS Neukölln 3,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+360,TuS Nortorf 2,Schleswig-Holstein,Schleswig-Holstein,7,Landesliga,DLL,53847,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+361,TuS Zetel,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen OL/OF,54758,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+362,TuS Zülpich,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 1 Damen (LL1D),54589,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+363,Türkiyemspor Berlin 2,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+364,Türkiyemspor Berlin 3,Berlin,Berlin,7,Landesliga,Damen Landesliga A,55055,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+365,UBC Münster 3,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 5 Damen (LL5D),54596,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+366,VfB Hermsdorf 1,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+367,VfL Astrostars Bochum 5,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+368,VfL Bad Kreuznach,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe B,54383,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+369,VfL Edewecht Wattworms,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen OL/OF,54758,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+370,VfL Kirchheim Knights 2,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+371,VfL Lichtenrade 1,Berlin,Berlin,7,Landesliga,Damen Landesliga B,55056,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+372,VfL Oldesloe,Schleswig-Holstein,Schleswig-Holstein,7,Landesliga,DLL,53847,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+373,VfL Stade,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Mixed,54167,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+374,WINGS Leverkusen 3,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+375,Witten Baskets,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 4 Damen (LL4D),54595,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+376,Zuffenhausen 89er,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW3 Landesliga Frauen,53878,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+377,vamos! TSG Söflingen 2,Baden-Württemberg,Baden-Württemberg,7,Landesliga,BBW4 Landesliga Frauen,55015,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+378,TV Illingen II,Saarland,Saarland,7,Landesliga,Landesliga Saar Damen 2026 2027,54619,6,1,0,0,1,31,32,-1,0,0.0,,basketball-bund.net
+379,CVJM Kassel 1,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,6,1,0,0,1,43,45,-2,0,0.0,,basketball-bund.net
+380,BG Shots Kaarst-Büttgen,Nordrhein-Westfalen,Nordrhein-Westfalen,7,Landesliga,Landesliga 2 Damen (LL2D),54591,10,1,0,0,1,42,45,-3,0,0.0,,basketball-bund.net
+381,Oldenburger TB 2,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 3,54206,8,1,0,0,1,63,70,-7,0,0.0,,basketball-bund.net
+382,BBC Osnabrück U20,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen (53664),53664,9,1,0,0,1,53,61,-8,0,0.0,,basketball-bund.net
+383,TSV Dreieichenhain 2,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,6,1,0,0,1,30,39,-9,0,0.0,,basketball-bund.net
+384,VfL Bensheim 1,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,7,1,0,0,1,36,50,-14,0,0.0,,basketball-bund.net
+385,TK Hannover 4,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,6,1,0,0,1,42,61,-19,0,0.0,,basketball-bund.net
+386,SG 1. FC Kaiserslautern/BBC Mehlingen  2,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe A,54382,4,1,0,0,1,33,52,-19,0,0.0,,basketball-bund.net
+387,SSG Lutzerather Höhe,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,6,1,0,0,1,28,47,-19,0,0.0,,basketball-bund.net
+388,TG 1846 Worms,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe B,54383,4,1,0,0,1,29,54,-25,0,0.0,,basketball-bund.net
+389,TSV Krofdorf/Gleiberg 2,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,9,2,0,0,2,77,129,-52,0,0.0,,basketball-bund.net
+390,TSG Wieseck 1,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,7,1,0,0,1,40,68,-28,0,0.0,,basketball-bund.net
+391,Eintracht Frankfurt 2,Hessen,Hessen,7,Landesliga,Landesliga Süd Damen,54642,8,1,0,0,1,25,54,-29,0,0.0,,basketball-bund.net
+392,BG 74 Göttingen II,Niedersachsen,Niedersachsen,7,Landesliga,Landesliga Damen 1,54145,7,1,0,0,1,12,44,-32,0,0.0,,basketball-bund.net
+393,BG Godshorn-Langenhagen,Niedersachsen,Niedersachsen,7,Regionsliga,Regionsliga Damen,54528,7,1,0,0,1,36,72,-36,0,0.0,,basketball-bund.net
+394,SG TSG Deidesheim/NW-Haardt,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe A,54382,5,1,0,0,1,29,71,-42,0,0.0,,basketball-bund.net
+395,SV Treysa Red Caps 1,Hessen,Hessen,7,Landesliga,Landesliga Nord Damen,54641,8,1,0,0,1,42,87,-45,0,0.0,,basketball-bund.net
+396,Sportfreunde Neustadt/Wied 2,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinland Damen,52846,7,1,0,0,1,24,79,-55,0,0.0,,basketball-bund.net
+397,TS 1863 Germersheim,Rheinland-Pfalz,Rheinland-Pfalz,7,Landesliga,Landesliga Rheinhessen-Pfalz Damen Gruppe A,54382,6,1,0,0,1,20,115,-95,0,0.0,,basketball-bund.net
+398,2. BLDA,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen,52803,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+399,2. BLDB,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen,52803,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+400,DJK Eichstätt,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Nord 25/26,54455,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+401,DJK Eichstätt,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+402,DJK Münsterschwarzach,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+403,ESV Staffelsee 2,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+404,Gerbrunn Grizzlies,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+405,München Basket 2,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+406,SG Oerlenbach/Ebenh.,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+407,SSV Schrobenhausen,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Nord 25/26,54455,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+408,SSV Schrobenhausen,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+409,SV Erlenbach Black Bees,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+410,SV Mammendorf,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+411,TB Arnstein Black Scorpions,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+412,TG 1848 Schweinfurt,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+413,TG 48 Würzburg 4,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+414,TSV 1880 Wasserburg 3,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+415,TSV Etting-Ingolstadt,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Nord 25/26,54455,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+416,TSV Gersthofen,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Süd 25/26,54456,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+417,TSV Gersthofen,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+418,TSV Grombühl 2,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+419,TSV Haunstetten,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Süd 25/26,54456,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+420,TSV Haunstetten,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+421,TSV Jahn Freising,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+422,TSV München Ost 2,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+423,TSV Neuötting,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+424,TSV Nördlingen 2,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Nord 25/26,54455,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+425,TSV Ottobeuren,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Süd 25/26,54456,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+426,TSV Ottobeuren,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+427,TSV Schwaben Augsburg 2,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+428,TSV Schwaben Augsburg 3,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Süd 25/26,54456,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+429,TSV Vaterstetten,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+430,TV Augsburg 3,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen Süd 25/26,54456,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+431,TV Augsburg 3,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+432,TV Marktheidenfeld 2,Bayern,Bayern,8,Bezirksoberliga,UFR Bezirksoberliga Damen,55572,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+433,TV Memmingen,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen 26/27,54454,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+434,TuS Bad Aibling Fireballs,Bayern,Bayern,8,Bezirksoberliga,Bezirksoberliga Damen (bold) 26/27,53875,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+435,TV Gladenbach 2,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,1,1,1,0,0,56,22,34,2,2.0,,basketball-bund.net
+436,SG Wallau/Laasphe 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,2,1,1,0,0,67,39,28,2,2.0,,basketball-bund.net
+437,LippeBaskets Werne  2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 7 Damen (BeL07D),54608,1,1,1,0,0,53,26,27,2,2.0,,basketball-bund.net
+438,TV Hofheim 2,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,3,1,1,0,0,80,55,25,2,2.0,,basketball-bund.net
+439,TV Dellbrück,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,1,1,1,0,0,43,20,23,2,2.0,,basketball-bund.net
+440,TuS Fritzlar 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,3,1,1,0,0,56,34,22,2,2.0,,basketball-bund.net
+441,BC Wiesbaden 2,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,2,1,1,0,0,65,46,19,2,2.0,,basketball-bund.net
+442,BC Gelnhausen 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,1,2,2,0,0,127,90,37,4,2.0,,basketball-bund.net
+443,TS Klein-Krotzenburg,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,4,1,1,0,0,58,40,18,2,2.0,,basketball-bund.net
+444,SC Bergstraße 1,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,3,1,1,0,0,49,33,16,2,2.0,,basketball-bund.net
+445,HTG Bad Homburg 4,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,2,2,2,0,0,65,35,30,4,2.0,,basketball-bund.net
+446,GSV Porz,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,2,1,1,0,0,54,43,11,2,2.0,,basketball-bund.net
+447,BG Darmstadt-Roßdorf 2,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,4,1,1,0,0,54,47,7,2,2.0,,basketball-bund.net
+448,TG Hochheim 2,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,1,2,1,0,1,124,63,61,2,1.0,,basketball-bund.net
+449,BG Rüsselsheim-Taunusstein 2,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,5,2,1,0,1,104,109,-5,2,1.0,,basketball-bund.net
+450,CVJM Kassel 2,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,4,2,1,0,1,81,99,-18,2,1.0,,basketball-bund.net
+451,TGS Seligenstadt 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,5,2,1,0,1,55,49,6,1,0.5,,basketball-bund.net
+452,"1. BBC Düren ""The Wizards""",Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+453,1. FC Baunach,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+454,AK Tigers München,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+455,ART Düsseldorf 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+456,ART Düsseldorf 4,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+457,ASC 09 Dortmund 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 7 Damen (BeL07D),54608,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+458,ASG Elsdorf,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+459,ATS Kulmbach,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+460,ATSV Freiberg,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+461,Aalener Sportallianz,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+462,BAC Hockenheim,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW1 Bezirksliga Frauen,52664,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+463,BASS Berlin 3,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+464,BBA Hagen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 7 Damen (BeL07D),54608,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+465,BBC Bayreuth,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+466,BBC Coburg,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+467,BC ASKA 1,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+468,BC Hellenen München 2,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+469,BC Lichterfelde 1,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+470,BC Lions Moabit 2,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+471,BC Marburg 5,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+472,BC Pesch,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+473,BC Soest 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 7 Damen (BeL07D),54608,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+474,BG Aachen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+475,BG Harburg-Hittfeld (3),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga West,53488,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+476,BG Kamp-Lintfort 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+477,BG Litzendorf 2,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+478,BG Litzendorf 3,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+479,BG Lünen,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 7 Damen (BeL07D),54608,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+480,BG Niederrhein 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+481,BG Remseck,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+482,BG Tamm/Bietigheim 2,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+483,BSG Vaihingen-Sachsenheim,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+484,BSV Wulfen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 6 Damen (BeL06D),54603,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+485,BV Hellas Esslingen,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+486,Backnanger Cool Blues,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+487,Barmer TV 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+488,Bischberg Baskets,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+489,Bramfelder SV von 1945 (3),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga Ost,53487,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+490,CITY Basket Berlin 3,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+491,Capitol Bascats Düsseldorf 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+492,Capitol Bascats Düsseldorf 4,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+493,CroBaskets Essen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+494,DJK Adler Bottrop,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 6 Damen (BeL06D),54603,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+495,DJK Adler Frintrop 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+496,DJK Don Bosco Bamberg 2,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+497,DJK Don Bosco Bamberg 3,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+498,DJK Frankenberg 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+499,DJK Südwest Köln 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+500,DJK Südwest Köln 4,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+501,DJK Südwest Köln 5,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+502,DTV Basketball Köln 4,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+503,Dresden Urbanics,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+504,ETB Miners Essen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+505,Elmshorner MTV (1),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga West,53488,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+506,FC Bad. St. Ilgen,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW1 Bezirksliga Frauen,52664,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+507,FC St. Pauli von 1910 e.V. (2),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga West,53488,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+508,Friedenauer TSC 2,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+509,GSV Fröndenberg,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 7 Damen (BeL07D),54608,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+510,Gütersloher TV 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+511,Haarener TE,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+512,Hamburger SV (1),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga Ost,53487,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+513,Hamburger Turnerbund von 1862 (1),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga Ost,53487,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+514,Herner TC 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+515,Hertener Löwen,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 6 Damen (BeL06D),54603,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+516,Hülser SV,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+517,Kieler TB 3,Schleswig-Holstein,Schleswig-Holstein,9,Bezirksliga,DBL,53853,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+518,LSV Ladenburg 2,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW1 Bezirksliga Frauen,52664,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+519,Leipzig Lakers 4,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+520,Leipzig Lakers 5,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+521,München Basket 3,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+522,Niendorfer TSV von 1919 (1),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga West,53488,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+523,Osterather TV,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+524,Regnitztal Baskets,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+525,RheinStars Köln 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+526,Roter Stern Leipzig,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+527,Ruhrbaskets Oberhausen 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+528,Ruhrpott Baskets Herne 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+529,S.C. Union Lüdinghausen,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 6 Damen (BeL06D),54603,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+530,SC Alstertal-Langenhorn (3),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga Ost,53487,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+531,SC Fast-Break Leverkusen,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+532,SC G-W Paderborn 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+533,SC Janus,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+534,SC Kemmern 2,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+535,SC Rist Wedel (4),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga West,53488,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+536,SC Westfalia Kinderhaus 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 6 Damen (BeL06D),54603,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+537,SE Gevelsberg 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 7 Damen (BeL07D),54608,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+538,SG Adelsberg 2,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+539,SG Coesfeld,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 6 Damen (BeL06D),54603,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+540,SG Herzogenrath/Baesweiler,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+541,SG Langenfeld,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+542,SV 1860 Minden,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+543,SV Bad Tölz,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+544,SV Darmstadt 98 1,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+545,SV Eintracht Erle 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 6 Damen (BeL06D),54603,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+546,SV Germering,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+547,SV Neukölln 09 1,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+548,SV Polizei Hamburg (1),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga West,53488,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+549,Science City Jena 3,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+550,SpVg Odenkirchen,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+551,Sportclub Krefeld 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+552,Südwest Baskets Wuppertal,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+553,Südwest Baskets Wuppertal 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+554,TG Neuss 4,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+555,TSB Flensburg 2,Schleswig-Holstein,Schleswig-Holstein,9,Bezirksliga,DBL,53853,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+556,TSB Schwäbisch Gmünd,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+557,TSC E. Dortmund 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 7 Damen (BeL07D),54608,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+558,TSC Spandau 1,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+559,TSG Bergedorf von 1860 (2),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga Ost,53487,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+560,TSG DO-Schüren,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 7 Damen (BeL07D),54608,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+561,TSG Markkleeberg 2,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+562,TSG Schwäbisch Hall 2,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+563,TSG Wiesloch 1,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW1 Bezirksliga Frauen,52664,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+564,TSV 1846 Butzbach 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+565,TSV 1865 Dachau,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+566,TSV 1884 Wolnzach,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+567,TSV Bargteheide,Schleswig-Holstein,Schleswig-Holstein,9,Bezirksliga,DBL,53853,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+568,TSV Ebermannstadt,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+569,TSV Hagen 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 7 Damen (BeL07D),54608,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+570,TSV Heumaden,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW3 Bezirksliga Frauen,53916,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+571,TSV Klausdorf,Schleswig-Holstein,Schleswig-Holstein,9,Bezirksliga,DBL,53853,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+572,TSV Klein-Linden 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+573,TSV Ludwigsstadt,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen B,52809,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+574,TSV München Ost 3,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+575,TSV Urdenbach,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+576,TSV Weilheim,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen (bzld) 26/27,53876,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+577,TSV Wieblingen 2,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW1 Bezirksliga Frauen,52664,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+578,TSVE 1890 Bielefeld 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+579,TV Breyell,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+580,TV Emsdetten,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 6 Damen (BeL06D),54603,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+581,TV Groß-Gerau 2,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+582,TV Jahn Borgholzhausen,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+583,TV Jahn Tigers,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 6 Damen (BeL06D),54603,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+584,TV Salzkotten,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+585,TV Weismain,Bayern,Bayern,9,Bezirksliga,Bezirksliga Damen A,52808,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+586,TVA Dortmund Wickede,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 7 Damen (BeL07D),54608,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+587,TVJ Königshardt,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+588,TuS Lichterfelde 3,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+589,TuS Lübeck,Schleswig-Holstein,Schleswig-Holstein,9,Bezirksliga,DBL,53853,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+590,TuS Zülpich 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 1 Damen - Vorrundengruppe A (BeL01D-A),54597,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+591,UBC Münster 4,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 6 Damen (BeL06D),54603,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+592,UBC Münster 5,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 6 Damen (BeL06D),54603,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+593,USV Halle II,Sachsen,Sachsen,9,Bezirksliga,Bezirksliga Leipzig Damen,54956,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+594,Velberter SG,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+595,VfL AstroStars Bochum 6,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 4 Damen (BeL04D),54601,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+596,VfL Heiligkreuzsteinach,Baden-Württemberg,Baden-Württemberg,9,Bezirksliga,BBW1 Bezirksliga Frauen,52664,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+597,VfL Merkur Kleve,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 5 Damen (BeL05D),54602,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+598,VfL Schlangen,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 8 Damen (BeL08D),54625,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+599,Vgg. Adler 1912 2,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,10,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+600,Vgg. Adler 1912 3,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+601,WINGS Leverkusen 4,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 2 Damen  (BeL02D),54599,11,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+602,Walddörfer Sportverein (2),Hamburg,Hamburg,9,Bezirksliga,Damen Bezirksliga Ost,53487,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+603,Weddinger Wiesel 3,Berlin,Berlin,9,Bezirksliga,Damen Bezirksliga,55057,12,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+604,DTV Basketball Köln 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,10,1,0,0,1,43,54,-11,0,0.0,,basketball-bund.net
+605,TuS Makkabi Frankfurt 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,6,1,0,0,1,51,64,-13,0,0.0,,basketball-bund.net
+606,TSV Gernsheim 1,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,8,2,0,0,2,77,107,-30,0,0.0,,basketball-bund.net
+607,ACT Kassel 2,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,8,2,0,0,2,66,98,-32,0,0.0,,basketball-bund.net
+608,TV Hofheim 3,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,8,2,0,0,2,74,108,-34,0,0.0,,basketball-bund.net
+609,TSG Oberursel 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,9,2,0,0,2,69,113,-44,0,0.0,,basketball-bund.net
+610,DJK Köln-Nord 2,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 3 Damen (BeL03D),54600,11,1,0,0,1,20,43,-23,0,0.0,,basketball-bund.net
+611,FTG Frankfurt 2,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen (55953),55953,7,1,0,0,1,55,80,-25,0,0.0,,basketball-bund.net
+612,TVE DO-Barop 3,Nordrhein-Westfalen,Nordrhein-Westfalen,9,Bezirksliga,Bezirksliga 7 Damen (BeL07D),54608,12,1,0,0,1,26,53,-27,0,0.0,,basketball-bund.net
+613,TV Bad Hersfeld 1,Hessen,Hessen,9,Bezirksliga,Bezirksliga Damen,54658,9,1,0,0,1,22,56,-34,0,0.0,,basketball-bund.net
+614,TV Groß-Gerau 3,Hessen,Hessen,9,Bezirksliga,Damen Bezirksliga (52919),52919,9,1,0,0,1,9,77,-68,0,0.0,,basketball-bund.net
+615,AK Tigers München 2,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+616,DJK SB Straubing,Bayern,Bayern,10,Bezirksklasse,Nord - Bezirksklasse Damen 4x4 2026/27,54101,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+617,München Basket 4,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+618,Platzhalter 2,Bayern,Bayern,10,Bezirksklasse,Nord - Bezirksklasse Damen 4x4 2026/27,54101,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+619,SB DJK Rosenheim 2,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+620,SV Saaldorf,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+621,Slama Jama Gröbenzell,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+622,TSV 1898 Penzberg,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+623,TSV Gräfelfing e.V.,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+624,TSV Ismaning,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+625,TSV Jahn Freising 2,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+626,TSV München-Forstenried,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+627,TSV München-Solln,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen West (kü-bkdw) 2026/27,55004,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+628,TV Freyung,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+629,TV von 1895 Markt Schwaben,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+630,TuS 1860 Pfarrkirchen,Bayern,Bayern,10,Bezirksklasse,Nord - Bezirksklasse Damen 4x4 2026/27,54101,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+631,TuS Holzkirchen,Bayern,Bayern,10,Bezirksklasse,Bezirksklasse Damen Ost (kü-bkdo) 2026/27,55001,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+632,SG Erlensee / Langenselbold,Hessen,Hessen,11,Kreisliga A,Kreisliga A Damen,55956,2,1,1,0,0,20,0,20,2,2.0,,basketball-bund.net
+633,TSG Oberursel 2,Hessen,Hessen,11,Kreisliga A,Kreisliga A Damen,55956,1,2,2,0,0,99,60,39,4,2.0,,basketball-bund.net
+634,TV Dieburg,Hessen,Hessen,11,Kreisliga,Damen Kreisliga,52933,1,1,1,0,0,51,42,9,2,2.0,,basketball-bund.net
+635,ASV Rott am Inn,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+636,Artio Nürnberg 2,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Damen,53720,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+637,DJK Landsberg 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+638,DJK/SCC Pfungstadt 1,Hessen,Hessen,11,Kreisliga,Damen Kreisliga,52933,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+639,Frankonia Baskets Nürnberg,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Damen,53720,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+640,MTV München 3,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+641,Maccabi München,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+642,Platzhalter 1,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+643,Platzhalter 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+644,Platzhalter 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+645,Post SV Nürnberg 3,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Damen,53720,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+646,SC Wörnsmühl,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+647,SG Poing,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+648,SKG Gräfenhausen,Hessen,Hessen,11,Kreisliga,Damen Kreisliga,52933,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+649,SV Seeon,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+650,TG Landshut 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+651,TSV 1880 Wasserburg 4,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+652,TSV Ansbach,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Damen,53720,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+653,TSV Trudering Basketball,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+654,TSV Weilheim 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+655,TUSPO Nürnberg 2,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Damen,53720,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+656,TV Fürth 1860 2,Bayern,Bayern,11,Kreisliga,MFR Kreisliga Damen,53720,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+657,TV Heppenheim 2,Hessen,Hessen,11,Kreisliga,Damen Kreisliga,52933,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+658,TuS Bad Aibling Fireballs 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+659,TuS Fürstenfeldbruck 2,Bayern,Bayern,11,Kreisliga,Kreisliga Damen West (kü-kldw) 2026/27,55008,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+660,TuS Makkabi Frankfurt 2,Hessen,Hessen,11,Kreisliga A,Kreisliga A Damen,55956,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+661,Turngenossenschaft 1886 Rimbach 1,Hessen,Hessen,11,Kreisliga,Damen Kreisliga,52933,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+662,WSV Glonn,Bayern,Bayern,11,Kreisliga,Kreisliga Damen Ost (kü-kldo) 2026/27,55006,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+663,BG Darmstadt-Roßdorf 3,Hessen,Hessen,11,Kreisliga,Damen Kreisliga,52933,6,1,0,0,1,42,51,-9,0,0.0,,basketball-bund.net
+664,BSG Usinger Land,Hessen,Hessen,11,Kreisliga A,Kreisliga A Damen,55956,4,1,0,0,1,36,49,-13,0,0.0,,basketball-bund.net
+665,BC Gelnhausen 2,Hessen,Hessen,11,Kreisliga A,Kreisliga A Damen,55956,5,2,0,0,2,24,70,-46,-1,-0.5,,basketball-bund.net
+666,Witten Baskets (2RLH),Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,56554,1,2,2,0,0,152,124,28,4,2.0,,basketball-bund.net
+667,SV Haspe 70 (1RLH),Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,56554,2,1,1,0,0,85,76,9,2,2.0,,basketball-bund.net
+668,TVE Dortmund Barop (OLH),Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,56554,3,3,1,0,2,209,211,-2,2,0.67,,basketball-bund.net
+669,ETB Miners Essen 5,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,1,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+670,Kettwiger SV 3,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,2,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+671,MTG Horst,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,3,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+672,Ruhrbaskets Oberhausen 3,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,4,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+673,Ruhrbaskets Oberhausen 4,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,5,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+674,Ruhrbaskets Oberhausen 5,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,6,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+675,TUSEM Essen 3,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,7,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+676,TVG Steele,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,8,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+677,Turnerbund Oberhausen,Nordrhein-Westfalen,Nordrhein-Westfalen,12,2.Kreisliga,2. Kreisliga Essen,55527,9,0,0,0,0,0,0,0,0,0.0,,basketball-bund.net
+678,Citybasket Recklinghausen (1RLH),Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,56554,4,1,0,0,1,76,85,-9,0,0.0,,basketball-bund.net
+679,TSV Bocholt (LLH),Nordrhein-Westfalen,Nordrhein-Westfalen,12,Kreisklasse,Test HA 26/27,56554,5,1,0,0,1,59,85,-26,0,0.0,,basketball-bund.net
