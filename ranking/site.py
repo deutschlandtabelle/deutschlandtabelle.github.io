@@ -298,6 +298,21 @@ a.klassenzeile:hover .zahl{color:var(--accent)}
 .kartennotiz{margin:22px auto 0;max-width:62ch;text-align:center;
   font-size:14px;color:var(--muted)}
 
+/* --- Eckdaten, Suche, Weiterführendes ----------------------------------- */
+.eckdaten{margin:20px 0 0;text-align:center;color:var(--muted);font-size:15px}
+.eckdaten b{color:var(--ink);font-weight:600}
+.grossesuche{display:flex;gap:10px;margin:18px auto 0;max-width:620px}
+.grossesuche input{flex:1 1 auto;min-width:0;background:var(--panel);
+  color:var(--ink);border:1px solid var(--hair);border-radius:14px;
+  padding:16px 20px;font-size:19px;letter-spacing:-.01em}
+.grossesuche input:focus{outline:none;border-color:var(--accent);
+  box-shadow:0 0 0 4px var(--accent-soft)}
+.grossesuche .knopf{padding:16px 26px;font-size:17px}
+.suchhinweis{margin:10px auto 0;max-width:620px;text-align:center;font-size:14px;
+  color:var(--muted);min-height:1.2em}
+.suchhinweis a{color:var(--accent);text-decoration:none;font-weight:500}
+.mehrlink{margin:18px 0 0}
+
 /* --- Kennzahlen-Karten --------------------------------------------------- */
 .karten{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
 .karte{background:var(--panel);border-radius:20px;padding:26px 24px 22px;
@@ -421,6 +436,18 @@ footer a:hover{text-decoration:underline}
   .haupt th:nth-child(9),.haupt td:nth-child(9){display:none}
   .club span{max-width:130px}
   .league{max-width:150px}
+}
+/* Auf dem Telefon passt die Kopfzeile sonst nicht: "Basketball" wird an
+   den Rand gedrückt. Der Verweis "Start" entfällt dort -- die Marke links
+   führt ohnehin zur Startseite. */
+@media (max-width:560px){
+  .topbar nav a[href="#home"]{display:none}
+  .topbar nav{gap:12px}
+  .topbar nav a{font-size:12px}
+  /* Die Icons entfallen ebenfalls: die drei Wörter stehen für sich, und
+     sie kosten zusammen die Breite, die "Basketball" gefehlt hat. */
+  .topbar nav a .ikon{display:none}
+  .brand{font-size:15px}
 }
 @media (max-width:860px){
   .band{padding:52px 0}
@@ -730,20 +757,31 @@ footer a:hover{text-decoration:underline}
 </section>
 
 <template id="tpl-sport">
-  <div class="sportkarten" id="statKacheln"></div>
-  <div id="noteSlot"></div>
-
-  <h2>Die Bestenlisten</h2>
-  <p class="unter">Quer zur Tabelle gelesen — ohne Rücksicht darauf, in welcher Liga jemand spielt.</p>
-  <div class="karten" id="karten"></div>
+  <!-- Zuerst die Suche: wer hierher kommt, sucht meist genau einen Verein.
+       Danach drei Karten als Ausblick, dann die Tabelle. Die Eckdaten und
+       die übrigen Auswertungen stehen unter ?analyse=1 -- sie haben vorher
+       den halben Bildschirm gekostet, bevor irgendetwas Nützliches kam. -->
+  <p class="eckdaten" id="eckdaten"></p>
+  <form class="grossesuche" id="sportSuche">
+    <input type="search" id="q" placeholder="Deinen Verein suchen …"
+           autocomplete="off" enterkeyhint="search">
+    <button class="knopf" type="submit">Finden</button>
+  </form>
+  <p class="suchhinweis" id="suchhinweis"></p>
 
   <div id="topBereich" hidden></div>
+  <div id="analyseBereich" hidden></div>
+
+  <h2>Die Bestenlisten</h2>
+  <p class="unter" id="bestenUnter">Quer zur Tabelle gelesen — ohne Rücksicht darauf, in welcher Liga jemand spielt.</p>
+  <div class="karten" id="karten"></div>
+  <p class="mehrlink" id="mehrlink"></p>
+
   <div id="pokalBereich" hidden></div>
 
   <h2 id="tabellenTitel">Die komplette Tabelle</h2>
   <p class="unter" id="tabellenUnter"></p>
   <div class="controls">
-    <input type="search" id="q" placeholder="Verein suchen …" autocomplete="off">
     <select id="verbandFilter"></select>
     <select id="tierFilter"></select>
     <select id="leagueFilter"></select>
@@ -1049,30 +1087,46 @@ function zeigeSport(sport, d, params){
     `${tausend(RANKING.length)} Mannschaften, sortiert nach Ligastufe und Punkten pro Spiel.`;
   $('vergleichHinweis').innerHTML = sport.vergleichHinweis || '';
 
-  $('statKacheln').innerHTML = [
+  // Die Eckdaten als eine Zeile statt als vier Kacheln -- ausführlich
+  // stehen sie auf der Analyseseite.
+  const eckdaten = [
     ['Mannschaften', tausend(RANKING.length)],
     ['Staffeln', tausend(d.meta.leagues)],
     ['Ligastufen', new Set(RANKING.map(r => r.tier)).size],
     ['Verbände', new Set(RANKING.map(r => r.verband).filter(Boolean)).size],
-  ].map(([k, v]) => `<div class="sportkarte"><div class="zahl">${v}</div>
-      <div class="klein">${k}</div></div>`).join('');
+  ];
+  $('eckdaten').innerHTML = eckdaten
+    .map(([k, v]) => `<b>${v}</b> ${k}`).join(' · ');
 
-  if (d.meta.note) $('noteSlot').innerHTML =
-    `<details class="note"><summary>${esc(d.meta.note_summary || 'Abdeckung')}</summary>
-     <p>${d.meta.note}</p></details>`;
+  // Die Abdeckungsnotiz gehört unter die Tabelle, nicht davor: sie erklärt
+  // die Zahlen, sie hält niemanden von ihnen ab.
+  const notiz = d.meta.note
+    ? `<details class="note"><summary>${esc(d.meta.note_summary || 'Abdeckung')}</summary>
+       <p>${d.meta.note}</p></details>` : '';
 
-  $('karten').innerHTML = (d.kennzahlen || []).map(k => `
+  // Drei Karten als Ausblick. Der Rest steht auf der Analyseseite.
+  const AUSBLICK = ['bester', 'torfabrik', 'aufsteiger'];
+  // `knapp` lässt die Erklärung weg: auf der Sportseite sind die drei
+  // Karten ein Ausblick, die Begründung steht in der Top-100 darüber.
+  const kennzahl = (k, knapp) => `
     <div class="karte">
       <div class="kopf">${ikon(k.key, k.icon)}${esc(k.titel)}</div>
       <div class="verein">${esc(k.verein)}</div>
       <div class="wert">${esc(k.wert)}</div>
       <div class="liga">${esc(k.liga)} · Ligastufe ${k.stufe} · ${esc(k.verband)}
         · Rang ${tausend(k.rang)}</div>
-      <div class="erklaerung">${esc(k.erklaerung)}</div>
+      ${knapp ? '' : `<div class="erklaerung">${esc(k.erklaerung)}</div>`}
       <a class="topknopf" href="#${sport.slug}?top=${k.key}">Zur Top-100 →</a>
-    </div>`).join('');
+    </div>`;
+  const alle = d.kennzahlen || [];
+  const ausblick = AUSBLICK.map(key => alle.find(k => k.key === key)).filter(Boolean);
+  const weitere = alle.filter(k => !AUSBLICK.includes(k.key));
+  $('karten').innerHTML = ausblick.map(k => kennzahl(k, true)).join('');
+  $('mehrlink').innerHTML = (weitere.length || d.pokal)
+    ? `<a class="topknopf" href="#${sport.slug}?analyse=1">Alle Auswertungen`
+      + `${d.pokal ? ' und der DFB-Pokal' : ''} →</a>` : '';
 
-  $('sportFuss').innerHTML = sport.fuss || '';
+  $('sportFuss').innerHTML = notiz + (sport.fuss || '');
 
   // --- Filter befüllen --------------------------------------------------
   const q = $('q'), tierFilter = $('tierFilter'), leagueFilter = $('leagueFilter'),
@@ -1142,6 +1196,18 @@ function zeigeSport(sport, d, params){
     gezeigt = 0; letzteStufe = null; rows.innerHTML = '';
     empty.hidden = gefiltert.length > 0;
     nachladen();
+    if (suchhinweis){
+      const wort = q.value.trim();
+      suchhinweis.innerHTML = !wort ? ''
+        : (gefiltert.length
+            ? `${tausend(gefiltert.length)} ${gefiltert.length === 1
+                ? 'Treffer' : 'Treffer'} — <a href="#" id="zumTreffer">zur Tabelle ↓</a>`
+            : 'Kein Verein dieses Namens in dieser Rangfolge.');
+      const sprung = suchhinweis.querySelector('#zumTreffer');
+      if (sprung) sprung.addEventListener('click', e => {
+        e.preventDefault(); zurTabelle();
+      });
+    }
   }
 
   // Wird von beiden Sonderansichten gebraucht -- muss deshalb vor ihnen
@@ -1173,7 +1239,8 @@ function zeigeSport(sport, d, params){
         <thead><tr><th>Abstand</th><th>Heim</th><th>Gast</th><th>Differenz</th></tr></thead>
         <tbody>${pokal.paarungen.map(paarungsZeile).join('')}</tbody>
       </table></div>`;
-    ziel.querySelectorAll('h2, p.unter, #karten, #statKacheln, #noteSlot, .controls, '
+    ziel.querySelectorAll('h2, p.unter, #karten, #mehrlink, #eckdaten, '
+      + '.grossesuche, #suchhinweis, .controls, '
       + '.tip, .legend, .count, .tablewrap, #pokalBereich').forEach(el => {
         if (!topBereich.contains(el)) el.hidden = true;
       });
@@ -1196,6 +1263,38 @@ function zeigeSport(sport, d, params){
         </div>`).join('')}</div>
       <p style="margin:12px 0 0"><a class="topknopf"
         href="#${sport.slug}?pokal=1">Alle ${pokal.paarungen.length} Paarungen →</a></p>`;
+    // Auf der Sportseite selbst tritt der Pokal hinter die Tabelle zurück;
+    // gezeigt wird er nur in der Analyse.
+    pokalBereich.hidden = !params.get('analyse');
+  }
+
+  // --- Analyseseite ---------------------------------------------------
+  // Eckdaten, die übrigen Bestenlisten und die Pokal-Auswertung. Auf der
+  // Sportseite standen sie vor der Tabelle und haben sie nach unten
+  // gedrückt; wer sie sucht, findet sie hier zusammen.
+  if (params.get('analyse')){
+    const analyse = $('analyseBereich');
+    analyse.hidden = false;
+    analyse.innerHTML = `
+      <a class="zurueckknopf" href="#${sport.slug}">← Zurück zu ${esc(sport.name)}</a>
+      <h2>Auswertungen — ${esc(sport.name)}</h2>
+      <p class="unter">Die Zahlen hinter der Tabelle, die übrigen Bestenlisten
+        und${d.pokal ? ' die Pokal-Auswertung' : ' mehr'}.</p>
+      <div class="sportkarten">${eckdaten.map(([k, v]) =>
+        `<div class="sportkarte"><div class="zahl">${v}</div>
+         <div class="klein">${k}</div></div>`).join('')}</div>
+      ${weitere.length ? `<h2>Weitere Bestenlisten</h2>
+        <p class="unter">Die drei bekanntesten stehen auf der Seite der
+          Sportart — hier der Rest.</p>
+        <div class="karten">${weitere.map(k => kennzahl(k)).join('')}</div>` : ''}`;
+    ziel.querySelectorAll('h2, p.unter, #karten, #mehrlink, #eckdaten, '
+      + '.grossesuche, #suchhinweis, .controls, .tip, .legend, .count, '
+      + '.tablewrap').forEach(el => {
+        if (!analyse.contains(el) && !pokalBereich.contains(el)) el.hidden = true;
+      });
+    analyse.querySelectorAll('h2, p.unter').forEach(el => el.hidden = false);
+    window.scrollTo(0, 0);
+    return;
   }
 
   // --- Top-100 einer Kennzahl ----------------------------------------
@@ -1239,7 +1338,8 @@ function zeigeSport(sport, d, params){
           <td>${tausend(r.rank)}</td></tr>`).join('')}</tbody>
       </table></div>`;
     // Karten und Gesamttabelle treten dahinter zurück.
-    ziel.querySelectorAll('h2, p.unter, #karten, #statKacheln, #noteSlot, .controls, '
+    ziel.querySelectorAll('h2, p.unter, #karten, #mehrlink, #eckdaten, '
+      + '.grossesuche, #suchhinweis, .controls, '
       + '.tip, .legend, .count, .tablewrap').forEach(el => {
         if (!topBereich.contains(el)) el.hidden = true;
       });
@@ -1247,6 +1347,12 @@ function zeigeSport(sport, d, params){
     window.scrollTo(0, 0);
     return;
   }
+
+  // Die große Suche filtert die Tabelle darunter. Enter springt hin --
+  // sonst tippt jemand oben und sieht nicht, dass unten etwas passiert.
+  const suchhinweis = $('suchhinweis');
+  const zurTabelle = () => $('tabellenTitel').scrollIntoView({behavior: 'smooth'});
+  $('sportSuche').addEventListener('submit', e => { e.preventDefault(); zurTabelle(); });
 
   if (params.get('q')) q.value = params.get('q');
   if (params.get('verband')) verbandFilter.value = params.get('verband');
