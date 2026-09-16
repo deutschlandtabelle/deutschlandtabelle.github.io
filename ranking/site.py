@@ -18,6 +18,8 @@ import hashlib
 import json
 from pathlib import Path
 
+from . import ikonen
+
 # Für die Teilen-Vorschau braucht es vollständige Adressen -- relative Pfade
 # lösen Messenger nicht auf.
 BASIS_URL = "https://clubrank.github.io/"
@@ -171,7 +173,7 @@ body{margin:0;background:var(--bg);color:var(--ink);
 .sportkarte{background:var(--panel);border:1px solid var(--line);border-radius:14px;
   padding:18px;text-decoration:none;color:var(--ink);display:block}
 .sportkarte:hover{border-color:var(--accent)}
-.sportkarte .ic{font-size:30px;line-height:1}
+.sportkarte .ic{line-height:1}
 .sportkarte h3{margin:8px 0 2px;font-size:20px;letter-spacing:-.01em}
 .sportkarte .zahl{font-size:26px;font-weight:800;letter-spacing:-.02em;
   color:var(--accent);margin:6px 0 0}
@@ -209,6 +211,20 @@ h2 + p.unter{margin:0 0 18px;color:var(--muted);font-size:15px}
 .karte .kopf{display:flex;align-items:center;gap:9px;font-size:13px;
   text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
 .karte .kopf i{font-style:normal;font-size:20px}
+
+/* --- Icons ---------------------------------------------------------------
+   Eine Strichstärke, eine Farbe -- die des umgebenden Textes. Emoji konnten
+   das nicht: sie bringen ihre eigenen Farben mit und sehen auf jedem System
+   anders aus. */
+.ikon{width:1.2em;height:1.2em;flex:0 0 auto;fill:none;stroke:currentColor;
+  stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;
+  vertical-align:-.22em}
+.topbar nav a .ikon{width:16px;height:16px;margin-right:6px;vertical-align:-3px}
+.sportkarte .ic .ikon{width:30px;height:30px;color:var(--accent);
+  vertical-align:top}
+.karte .kopf .ikon{width:20px;height:20px;color:var(--accent);vertical-align:-4px}
+h1 .ikon,h2 .ikon{width:.92em;height:.92em;color:var(--accent);margin-right:8px;
+  vertical-align:-.12em}
 .karte .verein{font-size:21px;font-weight:700;letter-spacing:-.01em;line-height:1.25}
 .karte .wert{font-size:15px;font-weight:600;color:var(--accent)}
 .karte .liga{font-size:13px;color:var(--muted)}
@@ -631,6 +647,13 @@ footer a{color:var(--accent)}
 
 <script>
 const SPORTS = __SPORTS__;
+const IKONEN = __IKONEN__;
+// Erst der sprechende Schlüssel, dann das, was im Datenpaket steht (dort
+// stehen teils noch Emoji aus älteren Läufen).
+const ikon = (...schluessel) => {
+  const pfad = schluessel.map(k => IKONEN[k]).find(Boolean);
+  return pfad ? `<svg class="ikon" viewBox="0 0 24 24" aria-hidden="true">${pfad}</svg>` : '';
+};
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const tausend = n => Number(n).toLocaleString('de-DE');
@@ -643,7 +666,7 @@ const SPORTARTEN = [];
 SPORTS.forEach(s => {
   let eintrag = SPORTARTEN.find(x => x.sportart === s.sportart);
   if (!eintrag) SPORTARTEN.push(eintrag = {
-    sportart: s.sportart, name: s.sportName, icon: s.icon, klassen: [],
+    sportart: s.sportart, name: s.sportName, klassen: [],
   });
   eintrag.klassen.push(s);
 });
@@ -652,7 +675,7 @@ document.getElementById('nav').innerHTML =
   '<a href="#home">Start</a>' + SPORTARTEN.map(a => {
     const erste = a.klassen.find(k => k.ready) || a.klassen[0];
     return `<a href="#${erste.slug}" data-sportart="${a.sportart}"
-       class="${a.klassen.some(k => k.ready) ? '' : 'leer'}">${a.icon} ${esc(a.name)}</a>`;
+       class="${a.klassen.some(k => k.ready) ? '' : 'leer'}">${ikon(a.sportart)}${esc(a.name)}</a>`;
   }).join('');
 
 document.getElementById('sportkarten').innerHTML = SPORTARTEN.map(a => {
@@ -665,12 +688,12 @@ document.getElementById('sportkarten').innerHTML = SPORTARTEN.map(a => {
          <span class="wer">${esc(k.klasseName)}</span>
          <span class="klein">${esc(k.hinweis || 'in Arbeit')}</span></div>`).join('');
   return `<div class="sportkarte">
-      <div class="ic">${a.icon}</div><h3>${esc(a.name)}</h3>
+      <div class="ic">${ikon(a.sportart)}</div><h3>${esc(a.name)}</h3>
       <div class="klassen">${zeilen}</div></div>`;
 }).join('');
 
 document.getElementById('homeSport').innerHTML = SPORTS.filter(s => s.ready)
-  .map(s => `<option value="${s.slug}">${s.icon} ${esc(s.name)} · ${esc(s.klasseName)}`
+  .map(s => `<option value="${s.slug}">${esc(s.name)} · ${esc(s.klasseName)}`
             + `</option>`).join('');
 document.getElementById('homeSuche').addEventListener('submit', e => {
   e.preventDefault();
@@ -706,7 +729,8 @@ async function route(){
   }
   if (!sport){ zeige('view-home'); window.scrollTo(0,0); return; }
   zeige('view-sport');
-  document.getElementById('sportTitel').textContent = `${sport.icon} ${sport.name}`;
+  document.getElementById('sportTitel').innerHTML =
+    ikon(sport.sportart, sport.icon) + esc(sport.name);
   document.getElementById('sportUnter').textContent = sport.ready
     ? `Saison ${sport.season} · Stand ${sport.generated}` : '';
 
@@ -817,7 +841,7 @@ function zeigeSport(sport, d, params){
 
   $('karten').innerHTML = (d.kennzahlen || []).map(k => `
     <div class="karte">
-      <div class="kopf"><i>${k.icon}</i>${esc(k.titel)}</div>
+      <div class="kopf">${ikon(k.key, k.icon)}${esc(k.titel)}</div>
       <div class="verein">${esc(k.verein)}</div>
       <div class="wert">${esc(k.wert)}</div>
       <div class="liga">${esc(k.liga)} · Ligastufe ${k.stufe} · ${esc(k.verband)}
@@ -939,12 +963,12 @@ function zeigeSport(sport, d, params){
   if (pokal){
     pokalBereich.hidden = false;
     pokalBereich.innerHTML = `
-      <h2>🏆 Sonderauswertung: DFB-Pokal, ${esc(pokal.runde)}</h2>
+      <h2>${ikon('bester')}Sonderauswertung: DFB-Pokal, ${esc(pokal.runde)}</h2>
       <p class="unter">Ausgelost für den ${esc(pokal.termin.split('-').reverse().join('.'))}.
         Wie weit liegen die Gegner im bundesweiten Ranking auseinander?</p>
       <div class="karten">${pokal.hoehepunkte.map(h => `
         <div class="karte">
-          <div class="kopf"><i>${h.icon}</i>${esc(h.titel)}</div>
+          <div class="kopf">${ikon(h.key, h.icon)}${esc(h.titel)}</div>
           <div class="verein">${esc(h.wert)}</div>
           <div class="liga">${esc(h.text)}</div>
         </div>`).join('')}</div>
@@ -970,7 +994,7 @@ function zeigeSport(sport, d, params){
     topBereich.hidden = false;
     topBereich.innerHTML = `
       <a class="zurueckknopf" href="#${sport.slug}">← Zurück zu ${esc(sport.name)}</a>
-      <h2>${karte.icon} ${esc(karte.titel)} — ${feld.length < 100
+      <h2>${ikon(karte.key, karte.icon)}${esc(karte.titel)} — ${feld.length < 100
           ? `alle ${tausend(feld.length)}` : 'Top 100'}</h2>
       <p class="unter">${esc(karte.erklaerung)}</p>
       <div class="tablewrap"><table class="topliste">
@@ -1057,6 +1081,7 @@ def write_shell(out_dir: Path, sports: list[dict]) -> None:
     for schluessel, wert in {
         "__TIER_CSS__": _tier_css(),
         "__SPORTS__": json.dumps(sports, ensure_ascii=False),
+        "__IKONEN__": ikonen.js_objekt(),
         "__URL__": BASIS_URL,
         "__BILDVERSION__": version,
         "__BILDBREITE__": breite,

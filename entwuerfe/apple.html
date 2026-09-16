@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClubRank — Entwurf A (Apple)</title>
+<style>
+/* ===================================================================
+   Entwurf A -- angelehnt an apple.com/de
+   Merkmale: sehr große, eng laufende Überschrift mittig, viel Weißraum,
+   abwechselnd weiße und hellgraue Vollbreite-Abschnitte, Kacheln mit
+   22px-Radius ohne Rahmen, blaue Textlinks mit Chevron, Pillen-Knöpfe,
+   Haarlinien statt Kästen in der Tabelle.
+   =================================================================== */
+:root{
+  --ink:#1d1d1f; --muted:#6e6e73; --bg:#ffffff; --grau:#f5f5f7;
+  --hair:#d2d2d7; --blau:#0066cc; --gruen:#2c7a4b;
+}
+@media (prefers-color-scheme:dark){
+  :root{--ink:#f5f5f7; --muted:#a1a1a6; --bg:#000000; --grau:#1d1d1f;
+        --hair:#333336; --blau:#2997ff; --gruen:#5bd48a}
+}
+*{box-sizing:border-box}
+/* Icons: eine Strichstärke, Farbe vom umgebenden Text. */
+.ikon{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;
+  stroke-linejoin:round;flex:0 0 auto;vertical-align:-.2em}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);letter-spacing:-.01em;
+  font:17px/1.47 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",
+       Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--blau)}
+.mitte{max-width:1000px;margin:0 auto;padding:0 22px}
+
+/* --- Kopfleiste: 48 px, durchscheinend, winzige Schrift -------------- */
+.nav{position:sticky;top:0;z-index:20;height:48px;
+  background:color-mix(in srgb,var(--bg) 72%,transparent);
+  backdrop-filter:saturate(180%) blur(20px);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:1px solid var(--hair)}
+.nav .mitte{height:48px;display:flex;align-items:center;gap:30px}
+.nav a{font-size:12px;color:var(--ink);text-decoration:none;opacity:.86;
+  display:inline-flex;align-items:center;gap:6px}
+.nav a:hover{opacity:1}
+.nav .marke{font-weight:600;font-size:15px;opacity:1;letter-spacing:-.02em}
+.nav .rechts{margin-left:auto}
+
+/* --- Bühne ----------------------------------------------------------- */
+.buehne{text-align:center;padding:76px 0 18px}
+.buehne h1{margin:0;font-weight:600;line-height:1.04;letter-spacing:-.025em;
+  font-size:clamp(40px,7.4vw,80px)}
+.buehne .unter{margin:16px auto 0;max-width:26ch;font-weight:400;color:var(--ink);
+  font-size:clamp(19px,2.6vw,28px);line-height:1.2;letter-spacing:-.02em}
+.buehne .links{margin-top:24px;display:flex;gap:28px;justify-content:center;
+  flex-wrap:wrap}
+.buehne .links a{font-size:19px;text-decoration:none}
+.buehne .links a:hover{text-decoration:underline}
+
+/* Zahlenband: die Kennzahl als Bild, nicht als Text. */
+.band{display:flex;justify-content:center;gap:clamp(26px,7vw,80px);flex-wrap:wrap;
+  padding:52px 22px 74px;text-align:center}
+.band .zahl{font-size:clamp(34px,5vw,54px);font-weight:600;letter-spacing:-.03em;
+  line-height:1}
+.band .wort{margin-top:7px;font-size:14px;color:var(--muted)}
+
+/* --- Abschnitte ------------------------------------------------------ */
+section.flaeche{background:var(--grau);padding:84px 0}
+section.weiss{background:var(--bg);padding:84px 0}
+.titel{text-align:center;font-size:clamp(30px,4.6vw,48px);font-weight:600;
+  letter-spacing:-.025em;margin:0 0 10px;line-height:1.08}
+.untertitel{text-align:center;color:var(--muted);font-size:19px;margin:0 auto 44px;
+  max-width:60ch;letter-spacing:-.01em}
+
+.kacheln{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.kachel{background:var(--bg);border-radius:22px;padding:36px 30px 30px;
+  text-align:center;display:flex;flex-direction:column;align-items:center}
+section.flaeche .kachel{background:var(--bg)}
+section.weiss .kachel{background:var(--grau)}
+.kachel .ikon{width:44px;height:44px;color:var(--gruen)}
+.kachel h3{margin:16px 0 0;font-size:26px;font-weight:600;letter-spacing:-.02em}
+.kachel .zeilen{width:100%;margin:22px 0 0;border-top:1px solid var(--hair)}
+.kachel .zeile{display:flex;align-items:baseline;justify-content:space-between;
+  padding:13px 2px;border-bottom:1px solid var(--hair);text-decoration:none;
+  color:var(--ink);gap:10px}
+.kachel .zeile b{font-size:24px;font-weight:600;letter-spacing:-.02em}
+.kachel .zeile .wer{font-size:15px;color:var(--muted);text-align:left}
+.kachel .pille{margin-top:22px;display:inline-block;background:var(--blau);
+  color:#fff;border-radius:980px;padding:11px 21px;font-size:15px;
+  text-decoration:none;font-weight:400}
+
+/* --- Bestenlisten ---------------------------------------------------- */
+.listen{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.liste{background:var(--bg);border-radius:22px;padding:30px 28px}
+section.flaeche .liste{background:var(--bg)}
+.liste .kopf{display:flex;align-items:center;gap:9px;color:var(--muted);
+  font-size:13px;letter-spacing:.02em}
+.liste .kopf .ikon{width:19px;height:19px;color:var(--gruen)}
+.liste .name{font-size:27px;font-weight:600;letter-spacing:-.025em;
+  line-height:1.15;margin:12px 0 6px}
+.liste .wert{font-size:19px;color:var(--gruen);font-weight:600}
+.liste .liga{font-size:14px;color:var(--muted);margin-top:8px}
+.liste .mehr{margin-top:16px;display:inline-block;font-size:15px;
+  text-decoration:none}
+
+/* --- Tabelle: Haarlinien, kein Kasten -------------------------------- */
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{text-align:right;padding:14px 8px;border-bottom:1px solid var(--hair);
+  font-size:15px}
+th{font-size:12px;font-weight:400;color:var(--muted);letter-spacing:0}
+th:nth-child(2),td:nth-child(2),th:nth-child(3),td:nth-child(3){text-align:left}
+td.platz{font-weight:600;width:56px}
+.verein{display:flex;align-items:center;gap:11px;min-width:0}
+.verein img{width:24px;height:24px;object-fit:contain;flex:0 0 24px}
+.verein span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.liga{color:var(--muted);font-size:14px}
+.stufe{display:inline-block;min-width:22px;text-align:center;font-size:12px;
+  color:var(--muted);border:1px solid var(--hair);border-radius:980px;
+  padding:1px 8px;margin-right:8px}
+.fussnote{text-align:center;margin:40px 0 0}
+.fussnote a{font-size:17px;text-decoration:none}
+
+footer{background:var(--grau);color:var(--muted);font-size:12px;
+  padding:34px 0 46px;line-height:1.8}
+footer a{color:var(--blau);text-decoration:none}
+footer .reihe{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+
+/* --- Entwurfsmarke --------------------------------------------------- */
+.marke-entwurf{position:fixed;right:14px;bottom:14px;z-index:40;font-size:12px;
+  background:var(--ink);color:var(--bg);border-radius:980px;padding:9px 15px;
+  text-decoration:none;box-shadow:0 6px 22px rgba(0,0,0,.22)}
+
+@media (max-width:700px){
+  .buehne{padding:48px 0 12px}
+  section.flaeche,section.weiss{padding:56px 0}
+  .band{padding:34px 22px 48px;gap:26px}
+  th:nth-child(4),td:nth-child(4),th:nth-child(5),td:nth-child(5){display:none}
+  th,td{padding:12px 5px}
+  .verein span{white-space:normal}
+}
+</style>
+</head>
+<body>
+
+<div class="nav"><div class="mitte">
+  <a class="marke" href="#">ClubRank</a>
+  <a href="#" data-sportart="fussball">Fußball</a>
+  <a href="#" data-sportart="handball">Handball</a>
+  <a href="#" data-sportart="basketball">Basketball</a>
+  <a class="rechts" href="#">Impressum</a>
+</div></div>
+
+<div class="buehne mitte">
+  <h1>Jeder Verein.<br>Eine Rangfolge.</h1>
+  <p class="unter">Von der Bundesliga bis zur Kreisklasse. Jeden Tag neu gerechnet.</p>
+  <div class="links">
+    <a href="#">Rangfolge ansehen&nbsp;&rsaquo;</a>
+    <a href="#">Wie gerechnet wird&nbsp;&rsaquo;</a>
+  </div>
+</div>
+
+<div class="band" id="band"></div>
+
+<section class="flaeche">
+  <div class="mitte">
+    <h2 class="titel">Drei Sportarten, sechs Rangfolgen</h2>
+    <p class="untertitel">Männer und Frauen spielen getrennte Pyramiden mit eigenen
+      Auf- und Abstiegsketten. Deshalb stehen sie auch getrennt.</p>
+    <div class="kacheln" id="kacheln"></div>
+  </div>
+</section>
+
+<section class="weiss">
+  <div class="mitte">
+    <h2 class="titel">Die Bestenlisten</h2>
+    <p class="untertitel">Quer zur Tabelle gelesen — ohne Rücksicht darauf,
+      in welcher Liga jemand spielt.</p>
+    <div class="listen" id="listen"></div>
+  </div>
+</section>
+
+<section class="flaeche">
+  <div class="mitte">
+    <h2 class="titel">Die Spitze</h2>
+    <p class="untertitel" id="tabellenUnter">Die ersten 25 von allen Mannschaften.</p>
+    <table>
+      <thead><tr><th>#</th><th>Verein</th><th>Liga</th><th>Sp</th>
+        <th>Tore</th><th>Pkt/Sp</th></tr></thead>
+      <tbody id="zeilen"><tr><td colspan="6" style="text-align:center;
+        color:var(--muted);border:0;padding:40px">Daten werden geladen …</td></tr></tbody>
+    </table>
+    <p class="fussnote"><a href="#">Alle Mannschaften ansehen&nbsp;&rsaquo;</a></p>
+  </div>
+</section>
+
+<footer><div class="mitte">
+  <div class="reihe"><a href="#">Impressum</a><a href="#">Datenschutz</a>
+    <a href="#">Quellen und Lizenzen</a></div>
+  <p style="margin:0">Enthält Daten von OpenLigaDB, lizenziert unter der Open
+    Database License 1.0. Ein privates, nicht-kommerzielles Projekt.</p>
+</div></footer>
+
+<a class="marke-entwurf" href="allianz.html">Entwurf A · Apple → zu B</a>
+
+<script src="ikonen.js"></script>
+<script>
+const BASIS = '../docs/';
+const SLUGS = ['fussball','fussball-frauen','handball','handball-frauen',
+               'basketball','basketball-frauen'];
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tausend = n => Number(n).toLocaleString('de-DE');
+const ikon = (...k) => {
+  const p = k.map(x => window.IKONEN[x]).find(Boolean);
+  return p ? `<svg class="ikon" viewBox="0 0 24 24" aria-hidden="true">${p}</svg>` : '';
+};
+
+(async () => {
+  const infos = await Promise.all(SLUGS.map(s =>
+    fetch(`${BASIS}data/${s}.info.json`).then(r => r.json())));
+
+  const summe = f => infos.reduce((a, i) => a + (i[f] || 0), 0);
+  document.getElementById('band').innerHTML = [
+    [tausend(summe('teams')), 'Mannschaften'],
+    [tausend(summe('leagues')), 'Staffeln'],
+    ['3', 'Sportarten'],
+    [infos[0].season, 'Saison'],
+  ].map(([z, w]) => `<div><div class="zahl">${z}</div><div class="wort">${w}</div></div>`)
+   .join('');
+
+  const arten = [];
+  infos.forEach(i => {
+    let a = arten.find(x => x.sportart === i.sportart);
+    if (!a) arten.push(a = {sportart: i.sportart, name: i.sportName, klassen: []});
+    a.klassen.push(i);
+  });
+  document.getElementById('kacheln').innerHTML = arten.map(a => `
+    <div class="kachel">
+      ${ikon(a.sportart)}
+      <h3>${esc(a.name)}</h3>
+      <div class="zeilen">${a.klassen.map(k => `
+        <a class="zeile" href="#">
+          <span class="wer">${esc(k.klasseName)}<br>${tausend(k.leagues)} Staffeln</span>
+          <b>${tausend(k.teams)}</b>
+        </a>`).join('')}</div>
+      <a class="pille" href="#">Rangfolge öffnen</a>
+    </div>`).join('');
+
+  const d = await fetch(`${BASIS}data/fussball.json`).then(r => r.json());
+  document.getElementById('listen').innerHTML = (d.kennzahlen || []).slice(0, 3)
+    .map(k => `
+    <div class="liste">
+      <div class="kopf">${ikon(k.key, k.icon)}${esc(k.titel)}</div>
+      <div class="name">${esc(k.verein)}</div>
+      <div class="wert">${esc(k.wert)}</div>
+      <div class="liga">${esc(k.liga)} · Ligastufe ${k.stufe} · ${esc(k.verband)}</div>
+      <a class="mehr" href="#">Top 100 ansehen&nbsp;&rsaquo;</a>
+    </div>`).join('');
+
+  document.getElementById('tabellenUnter').textContent =
+    `Die ersten 25 von ${tausend(d.rows.length)} Mannschaften im Fußball der Männer.`;
+  document.getElementById('zeilen').innerHTML = d.rows.slice(0, 25).map(r => `
+    <tr>
+      <td class="platz">${r[0]}</td>
+      <td><div class="verein">${r[3] ? `<img src="${BASIS}${esc(r[3])}" alt="" loading="lazy">` : ''}
+        <span>${esc(r[2])}</span></div></td>
+      <td><span class="stufe">${r[4]}</span><span class="liga">${esc(d.leagues[r[5]])}</span></td>
+      <td>${r[8]}</td><td>${r[12]}:${r[13]}</td><td><b>${r[16].toFixed(2)}</b></td>
+    </tr>`).join('');
+})();
+</script>
+</body>
+</html>

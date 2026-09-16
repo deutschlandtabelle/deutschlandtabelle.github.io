@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClubRank — Entwurf B (Allianz)</title>
+<style>
+/* ===================================================================
+   Entwurf B -- angelehnt an allianz.de
+   Merkmale: Dunkelblau als Leitfarbe, zweistöckiger Kopf mit Marken-
+   leiste und Navigationszeile, Bühne mit Bild und überlappender weißer
+   Karte, runde hellblaue Icon-Plaketten, linksbündige Module mit
+   1px-Rahmen und Chevron-Links, Tabelle mit grauem Kopf und Zebra,
+   dunkelblauer Fuß mit Spalten.
+   =================================================================== */
+:root{
+  --blau:#003781;       /* Hausfarbe */
+  --blau2:#006192;      /* Akzent für Links und Icons */
+  --hell:#F2F5F7;       /* Flächenton */
+  --hellblau:#E3EFF7;   /* Plaketten */
+  --linie:#D5DBE0;
+  --ink:#1A1A1A; --grau:#5C6671; --weiss:#ffffff;
+}
+*{box-sizing:border-box}
+/* Icons: eine Strichstärke, Farbe vom umgebenden Text. */
+.ikon{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;
+  stroke-linejoin:round;flex:0 0 auto;vertical-align:-.2em}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--weiss);color:var(--ink);
+  font:16px/1.6 "Helvetica Neue",Helvetica,Arial,sans-serif}
+a{color:var(--blau2)}
+.mitte{max-width:1140px;margin:0 auto;padding:0 20px}
+
+/* --- Kopf: Markenleiste, Navigationszeile ---------------------------- */
+.dienstleiste{background:var(--hell);font-size:13px;color:var(--grau)}
+.dienstleiste .mitte{display:flex;justify-content:flex-end;gap:20px;padding:7px 20px}
+.dienstleiste a{color:var(--grau);text-decoration:none}
+.dienstleiste a:hover{color:var(--blau);text-decoration:underline}
+
+.markenleiste{border-bottom:1px solid var(--linie);background:var(--weiss)}
+.markenleiste .mitte{display:flex;align-items:center;gap:20px;padding:16px 20px}
+.marke{font-size:25px;font-weight:700;color:var(--blau);text-decoration:none;
+  letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.marke .ikon{width:28px;height:28px;color:var(--blau)}
+.knopf{background:var(--blau);color:#fff;border:1px solid var(--blau);
+  border-radius:4px;padding:11px 20px;font-size:15px;font-weight:700;
+  text-decoration:none;display:inline-block;white-space:nowrap}
+.knopf:hover{background:#00285e}
+.knopf.offen{background:transparent;color:var(--blau)}
+.knopf.offen:hover{background:var(--hellblau)}
+.markenleiste .rechts{margin-left:auto;display:flex;gap:10px;align-items:center}
+
+.navileiste{border-bottom:3px solid var(--blau);background:var(--weiss)}
+.navileiste .mitte{display:flex;gap:6px;padding:0 20px;flex-wrap:wrap}
+.navileiste a{display:flex;align-items:center;gap:8px;padding:15px 16px;
+  font-size:16px;font-weight:700;color:var(--ink);text-decoration:none;
+  border-bottom:3px solid transparent;margin-bottom:-3px}
+.navileiste a .ikon{width:20px;height:20px;color:var(--blau2)}
+.navileiste a:hover,.navileiste a[aria-current]{color:var(--blau);
+  border-bottom-color:var(--blau2)}
+
+/* --- Bühne: Bild mit überlappender Karte ----------------------------- */
+.buehne{position:relative;background:var(--blau)}
+.buehne img{display:block;width:100%;height:clamp(260px,38vw,420px);
+  object-fit:cover;opacity:.92}
+.buehne .karte{background:var(--weiss);max-width:560px;padding:32px 34px;
+  box-shadow:0 2px 14px rgba(0,0,0,.14);margin:-90px 0 0;position:relative}
+.buehne h1{margin:0 0 12px;font-size:clamp(28px,3.6vw,40px);line-height:1.18;
+  color:var(--blau);font-weight:700}
+.buehne p{margin:0 0 20px;color:var(--grau)}
+.chev{text-decoration:none;font-weight:700;color:var(--blau2)}
+.chev::after{content:" \203A";font-weight:700}
+.chev:hover{text-decoration:underline}
+
+/* --- Kennzahlenstreifen ---------------------------------------------- */
+.streifen{background:var(--hell);margin-top:38px}
+.streifen .mitte{display:grid;gap:20px;padding:34px 20px;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.kennzahl{display:flex;align-items:center;gap:14px}
+.plakette{width:52px;height:52px;border-radius:50%;background:var(--hellblau);
+  display:grid;place-items:center;flex:0 0 52px}
+.plakette .ikon{width:26px;height:26px;color:var(--blau)}
+.kennzahl b{display:block;font-size:28px;line-height:1.1;color:var(--blau)}
+.kennzahl span{font-size:14px;color:var(--grau)}
+
+/* --- Abschnitte und Module ------------------------------------------- */
+section{padding:52px 0}
+section.flaeche{background:var(--hell)}
+h2{font-size:clamp(23px,2.6vw,30px);color:var(--blau);margin:0 0 6px;
+  font-weight:700;line-height:1.25}
+h2::before{content:"";display:block;width:44px;height:4px;background:var(--blau2);
+  margin-bottom:14px}
+.vorspann{margin:0 0 28px;color:var(--grau);max-width:74ch}
+
+.module{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.modul{background:var(--weiss);border:1px solid var(--linie);padding:24px;
+  display:flex;flex-direction:column}
+.modul .kopfzeile{display:flex;align-items:center;gap:12px}
+.modul h3{margin:0;font-size:20px;color:var(--blau);font-weight:700}
+.modul .reihen{margin:18px 0 18px;border-top:1px solid var(--linie)}
+.modul .reihe{display:flex;justify-content:space-between;align-items:baseline;
+  gap:12px;padding:12px 0;border-bottom:1px solid var(--linie);
+  text-decoration:none;color:var(--ink)}
+.modul .reihe:hover{background:var(--hell)}
+.modul .reihe b{color:var(--blau);font-size:22px}
+.modul .reihe small{display:block;color:var(--grau);font-size:13px}
+.modul .fuss{margin-top:auto}
+
+.liste{background:var(--weiss);border:1px solid var(--linie);padding:22px 24px}
+section.flaeche .liste{background:var(--weiss)}
+.liste .kopfzeile{display:flex;align-items:center;gap:11px;
+  text-transform:uppercase;letter-spacing:.06em;font-size:12px;font-weight:700;
+  color:var(--grau)}
+.liste .name{font-size:21px;font-weight:700;margin:12px 0 4px;line-height:1.25}
+.liste .wert{color:var(--blau);font-weight:700}
+.liste .liga{font-size:13px;color:var(--grau);margin:6px 0 14px}
+
+/* --- Tabelle: grauer Kopf, Zebra, klare Linien ----------------------- */
+.tabellenkasten{border:1px solid var(--linie);background:var(--weiss);
+  overflow:hidden}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{text-align:right;padding:12px 12px;font-size:15px;
+  border-bottom:1px solid var(--linie)}
+thead th{background:var(--hell);color:var(--blau);font-size:12px;font-weight:700;
+  text-transform:uppercase;letter-spacing:.05em;border-bottom:2px solid var(--blau2)}
+th:nth-child(2),td:nth-child(2),th:nth-child(3),td:nth-child(3){text-align:left}
+tbody tr:nth-child(even){background:#FAFBFC}
+tbody tr:hover{background:var(--hellblau)}
+td.platz{font-weight:700;color:var(--blau);width:58px}
+.verein{display:flex;align-items:center;gap:10px;min-width:0}
+.verein img{width:22px;height:22px;object-fit:contain;flex:0 0 22px}
+.verein span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.liga{color:var(--grau);font-size:13px}
+.stufe{display:inline-block;background:var(--hellblau);color:var(--blau);
+  font-size:12px;font-weight:700;border-radius:3px;padding:2px 7px;margin-right:8px}
+
+/* --- Fuß -------------------------------------------------------------- */
+footer{background:var(--blau);color:#fff;padding:44px 0 26px;font-size:14px}
+footer .spalten{display:grid;gap:26px;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+footer h4{margin:0 0 10px;font-size:15px;font-weight:700}
+footer a{color:#cfe2f2;text-decoration:none;display:block;padding:4px 0}
+footer a:hover{text-decoration:underline;color:#fff}
+footer .unten{margin-top:30px;padding-top:18px;border-top:1px solid #1d4f92;
+  color:#a9c6e2;font-size:13px}
+
+.marke-entwurf{position:fixed;right:14px;bottom:14px;z-index:40;font-size:13px;
+  background:var(--blau);color:#fff;padding:10px 16px;border-radius:4px;
+  text-decoration:none;font-weight:700;box-shadow:0 6px 22px rgba(0,0,0,.25)}
+
+@media (max-width:760px){
+  .buehne .karte{margin:-40px 0 0;padding:22px}
+  .markenleiste .rechts .knopf.offen{display:none}
+  section{padding:36px 0}
+  th:nth-child(4),td:nth-child(4),th:nth-child(5),td:nth-child(5){display:none}
+  th,td{padding:11px 7px}
+  .verein span{white-space:normal}
+}
+</style>
+</head>
+<body>
+
+<div class="dienstleiste"><div class="mitte">
+  <a href="#">Impressum</a><a href="#">Datenschutz</a><a href="#">Quellen</a>
+</div></div>
+
+<div class="markenleiste"><div class="mitte">
+  <a class="marke" href="#">ClubRank</a>
+  <div class="rechts">
+    <a class="knopf offen" href="#">Verein suchen</a>
+    <a class="knopf" href="#">Zur Rangfolge</a>
+  </div>
+</div></div>
+
+<div class="navileiste"><div class="mitte" id="navi"></div></div>
+
+<div class="buehne">
+  <img src="../docs/header.jpg" alt="" onerror="this.style.display='none'">
+  <div class="mitte"><div class="karte">
+    <h1>Jeder Verein. Jede Liga.<br>Eine Rangfolge.</h1>
+    <p>Von der Bundesliga bis zur Kreisklasse, für drei Sportarten und beide
+      Klassen — jeden Tag neu aus den Ergebnissen der laufenden Saison
+      gerechnet.</p>
+    <a class="chev" href="#">Wo steht dein Verein</a>
+  </div></div>
+</div>
+
+<div class="streifen"><div class="mitte" id="streifen"></div></div>
+
+<section>
+  <div class="mitte">
+    <h2>Drei Sportarten, sechs Rangfolgen</h2>
+    <p class="vorspann">Männer und Frauen spielen getrennte Pyramiden mit eigenen
+      Auf- und Abstiegsketten. Ein gemeinsamer Platz hätte keine sportliche
+      Grundlage — deshalb stehen sie getrennt.</p>
+    <div class="module" id="module"></div>
+  </div>
+</section>
+
+<section class="flaeche">
+  <div class="mitte">
+    <h2>Die Bestenlisten</h2>
+    <p class="vorspann">Quer zur Tabelle gelesen — ohne Rücksicht darauf, in
+      welcher Liga jemand spielt.</p>
+    <div class="module" id="listen"></div>
+  </div>
+</section>
+
+<section>
+  <div class="mitte">
+    <h2>Die Spitze der Rangfolge</h2>
+    <p class="vorspann" id="tabellenUnter">Die ersten 25 von allen Mannschaften.</p>
+    <div class="tabellenkasten">
+      <table>
+        <thead><tr><th>Rang</th><th>Verein</th><th>Liga</th><th>Sp</th>
+          <th>Tore</th><th>Pkt/Sp</th></tr></thead>
+        <tbody id="zeilen"><tr><td colspan="6" style="text-align:center;
+          color:var(--grau);padding:36px">Daten werden geladen …</td></tr></tbody>
+      </table>
+    </div>
+    <p style="margin:18px 0 0"><a class="chev" href="#">Alle Mannschaften ansehen</a></p>
+  </div>
+</section>
+
+<footer><div class="mitte">
+  <div class="spalten">
+    <div><h4>Sportarten</h4><a href="#">Fußball</a><a href="#">Handball</a>
+      <a href="#">Basketball</a></div>
+    <div><h4>Rangfolge</h4><a href="#">Wie gerechnet wird</a>
+      <a href="#">Bestenlisten</a><a href="#">Daten als CSV</a></div>
+    <div><h4>Rechtliches</h4><a href="#">Impressum</a><a href="#">Datenschutz</a>
+      <a href="#">Quellen und Lizenzen</a></div>
+    <div><h4>Kontakt</h4><a href="#">dominik.orbach@th-koeln.de</a></div>
+  </div>
+  <p class="unten">Enthält Daten von OpenLigaDB, lizenziert unter der Open Database
+    License 1.0. Ein privates, nicht-kommerzielles Projekt.</p>
+</div></footer>
+
+<a class="marke-entwurf" href="apple.html">Entwurf B · Allianz → zu A</a>
+
+<script src="ikonen.js"></script>
+<script>
+const BASIS = '../docs/';
+const SLUGS = ['fussball','fussball-frauen','handball','handball-frauen',
+               'basketball','basketball-frauen'];
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tausend = n => Number(n).toLocaleString('de-DE');
+const ikon = (...k) => {
+  const p = k.map(x => window.IKONEN[x]).find(Boolean);
+  return p ? `<svg class="ikon" viewBox="0 0 24 24" aria-hidden="true">${p}</svg>` : '';
+};
+
+(async () => {
+  const infos = await Promise.all(SLUGS.map(s =>
+    fetch(`${BASIS}data/${s}.info.json`).then(r => r.json())));
+  const summe = f => infos.reduce((a, i) => a + (i[f] || 0), 0);
+
+  const arten = [];
+  infos.forEach(i => {
+    let a = arten.find(x => x.sportart === i.sportart);
+    if (!a) arten.push(a = {sportart: i.sportart, name: i.sportName, klassen: []});
+    a.klassen.push(i);
+  });
+
+  document.getElementById('navi').innerHTML = arten.map((a, i) =>
+    `<a href="#" ${i === 0 ? 'aria-current="page"' : ''}>${ikon(a.sportart)}${esc(a.name)}</a>`
+  ).join('') + '<a href="#">Bestenlisten</a><a href="#">Daten</a>';
+
+  document.getElementById('streifen').innerHTML = [
+    ['bester', tausend(summe('teams')), 'Mannschaften in einer Rangfolge'],
+    ['abstand', tausend(summe('leagues')), 'Staffeln, Stufe 1 bis 14'],
+    ['aufsteiger', '6', 'Rangfolgen, täglich gerechnet'],
+    ['torfabrik', infos[0].season, 'laufende Saison'],
+  ].map(([ik, zahl, wort]) => `
+    <div class="kennzahl"><div class="plakette">${ikon(ik)}</div>
+      <div><b>${zahl}</b><span>${wort}</span></div></div>`).join('');
+
+  document.getElementById('module').innerHTML = arten.map(a => `
+    <div class="modul">
+      <div class="kopfzeile"><div class="plakette">${ikon(a.sportart)}</div>
+        <h3>${esc(a.name)}</h3></div>
+      <div class="reihen">${a.klassen.map(k => `
+        <a class="reihe" href="#">
+          <span>${esc(k.klasseName)}<small>${tausend(k.leagues)} Staffeln ·
+            Stand ${esc(k.generated.split(',')[0])}</small></span>
+          <b>${tausend(k.teams)}</b>
+        </a>`).join('')}</div>
+      <div class="fuss"><a class="chev" href="#">Zur Rangfolge</a></div>
+    </div>`).join('');
+
+  const d = await fetch(`${BASIS}data/fussball.json`).then(r => r.json());
+  document.getElementById('listen').innerHTML = (d.kennzahlen || []).slice(0, 3)
+    .map(k => `
+    <div class="liste">
+      <div class="kopfzeile">${ikon(k.key, k.icon)}${esc(k.titel)}</div>
+      <div class="name">${esc(k.verein)}</div>
+      <div class="wert">${esc(k.wert)}</div>
+      <div class="liga">${esc(k.liga)} · Ligastufe ${k.stufe} · ${esc(k.verband)}</div>
+      <a class="chev" href="#">Top 100 ansehen</a>
+    </div>`).join('');
+
+  document.getElementById('tabellenUnter').textContent =
+    `Die ersten 25 von ${tausend(d.rows.length)} Mannschaften im Fußball der Männer.`;
+  document.getElementById('zeilen').innerHTML = d.rows.slice(0, 25).map(r => `
+    <tr>
+      <td class="platz">${r[0]}</td>
+      <td><div class="verein">${r[3] ? `<img src="${BASIS}${esc(r[3])}" alt="" loading="lazy">` : ''}
+        <span>${esc(r[2])}</span></div></td>
+      <td><span class="stufe">${r[4]}</span><span class="liga">${esc(d.leagues[r[5]])}</span></td>
+      <td>${r[8]}</td><td>${r[12]}:${r[13]}</td><td><b>${r[16].toFixed(2)}</b></td>
+    </tr>`).join('');
+})();
+</script>
+</body>
+</html>

@@ -100,16 +100,16 @@ def auswertung(client: OpenLigaDB, season: int, ranking: list[dict],
         "paarungen": nach_abstand,
         "fehlend": fehlend,
         "hoehepunkte": [
-            {"icon": "🪜", "titel": "Größter Abstand",
+            {"key": "abstand", "icon": "🪜", "titel": "Größter Abstand",
              "text": f"{nach_abstand[0]['heim']} (Rang "
                      f"{nach_abstand[0]['heimRang']:,}) gegen "
                      f"{nach_abstand[0]['gast']} (Rang "
                      f"{nach_abstand[0]['gastRang']:,})".replace(",", "."),
              "wert": plaetze(nach_abstand[0]["abstand"])},
-            {"icon": "⚖️", "titel": "Engste Paarung",
+            {"key": "eng", "icon": "⚖️", "titel": "Engste Paarung",
              "text": f"{nach_abstand[-1]['heim']} gegen {nach_abstand[-1]['gast']}",
              "wert": plaetze(nach_abstand[-1]["abstand"])},
-            {"icon": "🐜", "titel": "Der kleinste Verbliebene",
+            {"key": "klein", "icon": "🐜", "titel": "Der kleinste Verbliebene",
              "text": f"{aussenseiter[schlechter]} "
                      f"({aussenseiter[schlechter + 'Liga']})",
              "wert": f"Rang {max(aussenseiter['heimRang'], aussenseiter['gastRang']):,}"

@@ -103,7 +103,7 @@ body{margin:0;background:var(--bg);color:var(--ink);
 .sportkarte{background:var(--panel);border:1px solid var(--line);border-radius:14px;
   padding:18px;text-decoration:none;color:var(--ink);display:block}
 .sportkarte:hover{border-color:var(--accent)}
-.sportkarte .ic{font-size:30px;line-height:1}
+.sportkarte .ic{line-height:1}
 .sportkarte h3{margin:8px 0 2px;font-size:20px;letter-spacing:-.01em}
 .sportkarte .zahl{font-size:26px;font-weight:800;letter-spacing:-.02em;
   color:var(--accent);margin:6px 0 0}
@@ -141,6 +141,20 @@ h2 + p.unter{margin:0 0 18px;color:var(--muted);font-size:15px}
 .karte .kopf{display:flex;align-items:center;gap:9px;font-size:13px;
   text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
 .karte .kopf i{font-style:normal;font-size:20px}
+
+/* --- Icons ---------------------------------------------------------------
+   Eine Strichstärke, eine Farbe -- die des umgebenden Textes. Emoji konnten
+   das nicht: sie bringen ihre eigenen Farben mit und sehen auf jedem System
+   anders aus. */
+.ikon{width:1.2em;height:1.2em;flex:0 0 auto;fill:none;stroke:currentColor;
+  stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;
+  vertical-align:-.22em}
+.topbar nav a .ikon{width:16px;height:16px;margin-right:6px;vertical-align:-3px}
+.sportkarte .ic .ikon{width:30px;height:30px;color:var(--accent);
+  vertical-align:top}
+.karte .kopf .ikon{width:20px;height:20px;color:var(--accent);vertical-align:-4px}
+h1 .ikon,h2 .ikon{width:.92em;height:.92em;color:var(--accent);margin-right:8px;
+  vertical-align:-.12em}
 .karte .verein{font-size:21px;font-weight:700;letter-spacing:-.01em;line-height:1.25}
 .karte .wert{font-size:15px;font-weight:600;color:var(--accent)}
 .karte .liga{font-size:13px;color:var(--muted)}
@@ -605,6 +619,13 @@ footer a{color:var(--accent)}
 
 <script>
 const SPORTS = [{"name": "Fußball", "sportart": "fussball", "sportName": "Fußball", "klasse": "maenner", "klasseName": "Männer", "icon": "⚽", "torwort": "Tore", "hinweis": null, "slug": "fussball", "ready": true, "teams": 26716, "leagues": 1936, "tiers": 14, "season": "2026/27", "generated": "09.09.2026, 14:28 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 09.09.2026, 14:28 Uhr · Saison 2026/27 · <a href=\"fussball-vereine.csv\">fussball-vereine.csv</a> · <a href=\"fussball-ligen.csv\">fussball-ligen.csv</a></p>"}, {"name": "Fußball der Frauen", "sportart": "fussball", "sportName": "Fußball", "klasse": "frauen", "klasseName": "Frauen", "icon": "⚽", "torwort": "Tore", "hinweis": null, "slug": "fussball-frauen", "ready": true, "teams": 3430, "leagues": 332, "tiers": 9, "season": "2026/27", "generated": "16.09.2026, 15:12 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 15:12 Uhr · Saison 2026/27 · <a href=\"fussball-frauen-vereine.csv\">fussball-frauen-vereine.csv</a> · <a href=\"fussball-frauen-ligen.csv\">fussball-frauen-ligen.csv</a></p><p class=\"rechtslinks\"><a href=\"#impressum\">Impressum</a> · <a href=\"#datenschutz\">Datenschutz</a> · <a href=\"#impressum\">Quellen und Lizenzen</a></p>"}, {"name": "Handball", "sportart": "handball", "sportName": "Handball", "klasse": "maenner", "klasseName": "Männer", "icon": "🤾", "torwort": "Tore", "hinweis": null, "slug": "handball", "ready": true, "teams": 1895, "leagues": 176, "tiers": 13, "season": "2026/27", "generated": "16.09.2026, 14:44 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 14:44 Uhr · Saison 2026/27 · <a href=\"handball-vereine.csv\">handball-vereine.csv</a> · <a href=\"handball-ligen.csv\">handball-ligen.csv</a></p>"}, {"name": "Handball der Frauen", "sportart": "handball", "sportName": "Handball", "klasse": "frauen", "klasseName": "Frauen", "icon": "🤾", "torwort": "Tore", "hinweis": null, "slug": "handball-frauen", "ready": true, "teams": 1216, "leagues": 121, "tiers": 9, "season": "2026/27", "generated": "16.09.2026, 14:46 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 14:46 Uhr · Saison 2026/27 · <a href=\"handball-frauen-vereine.csv\">handball-frauen-vereine.csv</a> · <a href=\"handball-frauen-ligen.csv\">handball-frauen-ligen.csv</a></p>"}, {"name": "Basketball", "sportart": "basketball", "sportName": "Basketball", "klasse": "maenner", "klasseName": "Männer", "icon": "🏀", "torwort": "Körbe", "hinweis": null, "slug": "basketball", "ready": true, "teams": 1872, "leagues": 207, "tiers": 13, "season": "2026/27", "generated": "16.09.2026, 14:56 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 14:56 Uhr · Saison 2026/27 · <a href=\"basketball-vereine.csv\">basketball-vereine.csv</a> · <a href=\"basketball-ligen.csv\">basketball-ligen.csv</a></p>"}, {"name": "Basketball der Frauen", "sportart": "basketball", "sportName": "Basketball", "klasse": "frauen", "klasseName": "Frauen", "icon": "🏀", "torwort": "Körbe", "hinweis": null, "slug": "basketball-frauen", "ready": true, "teams": 679, "leagues": 84, "tiers": 11, "season": "2026/27", "generated": "16.09.2026, 15:00 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 15:00 Uhr · Saison 2026/27 · <a href=\"basketball-frauen-vereine.csv\">basketball-frauen-vereine.csv</a> · <a href=\"basketball-frauen-ligen.csv\">basketball-frauen-ligen.csv</a></p><p class=\"rechtslinks\"><a href=\"#impressum\">Impressum</a> · <a href=\"#datenschutz\">Datenschutz</a> · <a href=\"#impressum\">Quellen und Lizenzen</a></p>"}];
+const IKONEN = {"fussball":"<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5 16.28 10.61 14.65 15.64H9.35L7.72 10.61Z\"/><path d=\"M12 7.5V3\"/><path d=\"m16.28 10.61 4.28-1.39\"/><path d=\"m14.65 15.64 2.64 3.64\"/><path d=\"m9.35 15.64-2.64 3.64\"/><path d=\"M7.72 10.61 3.44 9.22\"/>","handball":"<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 12c0-3.4 1.6-6.4 4.6-8.3\"/><path d=\"M12 12c-3 .6-6-.3-8.5-2.6\"/><path d=\"M12 12c1.4 2.9 1.3 6-.4 9\"/>","basketball":"<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 3v18\"/><path d=\"M3.1 12h17.8\"/><path d=\"M5.3 5.3c2.4 1.9 3.7 4.1 3.7 6.7s-1.3 4.8-3.7 6.7\"/><path d=\"M18.7 5.3C16.3 7.2 15 9.4 15 12s1.3 4.8 3.7 6.7\"/>","bester":"<path d=\"M8 3.5h8V9a4 4 0 0 1-8 0Z\"/><path d=\"M8 5H5.4a2.6 2.6 0 0 0 2.9 4.2\"/><path d=\"M16 5h2.6a2.6 2.6 0 0 1-2.9 4.2\"/><path d=\"M12 13v3\"/><path d=\"M10.1 16h3.8l.5 4h-4.8Z\"/><path d=\"M8.5 20h7\"/>","heiss":"<path d=\"M12 3.2c3 2.9 4.8 5.4 4.8 8.4a4.8 4.8 0 1 1-9.6 0c0-1.9.9-3.5 2.2-4.9.1 1.3.7 2.2 1.6 2.7.3-2.4-.1-4.3 1-6.2Z\"/><path d=\"M12 20a2.6 2.6 0 0 1-2.6-2.6c0-1.4 1.3-2.1 2.6-3.81.3 1.7 2.6 2.4 2.6 3.8A2.6 2.6 0 0 1 12 20Z\"/>","torfabrik":"<path d=\"M4 20.5V7.5h16v13\"/><path d=\"M4 13.5h16\"/><circle cx=\"12\" cy=\"17\" r=\"2.4\"/>","bollwerk":"<path d=\"M12 3.2 19 5.8v5.3c0 4.3-2.9 7.7-7 9.1-4.1-1.4-7-4.8-7-9.1V5.8Z\"/>","aufsteiger":"<path d=\"M3.5 16.5 9 11l3.5 3.5L20.5 6.5\"/><path d=\"M15.5 6.5h5v5\"/>","absteiger":"<path d=\"M3.5 7.5 9 13l3.5-3.5 8 8\"/><path d=\"M15.5 17.5h5v-5\"/>","schlusslicht":"<path d=\"M12 3v18\"/><path d=\"m3.34 7.5 17.32 10\"/><path d=\"M20.66 7.5 3.34 17.5\"/><path d=\"m9.6 5.4 2.4 2.4 2.4-2.4\"/><path d=\"m9.6 18.6 2.4-2.4 2.4 2.4\"/>","klatsche":"<path d=\"M13.5 2.8 5.8 13.6h5.1l-1 7.6 8-10.9h-5.1Z\"/>","abstand":"<path d=\"M8 3v18\"/><path d=\"M16 3v18\"/><path d=\"M8 7.5h8\"/><path d=\"M8 12h8\"/><path d=\"M8 16.5h8\"/>","eng":"<path d=\"M12 4.5v15\"/><path d=\"M8.5 20h7\"/><path d=\"M4.5 8h15\"/><path d=\"M4.5 8 2 13.4a2.9 2.9 0 0 0 5 0Z\"/><path d=\"m19.5 8 2.5 5.4a2.9 2.9 0 0 1-5 0Z\"/>","klein":"<path d=\"M3 20.5h18\"/><path d=\"M4.8 20.5V14h4.6v6.5\"/><path d=\"M14.6 20.5V5.5h4.6v15\"/>","⚽":"<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5 16.28 10.61 14.65 15.64H9.35L7.72 10.61Z\"/><path d=\"M12 7.5V3\"/><path d=\"m16.28 10.61 4.28-1.39\"/><path d=\"m14.65 15.64 2.64 3.64\"/><path d=\"m9.35 15.64-2.64 3.64\"/><path d=\"M7.72 10.61 3.44 9.22\"/>","🤾":"<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 12c0-3.4 1.6-6.4 4.6-8.3\"/><path d=\"M12 12c-3 .6-6-.3-8.5-2.6\"/><path d=\"M12 12c1.4 2.9 1.3 6-.4 9\"/>","🏀":"<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 3v18\"/><path d=\"M3.1 12h17.8\"/><path d=\"M5.3 5.3c2.4 1.9 3.7 4.1 3.7 6.7s-1.3 4.8-3.7 6.7\"/><path d=\"M18.7 5.3C16.3 7.2 15 9.4 15 12s1.3 4.8 3.7 6.7\"/>","🏆":"<path d=\"M8 3.5h8V9a4 4 0 0 1-8 0Z\"/><path d=\"M8 5H5.4a2.6 2.6 0 0 0 2.9 4.2\"/><path d=\"M16 5h2.6a2.6 2.6 0 0 1-2.9 4.2\"/><path d=\"M12 13v3\"/><path d=\"M10.1 16h3.8l.5 4h-4.8Z\"/><path d=\"M8.5 20h7\"/>","🔥":"<path d=\"M12 3.2c3 2.9 4.8 5.4 4.8 8.4a4.8 4.8 0 1 1-9.6 0c0-1.9.9-3.5 2.2-4.9.1 1.3.7 2.2 1.6 2.7.3-2.4-.1-4.3 1-6.2Z\"/><path d=\"M12 20a2.6 2.6 0 0 1-2.6-2.6c0-1.4 1.3-2.1 2.6-3.81.3 1.7 2.6 2.4 2.6 3.8A2.6 2.6 0 0 1 12 20Z\"/>","🧱":"<path d=\"M12 3.2 19 5.8v5.3c0 4.3-2.9 7.7-7 9.1-4.1-1.4-7-4.8-7-9.1V5.8Z\"/>","📈":"<path d=\"M3.5 16.5 9 11l3.5 3.5L20.5 6.5\"/><path d=\"M15.5 6.5h5v5\"/>","📉":"<path d=\"M3.5 7.5 9 13l3.5-3.5 8 8\"/><path d=\"M15.5 17.5h5v-5\"/>","🥶":"<path d=\"M12 3v18\"/><path d=\"m3.34 7.5 17.32 10\"/><path d=\"M20.66 7.5 3.34 17.5\"/><path d=\"m9.6 5.4 2.4 2.4 2.4-2.4\"/><path d=\"m9.6 18.6 2.4-2.4 2.4 2.4\"/>","💥":"<path d=\"M13.5 2.8 5.8 13.6h5.1l-1 7.6 8-10.9h-5.1Z\"/>","🪜":"<path d=\"M8 3v18\"/><path d=\"M16 3v18\"/><path d=\"M8 7.5h8\"/><path d=\"M8 12h8\"/><path d=\"M8 16.5h8\"/>","⚖️":"<path d=\"M12 4.5v15\"/><path d=\"M8.5 20h7\"/><path d=\"M4.5 8h15\"/><path d=\"M4.5 8 2 13.4a2.9 2.9 0 0 0 5 0Z\"/><path d=\"m19.5 8 2.5 5.4a2.9 2.9 0 0 1-5 0Z\"/>","⚖":"<path d=\"M12 4.5v15\"/><path d=\"M8.5 20h7\"/><path d=\"M4.5 8h15\"/><path d=\"M4.5 8 2 13.4a2.9 2.9 0 0 0 5 0Z\"/><path d=\"m19.5 8 2.5 5.4a2.9 2.9 0 0 1-5 0Z\"/>","🐜":"<path d=\"M3 20.5h18\"/><path d=\"M4.8 20.5V14h4.6v6.5\"/><path d=\"M14.6 20.5V5.5h4.6v15\"/>"};
+// Erst der sprechende Schlüssel, dann das, was im Datenpaket steht (dort
+// stehen teils noch Emoji aus älteren Läufen).
+const ikon = (...schluessel) => {
+  const pfad = schluessel.map(k => IKONEN[k]).find(Boolean);
+  return pfad ? `<svg class="ikon" viewBox="0 0 24 24" aria-hidden="true">${pfad}</svg>` : '';
+};
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const tausend = n => Number(n).toLocaleString('de-DE');
@@ -617,7 +638,7 @@ const SPORTARTEN = [];
 SPORTS.forEach(s => {
   let eintrag = SPORTARTEN.find(x => x.sportart === s.sportart);
   if (!eintrag) SPORTARTEN.push(eintrag = {
-    sportart: s.sportart, name: s.sportName, icon: s.icon, klassen: [],
+    sportart: s.sportart, name: s.sportName, klassen: [],
   });
   eintrag.klassen.push(s);
 });
@@ -626,7 +647,7 @@ document.getElementById('nav').innerHTML =
   '<a href="#home">Start</a>' + SPORTARTEN.map(a => {
     const erste = a.klassen.find(k => k.ready) || a.klassen[0];
     return `<a href="#${erste.slug}" data-sportart="${a.sportart}"
-       class="${a.klassen.some(k => k.ready) ? '' : 'leer'}">${a.icon} ${esc(a.name)}</a>`;
+       class="${a.klassen.some(k => k.ready) ? '' : 'leer'}">${ikon(a.sportart)}${esc(a.name)}</a>`;
   }).join('');
 
 document.getElementById('sportkarten').innerHTML = SPORTARTEN.map(a => {
@@ -639,12 +660,12 @@ document.getElementById('sportkarten').innerHTML = SPORTARTEN.map(a => {
          <span class="wer">${esc(k.klasseName)}</span>
          <span class="klein">${esc(k.hinweis || 'in Arbeit')}</span></div>`).join('');
   return `<div class="sportkarte">
-      <div class="ic">${a.icon}</div><h3>${esc(a.name)}</h3>
+      <div class="ic">${ikon(a.sportart)}</div><h3>${esc(a.name)}</h3>
       <div class="klassen">${zeilen}</div></div>`;
 }).join('');
 
 document.getElementById('homeSport').innerHTML = SPORTS.filter(s => s.ready)
-  .map(s => `<option value="${s.slug}">${s.icon} ${esc(s.name)} · ${esc(s.klasseName)}`
+  .map(s => `<option value="${s.slug}">${esc(s.name)} · ${esc(s.klasseName)}`
             + `</option>`).join('');
 document.getElementById('homeSuche').addEventListener('submit', e => {
   e.preventDefault();
@@ -680,7 +701,8 @@ async function route(){
   }
   if (!sport){ zeige('view-home'); window.scrollTo(0,0); return; }
   zeige('view-sport');
-  document.getElementById('sportTitel').textContent = `${sport.icon} ${sport.name}`;
+  document.getElementById('sportTitel').innerHTML =
+    ikon(sport.sportart, sport.icon) + esc(sport.name);
   document.getElementById('sportUnter').textContent = sport.ready
     ? `Saison ${sport.season} · Stand ${sport.generated}` : '';
 
@@ -791,7 +813,7 @@ function zeigeSport(sport, d, params){
 
   $('karten').innerHTML = (d.kennzahlen || []).map(k => `
     <div class="karte">
-      <div class="kopf"><i>${k.icon}</i>${esc(k.titel)}</div>
+      <div class="kopf">${ikon(k.key, k.icon)}${esc(k.titel)}</div>
       <div class="verein">${esc(k.verein)}</div>
       <div class="wert">${esc(k.wert)}</div>
       <div class="liga">${esc(k.liga)} · Ligastufe ${k.stufe} · ${esc(k.verband)}
@@ -913,12 +935,12 @@ function zeigeSport(sport, d, params){
   if (pokal){
     pokalBereich.hidden = false;
     pokalBereich.innerHTML = `
-      <h2>🏆 Sonderauswertung: DFB-Pokal, ${esc(pokal.runde)}</h2>
+      <h2>${ikon('bester')}Sonderauswertung: DFB-Pokal, ${esc(pokal.runde)}</h2>
       <p class="unter">Ausgelost für den ${esc(pokal.termin.split('-').reverse().join('.'))}.
         Wie weit liegen die Gegner im bundesweiten Ranking auseinander?</p>
       <div class="karten">${pokal.hoehepunkte.map(h => `
         <div class="karte">
-          <div class="kopf"><i>${h.icon}</i>${esc(h.titel)}</div>
+          <div class="kopf">${ikon(h.key, h.icon)}${esc(h.titel)}</div>
           <div class="verein">${esc(h.wert)}</div>
           <div class="liga">${esc(h.text)}</div>
         </div>`).join('')}</div>
@@ -944,7 +966,7 @@ function zeigeSport(sport, d, params){
     topBereich.hidden = false;
     topBereich.innerHTML = `
       <a class="zurueckknopf" href="#${sport.slug}">← Zurück zu ${esc(sport.name)}</a>
-      <h2>${karte.icon} ${esc(karte.titel)} — ${feld.length < 100
+      <h2>${ikon(karte.key, karte.icon)}${esc(karte.titel)} — ${feld.length < 100
           ? `alle ${tausend(feld.length)}` : 'Top 100'}</h2>
       <p class="unter">${esc(karte.erklaerung)}</p>
       <div class="tablewrap"><table class="topliste">
