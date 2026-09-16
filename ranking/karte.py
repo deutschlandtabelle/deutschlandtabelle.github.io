@@ -99,7 +99,42 @@ ORTE: dict[str, tuple[float, float]] = {
     "Bergisch Gladbach": (50.99, 7.13), "Herzogenaurach": (49.57, 10.89),
     "Lippstadt": (51.67, 8.35), "Rödinghausen": (52.24, 8.50), "Homburg": (49.33, 7.34),
     "Rehden": (52.61, 8.49), "Straelen": (51.44, 6.27), "Oberachern": (48.63, 8.08),
+    "Speyer": (49.32, 8.43), "Schifferstadt": (49.39, 8.38), "Kandel": (49.08, 8.19),
+    "Landau": (49.20, 8.12), "Pirmasens": (49.20, 7.60), "Neuwied": (50.43, 7.47),
+    "Bad Kreuznach": (49.84, 7.87), "Idar-Oberstein": (49.71, 7.31),
+    "Gießen": (50.58, 8.68), "Herne": (51.54, 7.22), "Castrop-Rauxel": (51.55, 7.31),
+    "Gladbeck": (51.57, 6.99), "Marl": (51.66, 7.09), "Dorsten": (51.66, 6.96),
+    "Arnsberg": (51.40, 8.06), "Soest": (51.57, 8.11), "Detmold": (51.94, 8.88),
+    "Herford": (52.12, 8.67), "Rheine": (52.28, 7.44), "Bocholt": (51.84, 6.61),
+    "Velbert": (51.34, 7.04), "Neuss": (51.20, 6.69), "Viersen": (51.26, 6.39),
+    "Wesel": (51.66, 6.62), "Kleve": (51.79, 6.14), "Euskirchen": (50.66, 6.79),
+    "Wolfenbüttel": (52.16, 10.54),
 }
+
+# Wenn weder Vereins- noch Ligenname einen Ort hergeben, bleibt das
+# Verbandsgebiet. Das ist eine grobe Verortung und wird auf der Seite auch
+# als solche ausgewiesen -- aber besser, als den Verein wegzulassen.
+# Längere Schlüssel gewinnen: "Rheinland-Pfalz" vor "Rheinland".
+GEBIETE: dict[str, tuple[float, float]] = {
+    "westfalen": (51.75, 8.10), "niederrhein": (51.40, 6.60),
+    "mittelrhein": (50.80, 7.00), "rheinland-pfalz": (49.90, 7.60),
+    "rheinhessen": (49.75, 8.15), "rheinland": (50.35, 7.50),
+    "südwest": (49.40, 7.80), "saarland": (49.38, 7.02), "saar": (49.38, 7.02),
+    "südbaden": (47.95, 7.95), "baden": (49.10, 8.60),
+    "württemberg": (48.70, 9.40), "bayern": (48.90, 11.40),
+    "hessen": (50.60, 9.00), "niedersachsen": (52.70, 9.50),
+    "bremen": (53.08, 8.81), "hamburg": (53.55, 9.99),
+    "schleswig-holstein": (54.20, 9.70), "mecklenburg": (53.70, 12.40),
+    "brandenburg": (52.40, 13.00), "berlin": (52.52, 13.40),
+    "sachsen-anhalt": (51.95, 11.70), "sachsen": (51.10, 13.30),
+    "thüringen": (50.90, 11.00), "handballregion-nord": (53.80, 10.00),
+    "nordrhein-westfalen": (51.45, 7.20), "nrw": (51.45, 7.20),
+    "oldenburg": (53.14, 8.21), "hannover": (52.37, 9.73),
+    "pfalz": (49.40, 8.00), "franken": (49.60, 10.80), "schwaben": (48.40, 10.50),
+    "oberbayern": (48.20, 11.60), "niederbayern": (48.60, 12.60),
+    "oberpfalz": (49.40, 12.00),
+}
+_GEBIETE_SORTIERT = sorted(GEBIETE, key=len, reverse=True)
 
 # Vereine, deren Name den Ort nicht oder falsch nennt. Ohne diese Liste
 # landet der Frankfurter HC 500 km zu weit westlich.
@@ -149,15 +184,42 @@ def _normal(text: str) -> str:
 _SORTIERT = sorted(ORTE, key=len, reverse=True)
 
 
-def verorten(verein: str) -> tuple[str, float, float] | None:
-    """(Ort, x, y) -- oder None, wenn der Name keinen bekannten Ort nennt."""
-    name = _normal(verein)
+def _treffer(name: str) -> tuple[str, float, float] | None:
+    """Ersten bekannten Ort in einem Text finden."""
+    text = _normal(name)
     for muster, ort in AUSNAHMEN.items():
-        if " " + muster + " " in name or name.strip().endswith(muster):
+        if " " + muster + " " in text or text.strip().endswith(muster):
             lat, lon = ORTE[ort]
             return (ort, *projizieren(lat, lon))
     for ort in _SORTIERT:
-        if " " + _normal(ort).strip() + " " in name:
+        if " " + _normal(ort).strip() + " " in text:
             lat, lon = ORTE[ort]
             return (ort, *projizieren(lat, lon))
+    return None
+
+
+def verorten(verein: str, liga: str = "", gebiet: str = "") -> dict | None:
+    """Wo sitzt dieser Verein -- und wie sicher ist das?
+
+    Drei Anläufe, vom Genauen zum Groben:
+      1. der Vereinsname ("SG Flensburg-Handewitt"),
+      2. der Ligenname ("A-Klasse Koblenz Herren Gruppe 1"),
+      3. das Verbandsgebiet ("Rheinland-Pfalz").
+
+    `art` sagt, welcher davon getroffen hat. Die Seite weist damit aus, wo
+    der Punkt genau sitzt und wo er nur die Gegend angibt.
+    """
+    for text, art in ((verein, "verein"), (liga, "liga")):
+        fund = _treffer(text or "")
+        if fund:
+            return {"ort": fund[0], "x": fund[1], "y": fund[2], "art": art}
+    # Bindestriche und Punkte sind im Verbandsnamen mal da, mal nicht
+    # ("Handballregion-Nord", "Handballregion Nord") -- beide Seiten werden
+    # deshalb gleich behandelt.
+    raum = _normal(gebiet)
+    for schluessel in _GEBIETE_SORTIERT:
+        if _normal(schluessel).strip() in raum:
+            lat, lon = GEBIETE[schluessel]
+            x, y = projizieren(lat, lon)
+            return {"ort": (gebiet or "").strip(), "x": x, "y": y, "art": "gebiet"}
     return None

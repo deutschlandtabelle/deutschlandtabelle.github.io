@@ -271,7 +271,8 @@ a.klassenzeile:hover .zahl{color:var(--accent)}
 .klassenwahl .leer{opacity:.4}
 
 /* --- Deutschlandkarte --------------------------------------------------- */
-.karte-land{display:grid;gap:34px;align-items:center;margin:40px 0 0;
+#kartenwahl{margin:22px 0 0}
+.karte-land{display:grid;gap:34px;align-items:center;margin:28px 0 0;
   grid-template-columns:minmax(0,330px) minmax(0,1fr)}
 .karte-land figure{margin:0}
 .karte-land svg{width:100%;height:auto;display:block}
@@ -292,6 +293,7 @@ a.klassenzeile:hover .zahl{color:var(--accent)}
   display:flex;align-items:center;gap:8px}
 .spitze .name .ikon{width:17px;height:17px;color:var(--muted)}
 .spitze .wo{font-size:14px;color:var(--muted);margin-top:2px}
+.spitze .etwa{font-style:normal;opacity:.75}
 .spitze:hover .name{color:var(--accent)}
 .kartennotiz{margin:22px auto 0;max-width:62ch;text-align:center;
   font-size:14px;color:var(--muted)}
@@ -521,8 +523,8 @@ footer a:hover{text-decoration:underline}
 
   <div class="band" id="kartenband" hidden><div class="mitte">
     <h2 class="titel">Die Spitze des Landes</h2>
-    <p class="untertitel">Wer in jeder der sechs Tabellen ganz oben steht —
-      und wo er zu Hause ist.</p>
+    <p class="untertitel" id="kartenunter"></p>
+    <div class="klassenwahl" id="kartenwahl"></div>
     <div class="karte-land" id="kartenbereich"></div>
     <p class="kartennotiz" id="kartennotiz"></p>
   </div></div>
@@ -824,25 +826,38 @@ document.getElementById('sportkarten').innerHTML = SPORTARTEN.map(a => {
 }).join('');
 
 // --- Deutschlandkarte -------------------------------------------------
-// Sechs Punkte, von Norden nach Süden nummeriert; die Liste daneben trägt
-// dieselben Nummern. Beschriftungen direkt an den Punkten wären unlesbar,
-// sobald zwei Vereine in derselben Stadt sitzen -- und genau das kommt vor.
-(function karteZeichnen(){
-  const spitzen = SPORTS
-    .filter(s => s.ready && s.spitze && s.spitze.x != null)
-    .map(s => ({...s.spitze, slug: s.slug, sportart: s.sportart,
-                klasse: s.klasseName, sportName: s.sportName}))
-    .sort((a, b) => a.y - b.y);
-  if (!spitzen.length) return;
+// Zwei Sichten auf dieselbe Frage: der beste Verein ohne Rücksicht auf die
+// Liga (Kreisklasse möglich) und der Erste der obersten Liga. Die Nummern
+// sind fest vergeben -- 1 Fußball Männer, 2 Fußball Frauen, 3 Handball
+// Männer und so fort -- damit dieselbe Zahl immer dieselbe Rangfolge meint,
+// auch wenn ein Punkt einmal fehlt.
+const KARTEN_FOLGE = ['fussball', 'fussball-frauen', 'handball',
+                      'handball-frauen', 'basketball', 'basketball-frauen'];
+const KARTEN_SICHT = {
+  gesamt: {knopf: 'Bester Verein', text: 'Die meisten Punkte pro Spiel — ohne '
+    + 'Rücksicht auf die Liga. Das kann die Bundesliga sein oder die Kreisklasse.'},
+  liga1:  {knopf: 'Erste Liga', text: 'Wer in der obersten erfassten Liga jeder '
+    + 'Rangfolge an der Spitze steht.'},
+};
+let kartenSicht = 'gesamt';
+
+function karteZeichnen(){
+  const punkte = KARTEN_FOLGE.map((slug, i) => {
+    const sport = SPORTS.find(x => x.slug === slug);
+    const p = sport && sport.ready && sport.karte && sport.karte[kartenSicht];
+    return (p && p.x != null)
+      ? {...p, nr: i + 1, slug, sportart: sport.sportart,
+         sportName: sport.sportName, klasse: sport.klasseName}
+      : null;
+  }).filter(Boolean);
+  if (!punkte.length) return false;
 
   // Zwei Vereine aus derselben Stadt würden aufeinander liegen. Der zweite
-  // rückt so weit zur Seite, bis er frei steht.
+  // weicht zur Kartenmitte hin aus -- nach außen läge er neben dem Land.
   const gesetzt = [];
-  spitzen.forEach(p => {
+  punkte.forEach(p => {
     p.px = p.x; p.py = p.y;
     let n = 0;
-    // Immer zur Kartenmitte hin ausweichen: nach außen geschoben landete
-    // der Punkt sonst neben dem Land oder auf dem nächsten Nachbarn.
     const richtung = p.x > 500 ? -1 : 1;
     while (gesetzt.some(q => Math.hypot(q.px - p.px, q.py - p.py) < 64) && n < 8){
       n += 1;
@@ -852,29 +867,46 @@ document.getElementById('sportkarten').innerHTML = SPORTARTEN.map(a => {
     gesetzt.push(p);
   });
 
-  const punkte = spitzen.map((p, i) => `<g class="stelle">
+  const stellen = punkte.map(p => `<g class="stelle">
       <title>${esc(p.name)}</title>
       <circle cx="${p.px}" cy="${p.py}" r="27"/>
-      <text x="${p.px}" y="${p.py + 12}">${i + 1}</text></g>`).join('');
-  const liste = spitzen.map((p, i) => `<a class="spitze" href="#${p.slug}">
-      <span class="nr">${i + 1}</span>
+      <text x="${p.px}" y="${p.py + 12}">${p.nr}</text></g>`).join('');
+  const liste = punkte.map(p => `<a class="spitze" href="#${p.slug}">
+      <span class="nr">${p.nr}</span>
       <span><span class="name">${ikon(p.sportart)}${esc(p.name)}</span>
         <span class="wo">${esc(p.sportName)} der ${esc(p.klasse)} ·
-          ${esc(p.liga)} · ${esc(p.ort)}</span></span></a>`).join('');
+          ${esc(p.liga)} · ${esc(p.ort)}${p.art === 'verein' ? ''
+            : ' <i class="etwa">(ungefähr)</i>'}</span></span></a>`).join('');
 
   document.getElementById('kartenbereich').innerHTML = `
     <figure><svg viewBox="${KARTE.box}" role="img"
-        aria-label="Karte von Deutschland mit den sechs Spitzenreitern">
-      <path class="landflaeche" d="${KARTE.umriss}"/>${punkte}
+        aria-label="Karte von Deutschland mit den Spitzenvereinen">
+      <path class="landflaeche" d="${KARTE.umriss}"/>${stellen}
     </svg></figure>
     <div class="spitzen">${liste}</div>`;
+  document.getElementById('kartenunter').textContent =
+    KARTEN_SICHT[kartenSicht].text;
+  document.getElementById('kartenwahl').innerHTML =
+    Object.entries(KARTEN_SICHT).map(([k, v]) => k === kartenSicht
+      ? `<span aria-current="page">${esc(v.knopf)}</span>`
+      : `<a href="#home" data-sicht="${k}">${esc(v.knopf)}</a>`).join('');
+  document.querySelectorAll('#kartenwahl a').forEach(a =>
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      kartenSicht = a.dataset.sicht;
+      karteZeichnen();
+    }));
+  const ungenau = punkte.some(p => p.art !== 'verein');
   document.getElementById('kartennotiz').innerHTML =
-    'Der Ort ist aus dem Vereinsnamen abgeleitet — Vereinsadressen liefert '
-    + 'keine der Quellen. Sitzen zwei Spitzenreiter in derselben Stadt, rückt '
-    + 'der zweite Punkt zur Seite; maßgeblich ist der Ort in der Liste. '
-    + 'Umriss: Natural Earth, gemeinfrei.';
-  document.getElementById('kartenband').hidden = false;
-})();
+    'Der Ort stammt aus dem Vereinsnamen, sonst aus dem Ligennamen, sonst '
+    + 'aus dem Verbandsgebiet — Vereinsadressen liefert keine der Quellen. '
+    + (ungenau ? 'Die mit <i>(ungefähr)</i> gekennzeichneten Punkte geben '
+       + 'deshalb nur die Gegend an. ' : '')
+    + 'Sitzen zwei Vereine in derselben Stadt, rückt der zweite Punkt zur '
+    + 'Seite. Umriss: Natural Earth, gemeinfrei.';
+  return true;
+}
+if (karteZeichnen()) document.getElementById('kartenband').hidden = false;
 
 document.getElementById('homeSport').innerHTML = SPORTS.filter(s => s.ready)
   .map(s => `<option value="${s.slug}">${esc(s.name)} · ${esc(s.klasseName)}`

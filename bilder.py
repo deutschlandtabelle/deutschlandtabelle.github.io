@@ -31,21 +31,11 @@ DOCS = ROOT / "docs"
 BREITE = 1800
 QUALITAET = 82
 
-# Zuschnitte für das Startmotiv, als Anteil der Quellgröße.
-#
-# Die aktuelle Vorlage hat rechts der Bildmitte eine verwaschene Stelle -- ein
-# Artefakt der Vorlage, das sich nachträglich nicht beheben lässt. Ausgemessen
-# liegt sie zwischen 64 % und 80 % der Breite und zwischen 37 % und 84 % der
-# Höhe. Weggeschnitten bekommt man sie nur über die Breite: das Startbild
-# behält deshalb den linken Teil des Motivs mit den beiden vorderen Gesichtern.
-#
 # Das Teaserbild ist der Ausschnitt, den Messenger beim Teilen eines Links
-# zeigen; es nimmt denselben linken Teil im Seitenverhältnis 1,91:1.
-#
-# WIRD DAS MOTIV GETAUSCHT, GEHÖREN DIESE DREI ZAHLEN ÜBERPRÜFT.
-START_LINKS = 0.632             # Anteil der Breite, vom linken Rand aus
-TEASER_HOEHE = 0.586            # Anteil der Höhe
-TEASER_OBEN = 0.039             # Abstand von oben, Anteil der Höhe
+# zeigen. Sie erwarten ungefähr 1,91:1; das Startmotiv ist höher. Geschnitten
+# wird deshalb vom oberen Rand aus -- dort sind die Gesichter.
+TEASER_SEITEN = 1.91
+TEASER_OBEN = 0.02              # Abstand von oben, Anteil der Höhe
 TEASER_DATEI = "teaser.jpg"
 
 # Dateiname (ohne "clubrank_") -> Zieldatei in docs/
@@ -112,9 +102,9 @@ def teaser(quelle: Path) -> None:
     if not b:
         return
     ziel = DOCS / TEASER_DATEI
-    breite = int(b * START_LINKS)
-    if _zuschneiden(quelle, ziel, min(breite, int(h * TEASER_HOEHE * 1.91)),
-                    int(h * TEASER_HOEHE), int(h * TEASER_OBEN), 0):
+    oben = int(h * TEASER_OBEN)
+    hoehe = min(h - oben, int(b / TEASER_SEITEN))
+    if _zuschneiden(quelle, ziel, b, hoehe, oben, 0):
         print(f"  ok {quelle.name} -> docs/{TEASER_DATEI} "
               f"({ziel.stat().st_size / 1024:.0f} KB, Teilen-Vorschau)",
               file=sys.stderr)
@@ -153,17 +143,8 @@ def main() -> int:
             breite_quelle = 0
         if breite_quelle > BREITE:
             befehl += ["--resampleWidth", str(BREITE)]
-        # Das Startbild wird vorher auf den linken Teil beschnitten.
-        eingabe = quelle
-        if ziel_name == "header.jpg":
-            b, h = _masse(quelle)
-            zwischen = ROOT / ".zuschnitt-zwischenschritt.png"
-            if b and _zuschneiden(quelle, zwischen, int(b * START_LINKS), h, 0, 0):
-                eingabe = zwischen
-        befehl += [str(eingabe), "--out", str(ziel)]
+        befehl += [str(quelle), "--out", str(ziel)]
         ergebnis = subprocess.run(befehl, capture_output=True, text=True)
-        if eingabe != quelle:
-            eingabe.unlink(missing_ok=True)
         if ergebnis.returncode != 0 or not ziel.exists():
             print(f"  !  {quelle.name}: {ergebnis.stderr.strip()[:120]}", file=sys.stderr)
             fehler += 1

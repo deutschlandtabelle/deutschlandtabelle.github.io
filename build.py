@@ -240,21 +240,32 @@ def schreibe_sport(out: Path, slug: str, ranking, leagues, matches,
     render.write_vereine(out, ranking, slug)
     render.write_ligen(out, ranking, slug)
 
-    # Spitzenreiter für die Deutschlandkarte auf der Startseite. Der Ort
-    # kommt aus dem Vereinsnamen; gibt er keinen her, bleibt der Verein ohne
-    # Punkt auf der Karte -- eine geratene Position wäre schlechter als keine.
-    spitze = None
+    # Zwei Punkte für die Deutschlandkarte auf der Startseite: der beste
+    # Verein ohne Rücksicht auf die Liga und der Erste der obersten Liga.
+    # Verortet wird über Vereins-, Ligen- und Verbandsnamen -- siehe
+    # ranking/karte.py. Wo keiner davon einen Ort hergibt, fehlt der Punkt.
+    def punkt(name, liga, verband, stufe, rang):
+        ort = karte.verorten(name, liga or "", verband or "")
+        eintrag = {"name": name, "liga": liga, "stufe": stufe, "rang": rang,
+                   "ort": None, "x": None, "y": None, "art": None}
+        eintrag.update(ort or {})
+        return eintrag
+
+    karten = {}
     if ranking:
         erster = ranking[0]
-        ort = karte.verorten(erster["name"])
-        spitze = {"name": erster["name"], "liga": erster["league"],
-                  "stufe": erster["tier"],
-                  "ort": ort[0] if ort else None,
-                  "x": ort[1] if ort else None, "y": ort[2] if ort else None}
+        karten["liga1"] = punkt(erster["name"], erster["league"],
+                                erster.get("verband"), erster["tier"],
+                                erster["rank"])
+    beste = next((k for k in zahlen["karten"] if k["key"] == "bester"), None)
+    if beste:
+        karten["gesamt"] = punkt(beste["verein"], beste["liga"],
+                                 beste["verband"], beste["stufe"],
+                                 beste["rang"])
 
     info = dict(SPORTARTEN[slug])
     info.update({
-        "spitze": spitze,
+        "karte": karten,
         "slug": slug, "ready": True, "teams": len(ranking), "leagues": leagues,
         "tiers": len({r["tier"] for r in ranking}),
         "season": meta["season_label"], "generated": meta["generated"],
