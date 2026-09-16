@@ -1,119 +1,122 @@
 staffel_id,verband,gebiet,ligastufe,spielklasse,staffel,mannschaften,spiele_gesamt,tore_gesamt,punkte_gesamt,tabellenfuehrer,tabellenfuehrer_punkte,quelle
+14058,Deutscher Handballbund,Deutscher Handballbund,3,3. Liga,Mitte,12,6,339,12,TB Wülfrath,2,handball.net
+14057,Deutscher Handballbund,Deutscher Handballbund,3,3. Liga,Nord,12,6,368,12,Frankfurter HC,2,handball.net
+14060,Deutscher Handballbund,Deutscher Handballbund,3,3. Liga,Süd,12,5,305,10,TSV Ismaning,2,handball.net
 12903,Handball Nordrhein,Handball Nordrhein,4,Regionalliga,Regionalliga Frauen,11,0,0,0,1.Fc KÖLN II,0,handball.net
-13541,Handballregion-Nord,Handballregion-Nord,4,Regionalliga,Meisterrunde,14,4,214,8,AMTV Hamburg,2,handball.net
-12650,Handballverband Westfalen,Handballverband Westfalen,4,Regionalliga,HVW Frauen Regionalliga,12,0,0,0,ASC 09 Dortmund SC Aplerbeck 09 E.V.,0,handball.net
-13249,REGIONALLIGA SüDWEST,REGIONALLIGA SüDWEST,4,Regionalliga,RLSW-W,12,5,266,10,HSG Hunsrück,2,handball.net
-12383,Hamburger Handballverband,Hamburger Handballverband,5,Oberliga,Oberliga Frauen (200),12,0,0,0,ETV Hamburg,0,handball.net
+13541,Handballregion-Nord,Handballregion-Nord,4,Regionalliga,Meisterrunde,14,20,1121,40,SV Henstedt-Ulzburg,6,handball.net
+12650,Handballverband Westfalen,Handballverband Westfalen,4,Regionalliga,HVW Frauen Regionalliga,12,11,574,22,ASC 09 Dortmund SC Aplerbeck 09 E.V.,4,handball.net
+13249,REGIONALLIGA SüDWEST,REGIONALLIGA SüDWEST,4,Regionalliga,RLSW-W,11,13,696,26,Moskitos,6,handball.net
+12383,Hamburger Handballverband,Hamburger Handballverband,5,Oberliga,Oberliga Frauen (200),12,12,637,24,TH Eilbeck,4,handball.net
 12910,Handball Nordrhein,Handball Nordrhein,5,Oberliga,Oberliga Frauen Gr. 1,14,1,0,2,HC TV Rhede,1,handball.net
 12908,Handball Nordrhein,Handball Nordrhein,5,Oberliga,Oberliga Frauen Gr. 2,14,0,0,0,ATV Biesel,0,handball.net
 12909,Handball Nordrhein,Handball Nordrhein,5,Oberliga,Oberliga Frauen Gr. 3,14,0,0,0,BTB Aachen,0,handball.net
-12404,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,5,Oberliga,F-OL,10,3,158,6,HSG Lingenfeld/Schwegenheim,2,handball.net
-12821,Handballverband Rheinland,Handballverband Rheinland,5,Oberliga,Oberliga Frauen · Handballverband Rheinland,12,0,0,0,DJK/MJC Trier,0,handball.net
-13012,Handballverband SAAR,Handballverband SAAR,5,Oberliga,Oberliga Frauen,12,1,63,2,HSG TV Birkenfeld/Nohfelden-Tus Schwarzenbach,2,handball.net
-12543,Handballverband Sachsen,Handballverband Sachsen,5,Oberliga,OLS Frauen,12,0,0,0,BSV Limbach-O.,0,handball.net
-14062,Handballverband Schleswig-Holstein,Handballverband Schleswig-Holstein,5,Oberliga,Meisterrunde · Handballverband Schleswig-Holstein,12,2,110,4,HSG Holstein Kiel/Kronshagen,2,handball.net
-12651,Handballverband Westfalen,Handballverband Westfalen,5,Oberliga,HVW Frauen Oberliga Staffel 1,12,0,0,0,HSG EURO,0,handball.net
-12652,Handballverband Westfalen,Handballverband Westfalen,5,Oberliga,HVW Frauen Oberliga Staffel 2,12,0,0,0,ASC 09 Dortmund II,0,handball.net
+12404,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,5,Oberliga,F-OL,10,9,484,18,HSG Lingenfeld/Schwegenheim,4,handball.net
+12821,Handballverband Rheinland,Handballverband Rheinland,5,Oberliga,Oberliga Frauen · Handballverband Rheinland,12,11,589,22,HSG Kastellaun-Simmern,4,handball.net
+13012,Handballverband SAAR,Handballverband SAAR,5,Oberliga,Oberliga Frauen,11,9,445,18,SG Zweibrücken,4,handball.net
+12543,Handballverband Sachsen,Handballverband Sachsen,5,Oberliga,OLS Frauen,12,12,591,24,Rotation Weissenborn,4,handball.net
+14062,Handballverband Schleswig-Holstein,Handballverband Schleswig-Holstein,5,Oberliga,Meisterrunde · Handballverband Schleswig-Holstein,12,9,472,18,HSG Kremperheide/Münsterdorf,4,handball.net
+12651,Handballverband Westfalen,Handballverband Westfalen,5,Oberliga,HVW Frauen Oberliga Staffel 1,12,6,311,12,TuS 09 Möllbergen e.V.,2,handball.net
+12652,Handballverband Westfalen,Handballverband Westfalen,5,Oberliga,HVW Frauen Oberliga Staffel 2,12,5,305,10,F.C. Vorwärts Wettringen e.V. I,2,handball.net
 12924,Handball Nordrhein,Handball Nordrhein,6,Verbandsliga,Verbandsliga Frauen Gr. 1,14,0,0,0,DJK Tura 05 Dümpten,0,handball.net
-12927,Handball Nordrhein,Handball Nordrhein,6,Verbandsliga,Verbandsliga Frauen Gr. 2,14,1,0,2,ASV Süchteln 1F,1,handball.net
+12927,Handball Nordrhein,Handball Nordrhein,6,Verbandsliga,Verbandsliga Frauen Gr. 2,14,0,0,0,ASV Rurtal Hückelhoven,0,handball.net
 12929,Handball Nordrhein,Handball Nordrhein,6,Verbandsliga,Verbandsliga Frauen Gr. 3,14,0,0,0,1.Fc KÖLN III,0,handball.net
 12931,Handball Nordrhein,Handball Nordrhein,6,Verbandsliga,Verbandsliga Frauen Gr. 4,14,0,0,0,CVJM Oberwiehl,0,handball.net
-12481,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,6,Verbandsliga,F-VL,10,3,173,6,FSG Gonsenheim/Schott,2,handball.net
-13031,Handballverband SAAR,Handballverband SAAR,6,Verbandsliga,Verbandsliga Frauen,13,1,59,4,HSG Tva/Atsv Saarbrücken 2,2,handball.net
-12574,Handballverband Sachsen,Handballverband Sachsen,6,Verbandsliga,VERBANDSLIGA OST,10,0,0,0,ESV Dresden,0,handball.net
-12575,Handballverband Sachsen,Handballverband Sachsen,6,Verbandsliga,VERBANDSLIGA West,11,0,0,0,HC Fraureuth,0,handball.net
-14065,Handballverband Schleswig-Holstein,Handballverband Schleswig-Holstein,6,Verbandsliga,Meisterrunde - Nord,12,3,187,6,SG Bordesholm/Brügge,2,handball.net
-14066,Handballverband Schleswig-Holstein,Handballverband Schleswig-Holstein,6,Verbandsliga,Meisterrunde - Süd,12,3,160,6,TSV Ellerau,2,handball.net
-12656,Handballverband Westfalen,Handballverband Westfalen,6,Verbandsliga,HVW Frauen Verbandsliga Staffel 1,12,0,0,0,SG Handball Detmold,0,handball.net
-12658,Handballverband Westfalen,Handballverband Westfalen,6,Verbandsliga,HVW Frauen Verbandsliga Staffel 2,12,0,0,0,ATV Dorstfeld 1878 e.V.,0,handball.net
-12657,Handballverband Westfalen,Handballverband Westfalen,6,Verbandsliga,HVW Frauen Verbandsliga Staffel 3,12,0,0,0,Allgemeiner Sportverein Hamm-Westfalen e.V.,0,handball.net
-13434,Hamburger Handballverband,Hamburger Handballverband,7,Landesliga,Landesliga Frauen Gruppe (221),12,3,175,8,FC St. Pauli II,2,handball.net
-13435,Hamburger Handballverband,Hamburger Handballverband,7,Landesliga,Landesliga Frauen Gruppe (222),12,0,0,0,2. Damen,0,handball.net
+12481,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,6,Verbandsliga,F-VL,10,9,536,18,HSG Mutterstadt/Ruchheim Damen,4,handball.net
+13031,Handballverband SAAR,Handballverband SAAR,6,Verbandsliga,Verbandsliga Frauen,11,8,394,16,Moskitos 3,4,handball.net
+12574,Handballverband Sachsen,Handballverband Sachsen,6,Verbandsliga,VERBANDSLIGA OST,10,8,441,16,Radeberger SV,4,handball.net
+12575,Handballverband Sachsen,Handballverband Sachsen,6,Verbandsliga,VERBANDSLIGA West,11,10,556,20,SC Markranstädt II,4,handball.net
+14065,Handballverband Schleswig-Holstein,Handballverband Schleswig-Holstein,6,Verbandsliga,Meisterrunde - Nord,12,11,632,22,HSG Szoww,4,handball.net
+14066,Handballverband Schleswig-Holstein,Handballverband Schleswig-Holstein,6,Verbandsliga,Meisterrunde - Süd,12,12,624,24,MTV Dänischenhagen,6,handball.net
+12656,Handballverband Westfalen,Handballverband Westfalen,6,Verbandsliga,HVW Frauen Verbandsliga Staffel 1,12,6,292,12,SG Häver-Lübbecke,2,handball.net
+12658,Handballverband Westfalen,Handballverband Westfalen,6,Verbandsliga,HVW Frauen Verbandsliga Staffel 2,12,6,318,12,ETG Recklinghausen 1912/32 E.V.,2,handball.net
+12657,Handballverband Westfalen,Handballverband Westfalen,6,Verbandsliga,HVW Frauen Verbandsliga Staffel 3,12,6,318,12,Lüner SV Handball E.V. II,2,handball.net
+13434,Hamburger Handballverband,Hamburger Handballverband,7,Landesliga,Landesliga Frauen Gruppe 1 (221),12,11,563,22,ETV Hamburg III,4,handball.net
+13435,Hamburger Handballverband,Hamburger Handballverband,7,Landesliga,Landesliga Frauen Gruppe 2 (222),12,10,526,20,Ahrensburger TSV,4,handball.net
 14651,HK Aachen-Düren,HK Aachen-Düren,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Regionsoberliga (w),8,0,0,0,Eschweiler SG,0,handball.net
 12900,HK Bonn-Euskirchen-Sieg,HK Bonn-Euskirchen-Sieg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Frauen,7,0,0,0,HSG Siebengebirge-Thomasberg,0,handball.net
-17263,HK Essen,HK Essen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,#0 - Freundschatfsspiel Senioren Frauen,2,0,0,0,HSG AM Hallo Essen,0,handball.net
-16074,HK Essen,HK Essen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Staffel Nord - BEZIRKSOBERLIGA / KREISOBERLIGA / REGIONSOBERLIGA Frauen ( HK Essen),8,0,0,0,HSG Haarzopf/Huttrop,0,handball.net
-16923,HK Essen,HK Essen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Staffel Süd - BEZIRKSOBERLIGA / KREISOBERLIGA / REGIONSOBERLIGA Frauen ( HK Essen),9,0,0,0,ATV Hückeswagen,0,handball.net
+17263,HK Essen,HK Essen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,#0 - Freundschatfsspiel Senioren Frauen,2,1,41,2,HSG AM Hallo Essen,2,handball.net
+16074,HK Essen,HK Essen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Staffel Nord - BEZIRKSOBERLIGA / KREISOBERLIGA / REGIONSOBERLIGA Frauen ( HK Essen),8,3,107,6,HSG am Hallo I Damen,2,handball.net
+16923,HK Essen,HK Essen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Staffel Süd - BEZIRKSOBERLIGA / KREISOBERLIGA / REGIONSOBERLIGA Frauen ( HK Essen),9,1,30,2,ATV Hückeswagen,1,handball.net
 13399,HK Krefeld-Grenzland,HK Krefeld-Grenzland,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,BOL Frauen,12,0,0,0,HSV Wegberg II,0,handball.net
 12888,HK Köln-Rheinberg,HK Köln-Rheinberg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Regionsoberliga Frauen,12,0,0,0,1.FSV Köln 1899,0,handball.net
-12958,HK Oberberg,HK Oberberg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Regionsoberliga Frauen Gr. A,7,0,0,0,HBD Löwen Oberberg II,0,handball.net
+12958,HK Oberberg,HK Oberberg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Regionsoberliga Frauen Gr. A,7,1,0,4,HBD Löwen Oberberg II,3,handball.net
 12959,HK Oberberg,HK Oberberg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Regionsoberliga Frauen Gr. B,7,0,0,0,CVJM Oberwiehl II,0,handball.net
 16210,HK Rhein-Ruhr,HK Rhein-Ruhr,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,REGIONSOBERLIGA FRAUEN,11,0,0,0,DJK Adler 07 Bottrop,0,handball.net
 13064,HK Wesel,HK Wesel,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Regionsoberliga Frauen · HK Wesel,10,0,0,0,HC TV Rhede II,0,handball.net
-16607,HR Leipzig,HR Leipzig,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Frauen · HR Leipzig,10,2,90,4,HSG Neudorf/Döbeln II,2,handball.net
-13109,HR Ostsachsen,HR Ostsachsen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Frauen · HR Ostsachsen,11,1,0,2,Koweg Görlitz,1,handball.net
-13102,HR Sachsen-Mitte,HR Sachsen-Mitte,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Frauen,11,0,0,0,ESV Dresden II,0,handball.net
-13095,HR Südwestsachsen,HR Südwestsachsen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Frauen · HR Südwestsachsen,10,1,54,2,Burgstädter HC,2,handball.net
-13429,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Frauen Gruppe (231),8,1,49,1,Moorreger SV,1,handball.net
-13430,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Frauen Gruppe (232),10,0,23,0,FC St. Pauli IV,0,handball.net
-13432,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Frauen Gruppe (233),9,0,0,0,AMTV Hamburg III,0,handball.net
-12965,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Frauen Nord,12,4,214,8,HSG Tarp/Wanderup II,2,handball.net
-12966,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Frauen Ost,12,2,88,4,Suchsdorfer SV II,2,handball.net
-12968,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Frauen Süd,12,4,203,8,Lübecker SV GUT HEIL V. 1876,2,handball.net
-12967,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Frauen West,12,1,60,2,TSV Ellerau II,2,handball.net
-12681,Handballkreis Hellweg,Handballkreis Hellweg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Frauen Bezirksliga HKH,10,0,0,0,Ahlener SG 93 E.V.,0,handball.net
-13225,Handballkreis Münsterland,Handballkreis Münsterland,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksliga Münsterland Frauen,12,0,0,0,DHG Ammeloe/Ellewick,0,handball.net
-12484,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,F-BOL 1,10,2,104,4,SG Saulheim,2,handball.net
-12485,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,F-BOL 2,10,3,154,6,HSG Trifels,2,handball.net
+16607,HR Leipzig,HR Leipzig,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Frauen · HR Leipzig,10,8,504,16,VFB Eilenburg,4,handball.net
+13109,HR Ostsachsen,HR Ostsachsen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Frauen · HR Ostsachsen,11,8,351,16,TBSV Neugersdorf,4,handball.net
+13102,HR Sachsen-Mitte,HR Sachsen-Mitte,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Frauen,11,9,466,18,SF 01 Dresden II,4,handball.net
+13095,HR Südwestsachsen,HR Südwestsachsen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Frauen · HR Südwestsachsen,10,8,381,16,TSV Burkhardtsdorf,4,handball.net
+13429,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Frauen Gruppe 1 (231),8,5,243,10,Elmshorner HT,4,handball.net
+13430,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Frauen Gruppe 2 (232),9,6,220,12,HT Norderstedt III,4,handball.net
+13432,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Frauen Gruppe 3 (233),8,5,250,10,TH Eilbeck IV,2,handball.net
+12965,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Frauen Nord,12,10,536,20,HC Treia/Jübek II,4,handball.net
+12966,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Frauen Ost,11,8,409,16,Suchsdorfer SV II,4,handball.net
+12968,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Frauen Süd,12,15,759,30,TSV Bargteheide II,6,handball.net
+12967,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Frauen West,12,10,525,20,HSG Schülp/Westerrönfeld/Rendsburg II,4,handball.net
+12681,Handballkreis Hellweg,Handballkreis Hellweg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Frauen Bezirksliga HKH,10,4,181,8,HCE Bergkamen 2.D,2,handball.net
+13225,Handballkreis Münsterland,Handballkreis Münsterland,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksliga Münsterland Frauen,12,4,213,8,DHG Ammeloe/Ellewick,2,handball.net
+12484,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,F-BOL 1,10,6,271,12,FSG Assenheim/Dannstadt/Iggelheim,4,handball.net
+12485,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,F-BOL 2,10,10,476,20,HSG Trifels,4,handball.net
 16942,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,KÜS BL Mitte Frauen (nicht nutzen),11,0,0,0,ASC 09 Dortmund SC Aplerbeck 09 E.V.,0,handball.net
-13091,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,KÜS Bezirksliga Industrie,11,0,0,0,Bochumer HC,0,handball.net
-13089,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,KÜS Bezirksliga Mitte,12,0,0,0,ASC 09 Dortmund SC Aplerbeck 09 E.V.2,0,handball.net
-13090,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,KÜS Bezirksliga Südwestfalen,11,0,0,0,HSG Lennestadt-Würdinghausen1,0,handball.net
-14549,Mosel/Eifel-Nahe/Hunsrück,Mosel/Eifel-Nahe/Hunsrück,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Frauen Mosel/Eifel-Nahe/Hunsrück,10,0,0,0,DJK St. Matthias Trier,0,handball.net
+13091,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,KÜS Bezirksliga Industrie,11,4,177,8,HSG DJK Rauxel-Schwerin E.V.,2,handball.net
+13089,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,KÜS Bezirksliga Mitte,11,4,175,8,HVE Villigst-Ergste II,2,handball.net
+13090,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,KÜS Bezirksliga Südwestfalen,10,2,104,4,HSG Lennestadt-Würdinghausen1,2,handball.net
+14549,Mosel/Eifel-Nahe/Hunsrück,Mosel/Eifel-Nahe/Hunsrück,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Frauen Mosel/Eifel-Nahe/Hunsrück,10,4,193,8,DJK St. Matthias Trier,2,handball.net
 14411,Rhein/Westerwald,Rhein/Westerwald,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Frauen,5,0,0,0,HSG Römerwall,0,handball.net
-14648,HK Aachen-Düren,HK Aachen-Düren,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga (w),1,0,0,0,Stolberger SV,0,handball.net
+14648,HK Aachen-Düren,HK Aachen-Düren,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga (w),6,0,0,0,BTB Aachen III,0,handball.net
 12901,HK Bonn-Euskirchen-Sieg,HK Bonn-Euskirchen-Sieg,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen,7,0,0,0,Damen 2,0,handball.net
 16922,HK Essen,HK Essen,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Frauen Gruppe Nord,8,0,0,0,Fortuna Düsseldorf 1895 E.V. 3f,0,handball.net
-15829,HK Essen,HK Essen,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Frauen Gruppe Süd (HKEssen),9,0,0,0,DJK Unitas HAAN E.V. III,0,handball.net
+15829,HK Essen,HK Essen,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Frauen Gruppe Süd (HKEssen),9,3,145,6,Wald-Merscheider TV II,2,handball.net
 15408,HK Krefeld-Grenzland,HK Krefeld-Grenzland,9,Bezirksliga / Kreisliga / Regionsliga,BL Frauen,11,0,0,0,ASV Süchteln 2F,0,handball.net
-14029,HK Köln-Rheinberg,HK Köln-Rheinberg,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Frauen,10,0,0,0,1.FSV Köln 1899 II,0,handball.net
+14029,HK Köln-Rheinberg,HK Köln-Rheinberg,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Frauen,11,0,0,0,1.FSV Köln 1899 II,0,handball.net
 13015,HK Rhein-Ruhr,HK Rhein-Ruhr,9,Bezirksliga / Kreisliga / Regionsliga,REGIONSLIGA FRAUEN,10,0,0,0,DJK Adler 07 Bottrop II,0,handball.net
 13066,HK Wesel,HK Wesel,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Frauen · HK Wesel,12,0,0,0,HC TV Rhede III,0,handball.net
-13117,HR Leipzig,HR Leipzig,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen,12,2,125,2,SV LOK LEIPZIG-Mitte Frauen,2,handball.net
-13111,HR Ostsachsen,HR Ostsachsen,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen Staffel A,3,0,0,0,HSV 1923 Pulsnitz II,0,handball.net
-13112,HR Ostsachsen,HR Ostsachsen,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen Staffel B,4,0,0,0,HSG Obergurig-Cunewalde,0,handball.net
-13104,HR Sachsen-Mitte,HR Sachsen-Mitte,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen St. 1,7,0,0,0,Blau-Weiss Gröditz,0,handball.net
-13105,HR Sachsen-Mitte,HR Sachsen-Mitte,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen St. 2,7,0,0,0,HSV Weinböhla III,0,handball.net
-13097,HR Südwestsachsen,HR Südwestsachsen,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen Ost,8,1,49,2,LOK Wurzen II,2,handball.net
-13098,HR Südwestsachsen,HR Südwestsachsen,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen West,7,0,0,0,BSV Limbach-O. II,0,handball.net
-13444,Hamburger Handballverband,Hamburger Handballverband,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen (241),8,0,0,0,1. HC Quickborn,0,handball.net
-12976,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel A,11,5,258,10,SG Husum/Schobüll/Nordstrand,2,handball.net
-12977,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel B,10,0,0,0,HG Owschlag-Kropp-Tetenhusen III,0,handball.net
-12978,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel C,10,0,0,0,Eckernförder MTV,0,handball.net
-12979,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel D,9,0,0,0,ATSV Stockelsdorf IV,0,handball.net
-12980,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel E,9,0,0,0,DIE HAIE I HSG Horst/Kiebitzreihe II,0,handball.net
-12981,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel F,11,2,100,4,TUS Lübeck VON 1893 III,2,handball.net
-12982,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel G,9,0,0,0,Boizenburger HV,0,handball.net
-13296,Handballkreis Bielefeld-Herford,Handballkreis Bielefeld-Herford,9,Bezirksliga / Kreisliga / Regionsliga,Frauen Kreisliga,8,0,0,0,HSG EGB Bielefeld,0,handball.net
-12687,Handballkreis Gütersloh,Handballkreis Gütersloh,9,Bezirksliga / Kreisliga / Regionsliga,HBKGT Frauen Kreisliga,10,0,0,0,FC Greffen,0,handball.net
-12713,Handballkreis Hellweg,Handballkreis Hellweg,9,Bezirksliga / Kreisliga / Regionsliga,Frauen Kreisliga HKH,11,0,0,0,1. Damen,0,handball.net
-13043,Handballkreis Industrie,Handballkreis Industrie,9,Bezirksliga / Kreisliga / Regionsliga,HKI-W-Kreisliga,10,0,0,0,Bochumer HC II,0,handball.net
+13117,HR Leipzig,HR Leipzig,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen,12,12,572,24,SV LOK LEIPZIG-Mitte Frauen,4,handball.net
+13111,HR Ostsachsen,HR Ostsachsen,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen Staffel A,3,1,25,2,Radeberger SV III,2,handball.net
+13112,HR Ostsachsen,HR Ostsachsen,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen Staffel B,4,2,75,4,HSG Obergurig-Cunewalde,2,handball.net
+13104,HR Sachsen-Mitte,HR Sachsen-Mitte,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen St. 1,7,4,166,8,HSV Weinböhla II,4,handball.net
+13105,HR Sachsen-Mitte,HR Sachsen-Mitte,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen St. 2,7,4,197,8,SSV Heidenau III,4,handball.net
+13097,HR Südwestsachsen,HR Südwestsachsen,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen Ost,8,7,309,14,Rotation Weissenborn II,4,handball.net
+13098,HR Südwestsachsen,HR Südwestsachsen,9,Bezirksliga / Kreisliga / Regionsliga,RL Frauen West,7,4,195,8,"SV ""tanne"" Thalheim",3,handball.net
+13444,Hamburger Handballverband,Hamburger Handballverband,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen (241),8,4,175,8,SG Harburg,2,handball.net
+12976,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel A,11,13,628,26,SG Husum/Schobüll/Nordstrand,6,handball.net
+12977,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel B,10,7,394,14,TSV Schwarz-Rot Schülp,4,handball.net
+12978,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel C,10,3,159,6,TSV Altenholz,4,handball.net
+12979,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel D,8,4,173,8,Preetzer TSV III,2,handball.net
+12980,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel E,9,3,102,6,TSV Wacken,2,handball.net
+12981,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel F,11,10,449,20,TSV Travemünde II,4,handball.net
+12982,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Frauen - Staffel G,9,2,54,4,HSG Kalkberg 06 II,2,handball.net
+13296,Handballkreis Bielefeld-Herford,Handballkreis Bielefeld-Herford,9,Bezirksliga / Kreisliga / Regionsliga,Frauen Kreisliga,8,3,151,6,HSG Löhne-Obernbeck,2,handball.net
+12687,Handballkreis Gütersloh,Handballkreis Gütersloh,9,Bezirksliga / Kreisliga / Regionsliga,HBKGT Frauen Kreisliga,10,4,186,8,Spfr. Loxten II,2,handball.net
+12713,Handballkreis Hellweg,Handballkreis Hellweg,9,Bezirksliga / Kreisliga / Regionsliga,Frauen Kreisliga HKH,11,2,99,4,TV Werne 03 e.V. II,2,handball.net
+13043,Handballkreis Industrie,Handballkreis Industrie,9,Bezirksliga / Kreisliga / Regionsliga,HKI-W-Kreisliga,8,3,127,6,TUS Ickern 1912 E.V.,2,handball.net
 13154,Handballkreis Iserlohn-Arnsberg,Handballkreis Iserlohn-Arnsberg,9,Bezirksliga / Kreisliga / Regionsliga,HKISAR Kreisliga OST Frauen,7,0,0,0,BC 1918 Eslohe E.V.,0,handball.net
-13153,Handballkreis Iserlohn-Arnsberg,Handballkreis Iserlohn-Arnsberg,9,Bezirksliga / Kreisliga / Regionsliga,HKISAR Kreisliga WEST Frauen,7,0,0,0,DJK SG Bösperde III,0,handball.net
-14946,Handballkreis Lippe,Handballkreis Lippe,9,Bezirksliga / Kreisliga / Regionsliga,HBKLIP Kreisliga Frauen,12,0,0,0,HSG Altenbeken/Buke,0,handball.net
-13020,Handballkreis Minden-Lübbecke,Handballkreis Minden-Lübbecke,9,Bezirksliga / Kreisliga / Regionsliga,HBKML Frauen Kreisliga Minden-Lübbecke,11,0,0,0,HSG EURO 2,0,handball.net
-13228,Handballkreis Münsterland,Handballkreis Münsterland,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Münsterland Frauen,11,0,0,0,BSV Roxel II,0,handball.net
+13153,Handballkreis Iserlohn-Arnsberg,Handballkreis Iserlohn-Arnsberg,9,Bezirksliga / Kreisliga / Regionsliga,HKISAR Kreisliga WEST Frauen,7,1,61,2,DJK SG Bösperde III,2,handball.net
+14946,Handballkreis Lippe,Handballkreis Lippe,9,Bezirksliga / Kreisliga / Regionsliga,HBKLIP Kreisliga Frauen,12,2,101,4,SG Cappel/Grossenmarpe/E.,2,handball.net
+13020,Handballkreis Minden-Lübbecke,Handballkreis Minden-Lübbecke,9,Bezirksliga / Kreisliga / Regionsliga,HBKML Frauen Kreisliga Minden-Lübbecke,11,3,133,6,HSG Hüllhorst 2,2,handball.net
+13228,Handballkreis Münsterland,Handballkreis Münsterland,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Münsterland Frauen,11,2,102,4,SG Handball Steinfurt II,2,handball.net
 12584,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,9,Bezirksliga / Kreisliga / Regionsliga,F-BZL 1,7,1,37,2,FSG Selz-Wiesbach 2,2,handball.net
-12585,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,9,Bezirksliga / Kreisliga / Regionsliga,F-BZL 2,8,3,151,6,TS Rodalben 2,2,handball.net
-13032,Handballverband SAAR,Handballverband SAAR,9,Bezirksliga / Kreisliga / Regionsliga,Bezirksliga Frauen,12,0,0,0,ASC Quierschied 2,0,handball.net
-12673,KÜS Ostwestfalenlippe,KÜS Ostwestfalenlippe,9,Bezirksliga / Kreisliga / Regionsliga,OWL Frauen Bezirksliga Staffel 1,12,0,0,0,HCE BAD Oeynhausen,0,handball.net
-12674,KÜS Ostwestfalenlippe,KÜS Ostwestfalenlippe,9,Bezirksliga / Kreisliga / Regionsliga,OWL Frauen Bezirksliga Staffel 2,12,0,0,0,HSG Rietberg-Mastholte,0,handball.net
-12790,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,9,Bezirksliga / Kreisliga / Regionsliga,KL (DO+HA) - Frauen,11,0,0,0,ATV Dorstfeld 2,0,handball.net
+12585,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,9,Bezirksliga / Kreisliga / Regionsliga,F-BZL 2,8,7,352,14,TSV Kandel 2,6,handball.net
+13032,Handballverband SAAR,Handballverband SAAR,9,Bezirksliga / Kreisliga / Regionsliga,Bezirksliga Frauen,12,9,380,18,HSG Ottweiler/Steinbach,4,handball.net
+12673,KÜS Ostwestfalenlippe,KÜS Ostwestfalenlippe,9,Bezirksliga / Kreisliga / Regionsliga,OWL Frauen Bezirksliga Staffel 1,12,4,195,8,TSV Hahlen II,2,handball.net
+12674,KÜS Ostwestfalenlippe,KÜS Ostwestfalenlippe,9,Bezirksliga / Kreisliga / Regionsliga,OWL Frauen Bezirksliga Staffel 2,12,3,160,6,Spfr. Loxten,2,handball.net
+12790,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,9,Bezirksliga / Kreisliga / Regionsliga,KL (DO+HA) - Frauen,10,3,132,6,DJK Westfalia Hörde,2,handball.net
 14412,Rhein/Westerwald,Rhein/Westerwald,9,Bezirksliga / Kreisliga / Regionsliga,Bezirksliga Frauen · Rhein/Westerwald,8,0,0,0,HSG Sinzig/Remagen/Ahrweiler,0,handball.net
 15423,HK Krefeld-Grenzland,HK Krefeld-Grenzland,10,Bezirksklasse / Kreisklasse / Regionsklasse,BK Frauen,8,0,0,0,Adler Königshof 3F,0,handball.net
-13447,Hamburger Handballverband,Hamburger Handballverband,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Frauen (251),9,0,0,0,ETV Hamburg V,0,handball.net
-12993,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Frauen Mitte,10,0,0,0,HSG 24109 II,0,handball.net
-12991,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Frauen Nord A,9,1,45,2,HSG Südtondern III,2,handball.net
-12992,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Frauen Nord B,10,0,0,0,DHK Flensborg IV,0,handball.net
-12994,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Frauen Süd,10,2,97,4,Lübecker SV GUT HEIL V. 1876 III,2,handball.net
-13294,Handballkreis Bielefeld-Herford,Handballkreis Bielefeld-Herford,10,Bezirksklasse / Kreisklasse / Regionsklasse,Frauen Kreisklasse,9,0,0,0,CVJM Rödinghausen,0,handball.net
-12688,Handballkreis Gütersloh,Handballkreis Gütersloh,10,Bezirksklasse / Kreisklasse / Regionsklasse,HBKGT Frauen 1. Kreisklasse,12,0,0,0,HSG Rietberg-Mastholte II,0,handball.net
-14350,Handballkreis Industrie,Handballkreis Industrie,10,Bezirksklasse / Kreisklasse / Regionsklasse,HKI-W-Kreisklasse,7,0,0,0,ETG Recklinghausen 1912/32 E.V. II,0,handball.net
-13022,Handballkreis Minden-Lübbecke,Handballkreis Minden-Lübbecke,10,Bezirksklasse / Kreisklasse / Regionsklasse,HBKML Frauen Kreisklasse,10,0,0,0,HCE Bad Oeynhausen e.V. II,0,handball.net
-13230,Handballkreis Münsterland,Handballkreis Münsterland,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse 1 Münsterland Frauen,10,0,0,0,HSG Ascheberg/Drensteinf.,0,handball.net
-13550,Handballverband SAAR,Handballverband SAAR,10,Bezirksklasse / Kreisklasse / Regionsklasse,A-Liga Frauen Staffel Ost,6,0,0,0,HSG Bliesgau 2,0,handball.net
-13033,Handballverband SAAR,Handballverband SAAR,10,Bezirksklasse / Kreisklasse / Regionsklasse,A-Liga Frauen Staffel West,5,0,0,0,HC St. Johann,0,handball.net
-12791,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,10,Bezirksklasse / Kreisklasse / Regionsklasse,KK (DO+HA) - Frauen,12,0,0,0,DJK Normannia Dortmund,0,handball.net
+13447,Hamburger Handballverband,Hamburger Handballverband,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Frauen (251),9,6,251,12,ETV Hamburg V,2,handball.net
+12993,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Frauen Mitte,10,6,233,12,HSG 24109 II,4,handball.net
+12991,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Frauen Nord A,9,5,182,10,HSG Südtondern III,4,handball.net
+12992,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Frauen Nord B,10,7,292,14,SG Oeversee-Jarplund-Weding II,4,handball.net
+12994,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Frauen Süd,10,5,236,10,Lübecker SV GUT HEIL V. 1876 III,4,handball.net
+13294,Handballkreis Bielefeld-Herford,Handballkreis Bielefeld-Herford,10,Bezirksklasse / Kreisklasse / Regionsklasse,Frauen Kreisklasse,9,3,126,6,TG Herford II,2,handball.net
+12688,Handballkreis Gütersloh,Handballkreis Gütersloh,10,Bezirksklasse / Kreisklasse / Regionsklasse,HBKGT Frauen 1. Kreisklasse,12,4,171,8,TSG Harsewinkel II,2,handball.net
+14350,Handballkreis Industrie,Handballkreis Industrie,10,Bezirksklasse / Kreisklasse / Regionsklasse,HKI-W-Kreisklasse,7,1,38,2,PSV E.V. Recklinghausen IV,2,handball.net
+13022,Handballkreis Minden-Lübbecke,Handballkreis Minden-Lübbecke,10,Bezirksklasse / Kreisklasse / Regionsklasse,HBKML Frauen Kreisklasse,10,4,166,8,TSV Hahlen 1945 e.V. III,2,handball.net
+13230,Handballkreis Münsterland,Handballkreis Münsterland,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse 1 Münsterland Frauen,10,1,54,2,SG Sendenhorst,2,handball.net
+13550,Handballverband SAAR,Handballverband SAAR,10,Bezirksklasse / Kreisklasse / Regionsklasse,A-Liga Frauen Staffel Ost,6,2,81,4,TV Kirkel 2,4,handball.net
+13033,Handballverband SAAR,Handballverband SAAR,10,Bezirksklasse / Kreisklasse / Regionsklasse,A-Liga Frauen Staffel West,5,1,44,2,HC St. Johann,2,handball.net
+12791,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,10,Bezirksklasse / Kreisklasse / Regionsklasse,KK (DO+HA) - Frauen,12,5,177,10,TG Voerde 2. Damen,2,handball.net
 15932,HK Krefeld-Grenzland,HK Krefeld-Grenzland,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,2. BK Frauen,8,0,0,0,ASV Rurtal Hückelhoven II,0,handball.net
-13234,Handballkreis Münsterland,Handballkreis Münsterland,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,Kreisklasse 2 Münsterland Frauen Staffel 1,11,0,0,0,DHG Ammeloe/Ellewick II,0,handball.net
-13235,Handballkreis Münsterland,Handballkreis Münsterland,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,Kreisklasse 2 Münsterland Frauen Staffel 2,10,0,0,0,HSG Preussen/Bor. Münster II,0,handball.net
+13234,Handballkreis Münsterland,Handballkreis Münsterland,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,Kreisklasse 2 Münsterland Frauen Staffel 1,11,4,123,8,DJK Eintracht Coesfeld II,2,handball.net
+13235,Handballkreis Münsterland,Handballkreis Münsterland,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,Kreisklasse 2 Münsterland Frauen Staffel 2,10,2,106,4,SC Hörstel 2,2,handball.net

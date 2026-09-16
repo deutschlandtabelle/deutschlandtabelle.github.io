@@ -1,26 +1,26 @@
 staffel_id,verband,gebiet,ligastufe,spielklasse,staffel,mannschaften,spiele_gesamt,tore_gesamt,punkte_gesamt,tabellenfuehrer,tabellenfuehrer_punkte,quelle
-hbl-248,,,1,1. Handball-Bundesliga,1. Handball-Bundesliga,18,27,1670,54,THW Kiel,6,HBL (Sportradar)
-hbl-254,,,2,2. Handball-Bundesliga,2. Handball-Bundesliga,18,17,1044,34,VfL Eintracht Hagen,4,HBL (Sportradar)
-14054,Deutscher Handballbund,Deutscher Handballbund,3,3. Liga,Nord-Ost,16,8,497,16,HC Empor Rostock,2,handball.net
-14053,Deutscher Handballbund,Deutscher Handballbund,3,3. Liga,Nord-West,16,9,558,18,TUS Spenge,4,handball.net
-14056,Deutscher Handballbund,Deutscher Handballbund,3,3. Liga,Süd,16,8,503,18,SG Pforzheim/Eutingen,3,handball.net
-14055,Deutscher Handballbund,Deutscher Handballbund,3,3. Liga,Süd-West,16,8,496,14,Saase3 Leutershausen Handball,2,handball.net
+hbl-248,,,1,1. Handball-Bundesliga,1. Handball-Bundesliga,18,36,2214,72,SG Flensburg-Handewitt,8,HBL (Sportradar)
+hbl-254,,,2,2. Handball-Bundesliga,2. Handball-Bundesliga,18,27,1660,54,VfL Eintracht Hagen,6,HBL (Sportradar)
+14054,Deutscher Handballbund,Deutscher Handballbund,3,3. Liga,Nord-Ost,16,24,1443,48,TSV Altenholz,6,handball.net
+14053,Deutscher Handballbund,Deutscher Handballbund,3,3. Liga,Nord-West,16,24,1533,48,TUS Spenge,6,handball.net
+14056,Deutscher Handballbund,Deutscher Handballbund,3,3. Liga,Süd,16,22,1431,44,VFL Pfullingen,6,handball.net
+14055,Deutscher Handballbund,Deutscher Handballbund,3,3. Liga,Süd-West,16,24,1425,48,HSG Krefeld Niederrhein,6,handball.net
 12902,Handball Nordrhein,Handball Nordrhein,4,Regionalliga,Regionalliga Männer,14,0,0,0,BTB Aachen,0,handball.net
-13540,Handballregion-Nord,Handballregion-Nord,4,Regionalliga,Meisterrunde,14,4,222,8,TSV Ellerbek,2,handball.net
-12649,Handballverband Westfalen,Handballverband Westfalen,4,Regionalliga,HVW Männer Regionalliga,14,0,0,0,Allgemeiner Sportverein Hamm-Westfalen e.V. II,0,handball.net
-13248,REGIONALLIGA SüDWEST,REGIONALLIGA SüDWEST,4,Regionalliga,RLSW-M,14,5,284,10,TV Homburg 1,2,handball.net
-12373,Hamburger Handballverband,Hamburger Handballverband,5,Oberliga,Oberliga Männer (100),14,1,62,2,TH Eilbeck,2,handball.net
-17158,Hamburger Handballverband,Hamburger Handballverband,5,Oberliga,Oberliga Senioren (300),6,0,26,0,AMTV Hamburg Ü40,0,handball.net
+13540,Handballregion-Nord,Handballregion-Nord,4,Regionalliga,Meisterrunde,14,17,989,34,TSV Ellerbek,6,handball.net
+12649,Handballverband Westfalen,Handballverband Westfalen,4,Regionalliga,HVW Männer Regionalliga,14,14,867,28,TSG Altenhagen-Heepen II,4,handball.net
+13248,REGIONALLIGA SüDWEST,REGIONALLIGA SüDWEST,4,Regionalliga,RLSW-M,14,18,1042,36,SF Budenheim,6,handball.net
+12373,Hamburger Handballverband,Hamburger Handballverband,5,Oberliga,Oberliga Männer (100),14,13,735,26,TV Fischbek,4,handball.net
+17158,Hamburger Handballverband,Hamburger Handballverband,5,Oberliga,Oberliga Senioren (300),6,1,54,2,HT Norderstedt Ü40,2,handball.net
 12904,Handball Nordrhein,Handball Nordrhein,5,Oberliga,Oberliga Männer Gr. 1,14,0,0,0,1.Fc KÖLN,0,handball.net
 12905,Handball Nordrhein,Handball Nordrhein,5,Oberliga,Oberliga Männer Gr. 2,14,0,0,0,Bergische Panther II,0,handball.net
 12906,Handball Nordrhein,Handball Nordrhein,5,Oberliga,Oberliga Männer Gr. 3,14,0,0,0,ASV Süchteln 1M,0,handball.net
-12401,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,5,Oberliga,M-OL,12,4,221,8,TV Offenbach,2,handball.net
-12820,Handballverband Rheinland,Handballverband Rheinland,5,Oberliga,Oberliga Männer · Handballverband Rheinland,12,0,0,0,DJK/MJC Trier,0,handball.net
-14368,Handballverband SAAR,Handballverband SAAR,5,Oberliga,Oberliga Männer,13,2,117,4,HSG Völklingen,2,handball.net
-12542,Handballverband Sachsen,Handballverband Sachsen,5,Oberliga,OLS MÄNNER,12,0,0,0,BSV Limbach-O.,0,handball.net
-15097,Handballverband Schleswig-Holstein,Handballverband Schleswig-Holstein,5,Oberliga,Meisterrunde · Handballverband Schleswig-Holstein,14,4,240,8,TSV Hürup II,2,handball.net
-12646,Handballverband Westfalen,Handballverband Westfalen,5,Oberliga,HVW Männer Oberliga Staffel 1,14,0,0,0,ASV Senden E.V.,0,handball.net
-12647,Handballverband Westfalen,Handballverband Westfalen,5,Oberliga,HVW Männer Oberliga Staffel 2,13,0,0,0,Ahlener SG 93 e.V. II,0,handball.net
+12401,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,5,Oberliga,M-OL,12,14,735,28,TSG Ober-Hilbersheim,4,handball.net
+12820,Handballverband Rheinland,Handballverband Rheinland,5,Oberliga,Oberliga Männer · Handballverband Rheinland,12,11,618,22,HC Koblenz,4,handball.net
+14368,Handballverband SAAR,Handballverband SAAR,5,Oberliga,Oberliga Männer,12,10,447,20,DJK Marpingen,4,handball.net
+12542,Handballverband Sachsen,Handballverband Sachsen,5,Oberliga,OLS MÄNNER,12,12,677,24,SG LVB,4,handball.net
+15097,Handballverband Schleswig-Holstein,Handballverband Schleswig-Holstein,5,Oberliga,Meisterrunde · Handballverband Schleswig-Holstein,14,17,1029,34,TSV Altenholz II,5,handball.net
+12646,Handballverband Westfalen,Handballverband Westfalen,5,Oberliga,HVW Männer Oberliga Staffel 1,14,11,588,22,TSV Hahlen 1945 e.V.,4,handball.net
+12647,Handballverband Westfalen,Handballverband Westfalen,5,Oberliga,HVW Männer Oberliga Staffel 2,14,12,731,24,HSC Haltern-Sythen,3,handball.net
 16949,Hamburger Handballverband,Hamburger Handballverband,6,Verbandsliga,Freiwurf-Liga Hamburg (910),4,0,0,0,Elmshorner HT (FWL),0,handball.net
 12912,Handball Nordrhein,Handball Nordrhein,6,Verbandsliga,Verbandsliga Männer Gr. 1,14,0,0,0,Alstadener TUS,0,handball.net
 12914,Handball Nordrhein,Handball Nordrhein,6,Verbandsliga,Verbandsliga Männer Gr. 2,14,0,0,0,DJK GRÜN Weiss Werden,0,handball.net
@@ -28,150 +28,150 @@ hbl-254,,,2,2. Handball-Bundesliga,2. Handball-Bundesliga,18,17,1044,34,VfL Eint
 12920,Handball Nordrhein,Handball Nordrhein,6,Verbandsliga,Verbandsliga Männer Gr. 4,14,0,0,0,ATV Hückeswagen,0,handball.net
 12921,Handball Nordrhein,Handball Nordrhein,6,Verbandsliga,Verbandsliga Männer Gr. 5,14,0,0,0,1.Fc KÖLN II,0,handball.net
 12922,Handball Nordrhein,Handball Nordrhein,6,Verbandsliga,Verbandsliga Männer Gr. 6,14,0,0,0,Handball Oppum II,0,handball.net
-12467,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,6,Verbandsliga,VL-M,12,4,242,8,HSG Dudenhofen/Schifferstadt 2,2,handball.net
-12824,Handballverband Rheinland,Handballverband Rheinland,6,Verbandsliga,Verbandsliga Männer · Handballverband Rheinland,11,3,156,6,HSV Rhein-Nette,2,handball.net
-14383,Handballverband SAAR,Handballverband SAAR,6,Verbandsliga,Verbandsliga Männer,13,1,73,2,HF Untere SAAR 2,2,handball.net
-12571,Handballverband Sachsen,Handballverband Sachsen,6,Verbandsliga,Verbandsliga Ost,12,0,0,0,ESV Dresden,0,handball.net
-12572,Handballverband Sachsen,Handballverband Sachsen,6,Verbandsliga,Verbandsliga West,12,0,0,0,Germania Zwenkau,0,handball.net
-14064,Handballverband Schleswig-Holstein,Handballverband Schleswig-Holstein,6,Verbandsliga,Meisterrunde - Nord,12,4,194,8,HSG Marne/Brunsbüttel,2,handball.net
-14063,Handballverband Schleswig-Holstein,Handballverband Schleswig-Holstein,6,Verbandsliga,Meisterrunde - Süd,12,4,215,8,TSV Schwarzenbek,2,handball.net
-12653,Handballverband Westfalen,Handballverband Westfalen,6,Verbandsliga,HVW Männer Verbandsliga Staffel 1,14,0,0,0,1. Herren,0,handball.net
-12654,Handballverband Westfalen,Handballverband Westfalen,6,Verbandsliga,HVW Männer Verbandsliga Staffel 2,14,0,0,0,HC Westfalia Herne E.V. II,0,handball.net
-12655,Handballverband Westfalen,Handballverband Westfalen,6,Verbandsliga,HVW Männer Verbandsliga Staffel 3,14,0,0,0,ATV Dorstfeld 1878 E.V.,0,handball.net
-13427,Hamburger Handballverband,Hamburger Handballverband,7,Landesliga,Landesliga Männer Gruppe 1 (121),12,0,0,0,Barmstedter MTV,0,handball.net
-13428,Hamburger Handballverband,Hamburger Handballverband,7,Landesliga,Landesliga Männer Gruppe 2 (122),12,0,0,0,AMTV Hamburg II,0,handball.net
-17292,Hamburger Handballverband,Hamburger Handballverband,7,Landesliga,Landesliga Senioren (320),8,0,0,0,FC St. Pauli Ü40,0,handball.net
+12467,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,6,Verbandsliga,VL-M,12,16,875,32,SF Budenheim 2,6,handball.net
+12824,Handballverband Rheinland,Handballverband Rheinland,6,Verbandsliga,Verbandsliga Männer · Handballverband Rheinland,11,9,539,18,HSG Hunsrück II,4,handball.net
+14383,Handballverband SAAR,Handballverband SAAR,6,Verbandsliga,Verbandsliga Männer,12,12,697,24,TUS Elm-Sprengen,4,handball.net
+12571,Handballverband Sachsen,Handballverband Sachsen,6,Verbandsliga,Verbandsliga Ost,12,10,586,20,Kjs-Club Dresden,4,handball.net
+12572,Handballverband Sachsen,Handballverband Sachsen,6,Verbandsliga,Verbandsliga West,12,11,616,22,Union Chemnitz,4,handball.net
+14064,Handballverband Schleswig-Holstein,Handballverband Schleswig-Holstein,6,Verbandsliga,Meisterrunde - Nord,12,13,690,26,DIE HAIE I HSG Horst/Kiebitzreihe,4,handball.net
+14063,Handballverband Schleswig-Holstein,Handballverband Schleswig-Holstein,6,Verbandsliga,Meisterrunde - Süd,12,12,593,24,MTV Dänischenhagen,6,handball.net
+12653,Handballverband Westfalen,Handballverband Westfalen,6,Verbandsliga,HVW Männer Verbandsliga Staffel 1,14,12,677,24,HSG Spradow,4,handball.net
+12654,Handballverband Westfalen,Handballverband Westfalen,6,Verbandsliga,HVW Männer Verbandsliga Staffel 2,14,12,689,24,SUS Neuenkirchen 09 E.V.,4,handball.net
+12655,Handballverband Westfalen,Handballverband Westfalen,6,Verbandsliga,HVW Männer Verbandsliga Staffel 3,14,14,760,28,VFL Eintracht Hagen E.V. III,4,handball.net
+13427,Hamburger Handballverband,Hamburger Handballverband,7,Landesliga,Landesliga Männer Gruppe 1 (121),12,11,557,22,SG Hamburg-Nord III,4,handball.net
+13428,Hamburger Handballverband,Hamburger Handballverband,7,Landesliga,Landesliga Männer Gruppe 2 (122),12,11,656,22,HG Hamburg-Barmbek III,4,handball.net
+17292,Hamburger Handballverband,Hamburger Handballverband,7,Landesliga,Landesliga Senioren (320),8,4,152,8,HL Buchholz08-Rosengarten Ü40,3,handball.net
 14717,HK Aachen-Düren,HK Aachen-Düren,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Regionsoberliga,12,0,0,0,BTB Aachen IV,0,handball.net
-12899,HK Bonn-Euskirchen-Sieg,HK Bonn-Euskirchen-Sieg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Männer,11,0,0,0,Godesberger TV,0,handball.net
-16926,HK Essen,HK Essen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Staffel Nord- BEZIRKSOBERLIGA / KREISOBERLIGA / REGIONSOBERLIGA Männer ( HK Essen),12,0,0,0,Cronenberger TG II,0,handball.net
-16008,HK Essen,HK Essen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Staffel Süd - BEZIRKSOBERLIGA / KREISOBERLIGA / REGIONSOBERLIGA Männer ( HK Essen),12,0,0,0,Bergische Panther III,0,handball.net
+12899,HK Bonn-Euskirchen-Sieg,HK Bonn-Euskirchen-Sieg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Männer,10,3,156,6,HV Erftstadt,2,handball.net
+16926,HK Essen,HK Essen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Staffel Nord- BEZIRKSOBERLIGA / KREISOBERLIGA / REGIONSOBERLIGA Männer ( HK Essen),12,5,283,10,Cronenberger TG II,2,handball.net
+16008,HK Essen,HK Essen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Staffel Süd - BEZIRKSOBERLIGA / KREISOBERLIGA / REGIONSOBERLIGA Männer ( HK Essen),12,5,283,10,Solinger TB 2. Herren,2,handball.net
 15673,HK Krefeld-Grenzland,HK Krefeld-Grenzland,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,BOL Männer,13,1,0,2,HSV Rheydt,1,handball.net
 12887,HK Köln-Rheinberg,HK Köln-Rheinberg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Regionsoberliga Männer · HK Köln-Rheinberg,12,0,0,0,HGV Hürth-Gleuel,0,handball.net
-12955,HK Oberberg,HK Oberberg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Regionsoberliga Männer · HK Oberberg,8,0,0,0,CVJM Oberwiehl II,0,handball.net
+12955,HK Oberberg,HK Oberberg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Regionsoberliga Männer,8,0,0,0,CVJM Oberwiehl II,0,handball.net
 12778,HK Rhein-Ruhr,HK Rhein-Ruhr,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,REGIONSOBERLIGA MÄNNER,14,0,0,0,Alstadener TUS II,0,handball.net
-13063,HK Wesel,HK Wesel,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Regionsoberliga Männer,12,0,0,0,HC TV Rhede II,0,handball.net
-13114,HR Leipzig,HR Leipzig,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Männer · HR Leipzig,8,1,58,2,Roter Stern Leipzig,1,handball.net
-13108,HR Ostsachsen,HR Ostsachsen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Männer · HR Ostsachsen,11,0,0,0,HSV 1923 Pulsnitz II,0,handball.net
-13101,HR Sachsen-Mitte,HR Sachsen-Mitte,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Männer,12,0,0,0,ESV Dresden II,0,handball.net
-12709,HR Südwestsachsen,HR Südwestsachsen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Männer · HR Südwestsachsen,12,1,0,2,HC Einheit Plauen II,1,handball.net
-13431,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Männer Gruppe 1 (131),9,0,0,0,1. HC Quickborn,0,handball.net
-13433,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Männer Gruppe 2 (132),9,0,0,0,ETV Hamburg III,0,handball.net
-13436,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Männer Gruppe 4 (134),9,0,0,0,2.Herren,0,handball.net
-13437,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Männer Staffel 3 (133),10,0,0,0,Ahrensburger TSV II,0,handball.net
+13063,HK Wesel,HK Wesel,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Regionsoberliga Männer · HK Wesel,12,0,0,0,HC TV Rhede II,0,handball.net
+13114,HR Leipzig,HR Leipzig,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Männer · HR Leipzig,8,4,240,8,SV LOK LEIPZIG-Mitte I,2,handball.net
+13108,HR Ostsachsen,HR Ostsachsen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Männer · HR Ostsachsen,10,7,416,14,SG Sohland/Friedersdorf,4,handball.net
+13101,HR Sachsen-Mitte,HR Sachsen-Mitte,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Männer,12,10,571,20,HSV Dresden II,4,handball.net
+12709,HR Südwestsachsen,HR Südwestsachsen,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,ROL Männer · HR Südwestsachsen,12,9,413,18,HV Grüna,4,handball.net
+13431,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Männer Gruppe 1 (131),9,5,289,10,Elmshorner HT,4,handball.net
+13433,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Männer Gruppe 2 (132),9,5,261,10,FC St. Pauli V,4,handball.net
+13437,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Männer Gruppe 3 (133),9,6,355,12,FC St. Pauli IV,4,handball.net
+13436,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Männer Gruppe 4 (134),8,4,246,8,SG Wilhelmsburg,4,handball.net
 17293,Hamburger Handballverband,Hamburger Handballverband,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Senioren (331),4,0,0,0,1. Handballclub Quickborn Ü40,0,handball.net
-12961,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Männer Nord,12,4,226,8,HSG 91 Nortorf,2,handball.net
-12962,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Männer Ost,12,3,151,6,HSG WABO 2011,2,handball.net
-12964,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Männer Süd,13,4,232,8,TSV Gross Grönau,2,handball.net
-12963,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Männer West,12,5,268,10,SG Handball Neumünster,2,handball.net
-12662,Handballkreis Hellweg,Handballkreis Hellweg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Männer Bezirksliga HKH,12,0,0,0,Allgemeiner Sportverein Hamm-Westfalen e.V. III,0,handball.net
-13224,Handballkreis Münsterland,Handballkreis Münsterland,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksliga Münsterland Männer,14,0,0,0,ASV Senden II,0,handball.net
-12482,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,M-BOL 1,12,6,281,12,SG Saulheim 2,4,handball.net
-12483,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,M-BOL 2,12,5,274,10,TUS Neuhofen,2,handball.net
-14339,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,KÜS Bezirklsliga Südwestfalen,12,0,0,0,HSG Hohenlimburg,0,handball.net
-14340,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,KÜS Bezirksliga Mitte,12,0,0,0,ASC Dortmund II,0,handball.net
-14338,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,KÜS Bezirksliga Ruhrgebiet,12,0,0,0,DJK Welper,0,handball.net
-14543,Mosel/Eifel-Nahe/Hunsrück,Mosel/Eifel-Nahe/Hunsrück,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Mosel/Eifel-Nahe/Hunsrück,10,0,0,0,DJK/MJC Trier II,0,handball.net
-13124,Rhein/Westerwald,Rhein/Westerwald,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Rhein/Westerwald,10,0,0,0,GW Mendig II,0,handball.net
+12961,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Männer Nord,12,15,834,30,HSG Schülp/Westerrönfeld/Rendsburg II,6,handball.net
+12962,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Männer Ost,12,13,694,26,TSV PLÖN,4,handball.net
+12964,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Männer Süd,13,17,834,34,HSG Holsteinische Schweiz II,6,handball.net
+12963,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Kreisoberliga Männer West,12,12,670,24,HSG Kalkberg 06,4,handball.net
+12662,Handballkreis Hellweg,Handballkreis Hellweg,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Männer Bezirksliga HKH,12,6,333,12,SG Handball Kamen,2,handball.net
+13224,Handballkreis Münsterland,Handballkreis Münsterland,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksliga Münsterland Männer,14,12,619,24,SC Arminia Ochtrup,4,handball.net
+12482,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,M-BOL 1,12,13,680,26,HSG Mutterstadt/Ruchheim,6,handball.net
+12483,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,M-BOL 2,12,16,874,32,MSG Iggelheim/Meckenheim 2,6,handball.net
+14339,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,KÜS Bezirklsliga Südwestfalen,12,4,206,8,TG Voerde 1. Herren,2,handball.net
+14340,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,KÜS Bezirksliga Mitte,12,5,267,12,TV Arnsberg H1,2,handball.net
+14338,KÜS Ruhrgebiet SÜD,KÜS Ruhrgebiet SÜD,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,KÜS Bezirksliga Ruhrgebiet,12,6,316,12,DJK Welper,2,handball.net
+14543,Mosel/Eifel-Nahe/Hunsrück,Mosel/Eifel-Nahe/Hunsrück,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Mosel/Eifel-Nahe/Hunsrück,10,5,281,10,HSG Obere Nahe,2,handball.net
+13124,Rhein/Westerwald,Rhein/Westerwald,8,Bezirksoberliga / Kreisoberliga / Regionsoberliga,Bezirksoberliga Rhein/Westerwald,10,3,164,6,TV Bad Ems II,2,handball.net
 14819,HK Aachen-Düren,HK Aachen-Düren,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga,9,0,0,0,Eschweiler SG III,0,handball.net
-12897,HK Bonn-Euskirchen-Sieg,HK Bonn-Euskirchen-Sieg,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer,10,0,0,0,HSG Euskirchen II,0,handball.net
-16078,HK Essen,HK Essen,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Männer Nord,10,0,0,0,DJK Winfried Huttrop 2.M,0,handball.net
-14914,HK Essen,HK Essen,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Männer Süd,11,0,0,0,ASV Wuppertal,0,handball.net
+12897,HK Bonn-Euskirchen-Sieg,HK Bonn-Euskirchen-Sieg,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer,9,2,98,4,Wölfe Voreifel IV,2,handball.net
+16078,HK Essen,HK Essen,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Männer Nord,10,4,205,8,ETB SW Essen II,2,handball.net
+14914,HK Essen,HK Essen,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Männer Süd,11,4,217,8,ATV Hückeswagen II,2,handball.net
 15675,HK Krefeld-Grenzland,HK Krefeld-Grenzland,9,Bezirksliga / Kreisliga / Regionsliga,BL Männer,14,1,0,2,Handball Oppum III,1,handball.net
 12889,HK Köln-Rheinberg,HK Köln-Rheinberg,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Männer · HK Köln-Rheinberg,14,0,0,0,Brühler TV II,0,handball.net
-12960,HK Oberberg,HK Oberberg,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Männer · HK Oberberg,8,0,0,0,Blue-White-Dynamite VFL Gummersbach E.V.,0,handball.net
+12960,HK Oberberg,HK Oberberg,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Männer,8,0,0,0,Blue-White-Dynamite VFL Gummersbach E.V.,0,handball.net
 13017,HK Rhein-Ruhr,HK Rhein-Ruhr,9,Bezirksliga / Kreisliga / Regionsliga,REGIONSLIGA MÄNNER,12,0,0,0,Alstadener TUS III,0,handball.net
-13065,HK Wesel,HK Wesel,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Männer,9,0,0,0,HC TV Rhede III,0,handball.net
-13116,HR Leipzig,HR Leipzig,9,Bezirksliga / Kreisliga / Regionsliga,RL Männer · HR Leipzig,12,1,50,2,Bornaer HV 09,2,handball.net
-13110,HR Ostsachsen,HR Ostsachsen,9,Bezirksliga / Kreisliga / Regionsliga,RL Männer · HR Ostsachsen,10,0,0,0,HSV 1923 Pulsnitz III,0,handball.net
-13103,HR Sachsen-Mitte,HR Sachsen-Mitte,9,Bezirksliga / Kreisliga / Regionsliga,RL Männer,11,5,275,10,SF 01 Dresden,2,handball.net
-13096,HR Südwestsachsen,HR Südwestsachsen,9,Bezirksliga / Kreisliga / Regionsliga,RL Männer · HR Südwestsachsen,12,0,0,0,HC Annaberg-B.,0,handball.net
-13440,Hamburger Handballverband,Hamburger Handballverband,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer Gruppe 1 (141),9,0,0,0,FC St. Pauli VI,0,handball.net
-13442,Hamburger Handballverband,Hamburger Handballverband,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer Gruppe 2 (142),10,0,0,0,AMTV Hamburg III,0,handball.net
-12969,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel A,9,0,23,0,HFF Munkbrarup II,0,handball.net
-12970,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel B,8,0,0,0,HG Owschlag-Kropp-Tetenhusen,0,handball.net
-12971,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel C,10,0,0,0,Eckernförder MTV,0,handball.net
-12972,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel D,9,0,0,0,FT Adler KIEL II,0,handball.net
-12973,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel E,10,1,51,2,DIE HAIE I HSG Horst/Kiebitzreihe III,2,handball.net
-12974,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel F,8,0,0,0,ATSV Stockelsdorf III,0,handball.net
-12975,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel G,10,0,0,0,ATSV Stockelsdorf II,0,handball.net
-13295,Handballkreis Bielefeld-Herford,Handballkreis Bielefeld-Herford,9,Bezirksliga / Kreisliga / Regionsliga,Männer Kreisliga Bielefeld-Herford,10,0,0,0,HSG EGB Bielefeld II,0,handball.net
-12777,Handballkreis Dortmund,Handballkreis Dortmund,9,Bezirksliga / Kreisliga / Regionsliga,HKDO-KL-M,10,0,0,0,DJK Ewaldi Aplerbeck H1,0,handball.net
-12456,Handballkreis Gütersloh,Handballkreis Gütersloh,9,Bezirksliga / Kreisliga / Regionsliga,HBKGT Männer Kreisliga,12,0,0,0,FC Greffen,0,handball.net
-13011,Handballkreis Hagen/Ennepe-Ruhr,Handballkreis Hagen/Ennepe-Ruhr,9,Bezirksliga / Kreisliga / Regionsliga,MÄNNER KREISLIGA HKHR,11,0,0,0,CVJM Gevelsberg,0,handball.net
-12689,Handballkreis Hellweg,Handballkreis Hellweg,9,Bezirksliga / Kreisliga / Regionsliga,Männer Kreisliga HKH,9,0,0,0,2. Herren,0,handball.net
-12710,Handballkreis Industrie,Handballkreis Industrie,9,Bezirksliga / Kreisliga / Regionsliga,HKI-M-Kreisliga,13,0,0,0,DJK Westfalia Welper E.V. II,0,handball.net
-15069,Handballkreis Iserlohn-Arnsberg,Handballkreis Iserlohn-Arnsberg,9,Bezirksliga / Kreisliga / Regionsliga,HKISAR Kreisliga MÄNNER,10,0,0,0,HSG Schwerte Westhofen 1.H,0,handball.net
-15898,Handballkreis Lenne-Sieg,Handballkreis Lenne-Sieg,9,Bezirksliga / Kreisliga / Regionsliga,HKLesi Kreisliga A Männer,10,0,0,0,HSG Lüdenscheid e.V. II,0,handball.net
+13065,HK Wesel,HK Wesel,9,Bezirksliga / Kreisliga / Regionsliga,Regionsliga Männer · HK Wesel,9,0,0,0,HC TV Rhede III,0,handball.net
+13116,HR Leipzig,HR Leipzig,9,Bezirksliga / Kreisliga / Regionsliga,RL Männer · HR Leipzig,12,12,688,24,SV LOK LEIPZIG-Mitte II,4,handball.net
+13110,HR Ostsachsen,HR Ostsachsen,9,Bezirksliga / Kreisliga / Regionsliga,RL Männer · HR Ostsachsen,10,8,436,16,OHC Bernstadt II,4,handball.net
+13103,HR Sachsen-Mitte,HR Sachsen-Mitte,9,Bezirksliga / Kreisliga / Regionsliga,RL Männer,11,10,559,20,SF 01 Dresden,4,handball.net
+13096,HR Südwestsachsen,HR Südwestsachsen,9,Bezirksliga / Kreisliga / Regionsliga,RL Männer · HR Südwestsachsen,12,10,457,20,Rotation Borstendorf,3,handball.net
+13440,Hamburger Handballverband,Hamburger Handballverband,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer Gruppe 1 (141),9,4,252,8,Niendorfer TSV III,2,handball.net
+13442,Hamburger Handballverband,Hamburger Handballverband,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer Gruppe 2 (142),10,7,405,14,SC Alstertal-Langenhorn,4,handball.net
+12969,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel A,9,5,256,10,TSV Hürup III,4,handball.net
+12970,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel B,8,3,147,6,HSG Schülp/Westerrönfeld/Rendsburg III,2,handball.net
+12971,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel C,10,7,382,14,HSG 24109 II,4,handball.net
+12972,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel D,9,3,177,6,Preetzer TSV II,2,handball.net
+12973,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel E,10,7,389,14,HSG Ohlau,3,handball.net
+12974,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel F,8,4,172,8,HSG Wagrien II,2,handball.net
+12975,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Männer - Staffel G,10,7,395,14,HSG Beste Trave,4,handball.net
+13295,Handballkreis Bielefeld-Herford,Handballkreis Bielefeld-Herford,9,Bezirksliga / Kreisliga / Regionsliga,Männer Kreisliga Bielefeld-Herford,9,3,163,6,TuS 97 Bielefeld/Jöllenbeck III,2,handball.net
+12777,Handballkreis Dortmund,Handballkreis Dortmund,9,Bezirksliga / Kreisliga / Regionsliga,HKDO-KL-M,10,4,215,8,TV Mengede,2,handball.net
+12456,Handballkreis Gütersloh,Handballkreis Gütersloh,9,Bezirksliga / Kreisliga / Regionsliga,HBKGT Männer Kreisliga,12,11,557,22,FC Greffen,4,handball.net
+13011,Handballkreis Hagen/Ennepe-Ruhr,Handballkreis Hagen/Ennepe-Ruhr,9,Bezirksliga / Kreisliga / Regionsliga,MÄNNER KREISLIGA HKHR,11,4,217,8,RE Schwelm 1,2,handball.net
+12689,Handballkreis Hellweg,Handballkreis Hellweg,9,Bezirksliga / Kreisliga / Regionsliga,Männer Kreisliga HKH,9,1,55,2,HCE Bergkamen 2.H,2,handball.net
+12710,Handballkreis Industrie,Handballkreis Industrie,9,Bezirksliga / Kreisliga / Regionsliga,HKI-M-Kreisliga,13,9,529,18,DJK Westfalia Welper E.V. II,4,handball.net
+15069,Handballkreis Iserlohn-Arnsberg,Handballkreis Iserlohn-Arnsberg,9,Bezirksliga / Kreisliga / Regionsliga,HKISAR Kreisliga MÄNNER,10,1,50,2,HSG Schwerte Westhofen 1.H,2,handball.net
+15898,Handballkreis Lenne-Sieg,Handballkreis Lenne-Sieg,9,Bezirksliga / Kreisliga / Regionsliga,HKLesi Kreisliga A Männer,9,1,56,2,HSG Wittgenstein,2,handball.net
 15787,Handballkreis Lenne-Sieg,Handballkreis Lenne-Sieg,9,Bezirksliga / Kreisliga / Regionsliga,KLB Süd 3 Runde,5,0,0,0,HSG Siegerland II,0,handball.net
-13093,Handballkreis Lenne-Sieg,Handballkreis Lenne-Sieg,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga B Nord,6,0,0,0,HSG Lüdenscheid E.V. III,0,handball.net
-13094,Handballkreis Lenne-Sieg,Handballkreis Lenne-Sieg,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga B Süd,5,0,0,0,HSG Siegerland II,0,handball.net
-13126,Handballkreis Lippe,Handballkreis Lippe,9,Bezirksliga / Kreisliga / Regionsliga,HBKLIP Kreisliga Männer,12,0,0,0,FC Stukenbrock,0,handball.net
-13016,Handballkreis Minden-Lübbecke,Handballkreis Minden-Lübbecke,9,Bezirksliga / Kreisliga / Regionsliga,HBKML Männer Kreisliga,14,1,62,2,HSG Petershagen/Lahde 2,2,handball.net
-13227,Handballkreis Münsterland,Handballkreis Münsterland,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Münsterland Männer,12,0,0,0,BSV Roxel,0,handball.net
-12486,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,9,Bezirksliga / Kreisliga / Regionsliga,M-BZL 1,12,3,185,6,SF Budenheim 3,2,handball.net
-12487,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,9,Bezirksliga / Kreisliga / Regionsliga,M-BZL 2,12,4,224,8,TV 03 Wörth 2,2,handball.net
-14382,Handballverband SAAR,Handballverband SAAR,9,Bezirksliga / Kreisliga / Regionsliga,Bezirksliga Männer,13,0,0,0,DJK Marpingen 2,0,handball.net
-12671,KÜS Ostwestfalenlippe,KÜS Ostwestfalenlippe,9,Bezirksliga / Kreisliga / Regionsliga,OWL Männer Bezirksliga Staffel 1,14,1,53,2,VFL Handball Mennighüffen II,2,handball.net
-12672,KÜS Ostwestfalenlippe,KÜS Ostwestfalenlippe,9,Bezirksliga / Kreisliga / Regionsliga,OWL Männer Bezirksliga Staffel 2,14,0,0,0,HSG Altenbeken/Buke,0,handball.net
-14548,Mosel/Eifel-Nahe/Hunsrück,Mosel/Eifel-Nahe/Hunsrück,9,Bezirksliga / Kreisliga / Regionsliga,Bezirksliga Männer Mosel/Eifel-Nahe/Hunsrück,5,0,0,0,DJK St. Matthias Trier II,0,handball.net
+13093,Handballkreis Lenne-Sieg,Handballkreis Lenne-Sieg,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga B Nord,7,2,113,4,TuS Grünenbaum 2,2,handball.net
+13094,Handballkreis Lenne-Sieg,Handballkreis Lenne-Sieg,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga B Süd,5,1,55,2,TUS Fellinghausen E.V. VON 1920 II,2,handball.net
+13126,Handballkreis Lippe,Handballkreis Lippe,9,Bezirksliga / Kreisliga / Regionsliga,HBKLIP Kreisliga Männer,12,7,306,14,HSG Altenbeken/Buke 2,4,handball.net
+13016,Handballkreis Minden-Lübbecke,Handballkreis Minden-Lübbecke,9,Bezirksliga / Kreisliga / Regionsliga,HBKML Männer Kreisliga,14,10,530,20,TSV Hahlen 2,4,handball.net
+13227,Handballkreis Münsterland,Handballkreis Münsterland,9,Bezirksliga / Kreisliga / Regionsliga,Kreisliga Münsterland Männer,12,5,251,10,TV Vreden II,2,handball.net
+12486,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,9,Bezirksliga / Kreisliga / Regionsliga,M-BZL 1,11,11,656,22,TV Nieder-Olm 3,6,handball.net
+12487,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,9,Bezirksliga / Kreisliga / Regionsliga,M-BZL 2,11,14,799,28,TV 03 Wörth 2,4,handball.net
+14382,Handballverband SAAR,Handballverband SAAR,9,Bezirksliga / Kreisliga / Regionsliga,Bezirksliga Männer,12,11,592,22,Falken 2 (m),4,handball.net
+12671,KÜS Ostwestfalenlippe,KÜS Ostwestfalenlippe,9,Bezirksliga / Kreisliga / Regionsliga,OWL Männer Bezirksliga Staffel 1,14,12,668,24,VFL Handball Mennighüffen II,4,handball.net
+12672,KÜS Ostwestfalenlippe,KÜS Ostwestfalenlippe,9,Bezirksliga / Kreisliga / Regionsliga,OWL Männer Bezirksliga Staffel 2,14,13,666,26,TSG Harsewinkel II,4,handball.net
+14548,Mosel/Eifel-Nahe/Hunsrück,Mosel/Eifel-Nahe/Hunsrück,9,Bezirksliga / Kreisliga / Regionsliga,Bezirksliga Männer Mosel/Eifel-Nahe/Hunsrück,5,1,50,2,TUS Fortuna Saarburg II,2,handball.net
 15020,Rhein/Westerwald,Rhein/Westerwald,9,Bezirksliga / Kreisliga / Regionsliga,Bezirksliga Männer Rhein/Westerwald,8,0,0,0,DJK Betzdorf,0,handball.net
-14417,Bergischer HK,Bergischer HK,10,Bezirksklasse / Kreisklasse / Regionsklasse,1. Regionsklasse Männer BHK,10,0,0,0,Bergischer HC,0,handball.net
+14417,Bergischer HK,Bergischer HK,10,Bezirksklasse / Kreisklasse / Regionsklasse,1. Regionsklasse Männer BHK,9,2,131,4,Wermelskirchener TV II,2,handball.net
 14820,HK Aachen-Düren,HK Aachen-Düren,10,Bezirksklasse / Kreisklasse / Regionsklasse,Regionsklasse,11,0,0,0,BSC Setterich,0,handball.net
 17301,HK Bonn-Euskirchen-Sieg,HK Bonn-Euskirchen-Sieg,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer,9,0,0,0,Godesberger TV II,0,handball.net
 15941,HK Düsseldorf,HK Düsseldorf,10,Bezirksklasse / Kreisklasse / Regionsklasse,1. Regionsklasse Männer (HK Düsseldorf),9,0,0,0,HSG JAHN 05/Sc WEST 1m,0,handball.net
-16888,HK Essen,HK Essen,10,Bezirksklasse / Kreisklasse / Regionsklasse,Regionsklasse Essen Männer,10,0,0,0,DJK GRÜN Weiss Werden 3.M,0,handball.net
-16080,HK Essen,HK Essen,10,Bezirksklasse / Kreisklasse / Regionsklasse,Regionsklasse Wuppertal Männer,9,0,0,0,Cronenberger TG IV,0,handball.net
+16888,HK Essen,HK Essen,10,Bezirksklasse / Kreisklasse / Regionsklasse,Regionsklasse Essen Männer,9,3,142,6,HSV ÜBERRUHR 3.Männer,2,handball.net
+16080,HK Essen,HK Essen,10,Bezirksklasse / Kreisklasse / Regionsklasse,Regionsklasse Wuppertal Männer,7,2,106,4,Cronenberger TG IV,2,handball.net
 15676,HK Krefeld-Grenzland,HK Krefeld-Grenzland,10,Bezirksklasse / Kreisklasse / Regionsklasse,BK Männer,14,0,0,0,ASV Süchteln 3M,0,handball.net
 12894,HK Köln-Rheinberg,HK Köln-Rheinberg,10,Bezirksklasse / Kreisklasse / Regionsklasse,Regionsklasse Männer,14,0,0,0,1.Fc KÖLN III,0,handball.net
 13019,HK Rhein-Ruhr,HK Rhein-Ruhr,10,Bezirksklasse / Kreisklasse / Regionsklasse,REGIONSKLASSE MÄNNER,12,0,0,0,DJK Adler 07 Bottrop II,0,handball.net
 13067,HK Wesel,HK Wesel,10,Bezirksklasse / Kreisklasse / Regionsklasse,Regionsklasse Männer · HK Wesel,9,0,0,0,HSG Hiesfeld/Aldenrade IV,0,handball.net
-13118,HR Leipzig,HR Leipzig,10,Bezirksklasse / Kreisklasse / Regionsklasse,RK Männer,9,0,0,0,Germania Zwenkau II,0,handball.net
+13118,HR Leipzig,HR Leipzig,10,Bezirksklasse / Kreisklasse / Regionsklasse,RK Männer,9,7,403,14,HSV Mölkau - DIE HAIE II,4,handball.net
 13113,HR Ostsachsen,HR Ostsachsen,10,Bezirksklasse / Kreisklasse / Regionsklasse,Freizeitklasse Staffel A,3,0,0,0,MSV Bautzen 04,0,handball.net
 15188,HR Ostsachsen,HR Ostsachsen,10,Bezirksklasse / Kreisklasse / Regionsklasse,Freizeitklasse Staffel B,4,0,0,0,LHV Hoyerswerda IV,0,handball.net
-13106,HR Sachsen-Mitte,HR Sachsen-Mitte,10,Bezirksklasse / Kreisklasse / Regionsklasse,RK Männer St. 1,8,1,48,2,SV Niederau III,2,handball.net
-13107,HR Sachsen-Mitte,HR Sachsen-Mitte,10,Bezirksklasse / Kreisklasse / Regionsklasse,RK Männer St. 2,8,2,107,4,SF 01 Dresden II,2,handball.net
-13100,HR Südwestsachsen,HR Südwestsachsen,10,Bezirksklasse / Kreisklasse / Regionsklasse,RK Männer Ost,12,1,61,2,SG 1899 Striegistal,2,handball.net
-13099,HR Südwestsachsen,HR Südwestsachsen,10,Bezirksklasse / Kreisklasse / Regionsklasse,RK Männer West,10,0,0,0,BSG Wismut AUE II,0,handball.net
-13445,Hamburger Handballverband,Hamburger Handballverband,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Gruppe 1 (151),8,0,0,0,Elmshorner HT II,0,handball.net
-13446,Hamburger Handballverband,Hamburger Handballverband,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Gruppe 2 (152),7,0,0,0,Ahrensburger TSV III,0,handball.net
-12988,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Kiel/RD,9,1,53,2,Büdelsdorfer TSV,2,handball.net
-12990,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer LauSto,8,0,0,0,Boizenburger HV,0,handball.net
-12985,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Nord A,10,1,49,2,HSG Angeln II,2,handball.net
-12986,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Nord B,9,0,0,0,HSG Nordau IV,0,handball.net
-12989,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Ostsee,9,0,0,0,Eichholzer SV,0,handball.net
-12987,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Plön,9,1,59,2,TSV Schönberg II,2,handball.net
-13293,Handballkreis Bielefeld-Herford,Handballkreis Bielefeld-Herford,10,Bezirksklasse / Kreisklasse / Regionsklasse,Männer 1. Kreisklasse,10,0,0,0,HSG Löhne-Obernbeck,0,handball.net
-12784,Handballkreis Dortmund,Handballkreis Dortmund,10,Bezirksklasse / Kreisklasse / Regionsklasse,HKDO-1. KK-M,12,0,0,0,ASC 09 Dortmund 3,0,handball.net
-12686,Handballkreis Gütersloh,Handballkreis Gütersloh,10,Bezirksklasse / Kreisklasse / Regionsklasse,HBKGT Männer 1. Kreisklasse,12,0,0,0,HSG Rietberg-Mastholte II,0,handball.net
-13009,Handballkreis Hagen/Ennepe-Ruhr,Handballkreis Hagen/Ennepe-Ruhr,10,Bezirksklasse / Kreisklasse / Regionsklasse,MÄNNER KREISklasse HKHR,8,0,0,0,HSG ECD Hagen 3,0,handball.net
-12715,Handballkreis Hellweg,Handballkreis Hellweg,10,Bezirksklasse / Kreisklasse / Regionsklasse,Männer 1. Kreisklasse HKH,8,0,0,0,Ahlener SG 93 E.V. III,0,handball.net
-13048,Handballkreis Industrie,Handballkreis Industrie,10,Bezirksklasse / Kreisklasse / Regionsklasse,HKI-M-1. Kreisklasse,12,0,0,0,DJK Westfalia Welper e.V. III,0,handball.net
-15392,Handballkreis Iserlohn-Arnsberg,Handballkreis Iserlohn-Arnsberg,10,Bezirksklasse / Kreisklasse / Regionsklasse,HKISAR 1. Kreisklasse MÄNNER,8,1,0,2,Letmather TV H3,1,handball.net
-15837,Handballkreis Lippe,Handballkreis Lippe,10,Bezirksklasse / Kreisklasse / Regionsklasse,HBKLIP Kreisklasse Männer,11,1,58,2,SG Handball Detmold 3,2,handball.net
-14376,Handballkreis Minden-Lübbecke,Handballkreis Minden-Lübbecke,10,Bezirksklasse / Kreisklasse / Regionsklasse,HBKML Männer Kreisklasse Staffel 1,8,0,0,0,HSG EURO 3,0,handball.net
-14377,Handballkreis Minden-Lübbecke,Handballkreis Minden-Lübbecke,10,Bezirksklasse / Kreisklasse / Regionsklasse,HBKML Männer Kreisklasse Staffel 2,9,0,0,0,HCE BAD Oeynhausen 2,0,handball.net
-13229,Handballkreis Münsterland,Handballkreis Münsterland,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse 1 Münsterland Männer,12,0,0,0,DJK Eintracht Hiltrup II,0,handball.net
-12582,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,10,Bezirksklasse / Kreisklasse / Regionsklasse,M-BZK 1,11,2,114,4,HC Gonsenheim 3,2,handball.net
-12583,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,10,Bezirksklasse / Kreisklasse / Regionsklasse,M-BZK 2,12,6,354,12,HSG Grethen/Maxdorf,2,handball.net
-14384,Handballverband SAAR,Handballverband SAAR,10,Bezirksklasse / Kreisklasse / Regionsklasse,A-Liga Männer Staffel Ost,11,0,0,0,ASC Quierschied 2,0,handball.net
-14385,Handballverband SAAR,Handballverband SAAR,10,Bezirksklasse / Kreisklasse / Regionsklasse,A-Liga Männer Staffel West,10,0,0,0,HC Dillingen-Diefflen 3,0,handball.net
-14739,Bergischer HK,Bergischer HK,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,2. Regionsklasse Männer BHK,10,0,0,0,ATV Hückeswagen III,0,handball.net
+13106,HR Sachsen-Mitte,HR Sachsen-Mitte,10,Bezirksklasse / Kreisklasse / Regionsklasse,RK Männer St. 1,8,4,196,8,SG Klotzsche II,2,handball.net
+13107,HR Sachsen-Mitte,HR Sachsen-Mitte,10,Bezirksklasse / Kreisklasse / Regionsklasse,RK Männer St. 2,8,5,260,10,SF 01 Dresden II,4,handball.net
+13100,HR Südwestsachsen,HR Südwestsachsen,10,Bezirksklasse / Kreisklasse / Regionsklasse,RK Männer Ost,12,11,624,22,USG Chemnitz II,4,handball.net
+13099,HR Südwestsachsen,HR Südwestsachsen,10,Bezirksklasse / Kreisklasse / Regionsklasse,RK Männer West,10,3,178,6,HC Glauchau/Meerane III,4,handball.net
+13445,Hamburger Handballverband,Hamburger Handballverband,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Gruppe 1 (151),7,3,130,6,SG Osdorf/Lurup II,2,handball.net
+13446,Hamburger Handballverband,Hamburger Handballverband,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Gruppe 2 (152),7,3,96,6,Wandsbeker TSV Concordia,3,handball.net
+12988,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Kiel/RD,8,4,232,8,Büdelsdorfer TSV,4,handball.net
+12990,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer LauSto,8,4,191,8,TSV Bargteheide II,2,handball.net
+12985,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Nord A,10,9,455,18,HSG Angeln II,4,handball.net
+12986,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Nord B,8,5,231,10,IF Stjernen Flensborg II,2,handball.net
+12989,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Ostsee,8,5,255,10,TSV Gross Grönau II,4,handball.net
+12987,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,Handball-Erwachsene DER Kreishandballverbände IN Schleswig-Holstein,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse Männer Plön,9,6,363,12,TSV Schönberg II,4,handball.net
+13293,Handballkreis Bielefeld-Herford,Handballkreis Bielefeld-Herford,10,Bezirksklasse / Kreisklasse / Regionsklasse,Männer 1. Kreisklasse,10,3,124,6,SG Bünde-Dünne III,2,handball.net
+12784,Handballkreis Dortmund,Handballkreis Dortmund,10,Bezirksklasse / Kreisklasse / Regionsklasse,HKDO-1. KK-M,12,6,309,12,ATV Dorstfeld 2,2,handball.net
+12686,Handballkreis Gütersloh,Handballkreis Gütersloh,10,Bezirksklasse / Kreisklasse / Regionsklasse,HBKGT Männer 1. Kreisklasse,12,9,400,18,TUS Brockhagen III,4,handball.net
+13009,Handballkreis Hagen/Ennepe-Ruhr,Handballkreis Hagen/Ennepe-Ruhr,10,Bezirksklasse / Kreisklasse / Regionsklasse,MÄNNER KREISklasse HKHR,8,3,155,6,HSG Wetter/Grundschöttel 2,2,handball.net
+12715,Handballkreis Hellweg,Handballkreis Hellweg,10,Bezirksklasse / Kreisklasse / Regionsklasse,Männer 1. Kreisklasse HKH,8,1,57,2,SG Handball Kamen III,2,handball.net
+13048,Handballkreis Industrie,Handballkreis Industrie,10,Bezirksklasse / Kreisklasse / Regionsklasse,HKI-M-1. Kreisklasse,11,3,164,6,HSG Re/Oe II,2,handball.net
+15392,Handballkreis Iserlohn-Arnsberg,Handballkreis Iserlohn-Arnsberg,10,Bezirksklasse / Kreisklasse / Regionsklasse,HKISAR 1. Kreisklasse MÄNNER,8,4,142,8,SG Iserlohn-Sümmern H2,3,handball.net
+15837,Handballkreis Lippe,Handballkreis Lippe,10,Bezirksklasse / Kreisklasse / Regionsklasse,HBKLIP Kreisklasse Männer,10,6,278,12,TSV Schloss Neuhaus 3,2,handball.net
+14376,Handballkreis Minden-Lübbecke,Handballkreis Minden-Lübbecke,10,Bezirksklasse / Kreisklasse / Regionsklasse,HBKML Männer Kreisklasse Staffel 1,8,1,51,2,TuS Südhemmern,2,handball.net
+14377,Handballkreis Minden-Lübbecke,Handballkreis Minden-Lübbecke,10,Bezirksklasse / Kreisklasse / Regionsklasse,HBKML Männer Kreisklasse Staffel 2,9,3,151,6,TSV GWD Minden 3,2,handball.net
+13229,Handballkreis Münsterland,Handballkreis Münsterland,10,Bezirksklasse / Kreisklasse / Regionsklasse,Kreisklasse 1 Münsterland Männer,12,5,302,10,VFL Sassenberg,2,handball.net
+12582,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,10,Bezirksklasse / Kreisklasse / Regionsklasse,M-BZK 1,11,11,571,22,HC Gonsenheim 3,6,handball.net
+12583,Handballverband Rheinhessen-Pfalz,Handballverband Rheinhessen-Pfalz,10,Bezirksklasse / Kreisklasse / Regionsklasse,M-BZK 2,11,14,798,28,SG LaFt - Herren,6,handball.net
+14384,Handballverband SAAR,Handballverband SAAR,10,Bezirksklasse / Kreisklasse / Regionsklasse,A-Liga Männer Staffel Ost,11,5,262,10,HSG Ottweiler/Steinbach,4,handball.net
+14385,Handballverband SAAR,Handballverband SAAR,10,Bezirksklasse / Kreisklasse / Regionsklasse,A-Liga Männer Staffel West,9,6,347,12,HC St. Johann,3,handball.net
+14739,Bergischer HK,Bergischer HK,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,2. Regionsklasse Männer BHK,8,3,84,6,Wermelskirchener TV III,2,handball.net
 15942,HK Düsseldorf,HK Düsseldorf,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,2. Regionsklasse Männer (HK Düsseldorf),9,0,0,0,Hildener Wölfe 3m,0,handball.net
 15677,HK Krefeld-Grenzland,HK Krefeld-Grenzland,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,2. BK Männer,13,0,0,0,ASV Rurtal Hückelhoven E.V. II,0,handball.net
 14329,HK Köln-Rheinberg,HK Köln-Rheinberg,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,2.Regionsklasse Männer,13,0,0,0,Brühler TV III,0,handball.net
-13119,HR Leipzig,HR Leipzig,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,2. RK Männer,9,2,56,4,VFB Eilenburg II,2,handball.net
-13297,Handballkreis Bielefeld-Herford,Handballkreis Bielefeld-Herford,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,Männer 2.Kreisklasse,8,0,0,0,CVJM Rödinghausen III,0,handball.net
-12785,Handballkreis Dortmund,Handballkreis Dortmund,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,hkdo-2. KK-M,7,0,0,0,DJK Normannia Dortmund,0,handball.net
-12682,Handballkreis Gütersloh,Handballkreis Gütersloh,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,HBKGT Männer 2. Kreisklasse,12,1,65,2,TUS Brockhagen IV,2,handball.net
-12714,Handballkreis Hellweg,Handballkreis Hellweg,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,Männer 2 Kreisklasse HKH,9,0,0,0,HC Heeren-Werve E.V. II,0,handball.net
-13037,Handballkreis Industrie,Handballkreis Industrie,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,HKI-M-2. Kreisklasse,11,0,0,0,Elmar Herne 22 E.V.,0,handball.net
+13119,HR Leipzig,HR Leipzig,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,2. RK Männer,8,5,238,10,VFB Eilenburg II,4,handball.net
+13297,Handballkreis Bielefeld-Herford,Handballkreis Bielefeld-Herford,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,Männer 2.Kreisklasse,8,2,89,4,TUS Brake III,2,handball.net
+12785,Handballkreis Dortmund,Handballkreis Dortmund,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,hkdo-2. KK-M,7,1,39,2,VfL Aplerbeckermark 2. Herren,2,handball.net
+12682,Handballkreis Gütersloh,Handballkreis Gütersloh,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,HBKGT Männer 2. Kreisklasse,12,11,574,22,TUS Brockhagen IV,4,handball.net
+12714,Handballkreis Hellweg,Handballkreis Hellweg,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,Männer 2 Kreisklasse HKH,9,1,52,2,SC Eintr.Heessen 01/45 Handball E.V.,2,handball.net
+13037,Handballkreis Industrie,Handballkreis Industrie,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,HKI-M-2. Kreisklasse,11,4,148,8,SUS 1927 E.V. Olfen,2,handball.net
 15391,Handballkreis Iserlohn-Arnsberg,Handballkreis Iserlohn-Arnsberg,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,HKISAR 2. Kreisklasse Männer,7,0,0,0,HV Sundern H2,0,handball.net
-13231,Handballkreis Münsterland,Handballkreis Münsterland,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,Kreisklasse 2 Münsterland Männer Staffel 1,9,0,0,1,HSG NRG 2025 III,1,handball.net
-13232,Handballkreis Münsterland,Handballkreis Münsterland,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,Kreisklasse 2 Münsterland Männer Staffel 2,9,0,0,0,BSV Roxel II,0,handball.net
-14397,Handballverband SAAR,Handballverband SAAR,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,B-Liga Männer,10,0,0,0,ASC Quierschied 3,0,handball.net
-15678,HK Krefeld-Grenzland,HK Krefeld-Grenzland,12,3. Bezirksklasse / 3. Kreisklasse / 3. Regionsklasse,3. BK Männer,5,0,0,0,Eagles Niederrhein IV,0,handball.net
-13298,Handballkreis Bielefeld-Herford,Handballkreis Bielefeld-Herford,12,3. Bezirksklasse / 3. Kreisklasse / 3. Regionsklasse,Männer 3.Kreisklasse,9,0,0,0,DJK Blau-Weiss Bielefeld,0,handball.net
-12786,Handballkreis Dortmund,Handballkreis Dortmund,12,3. Bezirksklasse / 3. Kreisklasse / 3. Regionsklasse,hkdo-Hobbyliga-Männer,8,0,0,0,DJK Komet Dortmund,0,handball.net
-13040,Handballkreis Industrie,Handballkreis Industrie,12,3. Bezirksklasse / 3. Kreisklasse / 3. Regionsklasse,HKI-M-3. Kreisklasse,11,0,0,0,Bochumer HC,0,handball.net
-13233,Handballkreis Münsterland,Handballkreis Münsterland,12,3. Bezirksklasse / 3. Kreisklasse / 3. Regionsklasse,Kreisklasse 3 Münsterland Männer,9,0,0,0,DJK SV Mauritz 1906 e.V.,0,handball.net
+13231,Handballkreis Münsterland,Handballkreis Münsterland,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,Kreisklasse 2 Münsterland Männer Staffel 1,9,3,183,6,HSG NRG 2025 III,2,handball.net
+13232,Handballkreis Münsterland,Handballkreis Münsterland,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,Kreisklasse 2 Münsterland Männer Staffel 2,9,2,94,4,TV Friesen Telgte II,2,handball.net
+14397,Handballverband SAAR,Handballverband SAAR,11,2. Bezirksklasse / 2. Kreisklasse / 2. Regionsklasse,B-Liga Männer,10,7,317,14,TV Niederwürzbach 2,4,handball.net
+15678,HK Krefeld-Grenzland,HK Krefeld-Grenzland,12,3. Bezirksklasse / 3. Kreisklasse / 3. Regionsklasse,3. BK Männer,11,0,0,0,Borussia VFL 1900 Mönchengladbach 4,0,handball.net
+13298,Handballkreis Bielefeld-Herford,Handballkreis Bielefeld-Herford,12,3. Bezirksklasse / 3. Kreisklasse / 3. Regionsklasse,Männer 3.Kreisklasse,9,2,109,4,VfL Herford 3. Männer,2,handball.net
+12786,Handballkreis Dortmund,Handballkreis Dortmund,12,3. Bezirksklasse / 3. Kreisklasse / 3. Regionsklasse,hkdo-Hobbyliga-Männer,8,2,83,4,SC Huckarde-Rahm 4,2,handball.net
+13040,Handballkreis Industrie,Handballkreis Industrie,12,3. Bezirksklasse / 3. Kreisklasse / 3. Regionsklasse,HKI-M-3. Kreisklasse,10,3,134,6,TV Gladbeck 1912 e.V. III,2,handball.net
+13233,Handballkreis Münsterland,Handballkreis Münsterland,12,3. Bezirksklasse / 3. Kreisklasse / 3. Regionsklasse,Kreisklasse 3 Münsterland Männer,9,1,58,2,VFL Eintracht Mettingen II,2,handball.net
 13047,Handballkreis Industrie,Handballkreis Industrie,13,4. Bezirksklasse / 4. Kreisklasse / 4. Regionsklasse,HKI-Ü35,12,1,1,2,SG Suderwich Ü35,2,handball.net

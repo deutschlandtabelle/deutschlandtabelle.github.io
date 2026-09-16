@@ -242,7 +242,10 @@ def schreibe_sport(out: Path, slug: str, ranking, leagues, matches,
         "vergleichHinweis": VERGLEICH,
         "fuss": (f'<p>Stand {meta["generated"]} · Saison {meta["season_label"]} · '
                  f'<a href="{slug}-vereine.csv">{slug}-vereine.csv</a> · '
-                 f'<a href="{slug}-ligen.csv">{slug}-ligen.csv</a></p>'),
+                 f'<a href="{slug}-ligen.csv">{slug}-ligen.csv</a></p>'
+                 '<p class="rechtslinks"><a href="#impressum">Impressum</a> · '
+                 '<a href="#datenschutz">Datenschutz</a> · '
+                 '<a href="#impressum">Quellen und Lizenzen</a></p>'),
     })
     return info
 

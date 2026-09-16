@@ -300,6 +300,27 @@ tbody tr:hover{background:var(--accent-soft)}
   td.rank{width:11%}
   .league{font-size:11px}
 }
+.rechtslinks{margin:8px 0 0}
+.odbl{margin:6px 0 0;font-size:12px}
+.rechtstext{max-width:720px;margin:0 auto;padding:28px 0 20px}
+.rechtstext h1{font-size:30px;letter-spacing:-.02em;margin:18px 0 6px}
+.rechtstext h2{font-size:18px;margin:32px 0 8px;letter-spacing:-.01em}
+.rechtstext p,.rechtstext ul{margin:0 0 14px}
+.rechtstext ul{padding-left:22px}
+.rechtstext li{margin-bottom:7px}
+.rechtstext address{font-style:normal;line-height:1.7;margin:0 0 14px}
+.rechtstext .fuehrung{font-size:17px;color:var(--muted);
+  border-left:3px solid var(--accent);padding-left:14px}
+.rechtstext code{font-size:13px;background:var(--panel);padding:1px 5px;
+  border:1px solid var(--line);border-radius:4px}
+.luecke{background:var(--accent-soft);border:1px dashed var(--accent);
+  border-radius:10px;padding:14px 16px;margin:0 0 14px}
+table.quellen{width:100%;border-collapse:collapse;margin:0 0 14px;font-size:14px}
+table.quellen th,table.quellen td{text-align:left;vertical-align:top;
+  padding:10px 12px 10px 0;border-bottom:1px solid var(--line);
+  white-space:normal}
+table.quellen th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--muted);position:static}
 footer{margin:40px 0 0;padding-top:20px;border-top:1px solid var(--line);
   color:var(--muted);font-size:13px;line-height:1.7}
 footer a{color:var(--accent)}
@@ -356,7 +377,171 @@ footer a{color:var(--accent)}
   <footer>
     <p>Ein Projekt aus offen zugänglichen Ergebnisdaten. Die Datenquellen und die
     jeweilige Abdeckung stehen auf der Seite der Sportart.</p>
+    <p class="rechtslinks"><a href="#impressum">Impressum</a> ·
+      <a href="#datenschutz">Datenschutz</a> ·
+      <a href="#impressum">Quellen und Lizenzen</a></p>
+    <p class="odbl">Enthält Daten von <a href="https://www.openligadb.de/"
+      rel="noopener">OpenLigaDB</a>, lizenziert unter der
+      <a href="https://opendatacommons.org/licenses/odbl/1-0/"
+      rel="noopener">Open Database License 1.0</a>.</p>
   </footer>
+</section>
+
+<!-- ========================= Impressum ========================= -->
+<section id="view-impressum" hidden>
+  <div class="rechtstext">
+    <a class="zurueckknopf" href="#home">← Zurück zur Startseite</a>
+    <h1>Impressum</h1>
+
+    <h2>Angaben gemäß § 5 DDG</h2>
+    <div class="luecke"><b>Name und Anschrift fehlen hier noch.</b> § 5 DDG verlangt eine ladungsfähige Anschrift; bis sie eingetragen ist, ist dieses Impressum unvollständig. Erreichbar bin ich zuverlässig über die unten genannte E-Mail-Adresse — wer eine Anschrift benötigt, bekommt sie auf Anfrage.</div>
+
+    <h2>Kontakt</h2>
+    <p>E-Mail: <a href="mailto:dominik.orbach@th-koeln.de">dominik.orbach@th-koeln.de</a></p>
+
+    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+    <p>Dieselbe Person wie oben.</p>
+
+    <h2>Art des Angebots</h2>
+    <p>ClubRank ist ein privates, nicht-kommerzielles Projekt. Es verkauft
+    nichts, zeigt keine Werbung und verlangt keine Anmeldung.</p>
+
+    <h2>Zu den Zahlen</h2>
+    <p>Die Tabellen stammen aus den unten genannten Quellen und werden
+    unverändert übernommen, lediglich in eine gemeinsame Rangfolge gebracht.
+    Für ihre Richtigkeit und Vollständigkeit kann ich nicht einstehen: ein
+    Punktabzug, eine zurückgezogene Mannschaft oder ein nachgetragenes Ergebnis
+    erscheinen hier erst, wenn die Quelle sie führt. Wer einen Fehler
+    bemerkt, darf mir gern schreiben.</p>
+    <p>Die Rangfolge selbst ist eine Rechnung, kein sportliches Urteil.
+    Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden
+    keine gemeinsame Auf- und Abstiegskette; ein Vergleich über Verbandsgrenzen
+    hinweg ist dort nicht sportlich begründet.</p>
+
+    <h2 id="lizenzen">Quellen und Lizenzen</h2>
+    <p>Jede Zeile der <a href="fussball-vereine.csv">CSV-Dateien</a> nennt in
+    der Spalte <code>quelle</code>, woher sie stammt.</p>
+    <table class="quellen">
+      <thead><tr><th>Quelle</th><th>Deckt ab</th><th>Rechtlicher Stand</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href="https://www.openligadb.de/" rel="noopener">OpenLigaDB</a></td>
+          <td>Fußball, obere Ligen</td>
+          <td><a href="https://opendatacommons.org/licenses/odbl/1-0/"
+              rel="noopener">ODbL 1.0</a> — Namensnennung und Weitergabe unter
+              gleichen Bedingungen. Die mit <code>OpenLigaDB</code>
+              gekennzeichneten Zeilen der CSV-Dateien stehen unter dieser
+              Lizenz.</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.fussball.de/" rel="noopener">fussball.de</a></td>
+          <td>Fußball, Landesverbände</td>
+          <td>DFB GmbH &amp; Co. KG. Keine freie Lizenz.</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.handball.net/" rel="noopener">handball.net</a></td>
+          <td>Handball ab 3. Liga</td>
+          <td>Deutscher Handballbund. Keine freie Lizenz.</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.opel-hbl.de/" rel="noopener">HBL</a> ·
+              Sportradar</td>
+          <td>Handball-Bundesligen</td>
+          <td>HBL GmbH. Keine freie Lizenz.</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.basketball-bund.net/" rel="noopener">basketball-bund.net</a></td>
+          <td>Basketball, alle Stufen</td>
+          <td>Deutscher Basketball Bund. Keine freie Lizenz.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Die Vereinswappen stammen aus OpenLigaDB und werden von dieser Seite
+    ausgeliefert, damit kein Seitenaufruf an fremde Server geht. Die Rechte an
+    den Wappen liegen bei den jeweiligen Vereinen; sie erscheinen hier zur
+    Kennzeichnung der Mannschaft, nicht als eigene Leistung.</p>
+    <p class="rechtslinks"><a href="#datenschutz">Weiter zur
+      Datenschutzerklärung →</a></p>
+  </div>
+</section>
+
+<!-- ====================== Datenschutzerklärung ====================== -->
+<section id="view-datenschutz" hidden>
+  <div class="rechtstext">
+    <a class="zurueckknopf" href="#home">← Zurück zur Startseite</a>
+    <h1>Datenschutzerklärung</h1>
+
+    <p class="fuehrung">Diese Seite setzt keine Cookies, misst nichts und
+    bindet nichts von fremden Servern ein. Alles, was Sie hier sehen —
+    Schriften, Bilder, Wappen, Daten — kommt von clubrank.github.io. Übrig
+    bleibt, was beim Ausliefern einer Seite technisch anfällt.</p>
+
+    <h2>Verantwortlicher</h2>
+    <div class="luecke"><b>Name und Anschrift fehlen hier noch.</b> § 5 DDG verlangt eine ladungsfähige Anschrift; bis sie eingetragen ist, ist dieses Impressum unvollständig. Erreichbar bin ich zuverlässig über die unten genannte E-Mail-Adresse — wer eine Anschrift benötigt, bekommt sie auf Anfrage.</div>
+    <p>E-Mail: <a href="mailto:dominik.orbach@th-koeln.de">dominik.orbach@th-koeln.de</a></p>
+
+    <h2>Was beim Aufruf der Seite verarbeitet wird</h2>
+    <p>Die Seite wird über <b>GitHub Pages</b> ausgeliefert, einen Dienst der
+    GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA
+    (Teil der Microsoft Corporation). Beim Abruf überträgt Ihr Browser
+    unvermeidlich Daten, die GitHub in Server-Protokollen erfasst:</p>
+    <ul>
+      <li>Ihre IP-Adresse</li>
+      <li>Datum und Uhrzeit des Abrufs</li>
+      <li>die angeforderte Datei und die übertragene Datenmenge</li>
+      <li>die zuvor besuchte Seite (Referrer), sofern Ihr Browser sie sendet</li>
+      <li>Browser und Betriebssystem</li>
+    </ul>
+    <p><b>Zweck und Rechtsgrundlage.</b> Diese Verarbeitung ist erforderlich,
+    um die Seite überhaupt ausliefern und ihren sicheren Betrieb gewährleisten
+    zu können. Rechtsgrundlage ist das berechtigte Interesse an einem
+    funktionsfähigen Angebot, Art. 6 Abs. 1 lit. f DSGVO.</p>
+    <p><b>Übermittlung in die USA.</b> GitHub verarbeitet die Protokolldaten
+    auch in den Vereinigten Staaten. Die Übermittlung stützt sich auf das
+    EU-US Data Privacy Framework beziehungsweise auf Standardvertragsklauseln.
+    Einzelheiten stehen in der
+    <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement"
+    rel="noopener">Datenschutzerklärung von GitHub</a>.</p>
+    <p><b>Speicherdauer.</b> Auf die Protokolle von GitHub habe ich keinen
+    Zugriff und kein Einsichtsrecht; ihre Dauer richtet sich nach den Angaben
+    von GitHub.</p>
+
+    <h2>Was nicht stattfindet</h2>
+    <ul>
+      <li><b>Keine Cookies</b> und keine vergleichbare Speicherung in Ihrem
+        Browser.</li>
+      <li><b>Keine Reichweitenmessung</b>, keine Analysewerkzeuge, keine
+        Zählpixel, keine Werbung.</li>
+      <li><b>Keine Einbindung Dritter.</b> Schriften sind die Ihres
+        Betriebssystems, Bilder und Vereinswappen liegen auf dieser Seite.
+        Es wird keine Verbindung zu einem anderen Server aufgebaut.</li>
+      <li><b>Keine Konten, keine Formulare.</b> Die Suche läuft in Ihrem
+        Browser; es wird nichts abgeschickt.</li>
+      <li><b>Keine automatisierte Entscheidungsfindung</b> und kein
+        Profiling.</li>
+    </ul>
+
+    <h2>Die angezeigten Daten</h2>
+    <p>Gezeigt werden Mannschaften, Ligen und Tabellenstände. Namen von
+    Spielerinnen, Spielern oder Schiedsrichtern werden nicht erhoben,
+    gespeichert oder angezeigt. Ein Mannschaftsname wie „SV Lengede II“ ist
+    kein personenbezogenes Datum.</p>
+    <p>Sollte in einem Mannschaftsnamen ausnahmsweise eine natürliche Person
+    erkennbar sein und Sie damit nicht einverstanden sein, schreiben Sie mir —
+    die Zeile wird dann entfernt.</p>
+
+    <h2>Ihre Rechte</h2>
+    <p>Sie haben gegenüber dem Verantwortlichen das Recht auf Auskunft
+    (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung
+    der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie das Recht,
+    der Verarbeitung zu widersprechen (Art. 21). Sie können sich außerdem bei
+    einer Datenschutz-Aufsichtsbehörde beschweren, Art. 77 DSGVO.</p>
+    <p>Da ich selbst keine Protokolle führe und auf die von GitHub keinen
+    Zugriff habe, richten sich Auskunfts- und Löschbegehren zu diesen Daten
+    zweckmäßigerweise direkt an GitHub.</p>
+
+    <p class="rechtslinks"><a href="#impressum">Zum Impressum →</a></p>
+  </div>
 </section>
 
 <!-- ========================= Ansicht Sportart ========================= -->
@@ -419,7 +604,7 @@ footer a{color:var(--accent)}
 </div>
 
 <script>
-const SPORTS = [{"name": "Fußball", "sportart": "fussball", "sportName": "Fußball", "klasse": "maenner", "klasseName": "Männer", "icon": "⚽", "torwort": "Tore", "hinweis": null, "slug": "fussball", "ready": true, "teams": 26716, "leagues": 1936, "tiers": 14, "season": "2026/27", "generated": "09.09.2026, 14:28 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 09.09.2026, 14:28 Uhr · Saison 2026/27 · <a href=\"fussball-vereine.csv\">fussball-vereine.csv</a> · <a href=\"fussball-ligen.csv\">fussball-ligen.csv</a></p>"}, {"name": "Fußball der Frauen", "sportart": "fussball", "sportName": "Fußball", "klasse": "frauen", "klasseName": "Frauen", "icon": "⚽", "torwort": "Tore", "hinweis": null, "slug": "fussball-frauen", "ready": true, "teams": 3431, "leagues": 332, "tiers": 9, "season": "2026/27", "generated": "09.09.2026, 13:31 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 09.09.2026, 13:31 Uhr · Saison 2026/27 · <a href=\"fussball-frauen-vereine.csv\">fussball-frauen-vereine.csv</a> · <a href=\"fussball-frauen-ligen.csv\">fussball-frauen-ligen.csv</a></p>"}, {"name": "Handball", "sportart": "handball", "sportName": "Handball", "klasse": "maenner", "klasseName": "Männer", "icon": "🤾", "torwort": "Tore", "hinweis": null, "slug": "handball", "ready": true, "teams": 1915, "leagues": 176, "tiers": 13, "season": "2026/27", "generated": "09.09.2026, 13:33 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 09.09.2026, 13:33 Uhr · Saison 2026/27 · <a href=\"handball-vereine.csv\">handball-vereine.csv</a> · <a href=\"handball-ligen.csv\">handball-ligen.csv</a></p>"}, {"name": "Handball der Frauen", "sportart": "handball", "sportName": "Handball", "klasse": "frauen", "klasseName": "Frauen", "icon": "🤾", "torwort": "Tore", "hinweis": null, "slug": "handball-frauen", "ready": true, "teams": 1187, "leagues": 118, "tiers": 8, "season": "2026/27", "generated": "09.09.2026, 13:19 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 09.09.2026, 13:19 Uhr · Saison 2026/27 · <a href=\"handball-frauen-vereine.csv\">handball-frauen-vereine.csv</a> · <a href=\"handball-frauen-ligen.csv\">handball-frauen-ligen.csv</a></p>"}, {"name": "Basketball", "sportart": "basketball", "sportName": "Basketball", "klasse": "maenner", "klasseName": "Männer", "icon": "🏀", "torwort": "Körbe", "hinweis": null, "slug": "basketball", "ready": true, "teams": 1658, "leagues": 185, "tiers": 13, "season": "2026/27", "generated": "09.09.2026, 13:33 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 09.09.2026, 13:33 Uhr · Saison 2026/27 · <a href=\"basketball-vereine.csv\">basketball-vereine.csv</a> · <a href=\"basketball-ligen.csv\">basketball-ligen.csv</a></p>"}, {"name": "Basketball der Frauen", "sportart": "basketball", "sportName": "Basketball", "klasse": "frauen", "klasseName": "Frauen", "icon": "🏀", "torwort": "Körbe", "hinweis": null, "slug": "basketball-frauen", "ready": true, "teams": 611, "leagues": 77, "tiers": 11, "season": "2026/27", "generated": "09.09.2026, 13:33 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 09.09.2026, 13:33 Uhr · Saison 2026/27 · <a href=\"basketball-frauen-vereine.csv\">basketball-frauen-vereine.csv</a> · <a href=\"basketball-frauen-ligen.csv\">basketball-frauen-ligen.csv</a></p>"}];
+const SPORTS = [{"name": "Fußball", "sportart": "fussball", "sportName": "Fußball", "klasse": "maenner", "klasseName": "Männer", "icon": "⚽", "torwort": "Tore", "hinweis": null, "slug": "fussball", "ready": true, "teams": 26716, "leagues": 1936, "tiers": 14, "season": "2026/27", "generated": "09.09.2026, 14:28 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 09.09.2026, 14:28 Uhr · Saison 2026/27 · <a href=\"fussball-vereine.csv\">fussball-vereine.csv</a> · <a href=\"fussball-ligen.csv\">fussball-ligen.csv</a></p>"}, {"name": "Fußball der Frauen", "sportart": "fussball", "sportName": "Fußball", "klasse": "frauen", "klasseName": "Frauen", "icon": "⚽", "torwort": "Tore", "hinweis": null, "slug": "fussball-frauen", "ready": true, "teams": 3431, "leagues": 332, "tiers": 9, "season": "2026/27", "generated": "09.09.2026, 13:31 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 09.09.2026, 13:31 Uhr · Saison 2026/27 · <a href=\"fussball-frauen-vereine.csv\">fussball-frauen-vereine.csv</a> · <a href=\"fussball-frauen-ligen.csv\">fussball-frauen-ligen.csv</a></p>"}, {"name": "Handball", "sportart": "handball", "sportName": "Handball", "klasse": "maenner", "klasseName": "Männer", "icon": "🤾", "torwort": "Tore", "hinweis": null, "slug": "handball", "ready": true, "teams": 1895, "leagues": 176, "tiers": 13, "season": "2026/27", "generated": "16.09.2026, 14:44 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 14:44 Uhr · Saison 2026/27 · <a href=\"handball-vereine.csv\">handball-vereine.csv</a> · <a href=\"handball-ligen.csv\">handball-ligen.csv</a></p>"}, {"name": "Handball der Frauen", "sportart": "handball", "sportName": "Handball", "klasse": "frauen", "klasseName": "Frauen", "icon": "🤾", "torwort": "Tore", "hinweis": null, "slug": "handball-frauen", "ready": true, "teams": 1216, "leagues": 121, "tiers": 9, "season": "2026/27", "generated": "16.09.2026, 14:46 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 14:46 Uhr · Saison 2026/27 · <a href=\"handball-frauen-vereine.csv\">handball-frauen-vereine.csv</a> · <a href=\"handball-frauen-ligen.csv\">handball-frauen-ligen.csv</a></p>"}, {"name": "Basketball", "sportart": "basketball", "sportName": "Basketball", "klasse": "maenner", "klasseName": "Männer", "icon": "🏀", "torwort": "Körbe", "hinweis": null, "slug": "basketball", "ready": true, "teams": 1872, "leagues": 207, "tiers": 13, "season": "2026/27", "generated": "16.09.2026, 14:56 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 14:56 Uhr · Saison 2026/27 · <a href=\"basketball-vereine.csv\">basketball-vereine.csv</a> · <a href=\"basketball-ligen.csv\">basketball-ligen.csv</a></p>"}, {"name": "Basketball der Frauen", "sportart": "basketball", "sportName": "Basketball", "klasse": "frauen", "klasseName": "Frauen", "icon": "🏀", "torwort": "Körbe", "hinweis": null, "slug": "basketball-frauen", "ready": true, "teams": 611, "leagues": 77, "tiers": 11, "season": "2026/27", "generated": "09.09.2026, 13:33 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 09.09.2026, 13:33 Uhr · Saison 2026/27 · <a href=\"basketball-frauen-vereine.csv\">basketball-frauen-vereine.csv</a> · <a href=\"basketball-frauen-ligen.csv\">basketball-frauen-ligen.csv</a></p>"}];
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const tausend = n => Number(n).toLocaleString('de-DE');
@@ -482,10 +667,19 @@ async function route(){
     a.toggleAttribute('aria-current',
       a.getAttribute('href') === '#' + slug ||
       (!!sport && a.dataset.sportart === sport.sportart)));
+  // Vier Ansichten, immer genau eine sichtbar.
+  const ANSICHTEN = ['view-home', 'view-sport', 'view-impressum', 'view-datenschutz'];
+  const zeige = id => ANSICHTEN.forEach(a =>
+    document.getElementById(a).hidden = (a !== id));
   const home = document.getElementById('view-home');
   const view = document.getElementById('view-sport');
-  if (!sport){ home.hidden = false; view.hidden = true; window.scrollTo(0,0); return; }
-  home.hidden = true; view.hidden = false;
+  if (slug === 'impressum' || slug === 'datenschutz'){
+    zeige('view-' + slug);
+    window.scrollTo(0, 0);
+    return;
+  }
+  if (!sport){ zeige('view-home'); window.scrollTo(0,0); return; }
+  zeige('view-sport');
   document.getElementById('sportTitel').textContent = `${sport.icon} ${sport.name}`;
   document.getElementById('sportUnter').textContent = sport.ready
     ? `Saison ${sport.season} · Stand ${sport.generated}` : '';
