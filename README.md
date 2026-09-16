@@ -1,6 +1,6 @@
 # Deutschlandtabelle — jeder Verein, jede Liga, ein Platz
 
-**→ [clubrank.github.io](https://clubrank.github.io/)**
+**→ [deutschlandtabelle.github.io](https://deutschlandtabelle.github.io/)**
 
 Jeder Verein des Landes in einer einzigen Rangfolge — von der Bundesliga bis zur
 Kreisklasse, für mehrere Sportarten.
@@ -16,10 +16,10 @@ Kreisklasse, für mehrere Sportarten.
 Eine Seite, vier Ansichten über die Adresszeile:
 
 ```
-clubrank.github.io/#home        Marke, Beschreibung, Überblick über die Sportarten
-clubrank.github.io/#fussball    Bestenlisten und komplette Tabelle
-clubrank.github.io/#handball    dito
-clubrank.github.io/#basketball  Platzhalter, solange die Quelle fehlt
+deutschlandtabelle.github.io/#home        Marke, Beschreibung, Überblick über die Sportarten
+deutschlandtabelle.github.io/#fussball    Bestenlisten und komplette Tabelle
+deutschlandtabelle.github.io/#handball    dito
+deutschlandtabelle.github.io/#basketball  Platzhalter, solange die Quelle fehlt
 ```
 
 Warum eine einzige Seite: so lauten die Adressen wie gewünscht `…/#fussball`. Die
