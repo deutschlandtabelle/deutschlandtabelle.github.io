@@ -20,8 +20,8 @@ import shutil
 import sys
 from pathlib import Path
 
-from ranking import (basketballde, fussballde, handballnet, hbl, landing,
-                     load, pokal, rank, render, site, wappen)
+from ranking import (basketballde, fussballde, handballnet, hbl, karte,
+                     landing, load, pokal, rank, render, site, wappen)
 from ranking.api import OpenLigaDB
 from ranking.leagues import EXPECTED_TIER4, current_season
 
@@ -35,32 +35,38 @@ SPORTARTEN = {
     "fussball": {
         "name": "Fußball", "sportart": "fussball", "sportName": "Fußball",
         "klasse": "maenner", "klasseName": "Männer",
-        "icon": "⚽", "torwort": "Tore", "hinweis": None,
+        "icon": "⚽", "torwort": "Tore", "worte": landing.WORTE_TOR,
+        "hinweis": None,
     },
     "fussball-frauen": {
         "name": "Fußball der Frauen", "sportart": "fussball",
         "sportName": "Fußball", "klasse": "frauen", "klasseName": "Frauen",
-        "icon": "⚽", "torwort": "Tore", "hinweis": None,
+        "icon": "⚽", "torwort": "Tore", "worte": landing.WORTE_TOR,
+        "hinweis": None,
     },
     "handball": {
         "name": "Handball", "sportart": "handball", "sportName": "Handball",
         "klasse": "maenner", "klasseName": "Männer",
-        "icon": "🤾", "torwort": "Tore", "hinweis": None,
+        "icon": "🤾", "torwort": "Tore", "worte": landing.WORTE_TOR,
+        "hinweis": None,
     },
     "handball-frauen": {
         "name": "Handball der Frauen", "sportart": "handball",
         "sportName": "Handball", "klasse": "frauen", "klasseName": "Frauen",
-        "icon": "🤾", "torwort": "Tore", "hinweis": None,
+        "icon": "🤾", "torwort": "Tore", "worte": landing.WORTE_TOR,
+        "hinweis": None,
     },
     "basketball": {
         "name": "Basketball", "sportart": "basketball",
         "sportName": "Basketball", "klasse": "maenner", "klasseName": "Männer",
-        "icon": "🏀", "torwort": "Körbe", "hinweis": None,
+        "icon": "🏀", "torwort": "Körbe", "worte": landing.WORTE_KORB,
+        "hinweis": None,
     },
     "basketball-frauen": {
         "name": "Basketball der Frauen", "sportart": "basketball",
         "sportName": "Basketball", "klasse": "frauen", "klasseName": "Frauen",
-        "icon": "🏀", "torwort": "Körbe", "hinweis": None,
+        "icon": "🏀", "torwort": "Körbe", "worte": landing.WORTE_KORB,
+        "hinweis": None,
     },
 }
 
@@ -211,7 +217,7 @@ def schreibe_sport(out: Path, slug: str, ranking, leagues, matches,
     # Wappen mitliefern statt verlinken: ein Bild von einem fremden Server
     # gibt die IP-Adresse jedes Besuchers dorthin weiter.
     wappen.einbetten(paket, out)
-    zahlen = landing.kennzahlen(ranking)
+    zahlen = landing.kennzahlen(ranking, SPORTARTEN[slug].get("worte"))
     paket["kennzahlen"] = zahlen["karten"]
     # Die Seite baut die Top-100-Listen selbst; dafür braucht sie dieselbe
     # Mindestspielzahl, mit der auch die Karten gerechnet wurden.
@@ -234,8 +240,21 @@ def schreibe_sport(out: Path, slug: str, ranking, leagues, matches,
     render.write_vereine(out, ranking, slug)
     render.write_ligen(out, ranking, slug)
 
+    # Spitzenreiter für die Deutschlandkarte auf der Startseite. Der Ort
+    # kommt aus dem Vereinsnamen; gibt er keinen her, bleibt der Verein ohne
+    # Punkt auf der Karte -- eine geratene Position wäre schlechter als keine.
+    spitze = None
+    if ranking:
+        erster = ranking[0]
+        ort = karte.verorten(erster["name"])
+        spitze = {"name": erster["name"], "liga": erster["league"],
+                  "stufe": erster["tier"],
+                  "ort": ort[0] if ort else None,
+                  "x": ort[1] if ort else None, "y": ort[2] if ort else None}
+
     info = dict(SPORTARTEN[slug])
     info.update({
+        "spitze": spitze,
         "slug": slug, "ready": True, "teams": len(ranking), "leagues": leagues,
         "tiers": len({r["tier"] for r in ranking}),
         "season": meta["season_label"], "generated": meta["generated"],

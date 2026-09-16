@@ -1,4 +1,4 @@
-# ClubRank — wo steht dein Verein?
+# Deutschlandtabelle — jeder Verein, jede Liga, ein Platz
 
 **→ [clubrank.github.io](https://clubrank.github.io/)**
 

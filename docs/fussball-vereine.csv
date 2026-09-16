@@ -1,128 +1,128 @@
 rang_bundesweit,verein,verband,gebiet,ligastufe,spielklasse,staffel,staffel_id,platz_in_staffel,spiele,siege,unentschieden,niederlagen,tore,gegentore,tordifferenz,punkte,punkte_pro_spiel,rangaenderung_vorwoche,quelle
-1,FC Augsburg,,,1,Bundesliga,Bundesliga,bl1/2026,1,2,2,0,0,7,1,6,6,3.0,2,OpenLigaDB
+1,FC Augsburg,,,1,Bundesliga,Bundesliga,bl1/2026,1,2,2,0,0,7,1,6,6,3.0,0,OpenLigaDB
 2,SC Freiburg,,,1,Bundesliga,Bundesliga,bl1/2026,2,2,2,0,0,5,1,4,6,3.0,0,OpenLigaDB
-3,Borussia Dortmund,,,1,Bundesliga,Bundesliga,bl1/2026,3,2,2,0,0,5,2,3,6,3.0,2,OpenLigaDB
-4,SV 07 Elversberg,,,1,Bundesliga,Bundesliga,bl1/2026,4,2,2,0,0,7,5,2,6,3.0,3,OpenLigaDB
-5,1. FSV Mainz 05,,,1,Bundesliga,Bundesliga,bl1/2026,5,2,1,1,0,5,0,5,4,2.0,5,OpenLigaDB
-6,FC Bayern München,,,1,Bundesliga,Bundesliga,bl1/2026,6,2,1,1,0,5,1,4,4,2.0,-5,OpenLigaDB
-7,Bayer 04 Leverkusen,,,1,Bundesliga,Bundesliga,bl1/2026,7,2,1,0,1,6,3,3,3,1.5,5,OpenLigaDB
-8,RB Leipzig,,,1,Bundesliga,Bundesliga,bl1/2026,8,2,1,0,1,4,3,1,3,1.5,-4,OpenLigaDB
-9,VfB Stuttgart,,,1,Bundesliga,Bundesliga,bl1/2026,9,2,1,0,1,5,6,-1,3,1.5,9,OpenLigaDB
-10,SV Werder Bremen,,,1,Bundesliga,Bundesliga,bl1/2026,10,2,1,0,1,4,5,-1,3,1.5,5,OpenLigaDB
-11,1. FC Köln,,,1,Bundesliga,Bundesliga,bl1/2026,11,2,1,0,1,4,6,-2,3,1.5,-5,OpenLigaDB
-12,SC Paderborn 07,,,1,Bundesliga,Bundesliga,bl1/2026,12,2,0,1,1,0,1,-1,1,0.5,-1,OpenLigaDB
-13,Eintracht Frankfurt,,,1,Bundesliga,Bundesliga,bl1/2026,13,2,0,1,1,4,7,-3,1,0.5,-4,OpenLigaDB
-14,FC Schalke 04,,,1,Bundesliga,Bundesliga,bl1/2026,14,2,0,1,1,0,3,-3,1,0.5,3,OpenLigaDB
-15,1. FC Union Berlin,,,1,Bundesliga,Bundesliga,bl1/2026,15,2,0,1,1,3,7,-4,1,0.5,-7,OpenLigaDB
-16,TSG Hoffenheim,,,1,Bundesliga,Bundesliga,bl1/2026,16,2,0,0,2,4,6,-2,0,0.0,-3,OpenLigaDB
-17,Borussia Mönchengladbach,,,1,Bundesliga,Bundesliga,bl1/2026,17,2,0,0,2,3,7,-4,0,0.0,-1,OpenLigaDB
-18,Hamburger SV,,,1,Bundesliga,Bundesliga,bl1/2026,18,2,0,0,2,0,7,-7,0,0.0,-4,OpenLigaDB
-19,Hertha BSC,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,1,4,4,0,0,12,5,7,12,3.0,1,OpenLigaDB
-20,1. FC Nürnberg,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,2,4,3,1,0,13,5,8,10,2.5,-1,OpenLigaDB
-21,1. FC Heidenheim 1846,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,3,4,3,0,1,11,10,1,9,2.25,1,OpenLigaDB
-22,VfL Wolfsburg,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,4,4,2,2,0,10,6,4,8,2.0,-1,OpenLigaDB
-23,1. FC Kaiserslautern,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,5,4,2,2,0,5,1,4,8,2.0,1,OpenLigaDB
-24,VfL Bochum,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,6,4,2,0,2,3,3,0,6,1.5,5,OpenLigaDB
-25,1. FC Magdeburg,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,7,4,2,0,2,7,8,-1,6,1.5,-2,OpenLigaDB
-26,VfL Osnabrück,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,8,4,2,0,2,7,8,-1,6,1.5,6,OpenLigaDB
-27,Karlsruher SC,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,9,4,1,2,1,6,8,-2,5,1.25,-1,OpenLigaDB
+3,Borussia Dortmund,,,1,Bundesliga,Bundesliga,bl1/2026,3,2,2,0,0,5,2,3,6,3.0,0,OpenLigaDB
+4,SV 07 Elversberg,,,1,Bundesliga,Bundesliga,bl1/2026,4,2,2,0,0,7,5,2,6,3.0,0,OpenLigaDB
+5,1. FSV Mainz 05,,,1,Bundesliga,Bundesliga,bl1/2026,5,2,1,1,0,5,0,5,4,2.0,0,OpenLigaDB
+6,FC Bayern München,,,1,Bundesliga,Bundesliga,bl1/2026,6,2,1,1,0,5,1,4,4,2.0,0,OpenLigaDB
+7,Bayer 04 Leverkusen,,,1,Bundesliga,Bundesliga,bl1/2026,7,2,1,0,1,6,3,3,3,1.5,0,OpenLigaDB
+8,RB Leipzig,,,1,Bundesliga,Bundesliga,bl1/2026,8,2,1,0,1,4,3,1,3,1.5,0,OpenLigaDB
+9,VfB Stuttgart,,,1,Bundesliga,Bundesliga,bl1/2026,9,2,1,0,1,5,6,-1,3,1.5,0,OpenLigaDB
+10,SV Werder Bremen,,,1,Bundesliga,Bundesliga,bl1/2026,10,2,1,0,1,4,5,-1,3,1.5,0,OpenLigaDB
+11,1. FC Köln,,,1,Bundesliga,Bundesliga,bl1/2026,11,2,1,0,1,4,6,-2,3,1.5,0,OpenLigaDB
+12,SC Paderborn 07,,,1,Bundesliga,Bundesliga,bl1/2026,12,2,0,1,1,0,1,-1,1,0.5,0,OpenLigaDB
+13,Eintracht Frankfurt,,,1,Bundesliga,Bundesliga,bl1/2026,13,2,0,1,1,4,7,-3,1,0.5,0,OpenLigaDB
+14,FC Schalke 04,,,1,Bundesliga,Bundesliga,bl1/2026,14,2,0,1,1,0,3,-3,1,0.5,0,OpenLigaDB
+15,1. FC Union Berlin,,,1,Bundesliga,Bundesliga,bl1/2026,15,2,0,1,1,3,7,-4,1,0.5,0,OpenLigaDB
+16,TSG Hoffenheim,,,1,Bundesliga,Bundesliga,bl1/2026,16,2,0,0,2,4,6,-2,0,0.0,0,OpenLigaDB
+17,Borussia Mönchengladbach,,,1,Bundesliga,Bundesliga,bl1/2026,17,2,0,0,2,3,7,-4,0,0.0,0,OpenLigaDB
+18,Hamburger SV,,,1,Bundesliga,Bundesliga,bl1/2026,18,2,0,0,2,0,7,-7,0,0.0,0,OpenLigaDB
+19,Hertha BSC,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,1,4,4,0,0,12,5,7,12,3.0,0,OpenLigaDB
+20,1. FC Nürnberg,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,2,4,3,1,0,13,5,8,10,2.5,0,OpenLigaDB
+21,1. FC Heidenheim 1846,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,3,4,3,0,1,11,10,1,9,2.25,0,OpenLigaDB
+22,VfL Wolfsburg,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,4,4,2,2,0,10,6,4,8,2.0,0,OpenLigaDB
+23,1. FC Kaiserslautern,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,5,4,2,2,0,5,1,4,8,2.0,0,OpenLigaDB
+24,VfL Bochum,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,6,4,2,0,2,3,3,0,6,1.5,0,OpenLigaDB
+25,1. FC Magdeburg,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,7,4,2,0,2,7,8,-1,6,1.5,0,OpenLigaDB
+26,VfL Osnabrück,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,8,4,2,0,2,7,8,-1,6,1.5,0,OpenLigaDB
+27,Karlsruher SC,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,9,4,1,2,1,6,8,-2,5,1.25,0,OpenLigaDB
 28,DSC Arminia Bielefeld,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,10,4,1,1,2,7,8,-1,4,1.0,0,OpenLigaDB
-29,Energie Cottbus,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,11,4,1,1,2,10,12,-2,4,1.0,1,OpenLigaDB
-30,SpVgg Greuther Fürth,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,12,4,1,1,2,7,9,-2,4,1.0,-5,OpenLigaDB
+29,Energie Cottbus,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,11,4,1,1,2,10,12,-2,4,1.0,0,OpenLigaDB
+30,SpVgg Greuther Fürth,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,12,4,1,1,2,7,9,-2,4,1.0,0,OpenLigaDB
 31,Hannover 96,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,13,4,1,1,2,4,6,-2,4,1.0,0,OpenLigaDB
-32,Eintracht Braunschweig,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,14,4,1,0,3,10,10,0,3,0.75,-5,OpenLigaDB
-33,FC St. Pauli,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,15,4,0,3,1,6,7,-1,3,0.75,1,OpenLigaDB
-34,Holstein Kiel,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,16,4,0,3,1,6,8,-2,3,0.75,1,OpenLigaDB
-35,Dynamo Dresden,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,17,4,1,0,3,5,10,-5,3,0.75,-2,OpenLigaDB
+32,Eintracht Braunschweig,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,14,4,1,0,3,10,10,0,3,0.75,0,OpenLigaDB
+33,FC St. Pauli,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,15,4,0,3,1,6,7,-1,3,0.75,0,OpenLigaDB
+34,Holstein Kiel,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,16,4,0,3,1,6,8,-2,3,0.75,0,OpenLigaDB
+35,Dynamo Dresden,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,17,4,1,0,3,5,10,-5,3,0.75,0,OpenLigaDB
 36,SV Darmstadt 98,,,2,2. Bundesliga,2. Bundesliga,bl2/2026,18,4,0,1,3,2,7,-5,1,0.25,0,OpenLigaDB
 37,MSV Duisburg,,,3,3. Liga,3. Liga,bl3/2026,1,4,4,0,0,12,3,9,12,3.0,0,OpenLigaDB
-38,1. FC Saarbrücken,,,3,3. Liga,3. Liga,bl3/2026,2,4,3,0,1,14,7,7,9,2.25,3,OpenLigaDB
-39,Hansa Rostock,,,3,3. Liga,3. Liga,bl3/2026,3,4,2,2,0,11,8,3,8,2.0,-1,OpenLigaDB
-40,Alemannia Aachen,,,3,3. Liga,3. Liga,bl3/2026,4,4,2,1,1,8,5,3,7,1.75,6,OpenLigaDB
-41,Preußen Münster,,,3,3. Liga,3. Liga,bl3/2026,5,4,2,1,1,7,7,0,7,1.75,7,OpenLigaDB
-42,Rot-Weiss Essen,,,3,3. Liga,3. Liga,bl3/2026,6,4,2,1,1,4,5,-1,7,1.75,7,OpenLigaDB
-43,TSG 1899 Hoffenheim II,,,3,3. Liga,3. Liga,bl3/2026,7,4,2,0,2,9,5,4,6,1.5,-4,OpenLigaDB
-44,Viktoria Köln,,,3,3. Liga,3. Liga,bl3/2026,8,4,2,0,2,9,8,1,6,1.5,-4,OpenLigaDB
-45,VfB Stuttgart II,,,3,3. Liga,3. Liga,bl3/2026,9,4,2,0,2,6,7,-1,6,1.5,7,OpenLigaDB
-46,SG Sonnenhof Großaspach,,,3,3. Liga,3. Liga,bl3/2026,10,4,2,0,2,2,4,-2,6,1.5,8,OpenLigaDB
-47,SV Meppen,,,3,3. Liga,3. Liga,bl3/2026,11,4,2,0,2,6,9,-3,6,1.5,-5,OpenLigaDB
-48,Fortuna Köln,,,3,3. Liga,3. Liga,bl3/2026,12,4,1,2,1,3,3,0,5,1.25,-1,OpenLigaDB
-49,FC Ingolstadt 04,,,3,3. Liga,3. Liga,bl3/2026,13,4,1,2,1,5,6,-1,5,1.25,-6,OpenLigaDB
-50,Würzburger Kickers,,,3,3. Liga,3. Liga,bl3/2026,14,4,1,1,2,7,7,0,4,1.0,-6,OpenLigaDB
-51,SV Waldhof Mannheim,,,3,3. Liga,3. Liga,bl3/2026,15,4,1,1,2,7,8,-1,4,1.0,-6,OpenLigaDB
-52,Fortuna Düsseldorf,,,3,3. Liga,3. Liga,bl3/2026,16,4,1,1,2,2,4,-2,4,1.0,1,OpenLigaDB
-53,TSV Havelse,,,3,3. Liga,3. Liga,bl3/2026,17,4,1,0,3,6,8,-2,3,0.75,-3,OpenLigaDB
-54,Jahn Regensburg,,,3,3. Liga,3. Liga,bl3/2026,18,4,1,0,3,7,10,-3,3,0.75,-3,OpenLigaDB
-55,SC Verl,,,3,3. Liga,3. Liga,bl3/2026,19,4,1,0,3,5,10,-5,3,0.75,1,OpenLigaDB
-56,SV Wehen Wiesbaden,,,3,3. Liga,3. Liga,bl3/2026,20,4,0,2,2,2,8,-6,2,0.5,-1,OpenLigaDB
-57,SC Weiche Flensburg 08,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,1,7,6,1,0,24,7,17,19,2.71,1,OpenLigaDB
+38,1. FC Saarbrücken,,,3,3. Liga,3. Liga,bl3/2026,2,4,3,0,1,14,7,7,9,2.25,0,OpenLigaDB
+39,Hansa Rostock,,,3,3. Liga,3. Liga,bl3/2026,3,4,2,2,0,11,8,3,8,2.0,0,OpenLigaDB
+40,Alemannia Aachen,,,3,3. Liga,3. Liga,bl3/2026,4,4,2,1,1,8,5,3,7,1.75,0,OpenLigaDB
+41,Preußen Münster,,,3,3. Liga,3. Liga,bl3/2026,5,4,2,1,1,7,7,0,7,1.75,0,OpenLigaDB
+42,Rot-Weiss Essen,,,3,3. Liga,3. Liga,bl3/2026,6,4,2,1,1,4,5,-1,7,1.75,0,OpenLigaDB
+43,TSG 1899 Hoffenheim II,,,3,3. Liga,3. Liga,bl3/2026,7,4,2,0,2,9,5,4,6,1.5,0,OpenLigaDB
+44,Viktoria Köln,,,3,3. Liga,3. Liga,bl3/2026,8,4,2,0,2,9,8,1,6,1.5,0,OpenLigaDB
+45,VfB Stuttgart II,,,3,3. Liga,3. Liga,bl3/2026,9,4,2,0,2,6,7,-1,6,1.5,0,OpenLigaDB
+46,SG Sonnenhof Großaspach,,,3,3. Liga,3. Liga,bl3/2026,10,4,2,0,2,2,4,-2,6,1.5,0,OpenLigaDB
+47,SV Meppen,,,3,3. Liga,3. Liga,bl3/2026,11,4,2,0,2,6,9,-3,6,1.5,0,OpenLigaDB
+48,Fortuna Köln,,,3,3. Liga,3. Liga,bl3/2026,12,4,1,2,1,3,3,0,5,1.25,0,OpenLigaDB
+49,FC Ingolstadt 04,,,3,3. Liga,3. Liga,bl3/2026,13,4,1,2,1,5,6,-1,5,1.25,0,OpenLigaDB
+50,Würzburger Kickers,,,3,3. Liga,3. Liga,bl3/2026,14,4,1,1,2,7,7,0,4,1.0,0,OpenLigaDB
+51,SV Waldhof Mannheim,,,3,3. Liga,3. Liga,bl3/2026,15,4,1,1,2,7,8,-1,4,1.0,0,OpenLigaDB
+52,Fortuna Düsseldorf,,,3,3. Liga,3. Liga,bl3/2026,16,4,1,1,2,2,4,-2,4,1.0,0,OpenLigaDB
+53,TSV Havelse,,,3,3. Liga,3. Liga,bl3/2026,17,4,1,0,3,6,8,-2,3,0.75,0,OpenLigaDB
+54,Jahn Regensburg,,,3,3. Liga,3. Liga,bl3/2026,18,4,1,0,3,7,10,-3,3,0.75,0,OpenLigaDB
+55,SC Verl,,,3,3. Liga,3. Liga,bl3/2026,19,4,1,0,3,5,10,-5,3,0.75,0,OpenLigaDB
+56,SV Wehen Wiesbaden,,,3,3. Liga,3. Liga,bl3/2026,20,4,0,2,2,2,8,-6,2,0.5,0,OpenLigaDB
+57,SC Weiche Flensburg 08,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,1,7,6,1,0,24,7,17,19,2.71,0,OpenLigaDB
 58,FC Gütersloh,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,1,7,6,1,0,19,4,15,19,2.71,,fussball.de
 59,Kickers Offenbach,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,1,6,5,1,0,15,5,10,16,2.67,,fussball.de
-60,Rot-Weiß Erfurt,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,1,7,5,2,0,23,5,18,17,2.43,-1,OpenLigaDB
-61,Chemnitzer FC,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,2,7,5,2,0,16,3,13,17,2.43,-1,OpenLigaDB
+60,Rot-Weiß Erfurt,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,1,7,5,2,0,23,5,18,17,2.43,-2,OpenLigaDB
+61,Chemnitzer FC,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,2,7,5,2,0,16,3,13,17,2.43,-2,OpenLigaDB
 62,TSV Buchbach,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,1,7,5,2,0,17,6,11,17,2.43,,fussball.de
-63,FSV Schöningen,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,2,7,5,2,0,13,6,7,17,2.43,-2,OpenLigaDB
-64,VfB Oldenburg,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,3,7,5,1,1,21,8,13,16,2.29,-7,OpenLigaDB
+63,FSV Schöningen,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,2,7,5,2,0,13,6,7,17,2.43,-3,OpenLigaDB
+64,VfB Oldenburg,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,3,7,5,1,1,21,8,13,16,2.29,-3,OpenLigaDB
 65,SC Rot-Weiß Oberhausen,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,2,7,5,1,1,16,5,11,16,2.29,,fussball.de
 66,FC Memmingen,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,2,7,5,1,1,11,6,5,16,2.29,,fussball.de
 67,SGV Heilbronn-Freiberg,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,2,6,3,3,0,14,5,9,12,2.0,,fussball.de
-68,1. FC Phönix Lübeck,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,4,7,4,2,1,14,4,10,14,2.0,2,OpenLigaDB
+68,1. FC Phönix Lübeck,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,4,7,4,2,1,14,4,10,14,2.0,-6,OpenLigaDB
 69,Borussia Mönchengladbach U23,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,3,7,4,2,1,15,6,9,14,2.0,,fussball.de
 70,Borussia Dortmund U23,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,4,6,3,3,0,10,4,6,12,2.0,,fussball.de
-71,Hannover 96 II,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,5,7,4,2,1,13,7,6,14,2.0,-5,OpenLigaDB
-72,Erzgebirge Aue,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,3,7,4,2,1,13,10,3,14,2.0,-9,OpenLigaDB
-73,1. FC Magdeburg II,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,4,7,4,1,2,17,12,5,13,1.86,-9,OpenLigaDB
-74,FC Carl Zeiss Jena,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,5,7,4,1,2,10,5,5,13,1.86,-6,OpenLigaDB
+71,Hannover 96 II,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,5,7,4,2,1,13,7,6,14,2.0,-8,OpenLigaDB
+72,Erzgebirge Aue,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,3,7,4,2,1,13,10,3,14,2.0,-8,OpenLigaDB
+73,1. FC Magdeburg II,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,4,7,4,1,2,17,12,5,13,1.86,-8,OpenLigaDB
+74,FC Carl Zeiss Jena,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,5,7,4,1,2,10,5,5,13,1.86,-8,OpenLigaDB
 75,DJK Vilzing,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,3,7,4,1,2,13,11,2,13,1.86,,fussball.de
-76,FSV Zwickau,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,6,7,4,1,2,8,9,-1,13,1.86,-11,OpenLigaDB
+76,FSV Zwickau,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,6,7,4,1,2,8,9,-1,13,1.86,-9,OpenLigaDB
 77,VfR Aalen,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,3,6,3,2,1,9,6,3,11,1.83,,fussball.de
 78,SpVgg Unterhaching,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,6,6,3,2,1,6,4,2,11,1.83,,fussball.de
 79,SV Westfalia Rhynern,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,6,6,3,2,1,12,12,0,11,1.83,,fussball.de
-80,SpVgg Drochtersen/Assel,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,6,7,4,0,3,18,11,7,12,1.71,-6,OpenLigaDB
-81,Greifswalder FC,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,7,7,3,3,1,15,10,5,12,1.71,-14,OpenLigaDB
-82,VSG Altglienicke Berlin,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,8,7,3,3,1,14,10,4,12,1.71,-20,OpenLigaDB
+80,SpVgg Drochtersen/Assel,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,6,7,4,0,3,18,11,7,12,1.71,-12,OpenLigaDB
+81,Greifswalder FC,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,7,7,3,3,1,15,10,5,12,1.71,-12,OpenLigaDB
+82,VSG Altglienicke Berlin,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,8,7,3,3,1,14,10,4,12,1.71,-12,OpenLigaDB
 83,SC Eltersdorf,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,4,7,3,3,1,11,7,4,12,1.71,,fussball.de
-84,Hallescher FC,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,9,7,3,3,1,9,5,4,12,1.71,-11,OpenLigaDB
+84,Hallescher FC,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,9,7,3,3,1,9,5,4,12,1.71,-13,OpenLigaDB
 85,SC Freiburg II,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,4,6,2,4,0,12,7,5,10,1.67,,fussball.de
 86,TSV 1860 München,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,10,6,2,4,0,13,9,4,10,1.67,,fussball.de
 87,SV Stuttgarter Kickers,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,5,6,3,1,2,12,10,2,10,1.67,,fussball.de
 88,SV Eintracht-Trier,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,6,6,3,1,2,5,4,1,10,1.67,,fussball.de
 89,FV Illertissen,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,5,7,3,2,2,12,9,3,11,1.57,,fussball.de
-90,Atlas Delmenhorst,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,7,7,3,2,2,13,11,2,11,1.57,-12,OpenLigaDB
+90,Atlas Delmenhorst,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,7,7,3,2,2,13,11,2,11,1.57,-18,OpenLigaDB
 91,1. FC Köln U23,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,5,7,3,2,2,12,10,2,11,1.57,,fussball.de
-92,BFC Dynamo,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,10,7,3,2,2,10,8,2,11,1.57,-20,OpenLigaDB
+92,BFC Dynamo,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,10,7,3,2,2,10,8,2,11,1.57,-19,OpenLigaDB
 93,1. FC Schweinfurt 1905,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,7,7,3,2,2,14,16,-2,11,1.57,,fussball.de
 94,FC Augsburg 2,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,8,7,3,2,2,13,15,-2,11,1.57,,fussball.de
 95,FSV Frankfurt,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,7,6,2,3,1,11,7,4,9,1.5,,fussball.de
 96,SV Wacker Burghausen,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,9,7,3,1,3,18,14,4,10,1.43,,fussball.de
-97,1. FC Lok Leipzig,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,11,7,3,1,3,13,13,0,10,1.43,-21,OpenLigaDB
-98,SV Todesfelde,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,8,7,3,1,3,16,18,-2,10,1.43,-29,OpenLigaDB
+97,1. FC Lok Leipzig,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,11,7,3,1,3,13,13,0,10,1.43,-23,OpenLigaDB
+98,SV Todesfelde,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,8,7,3,1,3,16,18,-2,10,1.43,-23,OpenLigaDB
 99,SV Bergisch Gladbach,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,7,7,3,1,3,9,12,-3,10,1.43,,fussball.de
 100,FC 08 Homburg,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,8,5,2,1,2,6,7,-1,7,1.4,,fussball.de
 101,TSV Aubstadt,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,11,6,2,2,2,12,10,2,8,1.33,,fussball.de
 102,1. FC Bocholt,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,8,7,2,3,2,16,16,0,9,1.29,,fussball.de
 103,SC Paderborn 07 U23,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,9,7,2,3,2,15,15,0,9,1.29,,fussball.de
-104,Eintracht Norderstedt,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,9,7,2,3,2,14,14,0,9,1.29,-27,OpenLigaDB
+104,Eintracht Norderstedt,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,9,7,2,3,2,14,14,0,9,1.29,-28,OpenLigaDB
 105,Sportfreunde Siegen,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,10,7,2,3,2,10,10,0,9,1.29,,fussball.de
 106,FC Schalke 04 U23,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,11,7,3,0,4,15,17,-2,9,1.29,,fussball.de
-107,Kickers Emden,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,10,7,2,3,2,18,21,-3,9,1.29,-28,OpenLigaDB
-108,Eimsbütteler TV,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,11,7,3,0,4,14,24,-10,9,1.29,-33,OpenLigaDB
+107,Kickers Emden,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,10,7,2,3,2,18,21,-3,9,1.29,-30,OpenLigaDB
+108,Eimsbütteler TV,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,11,7,3,0,4,14,24,-10,9,1.29,-30,OpenLigaDB
 109,1. FSV Mainz 05 II,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,11,5,2,0,3,7,10,-3,6,1.2,,fussball.de
 110,FC Bayern München 2,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,14,6,2,1,3,7,6,1,7,1.17,,fussball.de
 111,1. FC Nürnberg 2,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,15,6,2,1,3,11,11,0,7,1.17,,fussball.de
 112,TSV Schwaben Augsburg,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,12,7,2,2,3,7,9,-2,8,1.14,,fussball.de
 113,VfB Eichstätt,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,13,7,2,2,3,7,12,-5,8,1.14,,fussball.de
-114,HSC Hannover,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,12,7,2,2,3,10,16,-6,8,1.14,-43,OpenLigaDB
+114,HSC Hannover,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,12,7,2,2,3,10,16,-6,8,1.14,-35,OpenLigaDB
 115,Bonner SC,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,12,7,1,4,2,12,13,-1,7,1.0,,fussball.de
 116,SpVgg Bayreuth,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,16,7,2,1,4,12,13,-1,7,1.0,,fussball.de
 117,TSV Steinbach Haiger,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,9,6,1,3,2,10,11,-1,6,1.0,,fussball.de
 118,SG Barockstadt Fulda-Lehnerz,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,13,5,1,2,2,8,9,-1,5,1.0,,fussball.de
 119,KSV Hessen Kassel,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,10,6,2,0,4,10,12,-2,6,1.0,,fussball.de
 120,FC-Astoria Walldorf,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,12,6,1,3,2,7,10,-3,6,1.0,,fussball.de
-121,Hamburger SV II,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,13,7,2,1,4,11,15,-4,7,1.0,-35,OpenLigaDB
+121,Hamburger SV II,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,13,7,2,1,4,11,15,-4,7,1.0,-41,OpenLigaDB
 122,SG Wattenscheid 09,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,13,7,2,1,4,10,15,-5,7,1.0,,fussball.de
 123,1. FC Kaiserslautern II,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,15,5,1,2,2,4,12,-8,5,1.0,,fussball.de
-124,RSV Eintracht 1949,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,12,7,1,3,3,11,15,-4,6,0.86,-44,OpenLigaDB
+124,RSV Eintracht 1949,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,12,7,1,3,3,11,15,-4,6,0.86,-43,OpenLigaDB
 125,VfB 03 Hilden,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,14,7,1,3,3,4,13,-9,6,0.86,,fussball.de
 126,SV Sandhausen,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,14,6,1,2,3,9,15,-6,5,0.83,,fussball.de
 127,VfR Mannheim,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,16,5,0,4,1,4,5,-1,4,0.8,,fussball.de
@@ -130,11 +130,11 @@ rang_bundesweit,verein,verband,gebiet,ligastufe,spielklasse,staffel,staffel_id,p
 129,SV Babelsberg 03,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,13,7,1,2,4,9,12,-3,5,0.71,-47,OpenLigaDB
 130,SV Rödinghausen,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,15,7,1,2,4,9,13,-4,5,0.71,,fussball.de
 131,VfL Bochum 1848 U23,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,16,7,1,2,4,7,13,-6,5,0.71,,fussball.de
-132,Bremer SV,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,14,7,1,2,4,6,12,-6,5,0.71,-51,OpenLigaDB
+132,Bremer SV,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,14,7,1,2,4,6,12,-6,5,0.71,-49,OpenLigaDB
 133,SC Wiedenbrück,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,17,7,1,2,4,10,18,-8,5,0.71,,fussball.de
-134,Hertha BSC II,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,14,7,1,2,4,5,15,-10,5,0.71,-51,OpenLigaDB
-135,FC St. Pauli II,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,15,7,1,1,5,12,18,-6,4,0.57,-51,OpenLigaDB
-136,Werder Bremen II,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,16,7,1,1,5,6,13,-7,4,0.57,-51,OpenLigaDB
+134,Hertha BSC II,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,14,7,1,2,4,5,15,-10,5,0.71,-50,OpenLigaDB
+135,FC St. Pauli II,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,15,7,1,1,5,12,18,-6,4,0.57,-50,OpenLigaDB
+136,Werder Bremen II,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,16,7,1,1,5,6,13,-7,4,0.57,-50,OpenLigaDB
 137,SSV Jeddeloh,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,17,7,1,1,5,7,16,-9,4,0.57,-50,OpenLigaDB
 138,Tasmania Berlin,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,15,7,1,1,5,8,22,-14,4,0.57,-50,OpenLigaDB
 139,SSV Ulm 1846 Fussball,,Deutschland,4,Regionalliga,Regionalliga Südwest,031D0NRQ3O000004VS5489BUVUR5FS5A-G,18,6,0,3,3,8,14,-6,3,0.5,,fussball.de
@@ -142,8 +142,8 @@ rang_bundesweit,verein,verband,gebiet,ligastufe,spielklasse,staffel,staffel_id,p
 141,VfL Sportfreunde Lotte,,Deutschland,4,Regionalliga,Regionalliga West,031253DN8G000005VS5489BTVT51B5B5-G,18,7,0,3,4,6,11,-5,3,0.43,,fussball.de
 142,TSV 1882 Landsberg,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,18,7,0,3,4,6,12,-6,3,0.43,,fussball.de
 143,BFC Preussen,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,16,7,0,3,4,5,12,-7,3,0.43,-54,OpenLigaDB
-144,VfB Lübeck,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,18,7,0,3,4,6,15,-9,3,0.43,-53,OpenLigaDB
-145,FSV 63 Luckenwalde,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,17,7,1,0,6,5,18,-13,3,0.43,-55,OpenLigaDB
+144,VfB Lübeck,,,4,Regionalliga Nord,Regionalliga Nord,rln/2026,18,7,0,3,4,6,15,-9,3,0.43,-54,OpenLigaDB
+145,FSV 63 Luckenwalde,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,17,7,1,0,6,5,18,-13,3,0.43,-54,OpenLigaDB
 146,BSG Chemie Leipzig,,,4,Regionalliga Nordost,Regionalliga Nordost,rlno/2026,18,7,0,2,5,2,9,-7,2,0.29,-54,OpenLigaDB
 147,SpVgg Ansbach,Bayern,Bayern,4,Regionalliga Bayern,Regionalliga Bayern,0307PKMJ7S000009VS5489BUVT69HBT7-G,19,6,0,0,6,3,17,-14,0,0.0,,fussball.de
 148,Blumenthaler SV,Bremen,Bremen,5,Verbandsliga,Bremen-Liga,031DQ5CNJG00000QVS5489BTVUS470OH-G,1,5,5,0,0,23,6,17,15,3.0,,fussball.de

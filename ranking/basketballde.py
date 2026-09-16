@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import sys
 import time
@@ -32,13 +33,19 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+# Wie lange ein Zwischenspeicher als frisch gilt. Über RANKING_TTL (Sekunden)
+# lässt sich das erhöhen -- so baut sich die Seite komplett aus dem
+# Zwischenspeicher neu, ohne die Quellen erneut zu belasten.
+def _ttl(vorgabe: float = 3 * 3600) -> float:
+    return float(os.environ.get("RANKING_TTL") or vorgabe)
+
 ENABLED = True
 
 BASE = "https://www.basketball-bund.net/rest"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
 
-# Altersklasse/Geschlecht in der Ligasuche. Jugend lassen wir aus -- ClubRank
+# Altersklasse/Geschlecht in der Ligasuche. Jugend lassen wir aus -- die Tabelle
 # rankt Vereinsmannschaften im Seniorenbereich.
 GESCHLECHT = {"maenner": "3_1", "frauen": "3_2"}
 
@@ -97,11 +104,11 @@ def _stufe(sk_name: str, liga_name: str = "") -> int | None:
 
 class BasketballBund:
     def __init__(self, cache_dir: Path, min_interval: float = 0.5,
-                 ttl: float = 3 * 3600):
+                 ttl: float = 0):
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.min_interval = min_interval
-        self.ttl = ttl
+        self.ttl = ttl or _ttl()
         self._last = 0.0
 
     def _abruf(self, url: str, body: dict | None = None):

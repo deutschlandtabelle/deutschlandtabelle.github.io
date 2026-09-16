@@ -38,6 +38,7 @@ from __future__ import annotations
 import hashlib
 import html
 import json
+import os
 import re
 import sys
 import time
@@ -45,6 +46,12 @@ import urllib.error
 import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
+
+# Wie lange ein Zwischenspeicher als frisch gilt. Über RANKING_TTL (Sekunden)
+# lässt sich das erhöhen -- so baut sich die Seite komplett aus dem
+# Zwischenspeicher neu, ohne die Quellen erneut zu belasten.
+def _ttl(vorgabe: float = 3 * 3600) -> float:
+    return float(os.environ.get("RANKING_TTL") or vorgabe)
 
 ENABLED = True
 
@@ -244,12 +251,12 @@ def season_code(season: int) -> str:
 
 class FussballDe:
     def __init__(self, cache_dir: Path, min_interval: float = 1.0,
-                 ttl: float = 3 * 3600, verbose: bool = True):
+                 ttl: float = 0, verbose: bool = True):
         self.verbose = verbose
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.min_interval = min_interval
-        self.ttl = ttl
+        self.ttl = ttl or _ttl()
         self._last = 0.0
 
     def _get(self, url: str) -> str:

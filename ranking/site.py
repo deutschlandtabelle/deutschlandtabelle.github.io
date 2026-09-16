@@ -18,7 +18,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from . import ikonen
+from . import ikonen, karte
 
 # Für die Teilen-Vorschau braucht es vollständige Adressen -- relative Pfade
 # lösen Messenger nicht auf.
@@ -73,8 +73,8 @@ TEMPLATE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ClubRank — wo steht dein Verein?</title>
-<meta name="description" content="ClubRank: alle deutschen Vereine in Fußball, Handball und Basketball — von der Bundesliga bis zur Kreisklasse in einer einzigen Rangfolge. Wo steht dein Verein?">
+<title>Deutschlandtabelle — jeder Verein, jede Liga, ein Platz</title>
+<meta name="description" content="Die Deutschlandtabelle: alle Vereine des Landes in Fußball, Handball und Basketball — von der Bundesliga bis zur Kreisklasse in einer einzigen Tabelle. Wo steht deiner?">
 <link rel="canonical" href="__URL__">
 
 <!-- Vorschau beim Teilen. Ohne diese Angaben raten Messenger, was Titel und
@@ -82,219 +82,325 @@ TEMPLATE = """<!doctype html>
      Beschreibung und Startbild. Das Bild braucht eine vollständige Adresse,
      relative Pfade werden hier nicht aufgelöst. -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="ClubRank">
+<meta property="og:site_name" content="Deutschlandtabelle">
 <meta property="og:locale" content="de_DE">
 <meta property="og:url" content="__URL__">
-<meta property="og:title" content="ClubRank — wo steht dein Verein?">
-<meta property="og:description" content="Jeder Verein. Jede Liga. Eine Rangfolge. Fußball, Handball und Basketball von der Bundesliga bis zur Kreisklasse — täglich neu aus den Ergebnissen der laufenden Saison.">
-<meta property="og:image" content="__URL__header.jpg?v=__BILDVERSION__">
+<meta property="og:title" content="Deutschlandtabelle — jeder Verein, jede Liga, ein Platz">
+<meta property="og:description" content="Fußball, Handball und Basketball von der Bundesliga bis zur Kreisklasse, Männer und Frauen getrennt — täglich neu aus den Ergebnissen der laufenden Saison.">
+<meta property="og:image" content="__URL____TEASER__?v=__BILDVERSION__">
 <meta property="og:image:width" content="__BILDBREITE__">
 <meta property="og:image:height" content="__BILDHOEHE__">
 <meta property="og:image:alt" content="Jubelnde Mannschaft eines Amateurvereins nach dem Sieg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ClubRank — wo steht dein Verein?">
-<meta name="twitter:description" content="Jeder Verein. Jede Liga. Eine Rangfolge. Von der Bundesliga bis zur Kreisklasse.">
-<meta name="twitter:image" content="__URL__header.jpg?v=__BILDVERSION__">
+<meta name="twitter:title" content="Deutschlandtabelle — jeder Verein, jede Liga, ein Platz">
+<meta name="twitter:description" content="Jeder Verein. Jede Liga. Ein Platz. Von der Bundesliga bis zur Kreisklasse.">
+<meta name="twitter:image" content="__URL____TEASER__?v=__BILDVERSION__">
 <style>
+/* ======================================================================
+   Gestaltung nach dem Vorbild von apple.com/de: wenige Flächen, große
+   ruhige Typografie, Haarlinien statt Kästen, Abschnitte über die volle
+   Breite im Wechsel weiß und hellgrau. Die Farbe bleibt das Grün des
+   Projekts -- Apples Grammatik, nicht Apples Palette.
+   ====================================================================== */
 :root{
-  --bg:#f6f7f9; --panel:#ffffff; --line:#e3e6ea; --ink:#14171c; --muted:#666e79;
-  --accent:#1a6b3c; --accent-soft:#e6f2ea; --up:#137a3d; --down:#b02a2a;
-  --hero1:#0f3d2a; --hero2:#1a6b3c;
+  --ink:#1d1d1f; --muted:#6e6e73; --bg:#ffffff; --flaeche:#f5f5f7;
+  --panel:#ffffff; --hair:#d2d2d7; --line:#d2d2d7;
+  --accent:#1a6b3c; --accent-soft:#eaf3ee; --up:#137a3d; --down:#b02a2a;
+  --schatten:0 4px 24px rgba(0,0,0,.06);
+  --land:#e8e8ed; --landlinie:#c7c7cc;
   --t1:#0b3d91; --t2:#1a6b3c; --t3:#8a6100; --t4:#7a3aa8; --t5:#a3442c;
   --t6:#0d6b74; --t7:#7a5a1f; --t8:#8a2f5e; --t9:#3f5aa6; --t10:#5c6b1f;
   --t11:#6b4a8a; --t12:#1f6b5c; --t13:#8a4a2f; --t14:#4a4a6b;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#0f1216; --panel:#161a20; --line:#262c34; --ink:#e8ebef; --muted:#98a2ae;
+    --ink:#f5f5f7; --muted:#a1a1a6; --bg:#000000; --flaeche:#161617;
+    --panel:#1d1d1f; --hair:#38383a; --line:#38383a;
     --accent:#4ec27f; --accent-soft:#17301f; --up:#4ec27f; --down:#e8695f;
-    --hero1:#0a2419; --hero2:#14472a;
+    --schatten:0 4px 24px rgba(0,0,0,.5);
+    --land:#2c2c2e; --landlinie:#55555a;
     --t1:#6ea8ff; --t2:#4ec27f; --t3:#e0b453; --t4:#c194ea; --t5:#f0937a;
     --t6:#5ec9d4; --t7:#d9b26a; --t8:#ef8ab8; --t9:#8fa8ee; --t10:#b3c96a;
     --t11:#bfa0e0; --t12:#66c9b4; --t13:#e0a184; --t14:#a0a4d4;
   }
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:1080px;margin:0 auto;padding:0 18px 60px}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);letter-spacing:-.01em;
+  font:17px/1.47 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",
+       Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
 [hidden]{display:none!important}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px 70px}
+.mitte{max-width:1000px;margin:0 auto;padding:0 22px}
+.schmal{max-width:720px}
 
-/* --- Kopfleiste mit den Sportarten ------------------------------------- */
-.topbar{position:sticky;top:0;z-index:20;background:var(--bg);
-  border-bottom:1px solid var(--line)}
-.topbar .inner{max-width:1080px;margin:0 auto;padding:10px 18px;
-  display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.brand{font-weight:800;letter-spacing:-.02em;font-size:19px;color:var(--ink);
+/* --- Kopfleiste: schmal, durchscheinend, kleine Schrift ---------------- */
+.topbar{position:sticky;top:0;z-index:20;height:48px;
+  background:color-mix(in srgb,var(--bg) 72%,transparent);
+  backdrop-filter:saturate(180%) blur(20px);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:1px solid var(--hair)}
+.topbar .inner{max-width:1000px;margin:0 auto;padding:0 22px;height:48px;
+  display:flex;align-items:center;gap:26px}
+.brand{font-weight:600;font-size:16px;letter-spacing:-.02em;color:var(--ink);
   text-decoration:none;white-space:nowrap}
 .brand span{color:var(--accent)}
-.topbar nav{display:flex;gap:4px;flex-wrap:wrap}
-.topbar nav a{color:var(--muted);text-decoration:none;font-size:14px;
-  font-weight:600;padding:7px 12px;border-radius:8px}
-.topbar nav a[aria-current="page"]{background:var(--accent-soft);color:var(--accent)}
-.topbar nav a.leer{opacity:.5}
+.topbar nav{display:flex;gap:22px;margin-left:auto;align-items:center}
+.topbar nav a{color:var(--ink);opacity:.86;text-decoration:none;font-size:12.5px;
+  display:inline-flex;align-items:center;white-space:nowrap}
+.topbar nav a:hover{opacity:1}
+.topbar nav a[aria-current="page"]{color:var(--accent);opacity:1}
+.topbar nav a.leer{opacity:.4}
 
-/* --- Startseite --------------------------------------------------------- */
-.hero{position:relative;margin:18px 0 0;border-radius:16px;overflow:hidden;
-  background:linear-gradient(135deg,var(--hero1),var(--hero2));
-  min-height:300px;display:flex;align-items:flex-end}
-.hero.klein{min-height:210px;margin-bottom:8px}
-.hero.klein .marke{font-size:clamp(24px,4.5vw,40px)}
-.hero.klein .claim{font-size:clamp(13px,2vw,16px)}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* --- Bänder über die volle Breite -------------------------------------- */
+.band{padding:78px 0}
+.band.grau{background:var(--flaeche)}
+.band.eng{padding:54px 0}
+.band.voll{padding:0}
+
+/* --- Bühne -------------------------------------------------------------- */
+.hero{position:relative;overflow:hidden;display:flex;align-items:center;
+  justify-content:center;min-height:clamp(320px,42vw,500px);background:#111;
+  border-radius:22px}
+.hero.klein{min-height:clamp(220px,30vw,320px);border-radius:18px;
+  margin:26px 0 0}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  object-position:50% 22%}
 .hero .schleier{position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.72) 100%)}
-.platzhalter{position:absolute;inset:14px;border:2px dashed rgba(255,255,255,.4);
-  border-radius:10px;display:flex;align-items:flex-start;justify-content:center;
+  background:linear-gradient(180deg,rgba(0,0,0,.42) 0%,rgba(0,0,0,.28) 45%,
+             rgba(0,0,0,.62) 100%)}
+.hero .inhalt{position:relative;padding:34px 22px;color:#fff;text-align:center;
+  width:100%}
+.marke{margin:0;font-weight:600;line-height:1.05;letter-spacing:-.028em;
+  font-size:clamp(38px,6.6vw,76px);text-shadow:0 2px 24px rgba(0,0,0,.4)}
+.marke span{color:#8ff0b6}
+.marke .ikon{width:.86em;height:.86em;margin-right:.24em;vertical-align:-.08em;
+  color:#fff}
+.claim{margin:14px auto 0;max-width:30ch;font-weight:400;
+  font-size:clamp(18px,2.5vw,26px);line-height:1.25;letter-spacing:-.02em;
+  text-shadow:0 1px 16px rgba(0,0,0,.45)}
+.hero.klein .marke{font-size:clamp(28px,4.4vw,46px)}
+.hero.klein .claim{font-size:clamp(14px,1.9vw,18px);margin-top:8px}
+.platzhalter{position:absolute;inset:16px;border:1px dashed rgba(255,255,255,.4);
+  border-radius:12px;display:flex;align-items:flex-start;justify-content:center;
   padding:14px;pointer-events:none}
-.platzhalter em{font-style:normal;background:rgba(0,0,0,.4);
+.platzhalter em{font-style:normal;background:rgba(0,0,0,.45);
   color:rgba(255,255,255,.92);font-size:12px;line-height:1.5;text-align:center;
   padding:7px 12px;border-radius:8px}
 .platzhalter code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
-  font-size:11.5px;background:rgba(255,255,255,.16);padding:1px 5px;border-radius:4px}
-.hero .inhalt{position:relative;padding:28px 26px 26px;color:#fff;width:100%}
-.marke{font-size:clamp(30px,6vw,54px);font-weight:800;letter-spacing:-.03em;
-  margin:0;line-height:1.05;text-shadow:0 2px 14px rgba(0,0,0,.45)}
-.marke span{color:#8ff0b6}
-.claim{margin:8px 0 0;font-size:clamp(15px,2.4vw,20px);font-weight:500;
-  text-shadow:0 1px 10px rgba(0,0,0,.5)}
-.intro{margin:26px 0 0;font-size:17px;max-width:70ch}
-.intro p{margin:0 0 12px}
-.suche{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 0}
+  font-size:11.5px;background:rgba(255,255,255,.16);padding:1px 5px;
+  border-radius:4px}
+
+/* --- Überschriften und Fließtext --------------------------------------- */
+.titel{text-align:center;font-size:clamp(28px,4.2vw,46px);font-weight:600;
+  letter-spacing:-.025em;line-height:1.08;margin:0 0 12px}
+.untertitel{text-align:center;color:var(--muted);font-size:19px;margin:0 auto;
+  max-width:62ch;letter-spacing:-.01em}
+.intro{margin:0 auto;max-width:64ch;text-align:center;font-size:19px;
+  line-height:1.5}
+.intro p{margin:0 0 14px}
+.intro p:last-child{margin-bottom:0}
+h2{margin:52px 0 6px;font-size:clamp(24px,3vw,34px);font-weight:600;
+  letter-spacing:-.025em;line-height:1.12}
+h2 + p.unter{margin:0 0 22px;color:var(--muted);font-size:17px}
+
+/* --- Suche -------------------------------------------------------------- */
+.suche{display:flex;gap:10px;flex-wrap:wrap;margin:30px auto 0;max-width:640px;
+  justify-content:center}
 .suche input{flex:1 1 260px;min-width:0;background:var(--panel);color:var(--ink);
-  border:1px solid var(--line);border-radius:10px;padding:13px 15px;font-size:16px}
+  border:1px solid var(--hair);border-radius:12px;padding:13px 16px;font-size:16px}
 .suche select{flex:0 0 auto}
 .knopf{display:inline-block;background:var(--accent);color:#fff;border:0;
-  border-radius:10px;padding:13px 22px;font-size:16px;font-weight:600;
+  border-radius:980px;padding:13px 24px;font-size:16px;font-weight:400;
   cursor:pointer;text-decoration:none;white-space:nowrap}
+.knopf:hover{filter:brightness(1.08)}
 
-.sportkarten{display:grid;gap:12px;margin:26px 0 0;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.sportkarte{background:var(--panel);border:1px solid var(--line);border-radius:14px;
-  padding:18px;text-decoration:none;color:var(--ink);display:block}
-.sportkarte:hover{border-color:var(--accent)}
+/* --- Kacheln der Sportarten -------------------------------------------- */
+.sportkarten{display:grid;gap:16px;margin:40px 0 0;
+  grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.sportkarte{background:var(--panel);border-radius:22px;padding:34px 28px 28px;
+  text-decoration:none;color:var(--ink);display:flex;flex-direction:column;
+  align-items:center;text-align:center;box-shadow:var(--schatten)}
+.band.grau .sportkarte{background:var(--bg)}
 .sportkarte .ic{line-height:1}
-.sportkarte h3{margin:8px 0 2px;font-size:20px;letter-spacing:-.01em}
-.sportkarte .zahl{font-size:26px;font-weight:800;letter-spacing:-.02em;
-  color:var(--accent);margin:6px 0 0}
-.sportkarte .klein{color:var(--muted);font-size:13px}
-.sportkarte.leer{opacity:.62;border-style:dashed;cursor:default}
-/* Zwei Klassen je Sportart, untereinander in derselben Karte. */
-.sportkarte .klassen{display:grid;gap:8px;margin-top:12px}
-.klassenzeile{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;
-  align-items:baseline;padding:9px 11px;border:1px solid var(--line);
-  border-radius:10px;text-decoration:none;color:var(--ink);background:var(--bg)}
-a.klassenzeile:hover{border-color:var(--accent)}
-.klassenzeile .wer{font-weight:600;font-size:14px;grid-row:1}
-.klassenzeile .zahl{font-size:20px;font-weight:800;letter-spacing:-.02em;
-  color:var(--accent);grid-row:1;justify-self:end;margin:0}
-.klassenzeile .klein{grid-column:1/-1;font-size:12px;color:var(--muted)}
-.klassenzeile.leer{opacity:.6;border-style:dashed}
+.sportkarte .ic .ikon{width:42px;height:42px;color:var(--accent)}
+.sportkarte h3{margin:14px 0 0;font-size:25px;font-weight:600;
+  letter-spacing:-.02em}
+.sportkarte .zahl{font-size:40px;font-weight:600;letter-spacing:-.03em;
+  color:var(--ink);margin:4px 0 0;line-height:1.05}
+.sportkarte .klein{color:var(--muted);font-size:14px}
+.sportkarte.leer{opacity:.55}
+.sportkarte .klassen{display:block;width:100%;margin:22px 0 0;
+  border-top:1px solid var(--hair)}
+.klassenzeile{display:grid;grid-template-columns:1fr auto;gap:2px 14px;
+  align-items:baseline;padding:14px 2px;border-bottom:1px solid var(--hair);
+  text-decoration:none;color:var(--ink);text-align:left}
+.klassenzeile .wer{grid-row:1}
+.klassenzeile .zahl{grid-row:1;justify-self:end}
+.klassenzeile .klein{grid-column:1/-1}
+a.klassenzeile:hover .zahl{color:var(--accent)}
+.klassenzeile .wer{font-size:15px;font-weight:500}
+.klassenzeile .zahl{font-size:25px;font-weight:600;letter-spacing:-.025em;
+  margin:0;line-height:1.1}
+.klassenzeile .klein{display:block;font-size:13px;color:var(--muted);
+  font-weight:400}
+.klassenzeile.leer{opacity:.5}
 
-/* Umschalter Männer/Frauen unter dem Kopfbild. */
-.klassenwahl{display:flex;gap:6px;margin:14px 0 -4px;flex-wrap:wrap}
+/* --- Umschalter Männer/Frauen ------------------------------------------ */
+.klassenwahl{display:flex;gap:8px;margin:22px 0 0;flex-wrap:wrap;
+  justify-content:center}
 .klassenwahl:empty{display:none}
-.klassenwahl a,.klassenwahl span{font-size:14px;font-weight:600;
-  padding:7px 14px;border-radius:999px;border:1px solid var(--line);
-  text-decoration:none;color:var(--muted);background:var(--panel)}
+.klassenwahl a,.klassenwahl span{font-size:14px;font-weight:400;
+  padding:8px 18px;border-radius:980px;border:1px solid var(--hair);
+  text-decoration:none;color:var(--ink);background:var(--panel)}
 .klassenwahl a:hover{border-color:var(--accent);color:var(--accent)}
-.klassenwahl [aria-current="page"]{background:var(--accent);border-color:var(--accent);
-  color:#fff}
-.klassenwahl .leer{opacity:.45}
+.klassenwahl [aria-current="page"]{background:var(--accent);
+  border-color:var(--accent);color:#fff}
+.klassenwahl .leer{opacity:.4}
 
-h2{margin:42px 0 4px;font-size:24px;letter-spacing:-.02em}
-h2 + p.unter{margin:0 0 18px;color:var(--muted);font-size:15px}
+/* --- Deutschlandkarte --------------------------------------------------- */
+.karte-land{display:grid;gap:34px;align-items:center;margin:40px 0 0;
+  grid-template-columns:minmax(0,330px) minmax(0,1fr)}
+.karte-land figure{margin:0}
+.karte-land svg{width:100%;height:auto;display:block}
+.landflaeche{fill:var(--land);stroke:var(--landlinie);stroke-width:2.5;
+  stroke-linejoin:round}
+.stelle circle{fill:var(--accent);stroke:var(--bg);stroke-width:5}
+.stelle text{fill:#fff;font-size:34px;font-weight:600;text-anchor:middle;
+  letter-spacing:0}
+.spitzen{display:grid;gap:2px}
+.spitze{display:grid;grid-template-columns:30px 1fr;gap:14px;align-items:start;
+  padding:13px 0;border-bottom:1px solid var(--hair);text-decoration:none;
+  color:var(--ink)}
+.spitze:first-child{border-top:1px solid var(--hair)}
+.spitze .nr{width:26px;height:26px;border-radius:50%;background:var(--accent);
+  color:#fff;font-size:14px;font-weight:600;display:grid;place-items:center;
+  margin-top:2px}
+.spitze .name{font-size:18px;font-weight:600;letter-spacing:-.015em;
+  display:flex;align-items:center;gap:8px}
+.spitze .name .ikon{width:17px;height:17px;color:var(--muted)}
+.spitze .wo{font-size:14px;color:var(--muted);margin-top:2px}
+.spitze:hover .name{color:var(--accent)}
+.kartennotiz{margin:22px auto 0;max-width:62ch;text-align:center;
+  font-size:14px;color:var(--muted)}
 
-.karten{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.karte{background:var(--panel);border:1px solid var(--line);border-radius:14px;
-  padding:18px 18px 16px;display:flex;flex-direction:column;gap:6px}
+/* --- Kennzahlen-Karten --------------------------------------------------- */
+.karten{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.karte{background:var(--panel);border-radius:20px;padding:26px 24px 22px;
+  display:flex;flex-direction:column;gap:5px;box-shadow:var(--schatten)}
 .karte .kopf{display:flex;align-items:center;gap:9px;font-size:13px;
-  text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
-.karte .kopf i{font-style:normal;font-size:20px}
-
-/* --- Icons ---------------------------------------------------------------
-   Eine Strichstärke, eine Farbe -- die des umgebenden Textes. Emoji konnten
-   das nicht: sie bringen ihre eigenen Farben mit und sehen auf jedem System
-   anders aus. */
-.ikon{width:1.2em;height:1.2em;flex:0 0 auto;fill:none;stroke:currentColor;
-  stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;
-  vertical-align:-.22em}
-.topbar nav a .ikon{width:16px;height:16px;margin-right:6px;vertical-align:-3px}
-.sportkarte .ic .ikon{width:30px;height:30px;color:var(--accent);
-  vertical-align:top}
-.karte .kopf .ikon{width:20px;height:20px;color:var(--accent);vertical-align:-4px}
-h1 .ikon,h2 .ikon{width:.92em;height:.92em;color:var(--accent);margin-right:8px;
-  vertical-align:-.12em}
-.karte .verein{font-size:21px;font-weight:700;letter-spacing:-.01em;line-height:1.25}
-.karte .wert{font-size:15px;font-weight:600;color:var(--accent)}
-.karte .liga{font-size:13px;color:var(--muted)}
-.karte .erklaerung{font-size:13px;color:var(--muted);margin-top:4px;
-  padding-top:10px;border-top:1px solid var(--line)}
-.topknopf{margin-top:10px;align-self:flex-start;font-size:13px;font-weight:700;
-  color:var(--accent);text-decoration:none;padding:6px 12px;border-radius:8px;
-  border:1px solid var(--accent)}
-.topknopf:hover{background:var(--accent-soft)}
-.zurueckknopf{display:inline-block;margin:0 0 14px;font-size:14px;font-weight:600;
+  color:var(--muted);font-weight:400;letter-spacing:0}
+.karte .kopf i{font-style:normal;font-size:19px}
+.karte .kopf .ikon{width:19px;height:19px;color:var(--accent);vertical-align:-3px}
+.karte .verein{font-size:25px;font-weight:600;letter-spacing:-.025em;
+  line-height:1.16;margin-top:4px}
+.karte .wert{font-size:17px;font-weight:600;color:var(--accent)}
+.karte .liga{font-size:14px;color:var(--muted)}
+.karte .erklaerung{font-size:14px;color:var(--muted);margin-top:8px;
+  padding-top:12px;border-top:1px solid var(--hair)}
+.topknopf{margin-top:14px;align-self:flex-start;font-size:15px;font-weight:400;
+  color:var(--accent);text-decoration:none}
+.topknopf:hover{text-decoration:underline}
+.zurueckknopf{display:inline-block;margin:0 0 18px;font-size:15px;
   color:var(--accent);text-decoration:none}
 .zurueckknopf:hover{text-decoration:underline}
 
-.note{background:var(--panel);border:1px solid var(--line);
-  border-left:3px solid #8a6100;border-radius:8px;padding:12px 14px;
-  margin:16px 0;font-size:14px;color:var(--muted)}
-.note summary{cursor:pointer;color:var(--ink);font-weight:600;list-style:none}
+.note{background:var(--flaeche);border:0;border-radius:14px;padding:16px 18px;
+  margin:20px 0;font-size:15px;color:var(--muted)}
+.band.grau .note{background:var(--bg)}
+.note summary{cursor:pointer;color:var(--ink);font-weight:500;list-style:none}
 .note summary::-webkit-details-marker{display:none}
-.note summary::before{content:"▸ ";color:var(--muted)}
-.note[open] summary::before{content:"▾ "}
-.note p{margin:8px 0 0}
+.note summary::before{content:"› ";color:var(--muted)}
+.note[open] summary::before{content:"⌄ "}
+.note p{margin:10px 0 0}
 
-/* --- Tabelle ------------------------------------------------------------ */
-.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:18px 0 10px}
+/* --- Tabelle: Haarlinien statt Kasten ---------------------------------- */
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:20px 0 12px}
 input[type=search],select{background:var(--panel);color:var(--ink);
-  border:1px solid var(--line);border-radius:8px;padding:9px 11px;font-size:14px;
+  border:1px solid var(--hair);border-radius:10px;padding:10px 13px;font-size:14px;
   max-width:100%;min-width:0}
 select{text-overflow:ellipsis}
 input[type=search]{flex:1 1 240px}
-.tip{margin:0 0 10px;font-size:13px;color:var(--muted)}
-.legend{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
-.legend span{font-size:11px;padding:3px 9px;border-radius:999px;
-  border:1px solid currentColor;font-weight:600}
-.count{margin:0 0 8px;font-size:12px;color:var(--muted)}
+.tip{margin:0 0 10px;font-size:14px;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.legend span{font-size:11px;padding:3px 10px;border-radius:980px;
+  border:1px solid currentColor;font-weight:500}
+.count{margin:0 0 10px;font-size:13px;color:var(--muted)}
 /* Bewusst KEIN overflow: ein Scroll-Container würde den fixierten
    Spaltenkopf aushebeln. Schmale Fenster blenden stattdessen Spalten aus. */
-.tablewrap{background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.tablewrap{background:transparent;border:0}
 table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
-th,td{padding:9px 10px;text-align:right;border-bottom:1px solid var(--line);
-  white-space:nowrap}
-th{position:sticky;top:47px;z-index:3;background:var(--panel);font-size:11px;
-  text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;
-  box-shadow:inset 0 -1px 0 var(--line)}
+th,td{padding:13px 10px;text-align:right;border-bottom:1px solid var(--hair);
+  white-space:nowrap;font-size:15px}
+th{position:sticky;top:48px;z-index:3;font-size:12px;font-weight:400;
+  color:var(--muted);letter-spacing:0;
+  background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:saturate(180%) blur(20px);
+  -webkit-backdrop-filter:saturate(180%) blur(20px)}
 .haupt th:nth-child(3),.haupt td:nth-child(3),
 .haupt th:nth-child(4),.haupt td:nth-child(4){text-align:left}
 .paarungen th:nth-child(2),.paarungen td:nth-child(2),
 .paarungen th:nth-child(3),.paarungen td:nth-child(3){text-align:left}
 .topliste th:nth-child(2),.topliste td:nth-child(2),
 .topliste th:nth-child(3),.topliste td:nth-child(3){text-align:left}
-.paarungen td:nth-child(2),.paarungen td:nth-child(3){padding-top:10px;padding-bottom:10px}
+.paarungen td:nth-child(2),.paarungen td:nth-child(3){padding-top:12px;padding-bottom:12px}
 .paarungen .league{max-width:none;display:block;margin-top:2px}
 /* In der Paarungstabelle ist Platz -- Vereinsnamen dürfen ausgeschrieben
    stehen, anders als in der 13-spaltigen Haupttabelle. */
 .paarungen .club span{max-width:none;white-space:normal}
-td.rank{font-weight:700;width:52px}
+td.rank{font-weight:600;width:56px}
 td.delta{width:56px;font-size:13px}
-.club{display:flex;align-items:center;gap:9px;min-width:0}
-.club img{width:20px;height:20px;object-fit:contain;flex:0 0 20px}
+.club{display:flex;align-items:center;gap:11px;min-width:0}
+.club img{width:22px;height:22px;object-fit:contain;flex:0 0 22px}
 .club span{overflow:hidden;text-overflow:ellipsis;max-width:250px}
-.tier{display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;
-  font-weight:600;border:1px solid currentColor}
+.tier{display:inline-block;padding:2px 8px;border-radius:980px;font-size:11px;
+  font-weight:500;border:1px solid currentColor}
 .league{color:var(--muted);font-size:13px;display:inline-block;max-width:205px;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle}
 .up{color:var(--up)}.down{color:var(--down)}.flat{color:var(--muted)}
-.empty{padding:28px;text-align:center;color:var(--muted)}
-.laden{padding:40px;text-align:center;color:var(--muted)}
+.empty{padding:34px;text-align:center;color:var(--muted)}
+.laden{padding:48px;text-align:center;color:var(--muted)}
 __TIER_CSS__
-tbody tr:hover{background:var(--accent-soft)}
-/* Diese Regeln gelten nur für die Haupttabelle -- die Top-100-Listen haben
-   eine andere Spaltenfolge und würden sonst ihre Wertespalte verlieren. */
+tbody tr:hover{background:var(--flaeche)}
+
+/* --- Icons -------------------------------------------------------------- */
+.ikon{width:1.2em;height:1.2em;flex:0 0 auto;fill:none;stroke:currentColor;
+  stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;
+  vertical-align:-.22em}
+.topbar nav a .ikon{width:15px;height:15px;margin-right:6px;vertical-align:-3px}
+h1 .ikon,h2 .ikon{width:.88em;height:.88em;color:var(--accent);margin-right:10px;
+  vertical-align:-.1em}
+
+/* --- Rechtstexte -------------------------------------------------------- */
+.rechtslinks{margin:10px 0 0}
+.odbl{margin:8px 0 0;font-size:13px}
+.rechtstext{max-width:700px;margin:0 auto;padding:40px 0 30px}
+.rechtstext h1{font-size:clamp(32px,4.4vw,48px);letter-spacing:-.03em;
+  font-weight:600;margin:14px 0 8px}
+.rechtstext h2{font-size:21px;margin:38px 0 10px;letter-spacing:-.02em}
+.rechtstext p,.rechtstext ul{margin:0 0 15px}
+.rechtstext ul{padding-left:22px}
+.rechtstext li{margin-bottom:8px}
+.rechtstext address{font-style:normal;line-height:1.7;margin:0 0 15px}
+.rechtstext .fuehrung{font-size:19px;color:var(--muted);border:0;padding:0}
+.rechtstext code{font-size:13px;background:var(--flaeche);padding:2px 6px;
+  border-radius:5px}
+.luecke{background:var(--flaeche);border:1px solid var(--hair);
+  border-radius:14px;padding:16px 18px;margin:0 0 15px}
+table.quellen{width:100%;border-collapse:collapse;margin:0 0 15px;font-size:15px}
+table.quellen th,table.quellen td{text-align:left;vertical-align:top;
+  padding:13px 14px 13px 0;border-bottom:1px solid var(--hair);
+  white-space:normal}
+table.quellen th{font-size:12px;font-weight:400;color:var(--muted);
+  position:static;background:none;backdrop-filter:none}
+
+footer{margin:56px 0 0;padding-top:24px;border-top:1px solid var(--hair);
+  color:var(--muted);font-size:13px;line-height:1.8}
+footer a{color:var(--accent);text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+/* --- Schmale Fenster ---------------------------------------------------- */
 @media (max-width:1100px){
   .haupt th:nth-child(5),.haupt td:nth-child(5),
   .haupt th:nth-child(7),.haupt td:nth-child(7),
@@ -304,11 +410,20 @@ tbody tr:hover{background:var(--accent-soft)}
   .league{max-width:150px}
 }
 @media (max-width:860px){
+  .band{padding:52px 0}
+  .band.eng{padding:38px 0}
+  .karte-land{grid-template-columns:1fr;gap:24px;
+    justify-items:center}
+  .karte-land figure{max-width:300px;width:100%}
+  .spitzen{width:100%}
+  .topbar nav{gap:14px}
+  .topbar .inner{gap:14px;padding:0 16px}
+  .mitte,.wrap{padding-left:16px;padding-right:16px}
   .haupt th:nth-child(2),.haupt td:nth-child(2),
   .haupt th:nth-child(10),.haupt td:nth-child(10),
   .haupt th:nth-child(11),.haupt td:nth-child(11),
   .haupt th:nth-child(12),.haupt td:nth-child(12){display:none}
-  th,td{padding:8px 6px;white-space:normal}
+  th,td{padding:11px 6px;white-space:normal}
   .club span,.league{max-width:none;white-space:normal;overflow:visible;
     text-overflow:clip;display:inline;min-width:0}
   .club{align-items:flex-start}
@@ -319,14 +434,10 @@ tbody tr:hover{background:var(--accent-soft)}
   .haupt th:nth-child(6),.haupt td:nth-child(6){width:9%}
   .haupt th:nth-child(13),.haupt td:nth-child(13){width:14%}
   /* Die Top-100-Liste hat acht Spalten. Auf dem Telefon fliegt die
-     Tordifferenz raus -- sie steckt bereits in der Torangabe daneben --
-     und der Rest teilt sich die Breite nach dem, was drinsteht: die
-     Torangabe braucht Platz für "112:11", der Gesamtrang für "25.682". */
+     Differenz raus -- sie steckt bereits in der Angabe daneben -- und der
+     Rest teilt sich die Breite nach dem, was drinsteht. */
   .topliste th:nth-child(6),.topliste td:nth-child(6){display:none}
-  .topliste th,.topliste td{padding:8px 3px}
-  /* Nur die Überschriften dürfen mitten im Wort umbrechen ("Tore/Spiel").
-     Die Zahlen darunter bleiben in einer Zeile -- aus "9.40" sollen nicht
-     zwei Zeilen "9.4" und "0" werden. */
+  .topliste th,.topliste td{padding:10px 3px}
   .topliste th{overflow-wrap:anywhere}
   .topliste td:nth-child(4),.topliste td:nth-child(5),
   .topliste td:nth-child(7),.topliste td:nth-child(8){white-space:nowrap;
@@ -342,92 +453,85 @@ tbody tr:hover{background:var(--accent-soft)}
   td.rank{width:11%}
   .league{font-size:11px}
 }
-.rechtslinks{margin:8px 0 0}
-.odbl{margin:6px 0 0;font-size:12px}
-.rechtstext{max-width:720px;margin:0 auto;padding:28px 0 20px}
-.rechtstext h1{font-size:30px;letter-spacing:-.02em;margin:18px 0 6px}
-.rechtstext h2{font-size:18px;margin:32px 0 8px;letter-spacing:-.01em}
-.rechtstext p,.rechtstext ul{margin:0 0 14px}
-.rechtstext ul{padding-left:22px}
-.rechtstext li{margin-bottom:7px}
-.rechtstext address{font-style:normal;line-height:1.7;margin:0 0 14px}
-.rechtstext .fuehrung{font-size:17px;color:var(--muted);
-  border-left:3px solid var(--accent);padding-left:14px}
-.rechtstext code{font-size:13px;background:var(--panel);padding:1px 5px;
-  border:1px solid var(--line);border-radius:4px}
-.luecke{background:var(--accent-soft);border:1px dashed var(--accent);
-  border-radius:10px;padding:14px 16px;margin:0 0 14px}
-table.quellen{width:100%;border-collapse:collapse;margin:0 0 14px;font-size:14px}
-table.quellen th,table.quellen td{text-align:left;vertical-align:top;
-  padding:10px 12px 10px 0;border-bottom:1px solid var(--line);
-  white-space:normal}
-table.quellen th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;
-  color:var(--muted);position:static}
-footer{margin:40px 0 0;padding-top:20px;border-top:1px solid var(--line);
-  color:var(--muted);font-size:13px;line-height:1.7}
-footer a{color:var(--accent)}
 </style>
 </head>
 <body>
 
 <div class="topbar"><div class="inner">
-  <a class="brand" href="#home">Club<span>Rank</span></a>
+  <a class="brand" href="#home">Deutschland<span>tabelle</span></a>
   <nav id="nav"></nav>
 </div></div>
 
-<div class="wrap">
-
 <!-- ============================ Startseite ============================ -->
 <section id="view-home">
-  <div class="hero">
-    <!-- Headerbild: eine Datei docs/header.jpg ablegen, dann verschwindet
-         der Platzhalter von selbst. Empfohlen 2000x700 px. -->
-    <img src="header.jpg" alt=""
-         onload="document.getElementById('platzhalter').remove()"
-         onerror="this.remove()">
-    <div class="schleier"></div>
-    <div class="platzhalter" id="platzhalter"><em>Platzhalter für das Startbild —
-      am besten eines mit allen Sportarten.<br>Datei <code>docs/header.jpg</code>
-      ablegen, empfohlen 1800 × 870 px</em></div>
-    <div class="inhalt">
-      <h1 class="marke">Club<span>Rank</span></h1>
-      <p class="claim">Jeder Verein. Jede Liga. Eine Rangfolge. Wo steht deiner?</p>
+
+  <div class="band eng"><div class="mitte">
+    <div class="hero">
+      <!-- Startbild: eine Datei docs/header.jpg ablegen, dann verschwindet
+           der Platzhalter von selbst. -->
+      <img src="header.jpg?v=__STARTBILD__" alt=""
+           onload="document.getElementById('platzhalter').remove()"
+           onerror="this.remove()">
+      <div class="schleier"></div>
+      <div class="platzhalter" id="platzhalter"><em>Platzhalter für das Startbild —
+        am besten eines mit allen Sportarten.<br>Datei <code>docs/header.jpg</code>
+        ablegen</em></div>
+      <div class="inhalt">
+        <h1 class="marke">Deutschland<span>tabelle</span></h1>
+        <p class="claim">Jeder Verein des Landes in einer einzigen Tabelle.
+          Wo steht deiner?</p>
+      </div>
     </div>
-  </div>
+  </div></div>
 
-  <div class="intro">
-    <p><b>Jeder Verein des Landes in einer einzigen Rangfolge.</b> Nicht nur die
-    Bundesliga, sondern die komplette Pyramide bis hinunter zur Kreisklasse —
-    und das für mehrere Sportarten. Tag für Tag neu berechnet aus den
-    Ergebnissen der laufenden Saison.</p>
-    <p>Sortiert wird zuerst nach Ligastufe, innerhalb einer Stufe nach Punkten
-    pro Spiel. Dadurch stehen parallele Staffeln nicht blockweise
-    hintereinander, sondern verzahnen sich zu einer echten Rangfolge.</p>
-  </div>
+  <div class="band"><div class="mitte">
+    <div class="intro">
+      <p><b>Nicht nur die Bundesliga.</b> Die komplette Pyramide bis hinunter
+      zur Kreisklasse, für drei Sportarten und beide Klassen — Tag für Tag neu
+      gerechnet aus den Ergebnissen der laufenden Saison.</p>
+      <p>Sortiert wird zuerst nach Ligastufe, innerhalb einer Stufe nach Punkten
+      pro Spiel. Dadurch stehen parallele Staffeln nicht blockweise
+      hintereinander, sondern verzahnen sich zu einer echten Rangfolge.</p>
+    </div>
+    <form class="suche" id="homeSuche">
+      <input type="search" id="homeQuery" placeholder="Vereinsnamen eingeben …"
+             autocomplete="off">
+      <select id="homeSport"></select>
+      <button class="knopf" type="submit">Verein finden</button>
+    </form>
+  </div></div>
 
-  <form class="suche" id="homeSuche">
-    <input type="search" id="homeQuery" placeholder="Vereinsnamen eingeben …"
-           autocomplete="off">
-    <select id="homeSport"></select>
-    <button class="knopf" type="submit">Verein finden</button>
-  </form>
+  <div class="band grau"><div class="mitte">
+    <h2 class="titel">Drei Sportarten, sechs Tabellen</h2>
+    <p class="untertitel">Männer und Frauen spielen getrennte Pyramiden mit
+      eigenen Auf- und Abstiegsketten. Deshalb stehen sie auch getrennt.</p>
+    <div class="sportkarten" id="sportkarten"></div>
+  </div></div>
 
-  <h2>Die Sportarten</h2>
-  <p class="unter">Jede mit eigener Rangfolge, eigenen Bestenlisten und eigener Datenbasis.</p>
-  <div class="sportkarten" id="sportkarten"></div>
+  <div class="band" id="kartenband" hidden><div class="mitte">
+    <h2 class="titel">Die Spitze des Landes</h2>
+    <p class="untertitel">Wer in jeder der sechs Tabellen ganz oben steht —
+      und wo er zu Hause ist.</p>
+    <div class="karte-land" id="kartenbereich"></div>
+    <p class="kartennotiz" id="kartennotiz"></p>
+  </div></div>
 
-  <footer>
-    <p>Ein Projekt aus offen zugänglichen Ergebnisdaten. Die Datenquellen und die
-    jeweilige Abdeckung stehen auf der Seite der Sportart.</p>
-    <p class="rechtslinks"><a href="#impressum">Impressum</a> ·
-      <a href="#datenschutz">Datenschutz</a> ·
-      <a href="#impressum">Quellen und Lizenzen</a></p>
-    <p class="odbl">Enthält Daten von <a href="https://www.openligadb.de/"
-      rel="noopener">OpenLigaDB</a>, lizenziert unter der
-      <a href="https://opendatacommons.org/licenses/odbl/1-0/"
-      rel="noopener">Open Database License 1.0</a>.</p>
-  </footer>
+  <div class="band eng"><div class="mitte">
+    <footer>
+      <p>Ein Projekt aus offen zugänglichen Ergebnisdaten. Die Datenquellen und
+      die jeweilige Abdeckung stehen auf der Seite der Sportart.</p>
+      <p class="rechtslinks"><a href="#impressum">Impressum</a> ·
+        <a href="#datenschutz">Datenschutz</a> ·
+        <a href="#impressum">Quellen und Lizenzen</a></p>
+      <p class="odbl">Enthält Daten von <a href="https://www.openligadb.de/"
+        rel="noopener">OpenLigaDB</a>, lizenziert unter der
+        <a href="https://opendatacommons.org/licenses/odbl/1-0/"
+        rel="noopener">Open Database License 1.0</a>.</p>
+    </footer>
+  </div></div>
 </section>
+
+<div class="wrap">
 
 <!-- ========================= Impressum ========================= -->
 <section id="view-impressum" hidden>
@@ -445,8 +549,8 @@ footer a{color:var(--accent)}
     <p>Dieselbe Person wie oben.</p>
 
     <h2>Art des Angebots</h2>
-    <p>ClubRank ist ein privates, nicht-kommerzielles Projekt. Es verkauft
-    nichts, zeigt keine Werbung und verlangt keine Anmeldung.</p>
+    <p>Die Deutschlandtabelle ist ein privates, nicht-kommerzielles Projekt.
+    Sie verkauft nichts, zeigt keine Werbung und verlangt keine Anmeldung.</p>
 
     <h2>Zu den Zahlen</h2>
     <p>Die Tabellen stammen aus den unten genannten Quellen und werden
@@ -495,6 +599,13 @@ footer a{color:var(--accent)}
           <td><a href="https://www.basketball-bund.net/" rel="noopener">basketball-bund.net</a></td>
           <td>Basketball, alle Stufen</td>
           <td>Deutscher Basketball Bund. Keine freie Lizenz.</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.naturalearthdata.com/" rel="noopener">Natural
+              Earth</a></td>
+          <td>Umriss der Deutschlandkarte</td>
+          <td>Gemeinfrei („no rights reserved“). Namensnennung ist nicht
+              verlangt, geschieht hier trotzdem.</td>
         </tr>
       </tbody>
     </table>
@@ -633,7 +744,7 @@ footer a{color:var(--accent)}
         <th>#</th><th title="Veränderung gegenüber der Vorwoche">± Wo.</th>
         <th>Verein</th><th>Liga</th><th title="Platz in der eigenen Staffel">Pl.</th>
         <th>Sp</th><th>S</th><th>U</th><th>N</th><th id="thTore">Tore</th>
-        <th>Diff</th><th>Pkt</th>
+        <th id="thDiff">Diff</th><th>Pkt</th>
         <th title="Punkte pro Spiel — Sortierkriterium innerhalb der Ligastufe">Pkt/Sp</th>
       </tr></thead>
       <tbody id="rows"></tbody>
@@ -648,6 +759,10 @@ footer a{color:var(--accent)}
 <script>
 const SPORTS = __SPORTS__;
 const IKONEN = __IKONEN__;
+const KARTE = {box: "__KARTENBOX__", umriss: "__KARTENPFAD__"};
+// Basketball wirft Körbe. Ältere Datenpakete kennen das Feld noch nicht.
+const WORTE = s => s.worte || {mehrzahl: 'Tore', diff: 'Tordifferenz',
+  diff_kurz: 'Tordiff.', gegen: 'Gegentore', getroffen: 'geschossenen Tore'};
 // Erst der sprechende Schlüssel, dann das, was im Datenpaket steht (dort
 // stehen teils noch Emoji aus älteren Läufen).
 const ikon = (...schluessel) => {
@@ -691,6 +806,59 @@ document.getElementById('sportkarten').innerHTML = SPORTARTEN.map(a => {
       <div class="ic">${ikon(a.sportart)}</div><h3>${esc(a.name)}</h3>
       <div class="klassen">${zeilen}</div></div>`;
 }).join('');
+
+// --- Deutschlandkarte -------------------------------------------------
+// Sechs Punkte, von Norden nach Süden nummeriert; die Liste daneben trägt
+// dieselben Nummern. Beschriftungen direkt an den Punkten wären unlesbar,
+// sobald zwei Vereine in derselben Stadt sitzen -- und genau das kommt vor.
+(function karteZeichnen(){
+  const spitzen = SPORTS
+    .filter(s => s.ready && s.spitze && s.spitze.x != null)
+    .map(s => ({...s.spitze, slug: s.slug, sportart: s.sportart,
+                klasse: s.klasseName, sportName: s.sportName}))
+    .sort((a, b) => a.y - b.y);
+  if (!spitzen.length) return;
+
+  // Zwei Vereine aus derselben Stadt würden aufeinander liegen. Der zweite
+  // rückt so weit zur Seite, bis er frei steht.
+  const gesetzt = [];
+  spitzen.forEach(p => {
+    p.px = p.x; p.py = p.y;
+    let n = 0;
+    // Immer zur Kartenmitte hin ausweichen: nach außen geschoben landete
+    // der Punkt sonst neben dem Land oder auf dem nächsten Nachbarn.
+    const richtung = p.x > 500 ? -1 : 1;
+    while (gesetzt.some(q => Math.hypot(q.px - p.px, q.py - p.py) < 64) && n < 8){
+      n += 1;
+      p.px = Math.min(966, Math.max(34, p.x + richtung * 58 * n));
+      p.py = Math.min(1325, Math.max(34, p.y + 22 * n));
+    }
+    gesetzt.push(p);
+  });
+
+  const punkte = spitzen.map((p, i) => `<g class="stelle">
+      <title>${esc(p.name)}</title>
+      <circle cx="${p.px}" cy="${p.py}" r="27"/>
+      <text x="${p.px}" y="${p.py + 12}">${i + 1}</text></g>`).join('');
+  const liste = spitzen.map((p, i) => `<a class="spitze" href="#${p.slug}">
+      <span class="nr">${i + 1}</span>
+      <span><span class="name">${ikon(p.sportart)}${esc(p.name)}</span>
+        <span class="wo">${esc(p.sportName)} der ${esc(p.klasse)} ·
+          ${esc(p.liga)} · ${esc(p.ort)}</span></span></a>`).join('');
+
+  document.getElementById('kartenbereich').innerHTML = `
+    <figure><svg viewBox="${KARTE.box}" role="img"
+        aria-label="Karte von Deutschland mit den sechs Spitzenreitern">
+      <path class="landflaeche" d="${KARTE.umriss}"/>${punkte}
+    </svg></figure>
+    <div class="spitzen">${liste}</div>`;
+  document.getElementById('kartennotiz').innerHTML =
+    'Der Ort ist aus dem Vereinsnamen abgeleitet — Vereinsadressen liefert '
+    + 'keine der Quellen. Sitzen zwei Spitzenreiter in derselben Stadt, rückt '
+    + 'der zweite Punkt zur Seite; maßgeblich ist der Ort in der Liste. '
+    + 'Umriss: Natural Earth, gemeinfrei.';
+  document.getElementById('kartenband').hidden = false;
+})();
 
 document.getElementById('homeSport').innerHTML = SPORTS.filter(s => s.ready)
   .map(s => `<option value="${s.slug}">${esc(s.name)} · ${esc(s.klasseName)}`
@@ -787,7 +955,10 @@ window.addEventListener('hashchange', route);
 // dem ersten Wert, bei Gleichstand nach dem zweiten.
 const proSpiel = (r, feld) => r.played ? r[feld] / r.played : 0;
 const SORTIERUNG = {
-  bester:       r => [proSpiel(r,'points'), proSpiel(r,'goalDiff')],
+  // Gleichstand bei den Punkten: erst die Differenz, dann die erzielten
+  // Treffer -- dieselbe Reihenfolge, nach der auch eine Ligatabelle ordnet.
+  bester:       r => [proSpiel(r,'points'), proSpiel(r,'goalDiff'),
+                      proSpiel(r,'goalsFor')],
   heiss:        r => [proSpiel(r,'goalDiff'), proSpiel(r,'points')],
   torfabrik:    r => [proSpiel(r,'goalsFor'), proSpiel(r,'points')],
   bollwerk:     r => [-proSpiel(r,'goalsAgainst'), proSpiel(r,'points')],
@@ -822,7 +993,10 @@ function zeigeSport(sport, d, params){
   }));
 
   const $ = id => ziel.querySelector('#' + id);
-  $('thTore').textContent = sport.torwort || 'Tore';
+  const wort = WORTE(sport);
+  $('thTore').textContent = wort.mehrzahl;
+  $('thTore').title = `Erzielte ${wort.mehrzahl} : ${wort.gegen}`;
+  $('thDiff').title = wort.diff;
   $('tabellenUnter').textContent =
     `${tausend(RANKING.length)} Mannschaften, sortiert nach Ligastufe und Punkten pro Spiel.`;
   $('vergleichHinweis').innerHTML = sport.vergleichHinweis || '';
@@ -987,8 +1161,11 @@ function zeigeSport(sport, d, params){
     else if (karte.key === 'absteiger')  feld = RANKING.filter(r => r.delta < 0);
     else                                 feld = RANKING.filter(r => r.played >= minSpiele);
     feld = feld.slice().sort((a, b) => {
-      const [a1, a2] = SORTIERUNG[karte.key](a), [b1, b2] = SORTIERUNG[karte.key](b);
-      return b1 - a1 || b2 - a2;
+      const wa = SORTIERUNG[karte.key](a), wb = SORTIERUNG[karte.key](b);
+      for (let i = 0; i < wa.length; i++){
+        if (wb[i] !== wa[i]) return wb[i] - wa[i];
+      }
+      return 0;
     }).slice(0, 100);
 
     topBereich.hidden = false;
@@ -999,8 +1176,8 @@ function zeigeSport(sport, d, params){
       <p class="unter">${esc(karte.erklaerung)}</p>
       <div class="tablewrap"><table class="topliste">
         <thead><tr><th>#</th><th>Verein</th><th>Liga</th>
-          <th>Sp</th><th title="Geschossene Tore : Gegentore">Tore</th>
-          <th title="Tordifferenz">Diff</th>
+          <th>Sp</th><th title="Erzielte ${esc(wort.mehrzahl)} : ${esc(wort.gegen)}">${esc(wort.mehrzahl)}</th>
+          <th title="${esc(wort.diff)}">Diff</th>
           <th>${esc(karte.spalte)}</th><th>Rang gesamt</th></tr></thead>
         <tbody>${feld.map((r, i) => `<tr class="t${r.tier}">
           <td class="rank">${i + 1}</td>
@@ -1066,7 +1243,13 @@ def write_shell(out_dir: Path, sports: list[dict]) -> None:
     """Schreibt index.html. Die Daten je Sportart liegen in data/<slug>.json."""
     # Kennung des Startbilds, damit Messenger eine neue Vorschau holen, wenn
     # sich das Bild ändert -- sie zwischenspeichern sonst tagelang.
-    bild = out_dir / "header.jpg"
+    # Für die Teilen-Vorschau das eigens zugeschnittene Teaserbild, sonst
+    # das Startbild. Der Zuschnitt spart den verwaschenen Bildteil aus.
+    start = out_dir / "header.jpg"
+    startversion = (hashlib.sha1(start.read_bytes()).hexdigest()[:8]
+                    if start.exists() else "0")
+    teaser = "teaser.jpg" if (out_dir / "teaser.jpg").exists() else "header.jpg"
+    bild = out_dir / teaser
     version, breite, hoehe = "0", "1200", "630"
     if bild.exists():
         version = hashlib.sha1(bild.read_bytes()).hexdigest()[:8]
@@ -1082,10 +1265,14 @@ def write_shell(out_dir: Path, sports: list[dict]) -> None:
         "__TIER_CSS__": _tier_css(),
         "__SPORTS__": json.dumps(sports, ensure_ascii=False),
         "__IKONEN__": ikonen.js_objekt(),
+        "__KARTENBOX__": karte.VIEWBOX,
+        "__KARTENPFAD__": karte.UMRISS,
         "__URL__": BASIS_URL,
         "__BILDVERSION__": version,
         "__BILDBREITE__": breite,
         "__BILDHOEHE__": hoehe,
+        "__TEASER__": teaser,
+        "__STARTBILD__": startversion,
         "__ANSCHRIFT__": _anschrift_html(),
         "__KONTAKT__": _kontakt_html(),
     }.items():

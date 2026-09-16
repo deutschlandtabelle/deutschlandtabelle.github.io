@@ -10,6 +10,9 @@ Legt einfach eine Datei im Projektordner ab und ruf das Skript auf:
     clubrank_basketball.png  ->  docs/header-basketball.jpg
     clubrank_home.png        ->  docs/header.jpg        (Startseite)
 
+Aus dem Startmotiv entsteht zusätzlich docs/teaser.jpg -- das Bild, das
+Messenger beim Teilen eines Links zeigen.
+
 Die Bilder werden dabei auf 1800 px Breite gebracht und als JPEG gespeichert.
 Ein unbearbeitetes PNG wiegt schnell zwei Megabyte -- als JPEG sind es rund
 250 KB, und der Header lädt bei jedem Seitenaufruf mit.
@@ -27,6 +30,23 @@ ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
 BREITE = 1800
 QUALITAET = 82
+
+# Zuschnitte für das Startmotiv, als Anteil der Quellgröße.
+#
+# Die aktuelle Vorlage hat rechts der Bildmitte eine verwaschene Stelle -- ein
+# Artefakt der Vorlage, das sich nachträglich nicht beheben lässt. Ausgemessen
+# liegt sie zwischen 64 % und 80 % der Breite und zwischen 37 % und 84 % der
+# Höhe. Weggeschnitten bekommt man sie nur über die Breite: das Startbild
+# behält deshalb den linken Teil des Motivs mit den beiden vorderen Gesichtern.
+#
+# Das Teaserbild ist der Ausschnitt, den Messenger beim Teilen eines Links
+# zeigen; es nimmt denselben linken Teil im Seitenverhältnis 1,91:1.
+#
+# WIRD DAS MOTIV GETAUSCHT, GEHÖREN DIESE DREI ZAHLEN ÜBERPRÜFT.
+START_LINKS = 0.632             # Anteil der Breite, vom linken Rand aus
+TEASER_HOEHE = 0.586            # Anteil der Höhe
+TEASER_OBEN = 0.039             # Abstand von oben, Anteil der Höhe
+TEASER_DATEI = "teaser.jpg"
 
 # Dateiname (ohne "clubrank_") -> Zieldatei in docs/
 ZIELE = {
@@ -55,6 +75,49 @@ def schluessel(name: str) -> str:
     # Angehängte Ziffern erlauben mehrere Anläufe für dasselbe Motiv:
     # "clubrank_handball2" landet ebenfalls bei header-handball.jpg.
     return text.rstrip("0123456789 -")
+
+
+def _masse(datei: Path) -> tuple[int, int]:
+    werte = subprocess.run(["sips", "-g", "pixelWidth", "-g", "pixelHeight",
+                            str(datei)], capture_output=True, text=True).stdout
+    zahlen = [int(z.split(":")[-1]) for z in werte.splitlines() if "pixel" in z]
+    return (zahlen[0], zahlen[1]) if len(zahlen) == 2 else (0, 0)
+
+
+def _zuschneiden(quelle: Path, ziel: Path, breite: int, hoehe: int,
+                 oben: int = 0, links: int = 0) -> bool:
+    """Ausschnitt ab der linken oberen Ecke (oben, links).
+
+    Zur Eigenheit von `sips --cropOffset`, ausgemessen statt vermutet:
+    mit `0 0` schneidet es aus der **Bildmitte**, mit jedem anderen Wertepaar
+    dagegen **absolut ab der linken oberen Ecke** (Reihenfolge: oben, links).
+    Negative Werte laufen ins Leere und erzeugen schwarze Ränder. Für den
+    Fall "genau in der Ecke" wird deshalb um ein Pixel nach rechts gerückt --
+    das ist unsichtbar und umgeht den Sonderfall.
+    """
+    if oben == 0 and links == 0:
+        links = 1
+    lauf = subprocess.run(
+        ["sips", "-s", "format", "jpeg", "-s", "formatOptions", "88",
+         "--cropToHeightWidth", str(hoehe), str(breite),
+         "--cropOffset", str(oben), str(links),
+         str(quelle), "--out", str(ziel)],
+        capture_output=True, text=True)
+    return lauf.returncode == 0 and ziel.exists()
+
+
+def teaser(quelle: Path) -> None:
+    """Das Bild für die Teilen-Vorschau aus dem Startmotiv schneiden."""
+    b, h = _masse(quelle)
+    if not b:
+        return
+    ziel = DOCS / TEASER_DATEI
+    breite = int(b * START_LINKS)
+    if _zuschneiden(quelle, ziel, min(breite, int(h * TEASER_HOEHE * 1.91)),
+                    int(h * TEASER_HOEHE), int(h * TEASER_OBEN), 0):
+        print(f"  ok {quelle.name} -> docs/{TEASER_DATEI} "
+              f"({ziel.stat().st_size / 1024:.0f} KB, Teilen-Vorschau)",
+              file=sys.stderr)
 
 
 def main() -> int:
@@ -90,8 +153,17 @@ def main() -> int:
             breite_quelle = 0
         if breite_quelle > BREITE:
             befehl += ["--resampleWidth", str(BREITE)]
-        befehl += [str(quelle), "--out", str(ziel)]
+        # Das Startbild wird vorher auf den linken Teil beschnitten.
+        eingabe = quelle
+        if ziel_name == "header.jpg":
+            b, h = _masse(quelle)
+            zwischen = ROOT / ".zuschnitt-zwischenschritt.png"
+            if b and _zuschneiden(quelle, zwischen, int(b * START_LINKS), h, 0, 0):
+                eingabe = zwischen
+        befehl += [str(eingabe), "--out", str(ziel)]
         ergebnis = subprocess.run(befehl, capture_output=True, text=True)
+        if eingabe != quelle:
+            eingabe.unlink(missing_ok=True)
         if ergebnis.returncode != 0 or not ziel.exists():
             print(f"  !  {quelle.name}: {ergebnis.stderr.strip()[:120]}", file=sys.stderr)
             fehler += 1
@@ -100,6 +172,8 @@ def main() -> int:
         nachher = ziel.stat().st_size / 1024
         print(f"  ok {quelle.name} -> docs/{ziel_name} "
               f"({vorher:.0f} KB -> {nachher:.0f} KB)", file=sys.stderr)
+        if ziel_name == "header.jpg":
+            teaser(quelle)
     return 1 if fehler else 0
 
 

@@ -27,8 +27,24 @@ def _pro_spiel(r: dict, feld: str) -> float:
     return r[feld] / r["played"] if r["played"] else 0.0
 
 
-def kennzahlen(ranking: list[dict]) -> dict:
+# Basketball wirft Körbe, kein Tor fällt dort. Die Rechnung ist dieselbe,
+# nur die Wörter sind andere -- deshalb stehen sie an einer Stelle und nicht
+# verstreut in den Texten.
+WORTE_TOR = {
+    "mehrzahl": "Tore", "diff": "Tordifferenz", "diff_kurz": "Tordiff.",
+    "gegen": "Gegentore", "fabrik": "Die Torfabrik",
+    "erzielt": "eigene Tore", "getroffen": "geschossenen Tore",
+}
+WORTE_KORB = {
+    "mehrzahl": "Körbe", "diff": "Korbdifferenz", "diff_kurz": "Korbdiff.",
+    "gegen": "Gegenkörbe", "fabrik": "Die Korbfabrik",
+    "erzielt": "eigene Körbe", "getroffen": "geworfenen Körbe",
+}
+
+
+def kennzahlen(ranking: list[dict], worte: dict | None = None) -> dict:
     """Die Bestenlisten quer zur Ligastufe."""
+    w = worte or WORTE_TOR
     n = _schwelle(ranking)
     feld = [r for r in ranking if r["played"] >= n]
 
@@ -42,32 +58,37 @@ def kennzahlen(ranking: list[dict]) -> dict:
         {
             "icon": "🏆", "titel": "Bester Verein Deutschlands", "key": "bester", "spalte": "Punkte/Spiel",
             "erklaerung": f"Ohne Rücksicht auf die Ligastufe: die meisten Punkte "
-                          f"pro Spiel, bei Gleichstand die bessere Tordifferenz "
+                          f"pro Spiel. Bei Gleichstand entscheidet die {w['diff']} "
+                          f"pro Spiel, danach die Zahl der {w['getroffen']} "
                           f"pro Spiel. Mindestens {n} Spiele.",
             "team": bester(lambda r: (_pro_spiel(r, "points"),
-                                      _pro_spiel(r, "goalDiff"))),
+                                      _pro_spiel(r, "goalDiff"),
+                                      _pro_spiel(r, "goalsFor"))),
             "wert": lambda r: f"{_pro_spiel(r, 'points'):.2f} Punkte/Spiel",
         },
         {
-            "icon": "🔥", "titel": "Der heißeste Club", "key": "heiss", "spalte": "Tordiff./Spiel",
-            "erklaerung": f"Die größte Tordifferenz pro Spiel — wer nicht nur "
+            "icon": "🔥", "titel": "Der heißeste Club", "key": "heiss",
+            "spalte": f"{w['diff_kurz']}/Spiel",
+            "erklaerung": f"Die größte {w['diff']} pro Spiel — wer nicht nur "
                           f"gewinnt, sondern auseinandernimmt. Mindestens {n} Spiele.",
             "team": bester(lambda r: (_pro_spiel(r, "goalDiff"),
                                       _pro_spiel(r, "points"))),
-            "wert": lambda r: f"{_pro_spiel(r, 'goalDiff'):+.2f} Tore/Spiel",
+            "wert": lambda r: f"{_pro_spiel(r, 'goalDiff'):+.2f} {w['mehrzahl']}/Spiel",
         },
         {
-            "icon": "⚽", "titel": "Die Torfabrik", "key": "torfabrik", "spalte": "Tore/Spiel",
-            "erklaerung": f"Meiste eigene Tore pro Spiel. Mindestens {n} Spiele.",
+            "icon": "⚽", "titel": w["fabrik"], "key": "torfabrik",
+            "spalte": f"{w['mehrzahl']}/Spiel",
+            "erklaerung": f"Meiste {w['erzielt']} pro Spiel. Mindestens {n} Spiele.",
             "team": bester(lambda r: _pro_spiel(r, "goalsFor")),
-            "wert": lambda r: f"{_pro_spiel(r, 'goalsFor'):.2f} Tore/Spiel",
+            "wert": lambda r: f"{_pro_spiel(r, 'goalsFor'):.2f} {w['mehrzahl']}/Spiel",
         },
         {
-            "icon": "🧱", "titel": "Das Bollwerk", "key": "bollwerk", "spalte": "Gegentore/Spiel",
-            "erklaerung": f"Wenigste Gegentore pro Spiel. Mindestens {n} Spiele.",
+            "icon": "🧱", "titel": "Das Bollwerk", "key": "bollwerk",
+            "spalte": f"{w['gegen']}/Spiel",
+            "erklaerung": f"Wenigste {w['gegen']} pro Spiel. Mindestens {n} Spiele.",
             "team": bester(lambda r: (-_pro_spiel(r, "goalsAgainst"),
                                       _pro_spiel(r, "points"))),
-            "wert": lambda r: f"{_pro_spiel(r, 'goalsAgainst'):.2f} Gegentore/Spiel",
+            "wert": lambda r: f"{_pro_spiel(r, 'goalsAgainst'):.2f} {w['gegen']}/Spiel",
         },
         {
             "icon": "📈", "titel": "Aufsteiger der Woche", "key": "aufsteiger", "spalte": "Plätze",
@@ -92,12 +113,13 @@ def kennzahlen(ranking: list[dict]) -> dict:
             "wert": lambda r: f"{_pro_spiel(r, 'points'):.2f} Punkte/Spiel",
         },
         {
-            "icon": "💥", "titel": "Die dickste Klatsche", "key": "klatsche", "spalte": "Tordiff./Spiel",
-            "erklaerung": f"Schlechteste Tordifferenz pro Spiel. "
+            "icon": "💥", "titel": "Die dickste Klatsche", "key": "klatsche",
+            "spalte": f"{w['diff_kurz']}/Spiel",
+            "erklaerung": f"Schlechteste {w['diff']} pro Spiel. "
                           f"Mindestens {n} Spiele.",
             "team": bester(lambda r: (-_pro_spiel(r, "goalDiff"),
                                       -_pro_spiel(r, "points"))),
-            "wert": lambda r: f"{_pro_spiel(r, 'goalDiff'):+.2f} Tore/Spiel",
+            "wert": lambda r: f"{_pro_spiel(r, 'goalDiff'):+.2f} {w['mehrzahl']}/Spiel",
         },
     ]
 

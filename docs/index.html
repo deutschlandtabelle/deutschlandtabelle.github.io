@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ClubRank — wo steht dein Verein?</title>
-<meta name="description" content="ClubRank: alle deutschen Vereine in Fußball, Handball und Basketball — von der Bundesliga bis zur Kreisklasse in einer einzigen Rangfolge. Wo steht dein Verein?">
+<title>Deutschlandtabelle — jeder Verein, jede Liga, ein Platz</title>
+<meta name="description" content="Die Deutschlandtabelle: alle Vereine des Landes in Fußball, Handball und Basketball — von der Bundesliga bis zur Kreisklasse in einer einzigen Tabelle. Wo steht deiner?">
 <link rel="canonical" href="https://clubrank.github.io/">
 
 <!-- Vorschau beim Teilen. Ohne diese Angaben raten Messenger, was Titel und
@@ -12,215 +12,285 @@
      Beschreibung und Startbild. Das Bild braucht eine vollständige Adresse,
      relative Pfade werden hier nicht aufgelöst. -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="ClubRank">
+<meta property="og:site_name" content="Deutschlandtabelle">
 <meta property="og:locale" content="de_DE">
 <meta property="og:url" content="https://clubrank.github.io/">
-<meta property="og:title" content="ClubRank — wo steht dein Verein?">
-<meta property="og:description" content="Jeder Verein. Jede Liga. Eine Rangfolge. Fußball, Handball und Basketball von der Bundesliga bis zur Kreisklasse — täglich neu aus den Ergebnissen der laufenden Saison.">
-<meta property="og:image" content="https://clubrank.github.io/header.jpg?v=224554eb">
-<meta property="og:image:width" content="1408">
-<meta property="og:image:height" content="768">
+<meta property="og:title" content="Deutschlandtabelle — jeder Verein, jede Liga, ein Platz">
+<meta property="og:description" content="Fußball, Handball und Basketball von der Bundesliga bis zur Kreisklasse, Männer und Frauen getrennt — täglich neu aus den Ergebnissen der laufenden Saison.">
+<meta property="og:image" content="https://clubrank.github.io/teaser.jpg?v=fdbe21bd">
+<meta property="og:image:width" content="859">
+<meta property="og:image:height" content="450">
 <meta property="og:image:alt" content="Jubelnde Mannschaft eines Amateurvereins nach dem Sieg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ClubRank — wo steht dein Verein?">
-<meta name="twitter:description" content="Jeder Verein. Jede Liga. Eine Rangfolge. Von der Bundesliga bis zur Kreisklasse.">
-<meta name="twitter:image" content="https://clubrank.github.io/header.jpg?v=224554eb">
+<meta name="twitter:title" content="Deutschlandtabelle — jeder Verein, jede Liga, ein Platz">
+<meta name="twitter:description" content="Jeder Verein. Jede Liga. Ein Platz. Von der Bundesliga bis zur Kreisklasse.">
+<meta name="twitter:image" content="https://clubrank.github.io/teaser.jpg?v=fdbe21bd">
 <style>
+/* ======================================================================
+   Gestaltung nach dem Vorbild von apple.com/de: wenige Flächen, große
+   ruhige Typografie, Haarlinien statt Kästen, Abschnitte über die volle
+   Breite im Wechsel weiß und hellgrau. Die Farbe bleibt das Grün des
+   Projekts -- Apples Grammatik, nicht Apples Palette.
+   ====================================================================== */
 :root{
-  --bg:#f6f7f9; --panel:#ffffff; --line:#e3e6ea; --ink:#14171c; --muted:#666e79;
-  --accent:#1a6b3c; --accent-soft:#e6f2ea; --up:#137a3d; --down:#b02a2a;
-  --hero1:#0f3d2a; --hero2:#1a6b3c;
+  --ink:#1d1d1f; --muted:#6e6e73; --bg:#ffffff; --flaeche:#f5f5f7;
+  --panel:#ffffff; --hair:#d2d2d7; --line:#d2d2d7;
+  --accent:#1a6b3c; --accent-soft:#eaf3ee; --up:#137a3d; --down:#b02a2a;
+  --schatten:0 4px 24px rgba(0,0,0,.06);
+  --land:#e8e8ed; --landlinie:#c7c7cc;
   --t1:#0b3d91; --t2:#1a6b3c; --t3:#8a6100; --t4:#7a3aa8; --t5:#a3442c;
   --t6:#0d6b74; --t7:#7a5a1f; --t8:#8a2f5e; --t9:#3f5aa6; --t10:#5c6b1f;
   --t11:#6b4a8a; --t12:#1f6b5c; --t13:#8a4a2f; --t14:#4a4a6b;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#0f1216; --panel:#161a20; --line:#262c34; --ink:#e8ebef; --muted:#98a2ae;
+    --ink:#f5f5f7; --muted:#a1a1a6; --bg:#000000; --flaeche:#161617;
+    --panel:#1d1d1f; --hair:#38383a; --line:#38383a;
     --accent:#4ec27f; --accent-soft:#17301f; --up:#4ec27f; --down:#e8695f;
-    --hero1:#0a2419; --hero2:#14472a;
+    --schatten:0 4px 24px rgba(0,0,0,.5);
+    --land:#2c2c2e; --landlinie:#55555a;
     --t1:#6ea8ff; --t2:#4ec27f; --t3:#e0b453; --t4:#c194ea; --t5:#f0937a;
     --t6:#5ec9d4; --t7:#d9b26a; --t8:#ef8ab8; --t9:#8fa8ee; --t10:#b3c96a;
     --t11:#bfa0e0; --t12:#66c9b4; --t13:#e0a184; --t14:#a0a4d4;
   }
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:1080px;margin:0 auto;padding:0 18px 60px}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);letter-spacing:-.01em;
+  font:17px/1.47 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",
+       Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
 [hidden]{display:none!important}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px 70px}
+.mitte{max-width:1000px;margin:0 auto;padding:0 22px}
+.schmal{max-width:720px}
 
-/* --- Kopfleiste mit den Sportarten ------------------------------------- */
-.topbar{position:sticky;top:0;z-index:20;background:var(--bg);
-  border-bottom:1px solid var(--line)}
-.topbar .inner{max-width:1080px;margin:0 auto;padding:10px 18px;
-  display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.brand{font-weight:800;letter-spacing:-.02em;font-size:19px;color:var(--ink);
+/* --- Kopfleiste: schmal, durchscheinend, kleine Schrift ---------------- */
+.topbar{position:sticky;top:0;z-index:20;height:48px;
+  background:color-mix(in srgb,var(--bg) 72%,transparent);
+  backdrop-filter:saturate(180%) blur(20px);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:1px solid var(--hair)}
+.topbar .inner{max-width:1000px;margin:0 auto;padding:0 22px;height:48px;
+  display:flex;align-items:center;gap:26px}
+.brand{font-weight:600;font-size:16px;letter-spacing:-.02em;color:var(--ink);
   text-decoration:none;white-space:nowrap}
 .brand span{color:var(--accent)}
-.topbar nav{display:flex;gap:4px;flex-wrap:wrap}
-.topbar nav a{color:var(--muted);text-decoration:none;font-size:14px;
-  font-weight:600;padding:7px 12px;border-radius:8px}
-.topbar nav a[aria-current="page"]{background:var(--accent-soft);color:var(--accent)}
-.topbar nav a.leer{opacity:.5}
+.topbar nav{display:flex;gap:22px;margin-left:auto;align-items:center}
+.topbar nav a{color:var(--ink);opacity:.86;text-decoration:none;font-size:12.5px;
+  display:inline-flex;align-items:center;white-space:nowrap}
+.topbar nav a:hover{opacity:1}
+.topbar nav a[aria-current="page"]{color:var(--accent);opacity:1}
+.topbar nav a.leer{opacity:.4}
 
-/* --- Startseite --------------------------------------------------------- */
-.hero{position:relative;margin:18px 0 0;border-radius:16px;overflow:hidden;
-  background:linear-gradient(135deg,var(--hero1),var(--hero2));
-  min-height:300px;display:flex;align-items:flex-end}
-.hero.klein{min-height:210px;margin-bottom:8px}
-.hero.klein .marke{font-size:clamp(24px,4.5vw,40px)}
-.hero.klein .claim{font-size:clamp(13px,2vw,16px)}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* --- Bänder über die volle Breite -------------------------------------- */
+.band{padding:78px 0}
+.band.grau{background:var(--flaeche)}
+.band.eng{padding:54px 0}
+.band.voll{padding:0}
+
+/* --- Bühne -------------------------------------------------------------- */
+.hero{position:relative;overflow:hidden;display:flex;align-items:center;
+  justify-content:center;min-height:clamp(320px,42vw,500px);background:#111;
+  border-radius:22px}
+.hero.klein{min-height:clamp(220px,30vw,320px);border-radius:18px;
+  margin:26px 0 0}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  object-position:50% 22%}
 .hero .schleier{position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.72) 100%)}
-.platzhalter{position:absolute;inset:14px;border:2px dashed rgba(255,255,255,.4);
-  border-radius:10px;display:flex;align-items:flex-start;justify-content:center;
+  background:linear-gradient(180deg,rgba(0,0,0,.42) 0%,rgba(0,0,0,.28) 45%,
+             rgba(0,0,0,.62) 100%)}
+.hero .inhalt{position:relative;padding:34px 22px;color:#fff;text-align:center;
+  width:100%}
+.marke{margin:0;font-weight:600;line-height:1.05;letter-spacing:-.028em;
+  font-size:clamp(38px,6.6vw,76px);text-shadow:0 2px 24px rgba(0,0,0,.4)}
+.marke span{color:#8ff0b6}
+.marke .ikon{width:.86em;height:.86em;margin-right:.24em;vertical-align:-.08em;
+  color:#fff}
+.claim{margin:14px auto 0;max-width:30ch;font-weight:400;
+  font-size:clamp(18px,2.5vw,26px);line-height:1.25;letter-spacing:-.02em;
+  text-shadow:0 1px 16px rgba(0,0,0,.45)}
+.hero.klein .marke{font-size:clamp(28px,4.4vw,46px)}
+.hero.klein .claim{font-size:clamp(14px,1.9vw,18px);margin-top:8px}
+.platzhalter{position:absolute;inset:16px;border:1px dashed rgba(255,255,255,.4);
+  border-radius:12px;display:flex;align-items:flex-start;justify-content:center;
   padding:14px;pointer-events:none}
-.platzhalter em{font-style:normal;background:rgba(0,0,0,.4);
+.platzhalter em{font-style:normal;background:rgba(0,0,0,.45);
   color:rgba(255,255,255,.92);font-size:12px;line-height:1.5;text-align:center;
   padding:7px 12px;border-radius:8px}
 .platzhalter code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
-  font-size:11.5px;background:rgba(255,255,255,.16);padding:1px 5px;border-radius:4px}
-.hero .inhalt{position:relative;padding:28px 26px 26px;color:#fff;width:100%}
-.marke{font-size:clamp(30px,6vw,54px);font-weight:800;letter-spacing:-.03em;
-  margin:0;line-height:1.05;text-shadow:0 2px 14px rgba(0,0,0,.45)}
-.marke span{color:#8ff0b6}
-.claim{margin:8px 0 0;font-size:clamp(15px,2.4vw,20px);font-weight:500;
-  text-shadow:0 1px 10px rgba(0,0,0,.5)}
-.intro{margin:26px 0 0;font-size:17px;max-width:70ch}
-.intro p{margin:0 0 12px}
-.suche{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 0}
+  font-size:11.5px;background:rgba(255,255,255,.16);padding:1px 5px;
+  border-radius:4px}
+
+/* --- Überschriften und Fließtext --------------------------------------- */
+.titel{text-align:center;font-size:clamp(28px,4.2vw,46px);font-weight:600;
+  letter-spacing:-.025em;line-height:1.08;margin:0 0 12px}
+.untertitel{text-align:center;color:var(--muted);font-size:19px;margin:0 auto;
+  max-width:62ch;letter-spacing:-.01em}
+.intro{margin:0 auto;max-width:64ch;text-align:center;font-size:19px;
+  line-height:1.5}
+.intro p{margin:0 0 14px}
+.intro p:last-child{margin-bottom:0}
+h2{margin:52px 0 6px;font-size:clamp(24px,3vw,34px);font-weight:600;
+  letter-spacing:-.025em;line-height:1.12}
+h2 + p.unter{margin:0 0 22px;color:var(--muted);font-size:17px}
+
+/* --- Suche -------------------------------------------------------------- */
+.suche{display:flex;gap:10px;flex-wrap:wrap;margin:30px auto 0;max-width:640px;
+  justify-content:center}
 .suche input{flex:1 1 260px;min-width:0;background:var(--panel);color:var(--ink);
-  border:1px solid var(--line);border-radius:10px;padding:13px 15px;font-size:16px}
+  border:1px solid var(--hair);border-radius:12px;padding:13px 16px;font-size:16px}
 .suche select{flex:0 0 auto}
 .knopf{display:inline-block;background:var(--accent);color:#fff;border:0;
-  border-radius:10px;padding:13px 22px;font-size:16px;font-weight:600;
+  border-radius:980px;padding:13px 24px;font-size:16px;font-weight:400;
   cursor:pointer;text-decoration:none;white-space:nowrap}
+.knopf:hover{filter:brightness(1.08)}
 
-.sportkarten{display:grid;gap:12px;margin:26px 0 0;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.sportkarte{background:var(--panel);border:1px solid var(--line);border-radius:14px;
-  padding:18px;text-decoration:none;color:var(--ink);display:block}
-.sportkarte:hover{border-color:var(--accent)}
+/* --- Kacheln der Sportarten -------------------------------------------- */
+.sportkarten{display:grid;gap:16px;margin:40px 0 0;
+  grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.sportkarte{background:var(--panel);border-radius:22px;padding:34px 28px 28px;
+  text-decoration:none;color:var(--ink);display:flex;flex-direction:column;
+  align-items:center;text-align:center;box-shadow:var(--schatten)}
+.band.grau .sportkarte{background:var(--bg)}
 .sportkarte .ic{line-height:1}
-.sportkarte h3{margin:8px 0 2px;font-size:20px;letter-spacing:-.01em}
-.sportkarte .zahl{font-size:26px;font-weight:800;letter-spacing:-.02em;
-  color:var(--accent);margin:6px 0 0}
-.sportkarte .klein{color:var(--muted);font-size:13px}
-.sportkarte.leer{opacity:.62;border-style:dashed;cursor:default}
-/* Zwei Klassen je Sportart, untereinander in derselben Karte. */
-.sportkarte .klassen{display:grid;gap:8px;margin-top:12px}
-.klassenzeile{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;
-  align-items:baseline;padding:9px 11px;border:1px solid var(--line);
-  border-radius:10px;text-decoration:none;color:var(--ink);background:var(--bg)}
-a.klassenzeile:hover{border-color:var(--accent)}
-.klassenzeile .wer{font-weight:600;font-size:14px;grid-row:1}
-.klassenzeile .zahl{font-size:20px;font-weight:800;letter-spacing:-.02em;
-  color:var(--accent);grid-row:1;justify-self:end;margin:0}
-.klassenzeile .klein{grid-column:1/-1;font-size:12px;color:var(--muted)}
-.klassenzeile.leer{opacity:.6;border-style:dashed}
+.sportkarte .ic .ikon{width:42px;height:42px;color:var(--accent)}
+.sportkarte h3{margin:14px 0 0;font-size:25px;font-weight:600;
+  letter-spacing:-.02em}
+.sportkarte .zahl{font-size:40px;font-weight:600;letter-spacing:-.03em;
+  color:var(--ink);margin:4px 0 0;line-height:1.05}
+.sportkarte .klein{color:var(--muted);font-size:14px}
+.sportkarte.leer{opacity:.55}
+.sportkarte .klassen{display:block;width:100%;margin:22px 0 0;
+  border-top:1px solid var(--hair)}
+.klassenzeile{display:grid;grid-template-columns:1fr auto;gap:2px 14px;
+  align-items:baseline;padding:14px 2px;border-bottom:1px solid var(--hair);
+  text-decoration:none;color:var(--ink);text-align:left}
+.klassenzeile .wer{grid-row:1}
+.klassenzeile .zahl{grid-row:1;justify-self:end}
+.klassenzeile .klein{grid-column:1/-1}
+a.klassenzeile:hover .zahl{color:var(--accent)}
+.klassenzeile .wer{font-size:15px;font-weight:500}
+.klassenzeile .zahl{font-size:25px;font-weight:600;letter-spacing:-.025em;
+  margin:0;line-height:1.1}
+.klassenzeile .klein{display:block;font-size:13px;color:var(--muted);
+  font-weight:400}
+.klassenzeile.leer{opacity:.5}
 
-/* Umschalter Männer/Frauen unter dem Kopfbild. */
-.klassenwahl{display:flex;gap:6px;margin:14px 0 -4px;flex-wrap:wrap}
+/* --- Umschalter Männer/Frauen ------------------------------------------ */
+.klassenwahl{display:flex;gap:8px;margin:22px 0 0;flex-wrap:wrap;
+  justify-content:center}
 .klassenwahl:empty{display:none}
-.klassenwahl a,.klassenwahl span{font-size:14px;font-weight:600;
-  padding:7px 14px;border-radius:999px;border:1px solid var(--line);
-  text-decoration:none;color:var(--muted);background:var(--panel)}
+.klassenwahl a,.klassenwahl span{font-size:14px;font-weight:400;
+  padding:8px 18px;border-radius:980px;border:1px solid var(--hair);
+  text-decoration:none;color:var(--ink);background:var(--panel)}
 .klassenwahl a:hover{border-color:var(--accent);color:var(--accent)}
-.klassenwahl [aria-current="page"]{background:var(--accent);border-color:var(--accent);
-  color:#fff}
-.klassenwahl .leer{opacity:.45}
+.klassenwahl [aria-current="page"]{background:var(--accent);
+  border-color:var(--accent);color:#fff}
+.klassenwahl .leer{opacity:.4}
 
-h2{margin:42px 0 4px;font-size:24px;letter-spacing:-.02em}
-h2 + p.unter{margin:0 0 18px;color:var(--muted);font-size:15px}
+/* --- Deutschlandkarte --------------------------------------------------- */
+.karte-land{display:grid;gap:34px;align-items:center;margin:40px 0 0;
+  grid-template-columns:minmax(0,330px) minmax(0,1fr)}
+.karte-land figure{margin:0}
+.karte-land svg{width:100%;height:auto;display:block}
+.landflaeche{fill:var(--land);stroke:var(--landlinie);stroke-width:2.5;
+  stroke-linejoin:round}
+.stelle circle{fill:var(--accent);stroke:var(--bg);stroke-width:5}
+.stelle text{fill:#fff;font-size:34px;font-weight:600;text-anchor:middle;
+  letter-spacing:0}
+.spitzen{display:grid;gap:2px}
+.spitze{display:grid;grid-template-columns:30px 1fr;gap:14px;align-items:start;
+  padding:13px 0;border-bottom:1px solid var(--hair);text-decoration:none;
+  color:var(--ink)}
+.spitze:first-child{border-top:1px solid var(--hair)}
+.spitze .nr{width:26px;height:26px;border-radius:50%;background:var(--accent);
+  color:#fff;font-size:14px;font-weight:600;display:grid;place-items:center;
+  margin-top:2px}
+.spitze .name{font-size:18px;font-weight:600;letter-spacing:-.015em;
+  display:flex;align-items:center;gap:8px}
+.spitze .name .ikon{width:17px;height:17px;color:var(--muted)}
+.spitze .wo{font-size:14px;color:var(--muted);margin-top:2px}
+.spitze:hover .name{color:var(--accent)}
+.kartennotiz{margin:22px auto 0;max-width:62ch;text-align:center;
+  font-size:14px;color:var(--muted)}
 
-.karten{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.karte{background:var(--panel);border:1px solid var(--line);border-radius:14px;
-  padding:18px 18px 16px;display:flex;flex-direction:column;gap:6px}
+/* --- Kennzahlen-Karten --------------------------------------------------- */
+.karten{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.karte{background:var(--panel);border-radius:20px;padding:26px 24px 22px;
+  display:flex;flex-direction:column;gap:5px;box-shadow:var(--schatten)}
 .karte .kopf{display:flex;align-items:center;gap:9px;font-size:13px;
-  text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
-.karte .kopf i{font-style:normal;font-size:20px}
-
-/* --- Icons ---------------------------------------------------------------
-   Eine Strichstärke, eine Farbe -- die des umgebenden Textes. Emoji konnten
-   das nicht: sie bringen ihre eigenen Farben mit und sehen auf jedem System
-   anders aus. */
-.ikon{width:1.2em;height:1.2em;flex:0 0 auto;fill:none;stroke:currentColor;
-  stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;
-  vertical-align:-.22em}
-.topbar nav a .ikon{width:16px;height:16px;margin-right:6px;vertical-align:-3px}
-.sportkarte .ic .ikon{width:30px;height:30px;color:var(--accent);
-  vertical-align:top}
-.karte .kopf .ikon{width:20px;height:20px;color:var(--accent);vertical-align:-4px}
-h1 .ikon,h2 .ikon{width:.92em;height:.92em;color:var(--accent);margin-right:8px;
-  vertical-align:-.12em}
-.karte .verein{font-size:21px;font-weight:700;letter-spacing:-.01em;line-height:1.25}
-.karte .wert{font-size:15px;font-weight:600;color:var(--accent)}
-.karte .liga{font-size:13px;color:var(--muted)}
-.karte .erklaerung{font-size:13px;color:var(--muted);margin-top:4px;
-  padding-top:10px;border-top:1px solid var(--line)}
-.topknopf{margin-top:10px;align-self:flex-start;font-size:13px;font-weight:700;
-  color:var(--accent);text-decoration:none;padding:6px 12px;border-radius:8px;
-  border:1px solid var(--accent)}
-.topknopf:hover{background:var(--accent-soft)}
-.zurueckknopf{display:inline-block;margin:0 0 14px;font-size:14px;font-weight:600;
+  color:var(--muted);font-weight:400;letter-spacing:0}
+.karte .kopf i{font-style:normal;font-size:19px}
+.karte .kopf .ikon{width:19px;height:19px;color:var(--accent);vertical-align:-3px}
+.karte .verein{font-size:25px;font-weight:600;letter-spacing:-.025em;
+  line-height:1.16;margin-top:4px}
+.karte .wert{font-size:17px;font-weight:600;color:var(--accent)}
+.karte .liga{font-size:14px;color:var(--muted)}
+.karte .erklaerung{font-size:14px;color:var(--muted);margin-top:8px;
+  padding-top:12px;border-top:1px solid var(--hair)}
+.topknopf{margin-top:14px;align-self:flex-start;font-size:15px;font-weight:400;
+  color:var(--accent);text-decoration:none}
+.topknopf:hover{text-decoration:underline}
+.zurueckknopf{display:inline-block;margin:0 0 18px;font-size:15px;
   color:var(--accent);text-decoration:none}
 .zurueckknopf:hover{text-decoration:underline}
 
-.note{background:var(--panel);border:1px solid var(--line);
-  border-left:3px solid #8a6100;border-radius:8px;padding:12px 14px;
-  margin:16px 0;font-size:14px;color:var(--muted)}
-.note summary{cursor:pointer;color:var(--ink);font-weight:600;list-style:none}
+.note{background:var(--flaeche);border:0;border-radius:14px;padding:16px 18px;
+  margin:20px 0;font-size:15px;color:var(--muted)}
+.band.grau .note{background:var(--bg)}
+.note summary{cursor:pointer;color:var(--ink);font-weight:500;list-style:none}
 .note summary::-webkit-details-marker{display:none}
-.note summary::before{content:"▸ ";color:var(--muted)}
-.note[open] summary::before{content:"▾ "}
-.note p{margin:8px 0 0}
+.note summary::before{content:"› ";color:var(--muted)}
+.note[open] summary::before{content:"⌄ "}
+.note p{margin:10px 0 0}
 
-/* --- Tabelle ------------------------------------------------------------ */
-.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:18px 0 10px}
+/* --- Tabelle: Haarlinien statt Kasten ---------------------------------- */
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:20px 0 12px}
 input[type=search],select{background:var(--panel);color:var(--ink);
-  border:1px solid var(--line);border-radius:8px;padding:9px 11px;font-size:14px;
+  border:1px solid var(--hair);border-radius:10px;padding:10px 13px;font-size:14px;
   max-width:100%;min-width:0}
 select{text-overflow:ellipsis}
 input[type=search]{flex:1 1 240px}
-.tip{margin:0 0 10px;font-size:13px;color:var(--muted)}
-.legend{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
-.legend span{font-size:11px;padding:3px 9px;border-radius:999px;
-  border:1px solid currentColor;font-weight:600}
-.count{margin:0 0 8px;font-size:12px;color:var(--muted)}
+.tip{margin:0 0 10px;font-size:14px;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.legend span{font-size:11px;padding:3px 10px;border-radius:980px;
+  border:1px solid currentColor;font-weight:500}
+.count{margin:0 0 10px;font-size:13px;color:var(--muted)}
 /* Bewusst KEIN overflow: ein Scroll-Container würde den fixierten
    Spaltenkopf aushebeln. Schmale Fenster blenden stattdessen Spalten aus. */
-.tablewrap{background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.tablewrap{background:transparent;border:0}
 table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
-th,td{padding:9px 10px;text-align:right;border-bottom:1px solid var(--line);
-  white-space:nowrap}
-th{position:sticky;top:47px;z-index:3;background:var(--panel);font-size:11px;
-  text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;
-  box-shadow:inset 0 -1px 0 var(--line)}
+th,td{padding:13px 10px;text-align:right;border-bottom:1px solid var(--hair);
+  white-space:nowrap;font-size:15px}
+th{position:sticky;top:48px;z-index:3;font-size:12px;font-weight:400;
+  color:var(--muted);letter-spacing:0;
+  background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:saturate(180%) blur(20px);
+  -webkit-backdrop-filter:saturate(180%) blur(20px)}
 .haupt th:nth-child(3),.haupt td:nth-child(3),
 .haupt th:nth-child(4),.haupt td:nth-child(4){text-align:left}
 .paarungen th:nth-child(2),.paarungen td:nth-child(2),
 .paarungen th:nth-child(3),.paarungen td:nth-child(3){text-align:left}
 .topliste th:nth-child(2),.topliste td:nth-child(2),
 .topliste th:nth-child(3),.topliste td:nth-child(3){text-align:left}
-.paarungen td:nth-child(2),.paarungen td:nth-child(3){padding-top:10px;padding-bottom:10px}
+.paarungen td:nth-child(2),.paarungen td:nth-child(3){padding-top:12px;padding-bottom:12px}
 .paarungen .league{max-width:none;display:block;margin-top:2px}
 /* In der Paarungstabelle ist Platz -- Vereinsnamen dürfen ausgeschrieben
    stehen, anders als in der 13-spaltigen Haupttabelle. */
 .paarungen .club span{max-width:none;white-space:normal}
-td.rank{font-weight:700;width:52px}
+td.rank{font-weight:600;width:56px}
 td.delta{width:56px;font-size:13px}
-.club{display:flex;align-items:center;gap:9px;min-width:0}
-.club img{width:20px;height:20px;object-fit:contain;flex:0 0 20px}
+.club{display:flex;align-items:center;gap:11px;min-width:0}
+.club img{width:22px;height:22px;object-fit:contain;flex:0 0 22px}
 .club span{overflow:hidden;text-overflow:ellipsis;max-width:250px}
-.tier{display:inline-block;padding:2px 7px;border-radius:999px;font-size:11px;
-  font-weight:600;border:1px solid currentColor}
+.tier{display:inline-block;padding:2px 8px;border-radius:980px;font-size:11px;
+  font-weight:500;border:1px solid currentColor}
 .league{color:var(--muted);font-size:13px;display:inline-block;max-width:205px;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle}
 .up{color:var(--up)}.down{color:var(--down)}.flat{color:var(--muted)}
-.empty{padding:28px;text-align:center;color:var(--muted)}
-.laden{padding:40px;text-align:center;color:var(--muted)}
+.empty{padding:34px;text-align:center;color:var(--muted)}
+.laden{padding:48px;text-align:center;color:var(--muted)}
 .t1-fg{color:var(--t1)}
 tbody tr.t1{background:color-mix(in srgb,var(--t1) 7%, var(--panel))}
 .t2-fg{color:var(--t2)}
@@ -264,9 +334,45 @@ tbody tr.step.t11 > td{border-top-color:var(--t11)}
 tbody tr.step.t12 > td{border-top-color:var(--t12)}
 tbody tr.step.t13 > td{border-top-color:var(--t13)}
 tbody tr.step.t14 > td{border-top-color:var(--t14)}
-tbody tr:hover{background:var(--accent-soft)}
-/* Diese Regeln gelten nur für die Haupttabelle -- die Top-100-Listen haben
-   eine andere Spaltenfolge und würden sonst ihre Wertespalte verlieren. */
+tbody tr:hover{background:var(--flaeche)}
+
+/* --- Icons -------------------------------------------------------------- */
+.ikon{width:1.2em;height:1.2em;flex:0 0 auto;fill:none;stroke:currentColor;
+  stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;
+  vertical-align:-.22em}
+.topbar nav a .ikon{width:15px;height:15px;margin-right:6px;vertical-align:-3px}
+h1 .ikon,h2 .ikon{width:.88em;height:.88em;color:var(--accent);margin-right:10px;
+  vertical-align:-.1em}
+
+/* --- Rechtstexte -------------------------------------------------------- */
+.rechtslinks{margin:10px 0 0}
+.odbl{margin:8px 0 0;font-size:13px}
+.rechtstext{max-width:700px;margin:0 auto;padding:40px 0 30px}
+.rechtstext h1{font-size:clamp(32px,4.4vw,48px);letter-spacing:-.03em;
+  font-weight:600;margin:14px 0 8px}
+.rechtstext h2{font-size:21px;margin:38px 0 10px;letter-spacing:-.02em}
+.rechtstext p,.rechtstext ul{margin:0 0 15px}
+.rechtstext ul{padding-left:22px}
+.rechtstext li{margin-bottom:8px}
+.rechtstext address{font-style:normal;line-height:1.7;margin:0 0 15px}
+.rechtstext .fuehrung{font-size:19px;color:var(--muted);border:0;padding:0}
+.rechtstext code{font-size:13px;background:var(--flaeche);padding:2px 6px;
+  border-radius:5px}
+.luecke{background:var(--flaeche);border:1px solid var(--hair);
+  border-radius:14px;padding:16px 18px;margin:0 0 15px}
+table.quellen{width:100%;border-collapse:collapse;margin:0 0 15px;font-size:15px}
+table.quellen th,table.quellen td{text-align:left;vertical-align:top;
+  padding:13px 14px 13px 0;border-bottom:1px solid var(--hair);
+  white-space:normal}
+table.quellen th{font-size:12px;font-weight:400;color:var(--muted);
+  position:static;background:none;backdrop-filter:none}
+
+footer{margin:56px 0 0;padding-top:24px;border-top:1px solid var(--hair);
+  color:var(--muted);font-size:13px;line-height:1.8}
+footer a{color:var(--accent);text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+/* --- Schmale Fenster ---------------------------------------------------- */
 @media (max-width:1100px){
   .haupt th:nth-child(5),.haupt td:nth-child(5),
   .haupt th:nth-child(7),.haupt td:nth-child(7),
@@ -276,11 +382,20 @@ tbody tr:hover{background:var(--accent-soft)}
   .league{max-width:150px}
 }
 @media (max-width:860px){
+  .band{padding:52px 0}
+  .band.eng{padding:38px 0}
+  .karte-land{grid-template-columns:1fr;gap:24px;
+    justify-items:center}
+  .karte-land figure{max-width:300px;width:100%}
+  .spitzen{width:100%}
+  .topbar nav{gap:14px}
+  .topbar .inner{gap:14px;padding:0 16px}
+  .mitte,.wrap{padding-left:16px;padding-right:16px}
   .haupt th:nth-child(2),.haupt td:nth-child(2),
   .haupt th:nth-child(10),.haupt td:nth-child(10),
   .haupt th:nth-child(11),.haupt td:nth-child(11),
   .haupt th:nth-child(12),.haupt td:nth-child(12){display:none}
-  th,td{padding:8px 6px;white-space:normal}
+  th,td{padding:11px 6px;white-space:normal}
   .club span,.league{max-width:none;white-space:normal;overflow:visible;
     text-overflow:clip;display:inline;min-width:0}
   .club{align-items:flex-start}
@@ -291,14 +406,10 @@ tbody tr:hover{background:var(--accent-soft)}
   .haupt th:nth-child(6),.haupt td:nth-child(6){width:9%}
   .haupt th:nth-child(13),.haupt td:nth-child(13){width:14%}
   /* Die Top-100-Liste hat acht Spalten. Auf dem Telefon fliegt die
-     Tordifferenz raus -- sie steckt bereits in der Torangabe daneben --
-     und der Rest teilt sich die Breite nach dem, was drinsteht: die
-     Torangabe braucht Platz für "112:11", der Gesamtrang für "25.682". */
+     Differenz raus -- sie steckt bereits in der Angabe daneben -- und der
+     Rest teilt sich die Breite nach dem, was drinsteht. */
   .topliste th:nth-child(6),.topliste td:nth-child(6){display:none}
-  .topliste th,.topliste td{padding:8px 3px}
-  /* Nur die Überschriften dürfen mitten im Wort umbrechen ("Tore/Spiel").
-     Die Zahlen darunter bleiben in einer Zeile -- aus "9.40" sollen nicht
-     zwei Zeilen "9.4" und "0" werden. */
+  .topliste th,.topliste td{padding:10px 3px}
   .topliste th{overflow-wrap:anywhere}
   .topliste td:nth-child(4),.topliste td:nth-child(5),
   .topliste td:nth-child(7),.topliste td:nth-child(8){white-space:nowrap;
@@ -314,92 +425,85 @@ tbody tr:hover{background:var(--accent-soft)}
   td.rank{width:11%}
   .league{font-size:11px}
 }
-.rechtslinks{margin:8px 0 0}
-.odbl{margin:6px 0 0;font-size:12px}
-.rechtstext{max-width:720px;margin:0 auto;padding:28px 0 20px}
-.rechtstext h1{font-size:30px;letter-spacing:-.02em;margin:18px 0 6px}
-.rechtstext h2{font-size:18px;margin:32px 0 8px;letter-spacing:-.01em}
-.rechtstext p,.rechtstext ul{margin:0 0 14px}
-.rechtstext ul{padding-left:22px}
-.rechtstext li{margin-bottom:7px}
-.rechtstext address{font-style:normal;line-height:1.7;margin:0 0 14px}
-.rechtstext .fuehrung{font-size:17px;color:var(--muted);
-  border-left:3px solid var(--accent);padding-left:14px}
-.rechtstext code{font-size:13px;background:var(--panel);padding:1px 5px;
-  border:1px solid var(--line);border-radius:4px}
-.luecke{background:var(--accent-soft);border:1px dashed var(--accent);
-  border-radius:10px;padding:14px 16px;margin:0 0 14px}
-table.quellen{width:100%;border-collapse:collapse;margin:0 0 14px;font-size:14px}
-table.quellen th,table.quellen td{text-align:left;vertical-align:top;
-  padding:10px 12px 10px 0;border-bottom:1px solid var(--line);
-  white-space:normal}
-table.quellen th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;
-  color:var(--muted);position:static}
-footer{margin:40px 0 0;padding-top:20px;border-top:1px solid var(--line);
-  color:var(--muted);font-size:13px;line-height:1.7}
-footer a{color:var(--accent)}
 </style>
 </head>
 <body>
 
 <div class="topbar"><div class="inner">
-  <a class="brand" href="#home">Club<span>Rank</span></a>
+  <a class="brand" href="#home">Deutschland<span>tabelle</span></a>
   <nav id="nav"></nav>
 </div></div>
 
-<div class="wrap">
-
 <!-- ============================ Startseite ============================ -->
 <section id="view-home">
-  <div class="hero">
-    <!-- Headerbild: eine Datei docs/header.jpg ablegen, dann verschwindet
-         der Platzhalter von selbst. Empfohlen 2000x700 px. -->
-    <img src="header.jpg" alt=""
-         onload="document.getElementById('platzhalter').remove()"
-         onerror="this.remove()">
-    <div class="schleier"></div>
-    <div class="platzhalter" id="platzhalter"><em>Platzhalter für das Startbild —
-      am besten eines mit allen Sportarten.<br>Datei <code>docs/header.jpg</code>
-      ablegen, empfohlen 1800 × 870 px</em></div>
-    <div class="inhalt">
-      <h1 class="marke">Club<span>Rank</span></h1>
-      <p class="claim">Jeder Verein. Jede Liga. Eine Rangfolge. Wo steht deiner?</p>
+
+  <div class="band eng"><div class="mitte">
+    <div class="hero">
+      <!-- Startbild: eine Datei docs/header.jpg ablegen, dann verschwindet
+           der Platzhalter von selbst. -->
+      <img src="header.jpg?v=dd3e4e03" alt=""
+           onload="document.getElementById('platzhalter').remove()"
+           onerror="this.remove()">
+      <div class="schleier"></div>
+      <div class="platzhalter" id="platzhalter"><em>Platzhalter für das Startbild —
+        am besten eines mit allen Sportarten.<br>Datei <code>docs/header.jpg</code>
+        ablegen</em></div>
+      <div class="inhalt">
+        <h1 class="marke">Deutschland<span>tabelle</span></h1>
+        <p class="claim">Jeder Verein des Landes in einer einzigen Tabelle.
+          Wo steht deiner?</p>
+      </div>
     </div>
-  </div>
+  </div></div>
 
-  <div class="intro">
-    <p><b>Jeder Verein des Landes in einer einzigen Rangfolge.</b> Nicht nur die
-    Bundesliga, sondern die komplette Pyramide bis hinunter zur Kreisklasse —
-    und das für mehrere Sportarten. Tag für Tag neu berechnet aus den
-    Ergebnissen der laufenden Saison.</p>
-    <p>Sortiert wird zuerst nach Ligastufe, innerhalb einer Stufe nach Punkten
-    pro Spiel. Dadurch stehen parallele Staffeln nicht blockweise
-    hintereinander, sondern verzahnen sich zu einer echten Rangfolge.</p>
-  </div>
+  <div class="band"><div class="mitte">
+    <div class="intro">
+      <p><b>Nicht nur die Bundesliga.</b> Die komplette Pyramide bis hinunter
+      zur Kreisklasse, für drei Sportarten und beide Klassen — Tag für Tag neu
+      gerechnet aus den Ergebnissen der laufenden Saison.</p>
+      <p>Sortiert wird zuerst nach Ligastufe, innerhalb einer Stufe nach Punkten
+      pro Spiel. Dadurch stehen parallele Staffeln nicht blockweise
+      hintereinander, sondern verzahnen sich zu einer echten Rangfolge.</p>
+    </div>
+    <form class="suche" id="homeSuche">
+      <input type="search" id="homeQuery" placeholder="Vereinsnamen eingeben …"
+             autocomplete="off">
+      <select id="homeSport"></select>
+      <button class="knopf" type="submit">Verein finden</button>
+    </form>
+  </div></div>
 
-  <form class="suche" id="homeSuche">
-    <input type="search" id="homeQuery" placeholder="Vereinsnamen eingeben …"
-           autocomplete="off">
-    <select id="homeSport"></select>
-    <button class="knopf" type="submit">Verein finden</button>
-  </form>
+  <div class="band grau"><div class="mitte">
+    <h2 class="titel">Drei Sportarten, sechs Tabellen</h2>
+    <p class="untertitel">Männer und Frauen spielen getrennte Pyramiden mit
+      eigenen Auf- und Abstiegsketten. Deshalb stehen sie auch getrennt.</p>
+    <div class="sportkarten" id="sportkarten"></div>
+  </div></div>
 
-  <h2>Die Sportarten</h2>
-  <p class="unter">Jede mit eigener Rangfolge, eigenen Bestenlisten und eigener Datenbasis.</p>
-  <div class="sportkarten" id="sportkarten"></div>
+  <div class="band" id="kartenband" hidden><div class="mitte">
+    <h2 class="titel">Die Spitze des Landes</h2>
+    <p class="untertitel">Wer in jeder der sechs Tabellen ganz oben steht —
+      und wo er zu Hause ist.</p>
+    <div class="karte-land" id="kartenbereich"></div>
+    <p class="kartennotiz" id="kartennotiz"></p>
+  </div></div>
 
-  <footer>
-    <p>Ein Projekt aus offen zugänglichen Ergebnisdaten. Die Datenquellen und die
-    jeweilige Abdeckung stehen auf der Seite der Sportart.</p>
-    <p class="rechtslinks"><a href="#impressum">Impressum</a> ·
-      <a href="#datenschutz">Datenschutz</a> ·
-      <a href="#impressum">Quellen und Lizenzen</a></p>
-    <p class="odbl">Enthält Daten von <a href="https://www.openligadb.de/"
-      rel="noopener">OpenLigaDB</a>, lizenziert unter der
-      <a href="https://opendatacommons.org/licenses/odbl/1-0/"
-      rel="noopener">Open Database License 1.0</a>.</p>
-  </footer>
+  <div class="band eng"><div class="mitte">
+    <footer>
+      <p>Ein Projekt aus offen zugänglichen Ergebnisdaten. Die Datenquellen und
+      die jeweilige Abdeckung stehen auf der Seite der Sportart.</p>
+      <p class="rechtslinks"><a href="#impressum">Impressum</a> ·
+        <a href="#datenschutz">Datenschutz</a> ·
+        <a href="#impressum">Quellen und Lizenzen</a></p>
+      <p class="odbl">Enthält Daten von <a href="https://www.openligadb.de/"
+        rel="noopener">OpenLigaDB</a>, lizenziert unter der
+        <a href="https://opendatacommons.org/licenses/odbl/1-0/"
+        rel="noopener">Open Database License 1.0</a>.</p>
+    </footer>
+  </div></div>
 </section>
+
+<div class="wrap">
 
 <!-- ========================= Impressum ========================= -->
 <section id="view-impressum" hidden>
@@ -417,8 +521,8 @@ footer a{color:var(--accent)}
     <p>Dieselbe Person wie oben.</p>
 
     <h2>Art des Angebots</h2>
-    <p>ClubRank ist ein privates, nicht-kommerzielles Projekt. Es verkauft
-    nichts, zeigt keine Werbung und verlangt keine Anmeldung.</p>
+    <p>Die Deutschlandtabelle ist ein privates, nicht-kommerzielles Projekt.
+    Sie verkauft nichts, zeigt keine Werbung und verlangt keine Anmeldung.</p>
 
     <h2>Zu den Zahlen</h2>
     <p>Die Tabellen stammen aus den unten genannten Quellen und werden
@@ -467,6 +571,13 @@ footer a{color:var(--accent)}
           <td><a href="https://www.basketball-bund.net/" rel="noopener">basketball-bund.net</a></td>
           <td>Basketball, alle Stufen</td>
           <td>Deutscher Basketball Bund. Keine freie Lizenz.</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.naturalearthdata.com/" rel="noopener">Natural
+              Earth</a></td>
+          <td>Umriss der Deutschlandkarte</td>
+          <td>Gemeinfrei („no rights reserved“). Namensnennung ist nicht
+              verlangt, geschieht hier trotzdem.</td>
         </tr>
       </tbody>
     </table>
@@ -605,7 +716,7 @@ footer a{color:var(--accent)}
         <th>#</th><th title="Veränderung gegenüber der Vorwoche">± Wo.</th>
         <th>Verein</th><th>Liga</th><th title="Platz in der eigenen Staffel">Pl.</th>
         <th>Sp</th><th>S</th><th>U</th><th>N</th><th id="thTore">Tore</th>
-        <th>Diff</th><th>Pkt</th>
+        <th id="thDiff">Diff</th><th>Pkt</th>
         <th title="Punkte pro Spiel — Sortierkriterium innerhalb der Ligastufe">Pkt/Sp</th>
       </tr></thead>
       <tbody id="rows"></tbody>
@@ -618,8 +729,12 @@ footer a{color:var(--accent)}
 </div>
 
 <script>
-const SPORTS = [{"name": "Fußball", "sportart": "fussball", "sportName": "Fußball", "klasse": "maenner", "klasseName": "Männer", "icon": "⚽", "torwort": "Tore", "hinweis": null, "slug": "fussball", "ready": true, "teams": 26716, "leagues": 1936, "tiers": 14, "season": "2026/27", "generated": "09.09.2026, 14:28 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 09.09.2026, 14:28 Uhr · Saison 2026/27 · <a href=\"fussball-vereine.csv\">fussball-vereine.csv</a> · <a href=\"fussball-ligen.csv\">fussball-ligen.csv</a></p>"}, {"name": "Fußball der Frauen", "sportart": "fussball", "sportName": "Fußball", "klasse": "frauen", "klasseName": "Frauen", "icon": "⚽", "torwort": "Tore", "hinweis": null, "slug": "fussball-frauen", "ready": true, "teams": 3430, "leagues": 332, "tiers": 9, "season": "2026/27", "generated": "16.09.2026, 15:12 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 15:12 Uhr · Saison 2026/27 · <a href=\"fussball-frauen-vereine.csv\">fussball-frauen-vereine.csv</a> · <a href=\"fussball-frauen-ligen.csv\">fussball-frauen-ligen.csv</a></p><p class=\"rechtslinks\"><a href=\"#impressum\">Impressum</a> · <a href=\"#datenschutz\">Datenschutz</a> · <a href=\"#impressum\">Quellen und Lizenzen</a></p>"}, {"name": "Handball", "sportart": "handball", "sportName": "Handball", "klasse": "maenner", "klasseName": "Männer", "icon": "🤾", "torwort": "Tore", "hinweis": null, "slug": "handball", "ready": true, "teams": 1895, "leagues": 176, "tiers": 13, "season": "2026/27", "generated": "16.09.2026, 14:44 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 14:44 Uhr · Saison 2026/27 · <a href=\"handball-vereine.csv\">handball-vereine.csv</a> · <a href=\"handball-ligen.csv\">handball-ligen.csv</a></p>"}, {"name": "Handball der Frauen", "sportart": "handball", "sportName": "Handball", "klasse": "frauen", "klasseName": "Frauen", "icon": "🤾", "torwort": "Tore", "hinweis": null, "slug": "handball-frauen", "ready": true, "teams": 1216, "leagues": 121, "tiers": 9, "season": "2026/27", "generated": "16.09.2026, 14:46 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 14:46 Uhr · Saison 2026/27 · <a href=\"handball-frauen-vereine.csv\">handball-frauen-vereine.csv</a> · <a href=\"handball-frauen-ligen.csv\">handball-frauen-ligen.csv</a></p>"}, {"name": "Basketball", "sportart": "basketball", "sportName": "Basketball", "klasse": "maenner", "klasseName": "Männer", "icon": "🏀", "torwort": "Körbe", "hinweis": null, "slug": "basketball", "ready": true, "teams": 1872, "leagues": 207, "tiers": 13, "season": "2026/27", "generated": "16.09.2026, 14:56 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 14:56 Uhr · Saison 2026/27 · <a href=\"basketball-vereine.csv\">basketball-vereine.csv</a> · <a href=\"basketball-ligen.csv\">basketball-ligen.csv</a></p>"}, {"name": "Basketball der Frauen", "sportart": "basketball", "sportName": "Basketball", "klasse": "frauen", "klasseName": "Frauen", "icon": "🏀", "torwort": "Körbe", "hinweis": null, "slug": "basketball-frauen", "ready": true, "teams": 679, "leagues": 84, "tiers": 11, "season": "2026/27", "generated": "16.09.2026, 15:00 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 15:00 Uhr · Saison 2026/27 · <a href=\"basketball-frauen-vereine.csv\">basketball-frauen-vereine.csv</a> · <a href=\"basketball-frauen-ligen.csv\">basketball-frauen-ligen.csv</a></p><p class=\"rechtslinks\"><a href=\"#impressum\">Impressum</a> · <a href=\"#datenschutz\">Datenschutz</a> · <a href=\"#impressum\">Quellen und Lizenzen</a></p>"}];
+const SPORTS = [{"name": "Fußball", "sportart": "fussball", "sportName": "Fußball", "klasse": "maenner", "klasseName": "Männer", "icon": "⚽", "torwort": "Tore", "worte": {"mehrzahl": "Tore", "diff": "Tordifferenz", "diff_kurz": "Tordiff.", "gegen": "Gegentore", "fabrik": "Die Torfabrik", "erzielt": "eigene Tore", "getroffen": "geschossenen Tore"}, "hinweis": null, "spitze": {"name": "FC Augsburg", "liga": "Bundesliga", "stufe": 1, "ort": "Augsburg", "x": 550.5, "y": 1181.5}, "slug": "fussball", "ready": true, "teams": 26716, "leagues": 1936, "tiers": 14, "season": "2026/27", "generated": "16.09.2026, 18:33 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 18:33 Uhr · Saison 2026/27 · <a href=\"fussball-vereine.csv\">fussball-vereine.csv</a> · <a href=\"fussball-ligen.csv\">fussball-ligen.csv</a></p><p class=\"rechtslinks\"><a href=\"#impressum\">Impressum</a> · <a href=\"#datenschutz\">Datenschutz</a> · <a href=\"#impressum\">Quellen und Lizenzen</a></p>"}, {"name": "Fußball der Frauen", "sportart": "fussball", "sportName": "Fußball", "klasse": "frauen", "klasseName": "Frauen", "icon": "⚽", "torwort": "Tore", "worte": {"mehrzahl": "Tore", "diff": "Tordifferenz", "diff_kurz": "Tordiff.", "gegen": "Gegentore", "fabrik": "Die Torfabrik", "erzielt": "eigene Tore", "getroffen": "geschossenen Tore"}, "hinweis": null, "spitze": {"name": "VfL Wolfsburg Frauen", "liga": "Frauen-Bundesliga", "stufe": 1, "ort": "Wolfsburg", "x": 538.5, "y": 487.3}, "slug": "fussball-frauen", "ready": true, "teams": 3430, "leagues": 332, "tiers": 9, "season": "2026/27", "generated": "16.09.2026, 18:33 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 18:33 Uhr · Saison 2026/27 · <a href=\"fussball-frauen-vereine.csv\">fussball-frauen-vereine.csv</a> · <a href=\"fussball-frauen-ligen.csv\">fussball-frauen-ligen.csv</a></p><p class=\"rechtslinks\"><a href=\"#impressum\">Impressum</a> · <a href=\"#datenschutz\">Datenschutz</a> · <a href=\"#impressum\">Quellen und Lizenzen</a></p>"}, {"name": "Handball", "sportart": "handball", "sportName": "Handball", "klasse": "maenner", "klasseName": "Männer", "icon": "🤾", "torwort": "Tore", "worte": {"mehrzahl": "Tore", "diff": "Tordifferenz", "diff_kurz": "Tordiff.", "gegen": "Gegentore", "fabrik": "Die Torfabrik", "erzielt": "eigene Tore", "getroffen": "geschossenen Tore"}, "hinweis": null, "spitze": {"name": "SG Flensburg-Handewitt", "liga": "1. Handball-Bundesliga", "stufe": 1, "ort": "Flensburg", "x": 391.1, "y": 53.0}, "slug": "handball", "ready": true, "teams": 1895, "leagues": 176, "tiers": 13, "season": "2026/27", "generated": "16.09.2026, 18:33 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 18:33 Uhr · Saison 2026/27 · <a href=\"handball-vereine.csv\">handball-vereine.csv</a> · <a href=\"handball-ligen.csv\">handball-ligen.csv</a></p><p class=\"rechtslinks\"><a href=\"#impressum\">Impressum</a> · <a href=\"#datenschutz\">Datenschutz</a> · <a href=\"#impressum\">Quellen und Lizenzen</a></p>"}, {"name": "Handball der Frauen", "sportart": "handball", "sportName": "Handball", "klasse": "frauen", "klasseName": "Frauen", "icon": "🤾", "torwort": "Tore", "worte": {"mehrzahl": "Tore", "diff": "Tordifferenz", "diff_kurz": "Tordiff.", "gegen": "Gegentore", "fabrik": "Die Torfabrik", "erzielt": "eigene Tore", "getroffen": "geschossenen Tore"}, "hinweis": null, "spitze": {"name": "Frankfurter HC", "liga": "Nord", "stufe": 3, "ort": "Frankfurt (Oder)", "x": 949.1, "y": 499.8}, "slug": "handball-frauen", "ready": true, "teams": 1216, "leagues": 121, "tiers": 9, "season": "2026/27", "generated": "16.09.2026, 18:33 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 18:33 Uhr · Saison 2026/27 · <a href=\"handball-frauen-vereine.csv\">handball-frauen-vereine.csv</a> · <a href=\"handball-frauen-ligen.csv\">handball-frauen-ligen.csv</a></p><p class=\"rechtslinks\"><a href=\"#impressum\">Impressum</a> · <a href=\"#datenschutz\">Datenschutz</a> · <a href=\"#impressum\">Quellen und Lizenzen</a></p>"}, {"name": "Basketball", "sportart": "basketball", "sportName": "Basketball", "klasse": "maenner", "klasseName": "Männer", "icon": "🏀", "torwort": "Körbe", "worte": {"mehrzahl": "Körbe", "diff": "Korbdifferenz", "diff_kurz": "Korbdiff.", "gegen": "Gegenkörbe", "fabrik": "Die Korbfabrik", "erzielt": "eigene Körbe", "getroffen": "geworfenen Körbe"}, "hinweis": null, "spitze": {"name": "ALBA BERLIN", "liga": "1. Bundesliga (easyCredit BBL)", "stufe": 1, "ort": "Berlin", "x": 823.5, "y": 469.4}, "slug": "basketball", "ready": true, "teams": 1872, "leagues": 207, "tiers": 13, "season": "2026/27", "generated": "16.09.2026, 18:33 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 18:33 Uhr · Saison 2026/27 · <a href=\"basketball-vereine.csv\">basketball-vereine.csv</a> · <a href=\"basketball-ligen.csv\">basketball-ligen.csv</a></p><p class=\"rechtslinks\"><a href=\"#impressum\">Impressum</a> · <a href=\"#datenschutz\">Datenschutz</a> · <a href=\"#impressum\">Quellen und Lizenzen</a></p>"}, {"name": "Basketball der Frauen", "sportart": "basketball", "sportName": "Basketball", "klasse": "frauen", "klasseName": "Frauen", "icon": "🏀", "torwort": "Körbe", "worte": {"mehrzahl": "Körbe", "diff": "Korbdifferenz", "diff_kurz": "Korbdiff.", "gegen": "Gegenkörbe", "fabrik": "Die Korbfabrik", "erzielt": "eigene Körbe", "getroffen": "geworfenen Körbe"}, "hinweis": null, "spitze": {"name": "ALBA Berlin", "liga": "1. Bundesliga (Toyota DBBL)", "stufe": 1, "ort": "Berlin", "x": 823.5, "y": 469.4}, "slug": "basketball-frauen", "ready": true, "teams": 679, "leagues": 84, "tiers": 11, "season": "2026/27", "generated": "16.09.2026, 18:33 Uhr", "vergleichHinweis": "Unterhalb der überregionalen Ligen gibt es zwischen den Landesverbänden keine sportliche Verbindung — für einen belastbaren Vergleich oben einen <b>Verband</b> wählen.", "fuss": "<p>Stand 16.09.2026, 18:33 Uhr · Saison 2026/27 · <a href=\"basketball-frauen-vereine.csv\">basketball-frauen-vereine.csv</a> · <a href=\"basketball-frauen-ligen.csv\">basketball-frauen-ligen.csv</a></p><p class=\"rechtslinks\"><a href=\"#impressum\">Impressum</a> · <a href=\"#datenschutz\">Datenschutz</a> · <a href=\"#impressum\">Quellen und Lizenzen</a></p>"}];
 const IKONEN = {"fussball":"<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5 16.28 10.61 14.65 15.64H9.35L7.72 10.61Z\"/><path d=\"M12 7.5V3\"/><path d=\"m16.28 10.61 4.28-1.39\"/><path d=\"m14.65 15.64 2.64 3.64\"/><path d=\"m9.35 15.64-2.64 3.64\"/><path d=\"M7.72 10.61 3.44 9.22\"/>","handball":"<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 12c0-3.4 1.6-6.4 4.6-8.3\"/><path d=\"M12 12c-3 .6-6-.3-8.5-2.6\"/><path d=\"M12 12c1.4 2.9 1.3 6-.4 9\"/>","basketball":"<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 3v18\"/><path d=\"M3.1 12h17.8\"/><path d=\"M5.3 5.3c2.4 1.9 3.7 4.1 3.7 6.7s-1.3 4.8-3.7 6.7\"/><path d=\"M18.7 5.3C16.3 7.2 15 9.4 15 12s1.3 4.8 3.7 6.7\"/>","bester":"<path d=\"M8 3.5h8V9a4 4 0 0 1-8 0Z\"/><path d=\"M8 5H5.4a2.6 2.6 0 0 0 2.9 4.2\"/><path d=\"M16 5h2.6a2.6 2.6 0 0 1-2.9 4.2\"/><path d=\"M12 13v3\"/><path d=\"M10.1 16h3.8l.5 4h-4.8Z\"/><path d=\"M8.5 20h7\"/>","heiss":"<path d=\"M12 3.2c3 2.9 4.8 5.4 4.8 8.4a4.8 4.8 0 1 1-9.6 0c0-1.9.9-3.5 2.2-4.9.1 1.3.7 2.2 1.6 2.7.3-2.4-.1-4.3 1-6.2Z\"/><path d=\"M12 20a2.6 2.6 0 0 1-2.6-2.6c0-1.4 1.3-2.1 2.6-3.81.3 1.7 2.6 2.4 2.6 3.8A2.6 2.6 0 0 1 12 20Z\"/>","torfabrik":"<path d=\"M4 20.5V7.5h16v13\"/><path d=\"M4 13.5h16\"/><circle cx=\"12\" cy=\"17\" r=\"2.4\"/>","bollwerk":"<path d=\"M12 3.2 19 5.8v5.3c0 4.3-2.9 7.7-7 9.1-4.1-1.4-7-4.8-7-9.1V5.8Z\"/>","aufsteiger":"<path d=\"M3.5 16.5 9 11l3.5 3.5L20.5 6.5\"/><path d=\"M15.5 6.5h5v5\"/>","absteiger":"<path d=\"M3.5 7.5 9 13l3.5-3.5 8 8\"/><path d=\"M15.5 17.5h5v-5\"/>","schlusslicht":"<path d=\"M12 3v18\"/><path d=\"m3.34 7.5 17.32 10\"/><path d=\"M20.66 7.5 3.34 17.5\"/><path d=\"m9.6 5.4 2.4 2.4 2.4-2.4\"/><path d=\"m9.6 18.6 2.4-2.4 2.4 2.4\"/>","klatsche":"<path d=\"M13.5 2.8 5.8 13.6h5.1l-1 7.6 8-10.9h-5.1Z\"/>","abstand":"<path d=\"M8 3v18\"/><path d=\"M16 3v18\"/><path d=\"M8 7.5h8\"/><path d=\"M8 12h8\"/><path d=\"M8 16.5h8\"/>","eng":"<path d=\"M12 4.5v15\"/><path d=\"M8.5 20h7\"/><path d=\"M4.5 8h15\"/><path d=\"M4.5 8 2 13.4a2.9 2.9 0 0 0 5 0Z\"/><path d=\"m19.5 8 2.5 5.4a2.9 2.9 0 0 1-5 0Z\"/>","klein":"<path d=\"M3 20.5h18\"/><path d=\"M4.8 20.5V14h4.6v6.5\"/><path d=\"M14.6 20.5V5.5h4.6v15\"/>","⚽":"<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5 16.28 10.61 14.65 15.64H9.35L7.72 10.61Z\"/><path d=\"M12 7.5V3\"/><path d=\"m16.28 10.61 4.28-1.39\"/><path d=\"m14.65 15.64 2.64 3.64\"/><path d=\"m9.35 15.64-2.64 3.64\"/><path d=\"M7.72 10.61 3.44 9.22\"/>","🤾":"<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 12c0-3.4 1.6-6.4 4.6-8.3\"/><path d=\"M12 12c-3 .6-6-.3-8.5-2.6\"/><path d=\"M12 12c1.4 2.9 1.3 6-.4 9\"/>","🏀":"<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 3v18\"/><path d=\"M3.1 12h17.8\"/><path d=\"M5.3 5.3c2.4 1.9 3.7 4.1 3.7 6.7s-1.3 4.8-3.7 6.7\"/><path d=\"M18.7 5.3C16.3 7.2 15 9.4 15 12s1.3 4.8 3.7 6.7\"/>","🏆":"<path d=\"M8 3.5h8V9a4 4 0 0 1-8 0Z\"/><path d=\"M8 5H5.4a2.6 2.6 0 0 0 2.9 4.2\"/><path d=\"M16 5h2.6a2.6 2.6 0 0 1-2.9 4.2\"/><path d=\"M12 13v3\"/><path d=\"M10.1 16h3.8l.5 4h-4.8Z\"/><path d=\"M8.5 20h7\"/>","🔥":"<path d=\"M12 3.2c3 2.9 4.8 5.4 4.8 8.4a4.8 4.8 0 1 1-9.6 0c0-1.9.9-3.5 2.2-4.9.1 1.3.7 2.2 1.6 2.7.3-2.4-.1-4.3 1-6.2Z\"/><path d=\"M12 20a2.6 2.6 0 0 1-2.6-2.6c0-1.4 1.3-2.1 2.6-3.81.3 1.7 2.6 2.4 2.6 3.8A2.6 2.6 0 0 1 12 20Z\"/>","🧱":"<path d=\"M12 3.2 19 5.8v5.3c0 4.3-2.9 7.7-7 9.1-4.1-1.4-7-4.8-7-9.1V5.8Z\"/>","📈":"<path d=\"M3.5 16.5 9 11l3.5 3.5L20.5 6.5\"/><path d=\"M15.5 6.5h5v5\"/>","📉":"<path d=\"M3.5 7.5 9 13l3.5-3.5 8 8\"/><path d=\"M15.5 17.5h5v-5\"/>","🥶":"<path d=\"M12 3v18\"/><path d=\"m3.34 7.5 17.32 10\"/><path d=\"M20.66 7.5 3.34 17.5\"/><path d=\"m9.6 5.4 2.4 2.4 2.4-2.4\"/><path d=\"m9.6 18.6 2.4-2.4 2.4 2.4\"/>","💥":"<path d=\"M13.5 2.8 5.8 13.6h5.1l-1 7.6 8-10.9h-5.1Z\"/>","🪜":"<path d=\"M8 3v18\"/><path d=\"M16 3v18\"/><path d=\"M8 7.5h8\"/><path d=\"M8 12h8\"/><path d=\"M8 16.5h8\"/>","⚖️":"<path d=\"M12 4.5v15\"/><path d=\"M8.5 20h7\"/><path d=\"M4.5 8h15\"/><path d=\"M4.5 8 2 13.4a2.9 2.9 0 0 0 5 0Z\"/><path d=\"m19.5 8 2.5 5.4a2.9 2.9 0 0 1-5 0Z\"/>","⚖":"<path d=\"M12 4.5v15\"/><path d=\"M8.5 20h7\"/><path d=\"M4.5 8h15\"/><path d=\"M4.5 8 2 13.4a2.9 2.9 0 0 0 5 0Z\"/><path d=\"m19.5 8 2.5 5.4a2.9 2.9 0 0 1-5 0Z\"/>","🐜":"<path d=\"M3 20.5h18\"/><path d=\"M4.8 20.5V14h4.6v6.5\"/><path d=\"M14.6 20.5V5.5h4.6v15\"/>"};
+const KARTE = {box: "0 0 1000 1359", umriss: "M400.3 1319.4L381.3 1307.3L363.1 1295.7L357.0 1295.7L330.1 1298.0L329.3 1297.0L324.7 1290.3L320.5 1288.2L318.0 1289.3L316.3 1291.2L313.4 1290.9L301.4 1280.2L296.4 1278.6L289.6 1280.0L281.5 1285.8L278.0 1292.9L279.0 1297.0L283.2 1298.7L294.2 1297.5L295.8 1298.7L296.2 1301.0L295.0 1303.2L286.1 1305.1L283.5 1307.7L280.9 1308.4L279.2 1308.8L269.7 1306.0L255.6 1306.0L244.2 1311.0L226.0 1313.0L201.0 1312.0L192.0 1308.3L186.5 1306.1L182.5 1295.1L183.5 1278.9L189.5 1257.5L191.2 1241.7L188.5 1231.6L192.1 1216.5L201.8 1196.3L208.3 1174.9L211.5 1152.4L216.2 1137.7L225.5 1127.3L247.5 1098.4L249.2 1096.2L248.6 1081.7L242.7 1079.7L234.1 1075.5L212.0 1070.3L191.4 1067.0L182.1 1062.9L173.9 1051.9L168.9 1051.8L159.0 1055.7L146.6 1058.4L137.6 1056.1L131.9 1056.5L128.7 1058.5L127.2 1056.7L124.9 1047.3L120.2 1044.9L112.9 1042.7L108.3 1043.6L105.2 1048.3L100.3 1051.6L95.9 1050.5L81.9 1028.8L78.3 1023.9L77.4 1019.5L73.9 1011.4L65.6 1003.3L57.3 1000.7L53.2 1001.6L53.6 991.5L56.9 976.9L60.0 969.3L64.1 963.0L68.5 958.7L69.5 950.8L68.8 943.3L63.7 942.2L51.0 936.7L43.5 930.9L37.9 923.6L30.6 913.6L27.5 903.4L27.4 893.2L28.3 888.6L28.8 885.5L34.7 869.6L55.3 855.3L53.1 840.9L52.8 832.1L47.8 826.3L37.7 824.0L35.1 820.0L33.9 816.0L41.3 807.2L32.4 800.2L28.6 793.0L16.2 783.9L14.9 780.7L20.8 754.0L16.3 746.2L10.7 742.2L4.1 740.3L1.1 736.6L0.0 732.3L1.2 729.7L8.9 730.5L11.3 727.7L29.7 711.9L30.5 708.9L27.9 707.2L24.6 706.3L23.7 702.9L23.8 698.6L33.7 675.7L36.6 666.0L37.3 659.1L36.7 652.3L31.0 641.5L25.5 633.0L25.3 626.1L21.3 622.5L9.9 604.2L10.0 597.1L16.4 591.5L25.4 588.0L28.4 585.1L33.7 583.3L48.0 588.6L54.4 593.2L56.2 592.2L62.0 587.2L72.1 588.0L96.5 577.9L100.2 573.1L102.9 567.9L103.2 565.7L93.7 555.7L93.4 552.0L94.7 547.9L97.3 544.6L102.9 542.4L108.9 538.0L122.3 525.6L126.9 514.8L128.3 503.1L128.6 494.4L124.9 487.5L121.3 483.0L116.2 483.7L106.5 483.3L97.3 479.4L92.3 473.1L91.1 467.6L93.3 464.1L94.0 459.8L92.6 455.4L93.2 451.8L97.3 448.9L126.2 449.0L128.3 445.8L130.3 428.9L137.5 403.3L144.3 388.9L145.5 382.9L145.4 348.7L146.3 331.4L141.3 323.2L130.6 314.3L132.9 295.6L136.4 281.1L147.3 263.1L155.9 258.2L193.4 255.2L234.9 256.5L252.2 283.6L245.8 297.5L255.8 303.9L260.7 301.6L264.4 289.5L266.8 276.1L270.4 272.0L283.2 282.0L287.7 288.9L288.0 310.9L292.7 281.1L289.2 260.1L291.6 239.8L296.8 229.2L301.5 222.4L331.9 229.7L365.5 225.9L378.3 233.8L407.0 273.1L416.6 279.5L428.7 281.5L412.0 273.1L377.2 225.3L366.7 219.4L350.7 217.6L340.7 212.9L334.4 205.7L332.6 199.2L332.9 150.6L326.9 143.4L319.1 140.9L314.3 144.2L304.3 144.2L302.2 133.2L304.7 125.0L324.7 119.4L337.8 111.9L338.4 98.6L330.1 88.1L320.1 68.8L308.4 50.7L307.1 29.6L307.1 29.6L327.5 30.0L332.5 30.8L363.4 40.7L370.9 47.6L380.4 48.0L397.6 41.5L410.3 38.7L415.3 42.7L422.3 44.3L423.9 44.3L424.5 47.8L440.5 52.8L447.2 60.8L454.7 73.0L455.4 90.5L445.9 103.0L437.9 111.0L467.9 108.0L470.9 115.1L475.5 122.9L491.6 117.4L532.2 140.2L556.7 129.1L562.9 128.5L568.5 146.9L562.4 165.5L540.8 185.2L545.6 197.4L552.5 200.1L572.8 197.5L605.1 209.5L611.8 205.8L638.0 178.1L648.4 172.2L682.8 167.9L689.1 157.1L703.0 146.3L712.0 134.5L733.5 111.9L755.7 116.0L768.7 120.3L782.9 122.5L795.9 146.5L828.7 173.0L858.9 170.7L869.6 195.7L874.3 226.4L883.6 236.0L891.7 242.3L916.3 248.9L917.3 249.3L918.1 253.4L919.6 268.6L921.6 281.2L934.3 331.2L934.0 343.4L933.9 346.6L929.2 363.6L921.0 377.9L910.1 386.0L904.2 395.0L903.0 404.8L916.7 422.1L945.1 446.8L956.6 467.9L951.2 485.3L949.6 498.1L951.7 506.2L956.2 512.8L963.2 517.7L966.0 525.3L964.6 535.5L965.9 542.6L971.2 547.6L970.7 549.6L968.1 556.7L964.7 569.6L962.7 579.0L954.7 591.8L957.1 602.7L963.4 615.5L968.2 621.9L969.7 628.0L966.6 642.4L968.1 646.1L987.9 656.7L991.2 661.6L993.1 671.8L1000.0 693.6L994.2 721.0L989.2 736.0L977.9 759.8L977.4 762.0L976.1 764.8L972.7 769.0L968.0 769.6L960.9 766.5L956.0 762.6L957.1 752.3L954.0 751.6L950.1 745.4L948.6 738.6L944.4 735.8L929.1 733.0L923.9 731.0L919.9 732.4L916.9 737.2L918.8 741.5L921.7 745.8L930.2 752.4L929.3 755.1L911.0 761.6L899.5 768.2L888.8 772.0L877.9 778.8L856.4 786.6L840.6 788.6L837.3 790.7L831.4 803.7L827.4 806.5L823.6 805.0L820.7 802.9L817.1 804.7L813.2 809.0L809.3 810.7L805.8 810.6L799.6 822.0L781.6 825.5L779.5 831.4L776.2 838.2L773.6 839.9L765.4 837.2L754.2 835.7L747.8 839.4L740.0 841.5L730.6 842.1L720.1 849.6L709.8 862.6L704.0 874.2L700.9 878.3L695.9 867.5L689.7 860.1L685.4 856.2L681.5 856.2L680.5 857.8L680.4 863.4L684.6 872.9L689.8 879.3L690.6 884.0L693.3 892.6L700.8 902.0L712.6 909.4L720.6 916.7L726.5 926.9L726.6 930.0L725.0 934.1L722.2 938.0L719.8 943.1L713.3 953.3L715.2 957.8L720.5 963.4L725.3 970.2L731.3 981.1L739.6 1000.2L745.0 1008.0L752.3 1016.1L759.4 1022.3L770.7 1022.1L782.4 1033.9L795.2 1050.9L804.7 1058.7L811.4 1061.1L816.8 1067.2L821.7 1076.0L823.6 1081.0L827.9 1084.7L839.6 1084.0L854.6 1097.8L863.9 1107.9L868.8 1116.0L867.5 1119.2L866.9 1129.3L867.0 1140.0L865.6 1145.7L858.9 1153.1L855.4 1154.7L853.5 1156.3L833.0 1146.6L831.3 1148.3L830.0 1149.5L824.5 1177.5L820.7 1182.9L815.1 1187.9L803.3 1192.7L795.2 1194.7L788.8 1197.1L768.6 1208.8L759.5 1215.8L753.7 1224.6L753.6 1229.7L763.4 1244.6L774.7 1259.9L774.8 1273.4L769.8 1283.5L768.7 1287.4L772.0 1288.8L778.2 1289.4L783.5 1291.1L785.7 1298.2L785.1 1310.5L783.3 1322.0L781.4 1326.8L776.3 1327.2L766.6 1322.2L759.0 1316.5L756.1 1312.9L755.9 1308.7L757.6 1306.0L754.9 1300.7L745.5 1295.9L735.5 1298.0L728.1 1301.3L723.4 1301.1L718.2 1296.4L710.3 1292.8L699.9 1290.5L693.5 1287.9L692.1 1289.4L692.9 1299.5L690.9 1303.9L639.7 1309.8L624.1 1315.2L612.8 1322.3L604.4 1325.4L602.3 1329.7L594.0 1335.4L584.6 1337.2L582.3 1335.4L576.3 1338.0L566.0 1340.5L559.4 1339.7L556.2 1335.1L549.9 1328.1L547.3 1323.2L547.6 1320.0L533.3 1319.4L524.2 1315.7L505.0 1316.5L500.3 1314.9L499.3 1316.6L496.4 1336.7L492.6 1344.9L486.4 1353.4L478.6 1358.1L472.3 1359.0L472.6 1352.8L474.1 1345.3L469.6 1343.6L462.8 1342.7L459.5 1340.5L460.4 1334.8L458.8 1331.5L456.0 1327.6L449.2 1322.4L434.7 1314.8L424.9 1311.1L421.2 1315.1L414.1 1319.1L403.0 1317.8L400.3 1319.4ZM857.3 127.8L860.0 140.4L857.1 146.8L844.8 136.1L832.5 136.3L825.1 152.7L819.6 153.4L800.6 138.5L797.5 131.2L796.9 125.1L799.6 104.1L799.1 97.5L805.1 90.2L806.0 79.7L816.6 68.6L826.0 68.2L829.0 77.6L833.5 84.1L849.3 91.3L851.6 94.6L853.1 99.1L845.7 108.0L843.2 112.6L845.5 119.8L857.3 127.8ZM912.1 208.4L910.7 214.2L912.3 223.2L907.8 222.5L894.3 224.6L880.9 221.7L878.3 210.5L880.5 199.8L875.1 192.5L870.1 188.1L869.4 182.0L870.2 175.5L893.2 192.8L912.1 208.4ZM592.3 121.2L575.6 121.6L569.2 114.0L562.7 112.1L566.2 102.9L570.7 99.5L587.0 105.5L592.1 117.4L592.3 121.2ZM267.5 51.6L265.0 55.4L266.2 28.6L278.2 0.0L283.2 0.6L278.0 8.4L276.5 13.8L274.4 24.6L275.4 30.2L302.7 31.8L299.5 36.8L271.8 40.1L267.5 51.6ZM298.1 65.7L293.9 70.3L283.5 69.8L277.6 65.4L279.5 60.8L285.0 57.2L289.6 56.7L296.5 58.9L298.1 65.7Z"};
+// Basketball wirft Körbe. Ältere Datenpakete kennen das Feld noch nicht.
+const WORTE = s => s.worte || {mehrzahl: 'Tore', diff: 'Tordifferenz',
+  diff_kurz: 'Tordiff.', gegen: 'Gegentore', getroffen: 'geschossenen Tore'};
 // Erst der sprechende Schlüssel, dann das, was im Datenpaket steht (dort
 // stehen teils noch Emoji aus älteren Läufen).
 const ikon = (...schluessel) => {
@@ -663,6 +778,59 @@ document.getElementById('sportkarten').innerHTML = SPORTARTEN.map(a => {
       <div class="ic">${ikon(a.sportart)}</div><h3>${esc(a.name)}</h3>
       <div class="klassen">${zeilen}</div></div>`;
 }).join('');
+
+// --- Deutschlandkarte -------------------------------------------------
+// Sechs Punkte, von Norden nach Süden nummeriert; die Liste daneben trägt
+// dieselben Nummern. Beschriftungen direkt an den Punkten wären unlesbar,
+// sobald zwei Vereine in derselben Stadt sitzen -- und genau das kommt vor.
+(function karteZeichnen(){
+  const spitzen = SPORTS
+    .filter(s => s.ready && s.spitze && s.spitze.x != null)
+    .map(s => ({...s.spitze, slug: s.slug, sportart: s.sportart,
+                klasse: s.klasseName, sportName: s.sportName}))
+    .sort((a, b) => a.y - b.y);
+  if (!spitzen.length) return;
+
+  // Zwei Vereine aus derselben Stadt würden aufeinander liegen. Der zweite
+  // rückt so weit zur Seite, bis er frei steht.
+  const gesetzt = [];
+  spitzen.forEach(p => {
+    p.px = p.x; p.py = p.y;
+    let n = 0;
+    // Immer zur Kartenmitte hin ausweichen: nach außen geschoben landete
+    // der Punkt sonst neben dem Land oder auf dem nächsten Nachbarn.
+    const richtung = p.x > 500 ? -1 : 1;
+    while (gesetzt.some(q => Math.hypot(q.px - p.px, q.py - p.py) < 64) && n < 8){
+      n += 1;
+      p.px = Math.min(966, Math.max(34, p.x + richtung * 58 * n));
+      p.py = Math.min(1325, Math.max(34, p.y + 22 * n));
+    }
+    gesetzt.push(p);
+  });
+
+  const punkte = spitzen.map((p, i) => `<g class="stelle">
+      <title>${esc(p.name)}</title>
+      <circle cx="${p.px}" cy="${p.py}" r="27"/>
+      <text x="${p.px}" y="${p.py + 12}">${i + 1}</text></g>`).join('');
+  const liste = spitzen.map((p, i) => `<a class="spitze" href="#${p.slug}">
+      <span class="nr">${i + 1}</span>
+      <span><span class="name">${ikon(p.sportart)}${esc(p.name)}</span>
+        <span class="wo">${esc(p.sportName)} der ${esc(p.klasse)} ·
+          ${esc(p.liga)} · ${esc(p.ort)}</span></span></a>`).join('');
+
+  document.getElementById('kartenbereich').innerHTML = `
+    <figure><svg viewBox="${KARTE.box}" role="img"
+        aria-label="Karte von Deutschland mit den sechs Spitzenreitern">
+      <path class="landflaeche" d="${KARTE.umriss}"/>${punkte}
+    </svg></figure>
+    <div class="spitzen">${liste}</div>`;
+  document.getElementById('kartennotiz').innerHTML =
+    'Der Ort ist aus dem Vereinsnamen abgeleitet — Vereinsadressen liefert '
+    + 'keine der Quellen. Sitzen zwei Spitzenreiter in derselben Stadt, rückt '
+    + 'der zweite Punkt zur Seite; maßgeblich ist der Ort in der Liste. '
+    + 'Umriss: Natural Earth, gemeinfrei.';
+  document.getElementById('kartenband').hidden = false;
+})();
 
 document.getElementById('homeSport').innerHTML = SPORTS.filter(s => s.ready)
   .map(s => `<option value="${s.slug}">${esc(s.name)} · ${esc(s.klasseName)}`
@@ -759,7 +927,10 @@ window.addEventListener('hashchange', route);
 // dem ersten Wert, bei Gleichstand nach dem zweiten.
 const proSpiel = (r, feld) => r.played ? r[feld] / r.played : 0;
 const SORTIERUNG = {
-  bester:       r => [proSpiel(r,'points'), proSpiel(r,'goalDiff')],
+  // Gleichstand bei den Punkten: erst die Differenz, dann die erzielten
+  // Treffer -- dieselbe Reihenfolge, nach der auch eine Ligatabelle ordnet.
+  bester:       r => [proSpiel(r,'points'), proSpiel(r,'goalDiff'),
+                      proSpiel(r,'goalsFor')],
   heiss:        r => [proSpiel(r,'goalDiff'), proSpiel(r,'points')],
   torfabrik:    r => [proSpiel(r,'goalsFor'), proSpiel(r,'points')],
   bollwerk:     r => [-proSpiel(r,'goalsAgainst'), proSpiel(r,'points')],
@@ -794,7 +965,10 @@ function zeigeSport(sport, d, params){
   }));
 
   const $ = id => ziel.querySelector('#' + id);
-  $('thTore').textContent = sport.torwort || 'Tore';
+  const wort = WORTE(sport);
+  $('thTore').textContent = wort.mehrzahl;
+  $('thTore').title = `Erzielte ${wort.mehrzahl} : ${wort.gegen}`;
+  $('thDiff').title = wort.diff;
   $('tabellenUnter').textContent =
     `${tausend(RANKING.length)} Mannschaften, sortiert nach Ligastufe und Punkten pro Spiel.`;
   $('vergleichHinweis').innerHTML = sport.vergleichHinweis || '';
@@ -959,8 +1133,11 @@ function zeigeSport(sport, d, params){
     else if (karte.key === 'absteiger')  feld = RANKING.filter(r => r.delta < 0);
     else                                 feld = RANKING.filter(r => r.played >= minSpiele);
     feld = feld.slice().sort((a, b) => {
-      const [a1, a2] = SORTIERUNG[karte.key](a), [b1, b2] = SORTIERUNG[karte.key](b);
-      return b1 - a1 || b2 - a2;
+      const wa = SORTIERUNG[karte.key](a), wb = SORTIERUNG[karte.key](b);
+      for (let i = 0; i < wa.length; i++){
+        if (wb[i] !== wa[i]) return wb[i] - wa[i];
+      }
+      return 0;
     }).slice(0, 100);
 
     topBereich.hidden = false;
@@ -971,8 +1148,8 @@ function zeigeSport(sport, d, params){
       <p class="unter">${esc(karte.erklaerung)}</p>
       <div class="tablewrap"><table class="topliste">
         <thead><tr><th>#</th><th>Verein</th><th>Liga</th>
-          <th>Sp</th><th title="Geschossene Tore : Gegentore">Tore</th>
-          <th title="Tordifferenz">Diff</th>
+          <th>Sp</th><th title="Erzielte ${esc(wort.mehrzahl)} : ${esc(wort.gegen)}">${esc(wort.mehrzahl)}</th>
+          <th title="${esc(wort.diff)}">Diff</th>
           <th>${esc(karte.spalte)}</th><th>Rang gesamt</th></tr></thead>
         <tbody>${feld.map((r, i) => `<tr class="t${r.tier}">
           <td class="rank">${i + 1}</td>
