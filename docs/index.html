@@ -1092,9 +1092,8 @@ function zeigeSport(sport, d, params){
     </div>`;
   const alle = d.kennzahlen || [];
   const ausblick = AUSBLICK.map(key => alle.find(k => k.key === key)).filter(Boolean);
-  const weitere = alle.filter(k => !AUSBLICK.includes(k.key));
   $('karten').innerHTML = ausblick.map(k => kennzahl(k, true)).join('');
-  $('mehrlink').innerHTML = (weitere.length || d.pokal)
+  $('mehrlink').innerHTML = (alle.length || d.pokal)
     ? `<a class="topknopf" href="#${sport.slug}?analyse=1">Alle Auswertungen`
       + `${d.pokal ? ' und der DFB-Pokal' : ''} →</a>` : '';
 
@@ -1250,15 +1249,15 @@ function zeigeSport(sport, d, params){
     analyse.innerHTML = `
       <a class="zurueckknopf" href="#${sport.slug}">← Zurück zu ${esc(sport.name)}</a>
       <h2>Auswertungen — ${esc(sport.name)}</h2>
-      <p class="unter">Die Zahlen hinter der Tabelle, die übrigen Bestenlisten
-        und${d.pokal ? ' die Pokal-Auswertung' : ' mehr'}.</p>
+      <p class="unter">Die Zahlen hinter der Tabelle, alle Bestenlisten${
+        d.pokal ? ' und die Pokal-Auswertung' : ''}.</p>
       <div class="sportkarten">${eckdaten.map(([k, v]) =>
         `<div class="sportkarte"><div class="zahl">${v}</div>
          <div class="klein">${k}</div></div>`).join('')}</div>
-      ${weitere.length ? `<h2>Weitere Bestenlisten</h2>
-        <p class="unter">Die drei bekanntesten stehen auf der Seite der
-          Sportart — hier der Rest.</p>
-        <div class="karten">${weitere.map(k => kennzahl(k)).join('')}</div>` : ''}`;
+      ${alle.length ? `<h2>Alle Bestenlisten</h2>
+        <p class="unter">Alle ${alle.length} Auswertungen quer zur Tabelle,
+          jede mit ihrer vollständigen Liste.</p>
+        <div class="karten">${alle.map(k => kennzahl(k)).join('')}</div>` : ''}`;
     ziel.querySelectorAll('h2, p.unter, #karten, #mehrlink, #eckdaten, '
       + '.grossesuche, #suchhinweis, .controls, .tip, .legend, .count, '
       + '.tablewrap').forEach(el => {
