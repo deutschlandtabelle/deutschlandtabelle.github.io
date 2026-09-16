@@ -34,7 +34,7 @@ from pathlib import Path
 
 ORDNER = "wappen"                 # unterhalb von docs/
 MAX_BYTES = 512 * 1024            # ein Wappen, das größer ist, ist keins
-UA = "ClubRank/1.0 (+https://clubrank.github.io/)"
+UA = "ClubRank/1.0 (+https://deutschlandtabelle.github.io/)"
 
 # Die Seite zeigt Wappen mit 20 Pixeln Kantenlänge. Manche Quellen liefern
 # 2275 × 2065 -- ein Drittel Megabyte für ein Icon. Rasterbilder werden

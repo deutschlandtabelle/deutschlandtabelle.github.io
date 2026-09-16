@@ -22,7 +22,7 @@ from . import ikonen
 
 # Für die Teilen-Vorschau braucht es vollständige Adressen -- relative Pfade
 # lösen Messenger nicht auf.
-BASIS_URL = "https://clubrank.github.io/"
+BASIS_URL = "https://deutschlandtabelle.github.io/"
 
 # Pflichtangaben für Impressum (§ 5 DDG, § 18 Abs. 2 MStV) und für den
 # Verantwortlichen in der Datenschutzerklärung (Art. 13 DSGVO). Sie stehen
@@ -515,7 +515,7 @@ footer a{color:var(--accent)}
 
     <p class="fuehrung">Diese Seite setzt keine Cookies, misst nichts und
     bindet nichts von fremden Servern ein. Alles, was Sie hier sehen —
-    Schriften, Bilder, Wappen, Daten — kommt von clubrank.github.io. Übrig
+    Schriften, Bilder, Wappen, Daten — kommt von deutschlandtabelle.github.io. Übrig
     bleibt, was beim Ausliefern einer Seite technisch anfällt.</p>
 
     <h2>Verantwortlicher</h2>
