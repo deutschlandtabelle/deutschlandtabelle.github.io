@@ -63,13 +63,23 @@ jobs:
 
       # Die Prüfung bricht ab, wenn eine harte Prüfung fehlschlägt -- dann
       # wird nichts veröffentlicht und der Lauf ist rot.
+      # Alle sechs prüfen, dann erst entscheiden. GitHub führt jeden Schritt
+      # mit "bash -e" aus: ohne das "|| fehler=..." würde die Schleife beim
+      # ersten Fehlschlag abbrechen, und die dahinterliegenden Rangfolgen
+      # blieben ungeprüft -- man repariert eine und findet beim nächsten Lauf
+      # die nächste.
       - name: Daten prüfen
         if: ${{ !inputs.nur_veroeffentlichen }}
         run: |
+          fehler=""
           for s in fussball fussball-frauen handball handball-frauen \
                    basketball basketball-frauen; do
-            python3 pruefen.py --sport "$s"
+            python3 pruefen.py --sport "$s" || fehler="$fehler $s"
           done
+          if [ -n "$fehler" ]; then
+            echo "::error::Harte Prüfungen fehlgeschlagen bei:$fehler"
+            exit 1
+          fi
 
       - uses: actions/upload-pages-artifact@v3
         with:

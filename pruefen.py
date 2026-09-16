@@ -140,11 +140,16 @@ def main() -> int:
                 if zahl(v["spiele"]) and
                 abs(float(v["punkte_pro_spiel"])
                     - zahl(v["punkte"]) / zahl(v["spiele"])) > 0.0051])
+    # Das Punktesystem hängt an der Sportart: Fußball gibt drei Punkte je Sieg,
+    # Handball und Basketball zwei. Mit der falschen Zahl gerechnet meldet diese
+    # Prüfung für jede siegreiche Mannschaft einen Punktabzug -- bei Basketball
+    # waren das am 14. September 303 Hinweise, die alle keine waren.
+    je_sieg = 3 if args.sport.startswith("fussball") else 2
     abzuege = [f"{v['verein']} ({v['staffel']}): "
-               f"{zahl(v['punkte']) - (3 * zahl(v['siege']) + zahl(v['unentschieden']))}"
+               f"{zahl(v['punkte']) - (je_sieg * zahl(v['siege']) + zahl(v['unentschieden']))}"
                for v in vereine
-               if zahl(v["punkte"]) != 3 * zahl(v["siege"]) + zahl(v["unentschieden"])]
-    b.pruefung("Punkte = 3×Siege + Unentschieden (Abweichung = Punktabzug)",
+               if zahl(v["punkte"]) != je_sieg * zahl(v["siege"]) + zahl(v["unentschieden"])]
+    b.pruefung(f"Punkte = {je_sieg}×Siege + Unentschieden (Abweichung = Punktabzug)",
                abzuege, hart=False)
 
     # --- 4. Geschlossenheit je Staffel -----------------------------------
@@ -163,7 +168,8 @@ def main() -> int:
         plaetze = sorted(zahl(r["platz_in_staffel"]) for r in rs)
         if plaetze != list(range(1, len(rs) + 1)):
             plaetze_falsch.append(f"{rs[0]['staffel']}: {plaetze[:6]}…")
-        # Je Partie werden höchstens 3 Punkte vergeben. Die Schranke rechnet
+        # Je Partie werden höchstens so viele Punkte vergeben, wie ein Sieg
+        # einbringt. Die Schranke rechnet
         # bewusst mit `spiele` statt `spiele // 2`, unterstellt also den
         # ungünstigsten Fall, dass jede verbuchte Teilnahme zu einer eigenen,
         # nur einseitig eingetragenen Partie gehört. Genau das liefern
@@ -172,7 +178,7 @@ def main() -> int:
         # Die Prüfung soll den systematischen Fehler fangen -- eine falsch
         # gelesene Spalte etwa, die Tordifferenzen als Punkte einträgt und
         # dabei ein Vielfaches des Möglichen ergibt -- nicht den Nachtrag.
-        if sum(zahl(r["punkte"]) for r in rs) > 3 * spiele:
+        if sum(zahl(r["punkte"]) for r in rs) > je_sieg * spiele:
             punkte_zuviel.append(f"{rs[0]['staffel']}")
     # Eine Wertung gegen eine zurückgezogene Mannschaft erzeugt eine Niederlage
     # ohne zugehörigen Sieg: die Torsumme klafft dann auseinander und die
@@ -183,7 +189,7 @@ def main() -> int:
                f"({len(je_staffel)} Staffeln geprüft)", tore_ungleich, hart=False)
     b.pruefung("Summe der Spiele ist gerade", spiele_ungerade, hart=False)
     b.pruefung("Tabellenplätze sind lückenlos 1..n", plaetze_falsch)
-    b.pruefung("nicht mehr Punkte vergeben als Partien erlauben", punkte_zuviel)
+    b.pruefung(f"nicht mehr als {je_sieg} Punkte je Partie vergeben", punkte_zuviel)
 
     ungleich_weit = [f"{rs[0]['staffel']}: {sorted({zahl(r['spiele']) for r in rs})}"
                      for rs in je_staffel.values()

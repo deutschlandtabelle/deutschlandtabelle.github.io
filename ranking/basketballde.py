@@ -211,10 +211,18 @@ class BasketballBund:
                 # in der Tabelle, spielt aber nicht mehr.
                 continue
             siege, niederlagen = int(e.get("s") or 0), int(e.get("n") or 0)
+            spiele = int(e.get("anzspiele") or 0)
+            # Basketball kennt kein Unentschieden -- eine abgesagte oder
+            # annullierte Partie wird aber gelegentlich als solche gewertet und
+            # bringt je einen Punkt statt zwei. In der Tabelle steht sie dann
+            # unter den Spielen, aber weder bei den Siegen noch den Niederlagen.
+            # Was übrig bleibt, gehört also in diese Spalte; sie hart auf null
+            # zu setzen hieße, dass Siege + Niederlagen die Spielzahl verfehlen.
+            unentschieden = max(0, spiele - siege - niederlagen)
             zeilen.append({
                 "name": name,
-                "played": int(e.get("anzspiele") or 0),
-                "won": siege, "drawn": 0, "lost": niederlagen,
+                "played": spiele,
+                "won": siege, "drawn": unentschieden, "lost": niederlagen,
                 "goals_for": int(e.get("koerbe") or 0),
                 "goals_against": int(e.get("gegenKoerbe") or 0),
                 # Zwei Punkte je Sieg. Steht fertig in den Daten, wird aber
