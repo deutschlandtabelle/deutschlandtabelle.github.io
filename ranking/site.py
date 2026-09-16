@@ -246,6 +246,17 @@ a.klassenzeile:hover .zahl{color:var(--accent)}
 .klassenzeile .klein{display:block;font-size:13px;color:var(--muted);
   font-weight:400}
 .klassenzeile.leer{opacity:.5}
+/* Jede Kachel endet mit zwei Knöpfen -- die Zeilen darüber sind zwar auch
+   anklickbar, aber das sieht man ihnen nicht an. */
+.kachelknoepfe{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;
+  margin:22px 0 0;width:100%}
+.kachelknoepfe .knopf{padding:10px 20px;font-size:15px}
+.kachelknoepfe .knopf.zweit{background:var(--panel);color:var(--accent);
+  box-shadow:inset 0 0 0 1px var(--accent)}
+.band.grau .kachelknoepfe .knopf.zweit{background:var(--bg)}
+.kachelknoepfe .knopf.zweit:hover{background:var(--accent-soft);filter:none}
+.kachelknoepfe .knopf.aus{background:transparent;color:var(--muted);
+  box-shadow:inset 0 0 0 1px var(--hair);cursor:default;pointer-events:none}
 
 /* --- Umschalter Männer/Frauen ------------------------------------------ */
 .klassenwahl{display:flex;gap:8px;margin:22px 0 0;flex-wrap:wrap;
@@ -802,9 +813,14 @@ document.getElementById('sportkarten').innerHTML = SPORTARTEN.map(a => {
     : `<div class="klassenzeile leer">
          <span class="wer">${esc(k.klasseName)}</span>
          <span class="klein">${esc(k.hinweis || 'in Arbeit')}</span></div>`).join('');
+  const knoepfe = a.klassen.map((k, i) => k.ready
+    ? `<a class="knopf${i ? ' zweit' : ''}" href="#${k.slug}">${esc(k.klasseName)}
+         ansehen</a>`
+    : `<span class="knopf aus">${esc(k.klasseName)} folgt</span>`).join('');
   return `<div class="sportkarte">
       <div class="ic">${ikon(a.sportart)}</div><h3>${esc(a.name)}</h3>
-      <div class="klassen">${zeilen}</div></div>`;
+      <div class="klassen">${zeilen}</div>
+      <div class="kachelknoepfe">${knoepfe}</div></div>`;
 }).join('');
 
 // --- Deutschlandkarte -------------------------------------------------
