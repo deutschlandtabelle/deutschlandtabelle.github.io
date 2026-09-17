@@ -518,17 +518,17 @@ footer a:hover{text-decoration:underline}
         ablegen</em></div>
       <div class="inhalt">
         <h1 class="marke">Deutschland<span>tabelle</span></h1>
-        <p class="claim">Jeder Verein des Landes in einer einzigen Tabelle.
-          Wo steht deiner?</p>
+        <p class="claim">Der ganze Sport. Eine Tabelle.</p>
       </div>
     </div>
   </div></div>
 
   <div class="band"><div class="mitte">
     <div class="intro">
-      <p><b>Nicht nur die Bundesliga.</b> Die komplette Pyramide bis hinunter
-      zur Kreisklasse, für drei Sportarten und beide Klassen — Tag für Tag neu
-      gerechnet aus den Ergebnissen der laufenden Saison.</p>
+      <p><b>Fußball, Handball und Basketball</b> — nicht nur die erste Liga,
+      sondern die komplette Pyramide bis hinunter zur Kreisklasse, Männer und
+      Frauen getrennt. Tag für Tag neu gerechnet aus den Ergebnissen der
+      laufenden Saison. Wo steht deiner?</p>
       <p>Sortiert wird zuerst nach Ligastufe, innerhalb einer Stufe nach Punkten
       pro Spiel. Dadurch stehen parallele Staffeln nicht blockweise
       hintereinander, sondern verzahnen sich zu einer echten Rangfolge.</p>
@@ -985,8 +985,11 @@ async function route(){
   zeige('view-sport');
   document.getElementById('sportTitel').innerHTML =
     ikon(sport.sportart, sport.icon) + esc(sport.name);
-  document.getElementById('sportUnter').textContent = sport.ready
-    ? `Saison ${sport.season} · Stand ${sport.generated}` : '';
+  // Derselbe Claim, auf die Sportart gemünzt: die zweite Hälfte bleibt
+  // überall stehen, die erste wechselt. Welche Klasse gemeint ist, sagt die
+  // Überschrift darüber und der Umschalter darunter.
+  document.getElementById('sportUnter').textContent =
+    `Der ganze ${sport.sportName}. Eine Tabelle.`;
 
   // Umschalter Männer/Frauen. Beide Klassen sind eigene Rangfolgen: sie
   // spielen getrennte Pyramiden mit eigenen Auf- und Abstiegsketten, ein
@@ -1096,7 +1099,8 @@ function zeigeSport(sport, d, params){
     ['Verbände', new Set(RANKING.map(r => r.verband).filter(Boolean)).size],
   ];
   $('eckdaten').innerHTML = eckdaten
-    .map(([k, v]) => `<b>${v}</b> ${k}`).join(' · ');
+    .map(([k, v]) => `<b>${v}</b> ${k}`).join(' · ')
+    + ` · Saison ${esc(sport.season)} · Stand ${esc(sport.generated)}`;
 
   // Die Abdeckungsnotiz gehört unter die Tabelle, nicht davor: sie erklärt
   // die Zahlen, sie hält niemanden von ihnen ab.
