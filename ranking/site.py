@@ -73,8 +73,8 @@ TEMPLATE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deutschlandtabelle — jeder Verein, jede Liga, ein Platz</title>
-<meta name="description" content="Die Deutschlandtabelle: alle Vereine des Landes in Fußball, Handball und Basketball — von der Bundesliga bis zur Kreisklasse in einer einzigen Tabelle. Wo steht deiner?">
+<title>Deutschlandtabelle — der ganze Sport. Eine Tabelle.</title>
+<meta name="description" content="Alle Vereine, alle Ligen in einer einzigartigen deutschlandweiten Reihenfolge. Von der ersten Liga bis zur Kreisklasse: Wo steht dein Verein in der Deutschlandtabelle im Fußball, Handball oder Basketball?">
 <link rel="canonical" href="__URL__">
 
 <!-- Vorschau beim Teilen. Ohne diese Angaben raten Messenger, was Titel und
@@ -85,15 +85,15 @@ TEMPLATE = """<!doctype html>
 <meta property="og:site_name" content="Deutschlandtabelle">
 <meta property="og:locale" content="de_DE">
 <meta property="og:url" content="__URL__">
-<meta property="og:title" content="Deutschlandtabelle — jeder Verein, jede Liga, ein Platz">
-<meta property="og:description" content="Fußball, Handball und Basketball von der Bundesliga bis zur Kreisklasse, Männer und Frauen getrennt — täglich neu aus den Ergebnissen der laufenden Saison.">
+<meta property="og:title" content="Deutschlandtabelle — der ganze Sport. Eine Tabelle.">
+<meta property="og:description" content="Alle Vereine, alle Ligen in einer einzigartigen deutschlandweiten Reihenfolge. Von der ersten Liga bis zur Kreisklasse: Wo steht dein Verein in der Deutschlandtabelle im Fußball, Handball oder Basketball?">
 <meta property="og:image" content="__URL____TEASER__?v=__BILDVERSION__">
 <meta property="og:image:width" content="__BILDBREITE__">
 <meta property="og:image:height" content="__BILDHOEHE__">
 <meta property="og:image:alt" content="Jubelnde Mannschaft eines Amateurvereins nach dem Sieg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Deutschlandtabelle — jeder Verein, jede Liga, ein Platz">
-<meta name="twitter:description" content="Jeder Verein. Jede Liga. Ein Platz. Von der Bundesliga bis zur Kreisklasse.">
+<meta name="twitter:title" content="Deutschlandtabelle — der ganze Sport. Eine Tabelle.">
+<meta name="twitter:description" content="Alle Vereine, alle Ligen in einer einzigartigen deutschlandweiten Reihenfolge. Von der ersten Liga bis zur Kreisklasse: Wo steht dein Verein in der Deutschlandtabelle im Fußball, Handball oder Basketball?">
 <meta name="twitter:image" content="__URL____TEASER__?v=__BILDVERSION__">
 <style>
 /* ======================================================================
