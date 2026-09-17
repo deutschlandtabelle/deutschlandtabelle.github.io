@@ -50,21 +50,31 @@ ZIELE = {
     "basketball-frauen": "header-basketball-frauen.jpg",
     "home": "header.jpg",
     "start": "header.jpg",
+    "startbild": "header.jpg",
     "alle": "header.jpg",
 }
 
 
 def schluessel(name: str) -> str:
-    """"clubrank_fußball" -> "fussball" (ß und Umlaute vereinheitlichen)."""
+    """Dateiname -> Zielschlüssel.
+
+    Erkannt werden beide Schreibweisen, die sich eingebürgert haben:
+    "clubrank_fußball.png" und "Fußball_header.png" meinen dasselbe.
+    ß und Umlaute werden vereinheitlicht.
+    """
     text = name.lower().removeprefix("clubrank_").removeprefix("clubrank-")
     text = text.replace("ß", "ss").replace("ä", "ae").replace("ö", "oe")
     text = text.replace("ü", "ue")
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
     # "clubrank_fussball_frauen" und "clubrank_fussball-frauen" meinen dasselbe.
     text = text.replace("_", "-")
+    # "header" darf vorn oder hinten stehen und wird abgeschnitten.
+    for teil in ("-header", "header-"):
+        text = text.removesuffix(teil) if teil.startswith("-") \
+            else text.removeprefix(teil)
     # Angehängte Ziffern erlauben mehrere Anläufe für dasselbe Motiv:
     # "clubrank_handball2" landet ebenfalls bei header-handball.jpg.
-    return text.rstrip("0123456789 -")
+    return text.strip("-").rstrip("0123456789 -")
 
 
 def _masse(datei: Path) -> tuple[int, int]:
@@ -112,10 +122,42 @@ def teaser(quelle: Path) -> None:
 
 def main() -> int:
     DOCS.mkdir(parents=True, exist_ok=True)
-    quellen = sorted(p for p in ROOT.iterdir()
-                     if p.is_file()
-                     and p.suffix.lower() in (".png", ".jpg", ".jpeg")
-                     and p.stem.lower().startswith("clubrank"))
+    gefunden = [p for p in ROOT.iterdir()
+                if p.is_file()
+                and p.suffix.lower() in (".png", ".jpg", ".jpeg")
+                and schluessel(p.stem) in ZIELE]
+
+    # Zeigen zwei Vorlagen auf dasselbe Ziel ("clubrank_home.png" und
+    # "Startbild_header.png"), gewinnt die zuletzt abgelegte. Nach dem
+    # Dateinamen zu sortieren wäre Zufall -- und der Zufall hat hier schon
+    # einmal das alte Motiv über das neue geschrieben.
+    # Gruppiert wird nach dem ZIEL, nicht nach dem Schlüssel: "startbild"
+    # und "home" sind zwei Schlüssel, meinen aber dieselbe Datei.
+    beste: dict[str, Path] = {}
+    for datei in gefunden:
+        ziel = ZIELE[schluessel(datei.stem)]
+        if ziel not in beste or datei.stat().st_mtime > beste[ziel].stat().st_mtime:
+            beste[ziel] = datei
+    for datei in sorted(gefunden):
+        ziel = ZIELE[schluessel(datei.stem)]
+        if beste[ziel] != datei:
+            print(f"  -  {datei.name}: übergangen, {beste[ziel].name} "
+                  f"ist neuer ({ziel})", file=sys.stderr)
+    quellen = sorted(beste.values())
+
+    # Vorlagen gehören nicht nach docs/: was dort liegt, wird veröffentlicht.
+    # Ein unbearbeitetes PNG wiegt zwei Megabyte und wird von keiner Seite
+    # geladen -- deshalb hier ein deutlicher Hinweis statt stillem Übergehen.
+    verirrt = [p for p in DOCS.iterdir()
+               if p.is_file() and p.suffix.lower() in (".png", ".jpg", ".jpeg")
+               and schluessel(p.stem) in ZIELE
+               and not p.name.startswith(("header", "teaser"))]
+    if verirrt:
+        print("  !  Diese Vorlagen liegen in docs/ und würden mit "
+              "veröffentlicht werden:", file=sys.stderr)
+        for p in verirrt:
+            print(f"       {p.name}  ->  gehört in den Projektordner",
+                  file=sys.stderr)
     if not quellen:
         print("Keine Datei clubrank_*.png im Projektordner gefunden.", file=sys.stderr)
         print("Erwartet werden: " + ", ".join(f"clubrank_{k}" for k in

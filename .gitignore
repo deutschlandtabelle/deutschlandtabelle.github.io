@@ -8,3 +8,8 @@ data/cache/
 clubrank_*.png
 clubrank_*.jpg
 clubrank_*.jpeg
+
+# Vorlagen der Headerbilder, egal in welcher Schreibweise
+*_header.png
+*_header.jpg
+*_header.jpeg
