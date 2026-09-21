@@ -198,12 +198,23 @@ class HandballNet:
             if not name:
                 continue
             try:
+                siege = int(z.get("won") or 0)
+                unent = int(z.get("drawn") or 0)
+                nieder = int(z.get("lost") or 0)
+                # Am grünen Tisch gewertete Partien zählt handball.net bei
+                # Sieg und Niederlage mit, bei den Spielen aber nicht: ein
+                # Nichtantreten steht dort als "0 Spiele, 1 Niederlage,
+                # -2 Punkte". Für die Tabelle ist es eine ausgetragene
+                # Begegnung -- sie vergibt Punkte -- also zählen wir sie auch
+                # als Spiel. Sonst stünde die Mannschaft mit 0 Spielen da und
+                # ihre Punkte pro Spiel wären eine Division durch nichts.
                 zeilen.append({
                     "name": _titel(name),
-                    "played": int(z.get("played") or 0),
-                    "won": int(z.get("won") or 0),
-                    "drawn": int(z.get("drawn") or 0),
-                    "lost": int(z.get("lost") or 0),
+                    "played": max(int(z.get("played") or 0),
+                                  siege + unent + nieder),
+                    "won": siege,
+                    "drawn": unent,
+                    "lost": nieder,
                     "goals_for": int(z.get("goals_for") or 0),
                     "goals_against": int(z.get("goals_against") or 0),
                     "points": int(z.get("points") or 0),

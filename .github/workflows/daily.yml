@@ -31,6 +31,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 180
+    outputs:
+      artefakt: ${{ steps.hochgeladen.outputs.ja }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -61,32 +63,55 @@ jobs:
           python3 build.py --sport fussball-frauen
           python3 build.py --sport fussball
 
-      # Die Prüfung bricht ab, wenn eine harte Prüfung fehlschlägt -- dann
-      # wird nichts veröffentlicht und der Lauf ist rot.
       # Alle sechs prüfen, dann erst entscheiden. GitHub führt jeden Schritt
-      # mit "bash -e" aus: ohne das "|| fehler=..." würde die Schleife beim
-      # ersten Fehlschlag abbrechen, und die dahinterliegenden Rangfolgen
-      # blieben ungeprüft -- man repariert eine und findet beim nächsten Lauf
-      # die nächste.
+      # mit "bash -e" aus: ohne das "|| ..." würde die Schleife beim ersten
+      # Fehlschlag abbrechen, und die dahinterliegenden Rangfolgen blieben
+      # ungeprüft -- man repariert eine und findet beim nächsten Lauf die
+      # nächste.
+      #
+      # Fällt eine Rangfolge durch, wird nur sie auf den zuletzt
+      # veröffentlichten Stand zurückgesetzt; die anderen fünf gehen live.
+      # Ein einzelner Verein in einer Kreisliga hat schon dreimal die
+      # Veröffentlichung aller sechs Rangfolgen verhindert -- veraltet und
+      # richtig ist besser als frisch und falsch, aber beides ist besser als
+      # gar nichts. Der Lauf bleibt rot, damit es nicht untergeht.
       - name: Daten prüfen
         if: ${{ !inputs.nur_veroeffentlichen }}
         run: |
           fehler=""
           for s in fussball fussball-frauen handball handball-frauen \
                    basketball basketball-frauen; do
-            python3 pruefen.py --sport "$s" || fehler="$fehler $s"
+            if ! python3 pruefen.py --sport "$s"; then
+              fehler="$fehler $s"
+              git checkout -- "docs/data/$s.json" "docs/data/$s.info.json" \
+                              "docs/$s-vereine.csv" "docs/$s-ligen.csv" || true
+              echo "::error::$s fällt durch die Prüfung — veröffentlicht wird"\
+                   " der bisherige Stand dieser Rangfolge"
+            fi
           done
+          python3 build.py --nur-huelle
           if [ -n "$fehler" ]; then
-            echo "::error::Harte Prüfungen fehlgeschlagen bei:$fehler"
-            exit 1
+            echo "geprueft=$fehler" >> "$GITHUB_ENV"
           fi
 
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
 
+      - id: hochgeladen
+        run: echo "ja=true" >> "$GITHUB_OUTPUT"
+
+      # Erst veröffentlichen, dann rot werden: so steht die Seite auf dem
+      # bestmöglichen Stand und der Fehlschlag ist trotzdem sichtbar.
+      - name: Fehlschlag melden
+        if: ${{ env.geprueft != '' }}
+        run: |
+          echo "::error::Harte Prüfungen fehlgeschlagen bei:$geprueft"
+          exit 1
+
   deploy:
     needs: build
+    if: ${{ always() && needs.build.outputs.artefakt == 'true' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
