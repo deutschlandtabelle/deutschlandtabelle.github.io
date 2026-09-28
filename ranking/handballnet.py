@@ -201,17 +201,27 @@ class HandballNet:
                 siege = int(z.get("won") or 0)
                 unent = int(z.get("drawn") or 0)
                 nieder = int(z.get("lost") or 0)
-                # Am grünen Tisch gewertete Partien zählt handball.net bei
-                # Sieg und Niederlage mit, bei den Spielen aber nicht: ein
-                # Nichtantreten steht dort als "0 Spiele, 1 Niederlage,
-                # -2 Punkte". Für die Tabelle ist es eine ausgetragene
-                # Begegnung -- sie vergibt Punkte -- also zählen wir sie auch
-                # als Spiel. Sonst stünde die Mannschaft mit 0 Spielen da und
-                # ihre Punkte pro Spiel wären eine Division durch nichts.
+                # Die Zahl der Spiele ist die Zahl der Entscheidungen.
+                #
+                # handball.net pflegt den Zähler "played" unabhängig von Sieg,
+                # Unentschieden und Niederlage -- und beide laufen in beide
+                # Richtungen auseinander:
+                #
+                #   * Eine am grünen Tisch gewertete Partie steht als
+                #     "0 Spiele, 1 Niederlage, -2 Punkte". Sie vergibt Punkte,
+                #     ist also ein Spiel.
+                #   * Zieht eine Mannschaft zurück, werden ihre Partien
+                #     annulliert: Sieg, Tore und Punkte verschwinden, der
+                #     Zähler "played" bleibt stehen. Sie vergibt nichts mehr,
+                #     ist also kein Spiel.
+                #
+                # Punkte und Tore folgen in beiden Fällen den Entscheidungen.
+                # Also folgen wir ihnen auch -- sonst wären die Punkte pro
+                # Spiel, das Sortierkriterium der ganzen Rangfolge, durch eine
+                # falsche Zahl geteilt.
                 zeilen.append({
                     "name": _titel(name),
-                    "played": max(int(z.get("played") or 0),
-                                  siege + unent + nieder),
+                    "played": siege + unent + nieder,
                     "won": siege,
                     "drawn": unent,
                     "lost": nieder,

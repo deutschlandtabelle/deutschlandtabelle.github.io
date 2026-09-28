@@ -226,6 +226,11 @@ class BasketballBund:
             # Was übrig bleibt, gehört also in diese Spalte; sie hart auf null
             # zu setzen hieße, dass Siege + Niederlagen die Spielzahl verfehlen.
             unentschieden = max(0, spiele - siege - niederlagen)
+            # Und umgekehrt: stehen mehr Entscheidungen als Spiele in der
+            # Zeile, gilt die Zahl der Entscheidungen. Im Handball kommt
+            # genau das vor, wenn eine Partie am grünen Tisch gewertet wird;
+            # die Quelle hier ist dieselbe Sorte Vereinssoftware.
+            spiele = max(spiele, siege + unentschieden + niederlagen)
             zeilen.append({
                 "name": name,
                 "played": spiele,
