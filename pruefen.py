@@ -167,7 +167,9 @@ def main() -> int:
             spiele_ungerade.append(f"{rs[0]['staffel']}: {spiele} Spiele")
         plaetze = sorted(zahl(r["platz_in_staffel"]) for r in rs)
         if plaetze != list(range(1, len(rs) + 1)):
-            plaetze_falsch.append(f"{rs[0]['staffel']}: {plaetze[:6]}…")
+            plaetze_falsch.append(
+                f"{rs[0]['staffel']} ({len(rs)} Mannschaften, "
+                f"Staffel {sid[:14]}…): Plätze {plaetze[:6]}…")
         # Je Partie werden höchstens so viele Punkte vergeben, wie ein Sieg
         # einbringt. Die Schranke rechnet
         # bewusst mit `spiele` statt `spiele // 2`, unterstellt also den
@@ -189,6 +191,17 @@ def main() -> int:
                f"({len(je_staffel)} Staffeln geprüft)", tore_ungleich, hart=False)
     b.pruefung("Summe der Spiele ist gerade", spiele_ungerade, hart=False)
     b.pruefung("Tabellenplätze sind lückenlos 1..n", plaetze_falsch)
+
+    # Zwei Staffeln dürfen denselben Namen tragen -- die Quelle führt sie
+    # getrennt, und die Rangfolge trennt sie über die Kennung. Wissen will man
+    # es trotzdem: im Oktober 2026 tauchte eine zweite "Oberliga Niederrhein"
+    # auf, und bis das auffiel, war die halbe Tabelle verschoben.
+    namen: dict[str, list[str]] = defaultdict(list)
+    for sid, rs in je_staffel.items():
+        namen[rs[0]["staffel"]].append(sid)
+    doppelte = [f"{name}: {len(sids)}× ({', '.join(s[:14] for s in sids)})"
+                for name, sids in namen.items() if len(sids) > 1]
+    b.pruefung("Staffelnamen sind eindeutig", doppelte, hart=False)
     b.pruefung(f"nicht mehr als {je_sieg} Punkte je Partie vergeben", punkte_zuviel)
 
     ungleich_weit = [f"{rs[0]['staffel']}: {sorted({zahl(r['spiele']) for r in rs})}"

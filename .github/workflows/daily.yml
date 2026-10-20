@@ -77,17 +77,40 @@ jobs:
       # gar nichts. Der Lauf bleibt rot, damit es nicht untergeht.
       - name: Daten prüfen
         if: ${{ !inputs.nur_veroeffentlichen }}
+        env:
+          SEITE: https://deutschlandtabelle.github.io
         run: |
           fehler=""
           for s in fussball fussball-frauen handball handball-frauen \
                    basketball basketball-frauen; do
-            if ! python3 pruefen.py --sport "$s"; then
-              fehler="$fehler $s"
+            if python3 pruefen.py --sport "$s"; then
+              continue
+            fi
+            fehler="$fehler $s"
+            # Zurück auf den zuletzt *veröffentlichten* Stand, nicht auf den
+            # zuletzt eingecheckten: die Daten werden nicht ins Repository
+            # übernommen, der eingecheckte Stand ist deshalb beliebig alt.
+            # Am 19.10.2026 fiel der Fußball dadurch auf den 16.09. zurück,
+            # fünf Wochen, ohne dass es jemandem auffiel.
+            ablage=$(mktemp -d)
+            vollstaendig=1
+            for f in "data/$s.json" "data/$s.info.json" \
+                     "$s-vereine.csv" "$s-ligen.csv"; do
+              curl -fsS --retry 2 -o "$ablage/$(basename "$f")" "$SEITE/$f" \
+                || vollstaendig=0
+            done
+            if [ "$vollstaendig" = 1 ]; then
+              mv "$ablage/$s.json" "$ablage/$s.info.json" docs/data/
+              mv "$ablage/$s-vereine.csv" "$ablage/$s-ligen.csv" docs/
+              echo "::error::$s fällt durch die Prüfung — es bleibt beim"\
+                   " zuletzt veröffentlichten Stand"
+            else
               git checkout -- "docs/data/$s.json" "docs/data/$s.info.json" \
                               "docs/$s-vereine.csv" "docs/$s-ligen.csv" || true
-              echo "::error::$s fällt durch die Prüfung — veröffentlicht wird"\
-                   " der bisherige Stand dieser Rangfolge"
+              echo "::error::$s fällt durch die Prüfung und der veröffentlichte"\
+                   " Stand war nicht abrufbar — es bleibt beim eingecheckten"
             fi
+            rm -rf "$ablage"
           done
           python3 build.py --nur-huelle
           if [ -n "$fehler" ]; then

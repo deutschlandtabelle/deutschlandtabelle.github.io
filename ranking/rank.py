@@ -99,11 +99,20 @@ def _order(teams: dict[str, Team], table: dict[str, Stats]) -> list[str]:
 
 
 def _league_positions(teams: dict[str, Team], table: dict[str, Stats]) -> dict[str, int]:
-    """Klassischer Tabellenplatz in der eigenen Staffel (absolute Punkte)."""
+    """Klassischer Tabellenplatz in der eigenen Staffel (absolute Punkte).
+
+    Gruppiert wird über die Staffel-Kennung der Quelle, nicht über den
+    Staffelnamen: zwei Staffeln können denselben Namen tragen. Im Oktober 2026
+    führte fussball.de zwei Staffeln namens "Oberliga Niederrhein" -- über den
+    Namen gruppiert ergab das eine Tabelle mit zwanzig Plätzen für achtzehn
+    Mannschaften, und zwei Vereine standen auf Platz 19 und 20 einer Staffel,
+    die nur sie beide enthielt.
+    """
     groups: dict[str, list[str]] = {}
     for key, team in teams.items():
         if team.tier:
-            groups.setdefault(team.league_name or "", []).append(key)
+            groups.setdefault(team.staffel_id or team.league_name or "",
+                              []).append(key)
     positions: dict[str, int] = {}
     for members in groups.values():
         members.sort(key=lambda k: (
