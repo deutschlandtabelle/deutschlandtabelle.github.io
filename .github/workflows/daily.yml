@@ -63,6 +63,30 @@ jobs:
           python3 build.py --sport fussball-frauen
           python3 build.py --sport fussball
 
+      # Beim reinen Veröffentlichen gilt der Datenstand, der schon online
+      # steht -- nicht der eingecheckte. Die Daten werden nicht ins
+      # Repository übernommen; der eingecheckte Stand ist deshalb beliebig
+      # alt. Ohne diesen Schritt dreht jede Veröffentlichung, die nur
+      # Seitenaufbau oder Bilder ändert, die Daten auf den Stand des letzten
+      # Commits zurück. Genau das ist am 21.10.2026 viermal passiert.
+      - name: Veröffentlichten Datenstand übernehmen
+        if: ${{ inputs.nur_veroeffentlichen }}
+        env:
+          SEITE: https://deutschlandtabelle.github.io
+        run: |
+          for s in fussball fussball-frauen handball handball-frauen \
+                   basketball basketball-frauen; do
+            for f in "data/$s.json" "data/$s.info.json" \
+                     "$s-vereine.csv" "$s-ligen.csv"; do
+              curl -fsS --retry 2 -o "docs/$f.neu" "$SEITE/$f" \
+                && mv "docs/$f.neu" "docs/$f" \
+                || { rm -f "docs/$f.neu"
+                     echo "::warning::$f nicht abrufbar — es bleibt beim"\
+                          " eingecheckten Stand"; }
+            done
+          done
+          python3 build.py --nur-huelle
+
       # Alle sechs prüfen, dann erst entscheiden. GitHub führt jeden Schritt
       # mit "bash -e" aus: ohne das "|| ..." würde die Schleife beim ersten
       # Fehlschlag abbrechen, und die dahinterliegenden Rangfolgen blieben
