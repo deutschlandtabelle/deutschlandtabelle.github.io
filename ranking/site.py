@@ -63,9 +63,10 @@ ZUGANGSWOERTER = {
     "d1df9bc766402000ab24a962d31cf43a65d6d5a5d14448b4209e6542b6f4ddb4": "DFB",
 }
 
-# Adresse, an die das Formular die E-Mail-Adresse der Besucherin oder des
-# Besuchers meldet. Solange sie leer ist, verlässt die Eingabe den Browser
-# nicht -- es wird nichts übertragen und nichts gespeichert außer lokal.
+# Adresse eines Formulardienstes, der einen Zugang meldet. Gemeldet werden
+# der Name des benutzten Zugangsworts und der Zeitpunkt -- nichts, was die
+# Besucherin oder den Besucher benennt. Solange die Adresse leer ist, wird
+# gar nichts übertragen; dann weiß niemand von einem Zugriff.
 ZUGANG_MELDEN_AN = ""
 
 
@@ -554,8 +555,6 @@ footer a:hover{text-decoration:underline}
   <form class="tortafel" id="torFormular">
     <div class="marke">Deutschland<span>tabelle</span></div>
     <p class="lage">Prototyp — Zugang nach Absprache</p>
-    <input type="email" id="torMail" placeholder="Ihre E-Mail-Adresse"
-           autocomplete="email" required>
     <input type="password" id="torWort" placeholder="Zugangswort"
            autocomplete="current-password" required>
     <button class="knopf" type="submit">Ansehen</button>
@@ -776,18 +775,16 @@ footer a:hover{text-decoration:underline}
       <li><b>Keine Cookies.</b> Solange der Zugang zum Prototypen mit einem
         Zugangswort versehen ist, merkt sich Ihr Browser allerdings zwei
         Angaben lokal (<code>localStorage</code>): dass das Zugangswort
-        stimmte, und die von Ihnen eingegebene E-Mail-Adresse. Beides bleibt
-        auf Ihrem Gerät und lässt sich dort jederzeit löschen.</li>
+        stimmte, und unter welchem Namen es hinterlegt ist. Beides bleibt auf
+        Ihrem Gerät und lässt sich dort jederzeit löschen.</li>
       <li><b>Keine Reichweitenmessung</b>, keine Analysewerkzeuge, keine
         Zählpixel, keine Werbung.</li>
       <li><b>Keine Einbindung Dritter.</b> Schriften sind die Ihres
         Betriebssystems, Bilder und Vereinswappen liegen auf dieser Seite.
         Es wird keine Verbindung zu einem anderen Server aufgebaut.</li>
-      <li><b>Keine Konten.</b> Die Suche läuft in Ihrem Browser; es wird
-        nichts abgeschickt. Das Zugangsformular des Prototypen überträgt die
-        eingegebene E-Mail-Adresse nur dann an mich, wenn im Quelltext eine
-        Meldeadresse hinterlegt ist; ist sie leer, verlässt die Eingabe Ihr
-        Gerät nicht.</li>
+      <li><b>Keine Konten, keine Formulare.</b> Die Suche läuft in Ihrem
+        Browser; es wird nichts abgeschickt. Nach Ihrem Namen oder Ihrer
+        E-Mail-Adresse wird nirgends gefragt.</li>
       <li><b>Keine automatisierte Entscheidungsfindung</b> und kein
         Profiling.</li>
     </ul>
@@ -891,6 +888,9 @@ const TOR_WOERTER = __TORWOERTER__;
 const TOR_ZIEL = "__TORZIEL__";
 const TOR_OFFEN = new Set(['impressum', 'datenschutz']);
 const torTafel = document.getElementById('tor');
+// Das Tor hat einmal nach einer E-Mail-Adresse gefragt. Wer damals eine
+// eingetragen hat, soll sie nicht für immer im Browser behalten.
+try { localStorage.removeItem('dt-mail'); } catch (fehler) { /* egal */ }
 
 async function torPruefen(wort){
   const daten = new TextEncoder().encode(wort);
@@ -906,7 +906,6 @@ if (torAktiv && !torFrei()){
   document.getElementById('torFormular').addEventListener('submit', async e => {
     e.preventDefault();
     const wort = document.getElementById('torWort').value;
-    const mail = document.getElementById('torMail').value.trim();
     const summe = await torPruefen(wort);
     const wer = TOR_WOERTER[summe];
     if (wer === undefined){
@@ -916,15 +915,14 @@ if (torAktiv && !torFrei()){
     try {
       localStorage.setItem('dt-zugang', summe);
       localStorage.setItem('dt-wer', wer);
-      if (mail) localStorage.setItem('dt-mail', mail);
     } catch (fehler) { /* privates Fenster: dann eben für diesen Besuch */ }
     // Nur wenn eine Meldeadresse hinterlegt ist, verlässt etwas den Browser.
-    if (TOR_ZIEL && (mail || wer)){
+    if (TOR_ZIEL){
       try {
         await fetch(TOR_ZIEL, {
           method: 'POST', mode: 'cors',
           headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-          body: JSON.stringify({email: mail, zugang: wer,
+          body: JSON.stringify({zugang: wer,
                                 zeitpunkt: new Date().toISOString()}),
         });
       } catch (fehler) { /* der Zugang hängt nicht daran */ }
