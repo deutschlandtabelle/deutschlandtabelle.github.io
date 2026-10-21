@@ -41,14 +41,26 @@ BETREIBER = {
 
 
 # --- Zugangstor für den Prototypen ---------------------------------------
-# SHA-256 des Zugangsworts. Leer lassen, und die Seite steht wieder offen.
+# Zugangswörter, je eines pro Empfänger: SHA-256 -> Name. Leer lassen, und
+# die Seite steht wieder offen.
+#
+# Im Quelltext stehen nur die Prüfsummen, nicht die Wörter -- dieses
+# Repository ist öffentlich. Eine neue Prüfsumme erzeugt:
+#
+#     python3 zugangswort.py "Entwurf1026#-DFB"
+#
+# Der Name landet im Browser des Besuchers und, sofern eine Meldeadresse
+# hinterlegt ist, in der Meldung. Nur so lässt sich später sagen, welches
+# Haus hereingeschaut hat.
 #
 # Das ist eine Tür mit Schild, kein Schloss: Wer den Quelltext liest, findet
 # den Aufbau, und die Datendateien unter data/ bleiben einzeln abrufbar.
 # Gegen Neugier hilft es, gegen Entschlossenheit nicht. Der Zweck ist, den
 # Entwurfsstand erkennbar zu machen und die Vertraulichkeitszusage vor den
 # Zugang zu setzen -- nicht, Geheimnisse zu hüten.
-ZUGANGSWORT_HASH = "54039e400fae1778ea03a22372f887a9eb5b94785c9b9c6571fb0d7ba5ec6d5d"
+ZUGANGSWOERTER = {
+    "54039e400fae1778ea03a22372f887a9eb5b94785c9b9c6571fb0d7ba5ec6d5d": "Allgemein",
+}
 
 # Adresse, an die das Formular die E-Mail-Adresse der Besucherin oder des
 # Besuchers meldet. Solange sie leer ist, verlässt die Eingabe den Browser
@@ -874,7 +886,7 @@ footer a:hover{text-decoration:underline}
 
 <script>
 // --- Zugangstor -------------------------------------------------------
-const TOR_HASH = "__TORHASH__";
+const TOR_WOERTER = __TORWOERTER__;
 const TOR_ZIEL = "__TORZIEL__";
 const TOR_OFFEN = new Set(['impressum', 'datenschutz']);
 const torTafel = document.getElementById('tor');
@@ -885,29 +897,34 @@ async function torPruefen(wort){
   return [...new Uint8Array(summe)]
     .map(b => b.toString(16).padStart(2, '0')).join('');
 }
-const torFrei = () => !TOR_HASH ||
-  localStorage.getItem('dt-zugang') === TOR_HASH;
+const torAktiv = Object.keys(TOR_WOERTER).length > 0;
+const torFrei = () => !torAktiv ||
+  TOR_WOERTER[localStorage.getItem('dt-zugang') || ''] !== undefined;
 
-if (TOR_HASH && !torFrei()){
+if (torAktiv && !torFrei()){
   document.getElementById('torFormular').addEventListener('submit', async e => {
     e.preventDefault();
     const wort = document.getElementById('torWort').value;
     const mail = document.getElementById('torMail').value.trim();
-    if (await torPruefen(wort) !== TOR_HASH){
+    const summe = await torPruefen(wort);
+    const wer = TOR_WOERTER[summe];
+    if (wer === undefined){
       document.getElementById('torFehler').hidden = false;
       return;
     }
     try {
-      localStorage.setItem('dt-zugang', TOR_HASH);
+      localStorage.setItem('dt-zugang', summe);
+      localStorage.setItem('dt-wer', wer);
       if (mail) localStorage.setItem('dt-mail', mail);
     } catch (fehler) { /* privates Fenster: dann eben für diesen Besuch */ }
     // Nur wenn eine Meldeadresse hinterlegt ist, verlässt etwas den Browser.
-    if (TOR_ZIEL && mail){
+    if (TOR_ZIEL && (mail || wer)){
       try {
         await fetch(TOR_ZIEL, {
           method: 'POST', mode: 'cors',
           headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-          body: JSON.stringify({email: mail, zeitpunkt: new Date().toISOString()}),
+          body: JSON.stringify({email: mail, zugang: wer,
+                                zeitpunkt: new Date().toISOString()}),
         });
       } catch (fehler) { /* der Zugang hängt nicht daran */ }
     }
@@ -1074,7 +1091,7 @@ function aktuelleRoute(){
 async function route(){
   const {slug, params} = aktuelleRoute();
   // Impressum und Datenschutz stehen auch ohne Zugangswort offen.
-  if (TOR_HASH && !torFrei() && !TOR_OFFEN.has(slug)){
+  if (torAktiv && !torFrei() && !TOR_OFFEN.has(slug)){
     torTafel.hidden = false;
     return;
   }
@@ -1544,9 +1561,9 @@ def write_shell(out_dir: Path, sports: list[dict]) -> None:
         "__BILDHOEHE__": hoehe,
         "__TEASER__": teaser,
         "__ROBOTS__": ('<meta name="robots" content="noindex, nofollow">'
-                       if ZUGANGSWORT_HASH else ""),
+                       if ZUGANGSWOERTER else ""),
         "__STARTBILD__": startversion,
-        "__TORHASH__": ZUGANGSWORT_HASH,
+        "__TORWOERTER__": json.dumps(ZUGANGSWOERTER, ensure_ascii=False),
         "__TORZIEL__": ZUGANG_MELDEN_AN,
         "__ANSCHRIFT__": _anschrift_html(),
         "__KONTAKT__": _kontakt_html(),

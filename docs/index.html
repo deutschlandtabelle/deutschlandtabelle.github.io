@@ -830,7 +830,7 @@ footer a:hover{text-decoration:underline}
 
 <script>
 // --- Zugangstor -------------------------------------------------------
-const TOR_HASH = "54039e400fae1778ea03a22372f887a9eb5b94785c9b9c6571fb0d7ba5ec6d5d";
+const TOR_WOERTER = {"54039e400fae1778ea03a22372f887a9eb5b94785c9b9c6571fb0d7ba5ec6d5d": "Allgemein"};
 const TOR_ZIEL = "";
 const TOR_OFFEN = new Set(['impressum', 'datenschutz']);
 const torTafel = document.getElementById('tor');
@@ -841,29 +841,34 @@ async function torPruefen(wort){
   return [...new Uint8Array(summe)]
     .map(b => b.toString(16).padStart(2, '0')).join('');
 }
-const torFrei = () => !TOR_HASH ||
-  localStorage.getItem('dt-zugang') === TOR_HASH;
+const torAktiv = Object.keys(TOR_WOERTER).length > 0;
+const torFrei = () => !torAktiv ||
+  TOR_WOERTER[localStorage.getItem('dt-zugang') || ''] !== undefined;
 
-if (TOR_HASH && !torFrei()){
+if (torAktiv && !torFrei()){
   document.getElementById('torFormular').addEventListener('submit', async e => {
     e.preventDefault();
     const wort = document.getElementById('torWort').value;
     const mail = document.getElementById('torMail').value.trim();
-    if (await torPruefen(wort) !== TOR_HASH){
+    const summe = await torPruefen(wort);
+    const wer = TOR_WOERTER[summe];
+    if (wer === undefined){
       document.getElementById('torFehler').hidden = false;
       return;
     }
     try {
-      localStorage.setItem('dt-zugang', TOR_HASH);
+      localStorage.setItem('dt-zugang', summe);
+      localStorage.setItem('dt-wer', wer);
       if (mail) localStorage.setItem('dt-mail', mail);
     } catch (fehler) { /* privates Fenster: dann eben für diesen Besuch */ }
     // Nur wenn eine Meldeadresse hinterlegt ist, verlässt etwas den Browser.
-    if (TOR_ZIEL && mail){
+    if (TOR_ZIEL && (mail || wer)){
       try {
         await fetch(TOR_ZIEL, {
           method: 'POST', mode: 'cors',
           headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-          body: JSON.stringify({email: mail, zeitpunkt: new Date().toISOString()}),
+          body: JSON.stringify({email: mail, zugang: wer,
+                                zeitpunkt: new Date().toISOString()}),
         });
       } catch (fehler) { /* der Zugang hängt nicht daran */ }
     }
@@ -1030,7 +1035,7 @@ function aktuelleRoute(){
 async function route(){
   const {slug, params} = aktuelleRoute();
   // Impressum und Datenschutz stehen auch ohne Zugangswort offen.
-  if (TOR_HASH && !torFrei() && !TOR_OFFEN.has(slug)){
+  if (torAktiv && !torFrei() && !TOR_OFFEN.has(slug)){
     torTafel.hidden = false;
     return;
   }
