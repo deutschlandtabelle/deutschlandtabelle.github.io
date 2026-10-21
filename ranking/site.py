@@ -60,6 +60,7 @@ BETREIBER = {
 # Zugang zu setzen -- nicht, Geheimnisse zu hüten.
 ZUGANGSWOERTER = {
     "54039e400fae1778ea03a22372f887a9eb5b94785c9b9c6571fb0d7ba5ec6d5d": "Allgemein",
+    "d1df9bc766402000ab24a962d31cf43a65d6d5a5d14448b4209e6542b6f4ddb4": "DFB",
 }
 
 # Adresse, an die das Formular die E-Mail-Adresse der Besucherin oder des
