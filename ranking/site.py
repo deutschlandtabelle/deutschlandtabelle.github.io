@@ -61,6 +61,8 @@ BETREIBER = {
 ZUGANGSWOERTER = {
     "54039e400fae1778ea03a22372f887a9eb5b94785c9b9c6571fb0d7ba5ec6d5d": "Allgemein",
     "d1df9bc766402000ab24a962d31cf43a65d6d5a5d14448b4209e6542b6f4ddb4": "DFB",
+    "03125637501a475281e076aec5a851f4a83cfdb93daf11a03a5124fa74b7d2b3": "DHB",
+    "d488098e9e86ad6a5057794335b752a38058dc98a5454f199a4121e0354385b4": "DBB",
 }
 
 # Adresse eines Formulardienstes, der einen Zugang meldet. Gemeldet werden
