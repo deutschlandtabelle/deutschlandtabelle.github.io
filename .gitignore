@@ -13,3 +13,7 @@ clubrank_*.jpeg
 *_header.png
 *_header.jpg
 *_header.jpeg
+
+# Präsentationsunterlagen: erzeugt, nicht gepflegt
+praesentation/Deutschlandtabelle.pdf
+praesentation/bilder/
