@@ -40,6 +40,22 @@ BETREIBER = {
 }
 
 
+# --- Zugangstor für den Prototypen ---------------------------------------
+# SHA-256 des Zugangsworts. Leer lassen, und die Seite steht wieder offen.
+#
+# Das ist eine Tür mit Schild, kein Schloss: Wer den Quelltext liest, findet
+# den Aufbau, und die Datendateien unter data/ bleiben einzeln abrufbar.
+# Gegen Neugier hilft es, gegen Entschlossenheit nicht. Der Zweck ist, den
+# Entwurfsstand erkennbar zu machen und die Vertraulichkeitszusage vor den
+# Zugang zu setzen -- nicht, Geheimnisse zu hüten.
+ZUGANGSWORT_HASH = "54039e400fae1778ea03a22372f887a9eb5b94785c9b9c6571fb0d7ba5ec6d5d"
+
+# Adresse, an die das Formular die E-Mail-Adresse der Besucherin oder des
+# Besuchers meldet. Solange sie leer ist, verlässt die Eingabe den Browser
+# nicht -- es wird nichts übertragen und nichts gespeichert außer lokal.
+ZUGANG_MELDEN_AN = ""
+
+
 def betreiber_vollstaendig() -> bool:
     return all(BETREIBER.get(f) for f in ("name", "strasse", "plz_ort", "email"))
 
@@ -76,6 +92,7 @@ TEMPLATE = """<!doctype html>
 <title>Deutschlandtabelle — der ganze Sport. Eine Tabelle.</title>
 <meta name="description" content="Alle Vereine, alle Ligen in einer einzigartigen deutschlandweiten Reihenfolge. Von der ersten Liga bis zur Kreisklasse: Wo steht dein Verein in der Deutschlandtabelle im Fußball, Handball oder Basketball?">
 <link rel="canonical" href="__URL__">
+__ROBOTS__
 
 <!-- Vorschau beim Teilen. Ohne diese Angaben raten Messenger, was Titel und
      Bild sein sollen -- mit ihnen erscheint eine saubere Karte mit Marke,
@@ -400,6 +417,27 @@ tbody tr:hover{background:var(--flaeche)}
 h1 .ikon,h2 .ikon{width:.88em;height:.88em;color:var(--accent);margin-right:10px;
   vertical-align:-.1em}
 
+/* --- Zugangstor --------------------------------------------------------- */
+.tor{position:fixed;inset:0;z-index:100;background:var(--bg);
+  display:flex;align-items:center;justify-content:center;padding:22px}
+.tortafel{width:100%;max-width:420px;text-align:center}
+.tortafel .marke{font-size:28px;font-weight:600;letter-spacing:-.02em;
+  color:var(--ink)}
+.tortafel .marke span{color:var(--accent)}
+.tortafel .lage{margin:6px 0 26px;color:var(--muted);font-size:15px}
+.tortafel input{width:100%;background:var(--panel);color:var(--ink);
+  border:1px solid var(--hair);border-radius:12px;padding:14px 16px;
+  font-size:16px;margin:0 0 10px}
+.tortafel input:focus{outline:none;border-color:var(--accent);
+  box-shadow:0 0 0 4px var(--accent-soft)}
+.tortafel .knopf{width:100%;margin-top:4px}
+.tortafel .fehler{margin:12px 0 0;color:var(--down);font-size:14px}
+.tortafel .zusage{margin:26px 0 0;font-size:12.5px;line-height:1.6;
+  color:var(--muted);text-align:left}
+.tortafel .zusage a{color:var(--muted);text-decoration:underline}
+.tortafel .unten{margin:14px 0 0;font-size:12.5px;color:var(--muted)}
+.tortafel .unten a{color:var(--muted);text-decoration:none}
+
 /* --- Rechtstexte -------------------------------------------------------- */
 .rechtslinks{margin:10px 0 0}
 .odbl{margin:8px 0 0;font-size:13px}
@@ -496,6 +534,27 @@ footer a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
+
+<!-- Zugangstor. Steht vor allem außer Impressum und Datenschutz -- die
+     müssen nach § 5 DDG ständig erreichbar bleiben, auch ohne Zugangswort. -->
+<div class="tor" id="tor" hidden>
+  <form class="tortafel" id="torFormular">
+    <div class="marke">Deutschland<span>tabelle</span></div>
+    <p class="lage">Prototyp — Zugang nach Absprache</p>
+    <input type="email" id="torMail" placeholder="Ihre E-Mail-Adresse"
+           autocomplete="email" required>
+    <input type="password" id="torWort" placeholder="Zugangswort"
+           autocomplete="current-password" required>
+    <button class="knopf" type="submit">Ansehen</button>
+    <p class="fehler" id="torFehler" hidden>Das Zugangswort stimmt nicht.</p>
+    <p class="zusage">Mit dem Zugang erklären Sie sich mit der
+      <a href="vertraulichkeit.html">Vertraulichkeitszusage</a> einverstanden:
+      Inhalte, Zugangsdaten und die zugrunde liegende Idee bleiben vertraulich,
+      werden nicht weitergegeben und nicht eigenständig verwertet.</p>
+    <p class="unten"><a href="#impressum">Impressum</a> ·
+      <a href="#datenschutz">Datenschutz</a></p>
+  </form>
+</div>
 
 <div class="topbar"><div class="inner">
   <a class="brand" href="#home">Deutschland<span>tabelle</span></a>
@@ -701,15 +760,21 @@ footer a:hover{text-decoration:underline}
 
     <h2>Was nicht stattfindet</h2>
     <ul>
-      <li><b>Keine Cookies</b> und keine vergleichbare Speicherung in Ihrem
-        Browser.</li>
+      <li><b>Keine Cookies.</b> Solange der Zugang zum Prototypen mit einem
+        Zugangswort versehen ist, merkt sich Ihr Browser allerdings zwei
+        Angaben lokal (<code>localStorage</code>): dass das Zugangswort
+        stimmte, und die von Ihnen eingegebene E-Mail-Adresse. Beides bleibt
+        auf Ihrem Gerät und lässt sich dort jederzeit löschen.</li>
       <li><b>Keine Reichweitenmessung</b>, keine Analysewerkzeuge, keine
         Zählpixel, keine Werbung.</li>
       <li><b>Keine Einbindung Dritter.</b> Schriften sind die Ihres
         Betriebssystems, Bilder und Vereinswappen liegen auf dieser Seite.
         Es wird keine Verbindung zu einem anderen Server aufgebaut.</li>
-      <li><b>Keine Konten, keine Formulare.</b> Die Suche läuft in Ihrem
-        Browser; es wird nichts abgeschickt.</li>
+      <li><b>Keine Konten.</b> Die Suche läuft in Ihrem Browser; es wird
+        nichts abgeschickt. Das Zugangsformular des Prototypen überträgt die
+        eingegebene E-Mail-Adresse nur dann an mich, wenn im Quelltext eine
+        Meldeadresse hinterlegt ist; ist sie leer, verlässt die Eingabe Ihr
+        Gerät nicht.</li>
       <li><b>Keine automatisierte Entscheidungsfindung</b> und kein
         Profiling.</li>
     </ul>
@@ -808,6 +873,49 @@ footer a:hover{text-decoration:underline}
 </div>
 
 <script>
+// --- Zugangstor -------------------------------------------------------
+const TOR_HASH = "__TORHASH__";
+const TOR_ZIEL = "__TORZIEL__";
+const TOR_OFFEN = new Set(['impressum', 'datenschutz']);
+const torTafel = document.getElementById('tor');
+
+async function torPruefen(wort){
+  const daten = new TextEncoder().encode(wort);
+  const summe = await crypto.subtle.digest('SHA-256', daten);
+  return [...new Uint8Array(summe)]
+    .map(b => b.toString(16).padStart(2, '0')).join('');
+}
+const torFrei = () => !TOR_HASH ||
+  localStorage.getItem('dt-zugang') === TOR_HASH;
+
+if (TOR_HASH && !torFrei()){
+  document.getElementById('torFormular').addEventListener('submit', async e => {
+    e.preventDefault();
+    const wort = document.getElementById('torWort').value;
+    const mail = document.getElementById('torMail').value.trim();
+    if (await torPruefen(wort) !== TOR_HASH){
+      document.getElementById('torFehler').hidden = false;
+      return;
+    }
+    try {
+      localStorage.setItem('dt-zugang', TOR_HASH);
+      if (mail) localStorage.setItem('dt-mail', mail);
+    } catch (fehler) { /* privates Fenster: dann eben für diesen Besuch */ }
+    // Nur wenn eine Meldeadresse hinterlegt ist, verlässt etwas den Browser.
+    if (TOR_ZIEL && mail){
+      try {
+        await fetch(TOR_ZIEL, {
+          method: 'POST', mode: 'cors',
+          headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+          body: JSON.stringify({email: mail, zeitpunkt: new Date().toISOString()}),
+        });
+      } catch (fehler) { /* der Zugang hängt nicht daran */ }
+    }
+    torTafel.hidden = true;
+    route();
+  });
+}
+
 const SPORTS = __SPORTS__;
 const IKONEN = __IKONEN__;
 const KARTE = {box: "__KARTENBOX__", umriss: "__KARTENPFAD__"};
@@ -965,6 +1073,12 @@ function aktuelleRoute(){
 
 async function route(){
   const {slug, params} = aktuelleRoute();
+  // Impressum und Datenschutz stehen auch ohne Zugangswort offen.
+  if (TOR_HASH && !torFrei() && !TOR_OFFEN.has(slug)){
+    torTafel.hidden = false;
+    return;
+  }
+  torTafel.hidden = true;
   const sport = SPORTS.find(s => s.slug === slug);
   document.querySelectorAll('#nav a').forEach(a =>
     a.toggleAttribute('aria-current',
@@ -1429,7 +1543,11 @@ def write_shell(out_dir: Path, sports: list[dict]) -> None:
         "__BILDBREITE__": breite,
         "__BILDHOEHE__": hoehe,
         "__TEASER__": teaser,
+        "__ROBOTS__": ('<meta name="robots" content="noindex, nofollow">'
+                       if ZUGANGSWORT_HASH else ""),
         "__STARTBILD__": startversion,
+        "__TORHASH__": ZUGANGSWORT_HASH,
+        "__TORZIEL__": ZUGANG_MELDEN_AN,
         "__ANSCHRIFT__": _anschrift_html(),
         "__KONTAKT__": _kontakt_html(),
     }.items():
