@@ -37,6 +37,51 @@ c.setSubject("Jeder Verein des Landes in einer Rangfolge")
 RAND = 54
 
 
+def kachel(x, y, breite, hoehe, label, verein, wert, liga):
+    """Eine Highlight-Kachel im Stil der Seite."""
+    c.setFillColor(FLAECHE)
+    c.roundRect(x, y, breite, hoehe, 10, stroke=0, fill=1)
+    c.setFont(NORMAL, 8)
+    c.setFillColor(GRAU)
+    c.drawString(x + 16, y + hoehe - 20, label.upper())
+    c.setFont(FETT, 14)
+    c.setFillColor(INK)
+    name = verein
+    while c.stringWidth(name, FETT, 14) > breite - 32 and len(name) > 6:
+        name = name[:-2]
+    if name != verein:
+        name = name.rstrip(" .") + "…"
+    c.drawString(x + 16, y + hoehe - 40, name)
+    c.setFont(FETT, 11)
+    c.setFillColor(GRUEN)
+    c.drawString(x + 16, y + hoehe - 56, wert)
+    c.setFont(NORMAL, 8.5)
+    c.setFillColor(GRAU)
+    text = liga
+    while c.stringWidth(text, NORMAL, 8.5) > breite - 32 and len(text) > 6:
+        text = text[:-2]
+    c.drawString(x + 16, y + hoehe - 71, text + ("…" if text != liga else ""))
+
+
+def rundes_bild(pfad, mx, my, radius):
+    """Porträt in einem Kreis."""
+    ir = ImageReader(str(pfad))
+    bw, bh = ir.getSize()
+    kante = 2 * radius
+    skala = max(kante / bw, kante / bh)
+    c.saveState()
+    pfadform = c.beginPath()
+    pfadform.circle(mx, my, radius)
+    c.clipPath(pfadform, stroke=0)
+    c.drawImage(ir, mx - bw * skala / 2, my - bh * skala / 2,
+                width=bw * skala, height=bh * skala, mask="auto")
+    c.restoreState()
+    c.setStrokeColor(LINIE)
+    c.setLineWidth(1)
+    c.circle(mx, my, radius, stroke=1, fill=0)
+
+
+
 def fusszeile(nr):
     c.setFont(NORMAL, 8.5)
     c.setFillColor(GRAU)
@@ -169,29 +214,44 @@ c.setFont(FETT, 26)
 c.drawString(RAND, H - 70, "Wie es gemacht ist")
 punkte = [
     ("Offene Quellen, benannt",
-     "Jede Zeile der frei abrufbaren CSV-Dateien nennt ihre Herkunft. "
-     "OpenLigaDB steht unter ODbL und wird als solche ausgewiesen."),
+     "Jede Zeile der frei abrufbaren CSV-Dateien nennt ihre Herkunft."),
     ("Geprüft, bevor es erscheint",
      "Rund zwanzig Prüfungen je Rangfolge: Torsummen, Spielzahlen, "
-     "Tabellenplätze, Sortierung. Fällt eine Rangfolge durch eine der "
-     "harten, bleibt sie auf dem letzten geprüften Stand."),
+     "Tabellenplätze, Sortierung. Fällt eine durch, bleibt der letzte "
+     "geprüfte Stand stehen."),
     ("Keine Messung, keine Werbung",
-     "Keine Cookies, kein Tracker, keine Konten, keine fremden Server — "
-     "Schriften und Vereinswappen liegen auf der Seite selbst."),
+     "Keine Cookies, kein Tracker, keine Konten, keine fremden Server."),
     ("Ehrlich in den Grenzen",
      "Unterhalb der Regionalliga verbindet keine Auf- und Abstiegskette die "
-     "Verbände. Das steht auf jeder Sportseite, statt es zu verschweigen."),
+     "Verbände. Das steht auf jeder Sportseite."),
 ]
 y = H - 108
 for titel, text in punkte:
     c.setFillColor(GRUEN)
     c.circle(RAND + 4, y + 4, 3.2, stroke=0, fill=1)
-    c.setFont(FETT, 12)
+    c.setFont(FETT, 11.5)
     c.setFillColor(INK)
     c.drawString(RAND + 16, y, titel)
-    y = zeilen(text, RAND + 16, y - 17, 386, groesse=10.5, zeilenabstand=14,
-               farbe=GRAU) - 12
-bild(BILDER / "03-tabelle.jpg", 470, 96, 318, 300)
+    y = zeilen(text, RAND + 16, y - 16, 352, groesse=10, zeilenabstand=13.5,
+               farbe=GRAU) - 10
+
+# Was die Rangfolge sichtbar macht -- drei Funde von heute.
+c.setFont(NORMAL, 9)
+c.setFillColor(GRAU)
+c.drawString(455, H - 108, "AUS DER TABELLE VON HEUTE")
+kachel(455, H - 206, 333, 86, "Bester Verein Deutschlands",
+       "GW Harsewinkel", "3,00 Punkte/Spiel",
+       "Kreisliga C · Kreis Gütersloh · Ligastufe 11")
+kachel(455, H - 302, 333, 86, "Die Korbfabrik",
+       "Gladiators Trier", "100,00 Körbe/Spiel",
+       "1. Bundesliga · Ligastufe 1")
+kachel(455, H - 398, 333, 86, "DFB-Pokal, größter Abstand",
+       "99 Plätze", "SSV Jeddeloh II gegen Hertha BSC",
+       "Rang 118 gegen Rang 19 der Deutschlandtabelle")
+c.setFont(NORMAL, 8.5)
+c.setFillColor(GRAU)
+c.drawString(455, H - 416, "Der beste Verein des Landes spielt in der "
+             "Kreisliga C. Genau dafür ist die Tabelle gebaut.")
 fusszeile(4)
 c.showPage()
 
@@ -199,37 +259,56 @@ c.showPage()
 c.setFillColor(INK)
 c.setFont(FETT, 26)
 c.drawString(RAND, H - 70, "Worum es geht")
-zeilen("Die Deutschlandtabelle ist ein privates, nicht-kommerzielles Projekt. "
-       "Sie verkauft nichts, zeigt keine Werbung und verlangt keine Anmeldung. "
-       "Was sie zeigt, gehört den Verbänden — deshalb sucht sie das Gespräch "
-       "mit ihnen, statt es zu vermeiden.",
-       RAND, H - 100, 640, groesse=12.5, zeilenabstand=18, farbe=GRAU)
+c.setFont(FETT, 15)
+c.setFillColor(GRUEN)
+c.drawString(RAND, H - 100, "Die Deutschlandtabelle schafft Sichtbarkeit für "
+             "den Amateursport.")
+zeilen("Von der Bundesliga bis zur Kreisklasse steht jede Mannschaft an einem "
+       "Platz, den sonst niemand ausweist. Was dafür gezeigt wird, gehört den "
+       "Verbänden — deshalb suche ich das Gespräch mit Ihnen, statt es zu "
+       "vermeiden.",
+       RAND, H - 128, 470, groesse=12, zeilenabstand=17, farbe=GRAU)
+zeilen("Die Seite ist heute ein Prototyp, gebaut von einer Person. Ich würde "
+       "sie gern gemeinsam mit Ihnen aufbauen und weiterentwickeln.",
+       RAND, H - 196, 470, schrift=FETT, groesse=12, zeilenabstand=17,
+       farbe=INK)
 
-kasten = [
-    ("Für Vereine", "Der eigene Platz im Land, nicht nur in der Staffel."),
-    ("Für Verbände", "Ein Schaufenster für die Breite des eigenen Spielbetriebs."),
-    ("Für die Daten", "Namensnennung, Nachvollziehbarkeit, keine Weiterverwertung."),
-]
-x = RAND
-for titel, text in kasten:
+# --- Zwei Wege, die offen stehen
+def aufruf(x, y, breite, nummer, titel, zeile1, zeile2):
     c.setStrokeColor(LINIE)
-    c.setLineWidth(0.8)
-    c.roundRect(x, H - 296, 236, 112, 12, stroke=1, fill=0)
+    c.setLineWidth(0.9)
+    c.roundRect(x, y, breite, 104, 12, stroke=1, fill=0)
+    c.setFillColor(GRUEN)
+    c.circle(x + 26, y + 78, 10, stroke=0, fill=1)
+    c.setFont(FETT, 10)
+    c.setFillColor(HexColor("#ffffff"))
+    c.drawCentredString(x + 26, y + 74.5, nummer)
+    c.setFont(FETT, 13)
+    c.setFillColor(INK)
+    c.drawString(x + 46, y + 73, titel)
+    c.setFont(NORMAL, 10.5)
+    c.setFillColor(GRAU)
+    c.drawString(x + 46, y + 54, zeile1)
     c.setFont(FETT, 12)
     c.setFillColor(GRUEN)
-    c.drawString(x + 18, H - 212, titel)
-    zeilen(text, x + 18, H - 234, 200, groesse=10.5, zeilenabstand=14, farbe=GRAU)
-    x += 252
+    c.drawString(x + 46, y + 28, zeile2)
 
-c.setFillColor(FLAECHE)
-c.roundRect(RAND, 120, 734, 96, 12, stroke=0, fill=1)
+aufruf(RAND, 132, 232, "1", "Ansehen",
+       "Der Pilot läuft — schauen Sie hinein.", "deutschlandtabelle.github.io")
+aufruf(RAND + 248, 132, 232, "2", "Ansprechen",
+       "Für alles Weitere brauche ich Sie.", "dominik.orbach@th-koeln.de")
+
+# --- Porträt
+rundes_bild(BILDER / "05-portraet.jpg", 660, H - 230, 108)
 c.setFont(FETT, 15)
 c.setFillColor(INK)
-c.drawString(RAND + 24, 180, "deutschlandtabelle.github.io")
-c.setFont(NORMAL, 11.5)
+c.drawCentredString(660, H - 364, "Dominik Orbach")
+c.setFont(NORMAL, 11)
 c.setFillColor(GRAU)
-c.drawString(RAND + 24, 158, "Dominik Orbach · dominik.orbach@th-koeln.de")
-c.drawString(RAND + 24, 138, "Stand der Daten: 20.10.2026 · Saison 2026/27")
+c.drawCentredString(660, H - 384, "Initiator der Deutschlandtabelle")
+c.drawCentredString(660, H - 402, "dominik.orbach@th-koeln.de")
+c.setFont(NORMAL, 9)
+c.drawCentredString(660, 60, "Stand der Daten: 20.10.2026 · Saison 2026/27")
 fusszeile(5)
 c.showPage()
 
