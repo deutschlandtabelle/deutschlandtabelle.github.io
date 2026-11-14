@@ -4,11 +4,12 @@ name: Ranking aktualisieren
 # dauert etwa eine Stunde. Der soll einmal am Tag laufen und nicht bei jedem
 # Commit. Von Hand startbar über "Run workflow".
 on:
-  schedule:
-    # Vorerst nur montags 03:15 UTC (05:15 deutscher Zeit). Der sonntägliche
-    # Lauf ist damit übersprungen. Für den täglichen Rhythmus wieder auf
-    # "15 3 * * *" ändern.
-    - cron: "15 3 * * 1"
+  # Der wöchentliche Lauf ist am 14.11.2026 ausgesetzt. Zum Wiederanschalten
+  # die drei Zeilen darunter entkommentieren -- montags 03:15 UTC (05:15
+  # deutscher Zeit), für täglich "15 3 * * *".
+  #
+  # schedule:
+  #   - cron: "15 3 * * 1"
   workflow_dispatch:
     inputs:
       nur_veroeffentlichen:
